@@ -1,0 +1,32 @@
+{
+  "id": "letter_ba",
+  "form": "ب",
+  "audio" : "alif.mp3",
+  "name": "Baa'on",
+  "syllables": {
+    "short": [
+      { "id": "ba_fatha", "form": "بَ", "phoneme": "ba", "audio": "ba_fatha.mp3" },
+      { "id": "ba_kasra", "form": "بِ", "phoneme": "bi", "audio": "ba_kasra.mp3" },
+      { "id": "ba_damma", "form": "بُ", "phoneme": "bu", "audio": "ba_damma.mp3" }
+    ],
+    "long": [
+      { "id": "ba_alif", "form": "با", "phoneme": "baa", "audio": "baa.mp3" },
+      { "id": "ba_ya", "form": "بي", "phoneme": "bii", "audio": "bii.mp3" },
+      { "id": "ba_waw", "form": "بو", "phoneme": "buu", "audio": "buu.mp3" }
+    ],
+    "sukun": [
+      { "id": "b_sukun", "form": "بْ", "phoneme": "b", "type": "closed", "audio": "b_stop.mp3" }
+    ],
+    "tanwin": [
+      { "id": "ban", "form": "بً", "phoneme": "ban", "audio": "ban.mp3" },
+      { "id": "bin", "form": "بٍ", "phoneme": "bin", "audio": "bin.mp3" },
+      { "id": "bun", "form": "بٌ", "phoneme": "bun", "audio": "bun.mp3" }
+    ]
+    ,
+    "shadda": [
+      { "id": "bba", "form": "بً", "phoneme": "bba", "audio": "bba.mp3" },
+      { "id": "bbi", "form": "بٍ", "phoneme": "bbi", "audio": "bbi.mp3" },
+      { "id": "bbo", "form": "بٌ", "phoneme": "bbo", "audio": "bbo.mp3" }
+    ]
+  }
+}
