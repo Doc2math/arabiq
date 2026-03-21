@@ -19,19 +19,19 @@
     {
         "label": "read_root",
         "kind": 2,
-        "importPath": "backend.main",
-        "description": "backend.main",
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
         "peekOfCode": "def read_root():\n    return {\"message\": \"Hello FastAPI 🚀\"}",
-        "detail": "backend.main",
+        "detail": "backend.app.main",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "backend.main",
-        "description": "backend.main",
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
         "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\ndef read_root():\n    return {\"message\": \"Hello FastAPI 🚀\"}",
-        "detail": "backend.main",
+        "detail": "backend.app.main",
         "documentation": {}
     },
     {
