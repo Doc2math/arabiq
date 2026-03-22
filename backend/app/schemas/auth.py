@@ -33,6 +33,7 @@ class UserRead(BaseModel):
     level: int
     streak: int
     is_premium: bool
+    is_admin: bool = False
     created_at: datetime
     model_config = {"from_attributes": True}
 

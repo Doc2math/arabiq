@@ -2,4 +2,18 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
+@layer base {
+  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body { @apply bg-surface text-gray-900; }
+ 
+  [dir="rtl"], .font-arabic {
+    direction: rtl;
+    unicode-bidi: embed;
+    font-family: 'Noto Naskh Arabic', 'Scheherazade New', serif;
+  }
+}
+ 
+@layer utilities {
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+}

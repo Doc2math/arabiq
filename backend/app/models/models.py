@@ -17,7 +17,7 @@ class User(Base):
     email: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)
     username: Mapped[str] = mapped_column(String(80), unique=True, nullable=False)
     hashed_password: Mapped[str] = mapped_column(String(255), nullable=False)
-    native_language: Mapped[str] = mapped_column(SAEnum("fr", "es", "en", name="language_enum"), default="fr")
+    native_language: Mapped[str] = mapped_column(String(10), default="fr")
     avatar_url: Mapped[str | None] = mapped_column(String(512))
     xp: Mapped[int] = mapped_column(Integer, default=0)
     level: Mapped[int] = mapped_column(Integer, default=1)
@@ -25,6 +25,7 @@ class User(Base):
     longest_streak: Mapped[int] = mapped_column(Integer, default=0)
     last_activity_date: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     is_premium: Mapped[bool] = mapped_column(Boolean, default=False)
+    is_admin: Mapped[bool] = mapped_column(Boolean, default=False)
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
     is_verified: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
@@ -42,7 +43,9 @@ class Module(Base):
     arabic_ratio: Mapped[float] = mapped_column(Float, default=0.1)
     sort_order: Mapped[int] = mapped_column(Integer, default=0)
     is_premium: Mapped[bool] = mapped_column(Boolean, default=False)
-    courses: Mapped[list["Course"]] = relationship(back_populates="module", order_by="Course.sort_order", lazy="selectin")
+    courses: Mapped[list["Course"]] = relationship(
+        back_populates="module", order_by="Course.sort_order", lazy="selectin"
+    )
 
 
 class Course(Base):
@@ -52,7 +55,9 @@ class Course(Base):
     title: Mapped[str] = mapped_column(String(200), nullable=False)
     sort_order: Mapped[int] = mapped_column(Integer, default=0)
     module: Mapped["Module"] = relationship(back_populates="courses")
-    lessons: Mapped[list["Lesson"]] = relationship(back_populates="course", order_by="Lesson.sort_order", lazy="selectin")
+    lessons: Mapped[list["Lesson"]] = relationship(
+        back_populates="course", order_by="Lesson.sort_order", lazy="selectin"
+    )
 
 
 class Lesson(Base):
@@ -66,13 +71,17 @@ class Lesson(Base):
     sort_order: Mapped[int] = mapped_column(Integer, default=0)
     content: Mapped[dict] = mapped_column(JSON, default=dict)
     course: Mapped["Course"] = relationship(back_populates="lessons")
-    progress_records: Mapped[list["LessonProgress"]] = relationship(back_populates="lesson", lazy="select")
+    progress_records: Mapped[list["LessonProgress"]] = relationship(
+        back_populates="lesson", lazy="select"
+    )
 
 
 class LessonProgress(Base):
     __tablename__ = "lesson_progress"
     id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
+    )
     lesson_id: Mapped[int] = mapped_column(ForeignKey("lessons.id"), nullable=False, index=True)
     score: Mapped[float] = mapped_column(Float, default=0.0)
     xp_earned: Mapped[int] = mapped_column(Integer, default=0)
@@ -95,7 +104,9 @@ class Badge(Base):
 
 class UserBadge(Base):
     __tablename__ = "user_badges"
-    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), primary_key=True)
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        ForeignKey("users.id", ondelete="CASCADE"), primary_key=True
+    )
     badge_id: Mapped[str] = mapped_column(ForeignKey("badges.id"), primary_key=True)
     earned_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
     user: Mapped["User"] = relationship(back_populates="badges")
