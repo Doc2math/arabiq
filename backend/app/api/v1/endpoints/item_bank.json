@@ -1,0 +1,527 @@
+[
+  {
+    "id": "vis_001",
+    "axis": "visual",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "very_easy",
+    "irt": { "a": 0.8, "b": -2.5, "c": 0.25 },
+    "question": {
+      "fr": "Quelle est cette lettre ?",
+      "es": "¿Cuál es esta letra?",
+      "en": "What is this letter?"
+    },
+    "stimulus": { "ar": "ب", "type": "letter" },
+    "choices": [
+      { "id": "A", "fr": "Ba",   "ar": "ب", "correct": true  },
+      { "id": "B", "fr": "Ta",   "ar": "ت", "correct": false },
+      { "id": "C", "fr": "Tha",  "ar": "ث", "correct": false },
+      { "id": "D", "fr": "Nun",  "ar": "ن", "correct": false }
+    ],
+    "tags": ["alphabet", "lettre_ba"]
+  },
+  {
+    "id": "vis_002",
+    "axis": "visual",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "very_easy",
+    "irt": { "a": 0.8, "b": -2.2, "c": 0.25 },
+    "question": {
+      "fr": "Quelle est cette lettre ?",
+      "es": "¿Cuál es esta letra?",
+      "en": "What is this letter?"
+    },
+    "stimulus": { "ar": "ا", "type": "letter" },
+    "choices": [
+      { "id": "A", "fr": "Alif", "ar": "ا", "correct": true  },
+      { "id": "B", "fr": "Lam",  "ar": "ل", "correct": false },
+      { "id": "C", "fr": "Waw",  "ar": "و", "correct": false },
+      { "id": "D", "fr": "Ra",   "ar": "ر", "correct": false }
+    ],
+    "tags": ["alphabet", "lettre_alif"]
+  },
+  {
+    "id": "vis_003",
+    "axis": "visual",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "easy",
+    "irt": { "a": 1.0, "b": -1.5, "c": 0.25 },
+    "question": {
+      "fr": "Identifiez la lettre Shin parmi ces propositions",
+      "es": "Identifique la letra Shin",
+      "en": "Identify the letter Shin"
+    },
+    "stimulus": null,
+    "choices": [
+      { "id": "A", "ar": "س", "correct": false },
+      { "id": "B", "ar": "ش", "correct": true  },
+      { "id": "C", "ar": "ص", "correct": false },
+      { "id": "D", "ar": "ض", "correct": false }
+    ],
+    "tags": ["alphabet", "lettres_similaires"]
+  },
+  {
+    "id": "vis_004",
+    "axis": "visual",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "medium",
+    "irt": { "a": 1.2, "b": -0.5, "c": 0.25 },
+    "question": {
+      "fr": "Laquelle de ces lettres est un Qaf ?",
+      "es": "¿Cuál de estas letras es Qaf?",
+      "en": "Which of these letters is Qaf?"
+    },
+    "stimulus": null,
+    "choices": [
+      { "id": "A", "ar": "ف", "correct": false },
+      { "id": "B", "ar": "غ", "correct": false },
+      { "id": "C", "ar": "ق", "correct": true  },
+      { "id": "D", "ar": "ع", "correct": false }
+    ],
+    "tags": ["alphabet", "lettres_similaires"]
+  },
+  {
+    "id": "vis_005",
+    "axis": "visual",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "hard",
+    "irt": { "a": 1.4, "b": 1.2, "c": 0.25 },
+    "question": {
+      "fr": "Quelle lettre est représentée ici en forme médiane ?",
+      "es": "¿Qué letra está representada en forma medial?",
+      "en": "Which letter is shown in its medial form?"
+    },
+    "stimulus": { "ar": "ـعـ", "type": "form_medial" },
+    "choices": [
+      { "id": "A", "fr": "Ayn",   "ar": "ع", "correct": true  },
+      { "id": "B", "fr": "Ghayn", "ar": "غ", "correct": false },
+      { "id": "C", "fr": "Ha",    "ar": "ح", "correct": false },
+      { "id": "D", "fr": "Kha",   "ar": "خ", "correct": false }
+    ],
+    "tags": ["formes", "mediale"]
+  },
+
+  {
+    "id": "syl_001",
+    "axis": "syllable",
+    "type": "mcq_audio",
+    "modality": "audio",
+    "difficulty_label": "very_easy",
+    "irt": { "a": 0.9, "b": -2.0, "c": 0.25 },
+    "question": {
+      "fr": "Cliquez sur la syllabe que vous entendez",
+      "es": "Haga clic en la sílaba que escucha",
+      "en": "Click on the syllable you hear"
+    },
+    "stimulus": { "audio": "audio/letter_ba/ba_fatha.mp3", "type": "audio" },
+    "choices": [
+      { "id": "A", "ar": "بَ", "phoneme": "ba", "correct": true  },
+      { "id": "B", "ar": "بِ", "phoneme": "bi", "correct": false },
+      { "id": "C", "ar": "بُ", "phoneme": "bu", "correct": false },
+      { "id": "D", "ar": "بْ", "phoneme": "b",  "correct": false }
+    ],
+    "tags": ["syllabes", "voyelles_courtes"]
+  },
+  {
+    "id": "syl_002",
+    "axis": "syllable",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "easy",
+    "irt": { "a": 1.0, "b": -1.2, "c": 0.25 },
+    "question": {
+      "fr": "Comment se prononce cette syllabe ?",
+      "es": "¿Cómo se pronuncia esta sílaba?",
+      "en": "How is this syllable pronounced?"
+    },
+    "stimulus": { "ar": "كِ", "type": "syllable" },
+    "choices": [
+      { "id": "A", "fr": "ka", "correct": false },
+      { "id": "B", "fr": "ku", "correct": false },
+      { "id": "C", "fr": "ki", "correct": true  },
+      { "id": "D", "fr": "k",  "correct": false }
+    ],
+    "tags": ["syllabes", "kasra"]
+  },
+  {
+    "id": "syl_003",
+    "axis": "syllable",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "medium",
+    "irt": { "a": 1.2, "b": 0.2, "c": 0.25 },
+    "question": {
+      "fr": "Quelle syllabe correspond à la prononciation 'muu' (long) ?",
+      "es": "¿Qué sílaba corresponde a la pronunciación 'muu' (larga)?",
+      "en": "Which syllable corresponds to the pronunciation 'muu' (long)?"
+    },
+    "stimulus": null,
+    "choices": [
+      { "id": "A", "ar": "مُ",  "phoneme": "mu",  "correct": false },
+      { "id": "B", "ar": "مو",  "phoneme": "muu", "correct": true  },
+      { "id": "C", "ar": "مُّ", "phoneme": "mmu", "correct": false },
+      { "id": "D", "ar": "مْ",  "phoneme": "m",   "correct": false }
+    ],
+    "tags": ["syllabes", "voyelles_longues"]
+  },
+  {
+    "id": "syl_004",
+    "axis": "syllable",
+    "type": "mcq_audio",
+    "modality": "audio",
+    "difficulty_label": "medium",
+    "irt": { "a": 1.3, "b": 0.5, "c": 0.25 },
+    "question": {
+      "fr": "Écoutez et identifiez la syllabe avec shadda",
+      "es": "Escuche e identifique la sílaba con shadda",
+      "en": "Listen and identify the syllable with shadda"
+    },
+    "stimulus": { "audio": "audio/letter_ba/shadda/bba_fatha.mp3", "type": "audio" },
+    "choices": [
+      { "id": "A", "ar": "بَ",  "phoneme": "ba",  "correct": false },
+      { "id": "B", "ar": "بَّ", "phoneme": "bba", "correct": true  },
+      { "id": "C", "ar": "بَا", "phoneme": "baa", "correct": false },
+      { "id": "D", "ar": "بً",  "phoneme": "ban", "correct": false }
+    ],
+    "tags": ["syllabes", "shadda"]
+  },
+  {
+    "id": "syl_005",
+    "axis": "syllable",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "hard",
+    "irt": { "a": 1.5, "b": 1.5, "c": 0.25 },
+    "question": {
+      "fr": "Lisez ce mot et choisissez sa transcription correcte",
+      "es": "Lea esta palabra y elija su transcripción correcta",
+      "en": "Read this word and choose its correct transcription"
+    },
+    "stimulus": { "ar": "كَتَبَ", "type": "word" },
+    "choices": [
+      { "id": "A", "fr": "kataba", "correct": true  },
+      { "id": "B", "fr": "kitaba", "correct": false },
+      { "id": "C", "fr": "kutuba", "correct": false },
+      { "id": "D", "fr": "katabi", "correct": false }
+    ],
+    "tags": ["syllabes", "lecture_mot"]
+  },
+
+  {
+    "id": "sign_001",
+    "axis": "signs",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "very_easy",
+    "irt": { "a": 0.9, "b": -2.0, "c": 0.25 },
+    "question": {
+      "fr": "Quel est ce signe de vocalisation ?",
+      "es": "¿Cuál es este signo de vocalización?",
+      "en": "What is this vocalization sign?"
+    },
+    "stimulus": { "ar": "بَ", "type": "sign_highlight", "highlight": "fatha" },
+    "choices": [
+      { "id": "A", "fr": "Fatha — son A",  "correct": true  },
+      { "id": "B", "fr": "Kasra — son I",  "correct": false },
+      { "id": "C", "fr": "Damma — son OU", "correct": false },
+      { "id": "D", "fr": "Sukūn",          "correct": false }
+    ],
+    "tags": ["signes", "fatha"]
+  },
+  {
+    "id": "sign_002",
+    "axis": "signs",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "easy",
+    "irt": { "a": 1.0, "b": -1.0, "c": 0.25 },
+    "question": {
+      "fr": "Où se place la kasra ?",
+      "es": "¿Dónde se coloca la kasra?",
+      "en": "Where is the kasra placed?"
+    },
+    "stimulus": null,
+    "choices": [
+      { "id": "A", "fr": "Toujours au-dessus de la lettre", "correct": false },
+      { "id": "B", "fr": "Toujours en-dessous de la lettre", "correct": true  },
+      { "id": "C", "fr": "Au-dessus ou en-dessous selon la lettre", "correct": false },
+      { "id": "D", "fr": "Après la lettre", "correct": false }
+    ],
+    "tags": ["signes", "kasra", "position"]
+  },
+  {
+    "id": "sign_003",
+    "axis": "signs",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "medium",
+    "irt": { "a": 1.2, "b": 0.3, "c": 0.25 },
+    "question": {
+      "fr": "Que signifie ce signe sur la lettre ?",
+      "es": "¿Qué significa este signo sobre la letra?",
+      "en": "What does this sign on the letter mean?"
+    },
+    "stimulus": { "ar": "بْ", "type": "sign_highlight", "highlight": "sukun" },
+    "choices": [
+      { "id": "A", "fr": "La lettre se prononce 'ba'", "correct": false },
+      { "id": "B", "fr": "La lettre est doublée",      "correct": false },
+      { "id": "C", "fr": "La lettre n'a pas de voyelle", "correct": true },
+      { "id": "D", "fr": "La lettre se prononce 'bi'", "correct": false }
+    ],
+    "tags": ["signes", "sukun"]
+  },
+  {
+    "id": "sign_004",
+    "axis": "signs",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "medium",
+    "irt": { "a": 1.3, "b": 0.6, "c": 0.25 },
+    "question": {
+      "fr": "Comment se prononce ce mot avec tanwīn ?",
+      "es": "¿Cómo se pronuncia esta palabra con tanwīn?",
+      "en": "How is this word with tanwīn pronounced?"
+    },
+    "stimulus": { "ar": "كِتَابً", "type": "word" },
+    "choices": [
+      { "id": "A", "fr": "kitaab",  "correct": false },
+      { "id": "B", "fr": "kitaaban", "correct": true },
+      { "id": "C", "fr": "kitaabin", "correct": false },
+      { "id": "D", "fr": "kitaabun", "correct": false }
+    ],
+    "tags": ["signes", "tanwin", "fathatayn"]
+  },
+  {
+    "id": "sign_005",
+    "axis": "signs",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "hard",
+    "irt": { "a": 1.5, "b": 1.4, "c": 0.25 },
+    "question": {
+      "fr": "Quelle est la règle de la shadda ?",
+      "es": "¿Cuál es la regla de la shadda?",
+      "en": "What is the rule of the shadda?"
+    },
+    "stimulus": { "ar": "مُحَمَّد", "type": "word" },
+    "choices": [
+      { "id": "A", "fr": "La lettre avant est allongée",      "correct": false },
+      { "id": "B", "fr": "La consonne est prononcée deux fois", "correct": true },
+      { "id": "C", "fr": "La lettre après est supprimée",     "correct": false },
+      { "id": "D", "fr": "Le mot est en pause",               "correct": false }
+    ],
+    "tags": ["signes", "shadda", "doublement"]
+  },
+
+  {
+    "id": "morph_001",
+    "axis": "morphology",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "easy",
+    "irt": { "a": 1.0, "b": -1.0, "c": 0.25 },
+    "question": {
+      "fr": "Quelle est la racine de ce mot ?",
+      "es": "¿Cuál es la raíz de esta palabra?",
+      "en": "What is the root of this word?"
+    },
+    "stimulus": { "ar": "كَتَبَ", "type": "word", "translation": "il a écrit" },
+    "choices": [
+      { "id": "A", "ar": "ك-ت-ب", "fr": "K-T-B", "correct": true  },
+      { "id": "B", "ar": "ك-ب-ت", "fr": "K-B-T", "correct": false },
+      { "id": "C", "ar": "ت-ك-ب", "fr": "T-K-B", "correct": false },
+      { "id": "D", "ar": "ب-ت-ك", "fr": "B-T-K", "correct": false }
+    ],
+    "tags": ["morphologie", "racine", "trilitere"]
+  },
+  {
+    "id": "morph_002",
+    "axis": "morphology",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "medium",
+    "irt": { "a": 1.2, "b": 0.4, "c": 0.25 },
+    "question": {
+      "fr": "Quel mot appartient à la même racine que كَتَبَ ?",
+      "es": "¿Qué palabra pertenece a la misma raíz que كَتَبَ?",
+      "en": "Which word shares the same root as كَتَبَ?"
+    },
+    "stimulus": { "ar": "كَتَبَ", "type": "word", "translation": "il a écrit" },
+    "choices": [
+      { "id": "A", "ar": "كِتَاب",  "fr": "livre",    "correct": true  },
+      { "id": "B", "ar": "كَلَام",  "fr": "parole",   "correct": false },
+      { "id": "C", "ar": "كَبِير",  "fr": "grand",    "correct": false },
+      { "id": "D", "ar": "كَرِيم",  "fr": "généreux", "correct": false }
+    ],
+    "tags": ["morphologie", "famille_mots", "k-t-b"]
+  },
+  {
+    "id": "morph_003",
+    "axis": "morphology",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "medium",
+    "irt": { "a": 1.3, "b": 0.7, "c": 0.25 },
+    "question": {
+      "fr": "Quel est le pattern de ce mot verbal ?",
+      "es": "¿Cuál es el patrón de este verbo?",
+      "en": "What is the pattern of this verb?"
+    },
+    "stimulus": { "ar": "كَتَبَ", "type": "word", "translation": "il a écrit (passé)" },
+    "choices": [
+      { "id": "A", "fr": "فَعَلَ — passé accompli forme I", "correct": true  },
+      { "id": "B", "fr": "فَعَّلَ — forme II intensif",      "correct": false },
+      { "id": "C", "fr": "أَفْعَلَ — forme IV causatif",     "correct": false },
+      { "id": "D", "fr": "تَفَعَّلَ — forme V réfléchi",     "correct": false }
+    ],
+    "tags": ["morphologie", "patterns_verbaux", "forme_I"]
+  },
+  {
+    "id": "morph_004",
+    "axis": "morphology",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "hard",
+    "irt": { "a": 1.5, "b": 1.3, "c": 0.25 },
+    "question": {
+      "fr": "Quelle est la différence entre ces deux formes ?",
+      "es": "¿Cuál es la diferencia entre estas dos formas?",
+      "en": "What is the difference between these two forms?"
+    },
+    "stimulus": { "ar": "كَتَبَ / كَتَّبَ", "type": "comparison" },
+    "choices": [
+      { "id": "A", "fr": "Forme I vs Forme II — intensité / causatif",    "correct": true  },
+      { "id": "B", "fr": "Passé vs présent",                              "correct": false },
+      { "id": "C", "fr": "Singulier vs pluriel",                          "correct": false },
+      { "id": "D", "fr": "Masculin vs féminin",                           "correct": false }
+    ],
+    "tags": ["morphologie", "formes_verbales", "forme_I_II"]
+  },
+  {
+    "id": "morph_005",
+    "axis": "morphology",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "very_hard",
+    "irt": { "a": 1.6, "b": 2.0, "c": 0.25 },
+    "question": {
+      "fr": "Identifiez le masdar (nom verbal) de درَسَ",
+      "es": "Identifique el masdar (nombre verbal) de درَسَ",
+      "en": "Identify the masdar (verbal noun) of درَسَ"
+    },
+    "stimulus": { "ar": "دَرَسَ", "type": "word", "translation": "étudier" },
+    "choices": [
+      { "id": "A", "ar": "دِرَاسَة", "fr": "étude", "correct": true  },
+      { "id": "B", "ar": "دَرْس",   "fr": "leçon",  "correct": false },
+      { "id": "C", "ar": "دَرَسَة", "fr": "—",      "correct": false },
+      { "id": "D", "ar": "مَدْرَسَة","fr": "école",  "correct": false }
+    ],
+    "tags": ["morphologie", "masdar", "nom_verbal"]
+  },
+
+  {
+    "id": "voc_001",
+    "axis": "vocabulary",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "very_easy",
+    "irt": { "a": 0.8, "b": -2.5, "c": 0.25 },
+    "question": {
+      "fr": "Que signifie ce mot ?",
+      "es": "¿Qué significa esta palabra?",
+      "en": "What does this word mean?"
+    },
+    "stimulus": { "ar": "كِتَاب", "type": "word" },
+    "choices": [
+      { "id": "A", "fr": "Livre",   "es": "Libro",  "en": "Book",   "correct": true  },
+      { "id": "B", "fr": "Maison",  "es": "Casa",   "en": "House",  "correct": false },
+      { "id": "C", "fr": "Enfant",  "es": "Niño",   "en": "Child",  "correct": false },
+      { "id": "D", "fr": "Eau",     "es": "Agua",   "en": "Water",  "correct": false }
+    ],
+    "tags": ["vocabulaire", "objets", "frequence_1"]
+  },
+  {
+    "id": "voc_002",
+    "axis": "vocabulary",
+    "type": "mcq_audio",
+    "modality": "audio",
+    "difficulty_label": "easy",
+    "irt": { "a": 1.0, "b": -1.5, "c": 0.25 },
+    "question": {
+      "fr": "Écoutez et choisissez la bonne traduction",
+      "es": "Escuche y elija la traducción correcta",
+      "en": "Listen and choose the correct translation"
+    },
+    "stimulus": { "audio": "audio/vocab/bayt.mp3", "ar": "بَيْت", "type": "audio_word" },
+    "choices": [
+      { "id": "A", "fr": "École",  "es": "Escuela", "en": "School", "correct": false },
+      { "id": "B", "fr": "Maison", "es": "Casa",    "en": "House",  "correct": true  },
+      { "id": "C", "fr": "Rue",    "es": "Calle",   "en": "Street", "correct": false },
+      { "id": "D", "fr": "Jardin", "es": "Jardín",  "en": "Garden", "correct": false }
+    ],
+    "tags": ["vocabulaire", "maison", "frequence_1"]
+  },
+  {
+    "id": "voc_003",
+    "axis": "vocabulary",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "medium",
+    "irt": { "a": 1.2, "b": 0.3, "c": 0.25 },
+    "question": {
+      "fr": "Quel mot arabe correspond à 'étudiant' ?",
+      "es": "¿Qué palabra árabe significa 'estudiante'?",
+      "en": "Which Arabic word means 'student'?"
+    },
+    "stimulus": null,
+    "choices": [
+      { "id": "A", "ar": "مُعَلِّم",  "fr": "enseignant", "correct": false },
+      { "id": "B", "ar": "طَالِب",   "fr": "étudiant",   "correct": true  },
+      { "id": "C", "ar": "مَدْرَسَة", "fr": "école",      "correct": false },
+      { "id": "D", "ar": "كِتَاب",   "fr": "livre",      "correct": false }
+    ],
+    "tags": ["vocabulaire", "education", "frequence_1"]
+  },
+  {
+    "id": "voc_004",
+    "axis": "vocabulary",
+    "type": "input_text",
+    "modality": "typing",
+    "difficulty_label": "hard",
+    "irt": { "a": 1.4, "b": 1.0, "c": 0.0 },
+    "question": {
+      "fr": "Écrivez en arabe le mot 'soleil'",
+      "es": "Escriba en árabe la palabra 'sol'",
+      "en": "Write the Arabic word for 'sun'"
+    },
+    "stimulus": null,
+    "correct_answers": ["شمس", "الشمس", "شَمْس", "الشَّمْس"],
+    "hint": { "fr": "Commence par la lettre Shin (ش)", "es": "Empieza con Shin (ش)", "en": "Starts with Shin (ش)" },
+    "tags": ["vocabulaire", "nature", "ecriture"]
+  },
+  {
+    "id": "voc_005",
+    "axis": "vocabulary",
+    "type": "mcq_visual",
+    "modality": "visual",
+    "difficulty_label": "very_hard",
+    "irt": { "a": 1.6, "b": 1.8, "c": 0.25 },
+    "question": {
+      "fr": "Quel est le pluriel irrégulier de كِتَاب (livre) ?",
+      "es": "¿Cuál es el plural irregular de كِتَاب (libro)?",
+      "en": "What is the irregular plural of كِتَاب (book)?"
+    },
+    "stimulus": { "ar": "كِتَاب", "type": "word" },
+    "choices": [
+      { "id": "A", "ar": "كُتُب",   "fr": "kutub",   "correct": true  },
+      { "id": "B", "ar": "كِتَابَات","fr": "kitaabat","correct": false },
+      { "id": "C", "ar": "كِتَابَان","fr": "kitaaban","correct": false },
+      { "id": "D", "ar": "أَكْتَاب", "fr": "aktaab",  "correct": false }
+    ],
+    "tags": ["vocabulaire", "pluriel_brise", "morphologie"]
+  }
+]

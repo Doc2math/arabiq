@@ -1,0 +1,199 @@
+{
+  "version": "1.0",
+  "description": "Graphe de compétences LangDad — 9 modules",
+
+  "skills": [
+    {
+      "id": "diag_visual",
+      "label": "Reconnaissance visuelle",
+      "label_ar": "التَّعَرُّف البَصَرِي",
+      "module": 0,
+      "prerequisites": [],
+      "bkt": { "p_init": 0.1, "p_learn": 0.3, "p_forget": 0.05, "p_slip": 0.1, "p_guess": 0.25 },
+      "description": "Identifier une lettre arabe parmi d'autres visuellement"
+    },
+    {
+      "id": "letter_name",
+      "label": "Nom des lettres",
+      "label_ar": "أَسْمَاء الحُرُوف",
+      "module": 0,
+      "prerequisites": ["diag_visual"],
+      "bkt": { "p_init": 0.1, "p_learn": 0.25, "p_forget": 0.05, "p_slip": 0.1, "p_guess": 0.25 },
+      "description": "Connaître le nom de chaque lettre (alif, ba, ta...)"
+    },
+    {
+      "id": "harakat",
+      "label": "Harakat (voyelles courtes)",
+      "label_ar": "الحَرَكَات",
+      "module": 1,
+      "prerequisites": ["diag_visual", "letter_name"],
+      "bkt": { "p_init": 0.05, "p_learn": 0.25, "p_forget": 0.08, "p_slip": 0.1, "p_guess": 0.25 },
+      "description": "Fatha (a), kasra (i), damma (u) — position et son"
+    },
+    {
+      "id": "sukun_shadda",
+      "label": "Sukūn et Shadda",
+      "label_ar": "السُّكُون وَالشَّدَّة",
+      "module": 1,
+      "prerequisites": ["harakat"],
+      "bkt": { "p_init": 0.05, "p_learn": 0.2, "p_forget": 0.08, "p_slip": 0.12, "p_guess": 0.25 },
+      "description": "Consonne sans voyelle (sukūn) et doublement (shadda)"
+    },
+    {
+      "id": "short_syllables",
+      "label": "Syllabes courtes",
+      "label_ar": "المَقَاطِع القَصِيرَة",
+      "module": 1,
+      "prerequisites": ["harakat", "diag_visual"],
+      "bkt": { "p_init": 0.05, "p_learn": 0.3, "p_forget": 0.07, "p_slip": 0.1, "p_guess": 0.25 },
+      "description": "Lire ba, bi, bu — lettre + voyelle courte"
+    },
+    {
+      "id": "long_syllables",
+      "label": "Syllabes longues",
+      "label_ar": "المَقَاطِع الطَّوِيلَة",
+      "module": 1,
+      "prerequisites": ["short_syllables", "sukun_shadda"],
+      "bkt": { "p_init": 0.05, "p_learn": 0.25, "p_forget": 0.07, "p_slip": 0.12, "p_guess": 0.25 },
+      "description": "Lire baa, bii, buu — voyelle longue avec alif/waw/ya"
+    },
+    {
+      "id": "words_m1",
+      "label": "Mots — مَكْتَبٌ",
+      "label_ar": "كَلِمَات المَكْتَب",
+      "module": 1,
+      "prerequisites": ["short_syllables", "long_syllables"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.2, "p_forget": 0.1, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "Lire et comprendre des mots avec م ك ت ب vocalisés"
+    },
+    {
+      "id": "letter_connection",
+      "label": "Connexion des lettres",
+      "label_ar": "تَوَاصُل الحُرُوف",
+      "module": 2,
+      "prerequisites": ["words_m1"],
+      "bkt": { "p_init": 0.05, "p_learn": 0.2, "p_forget": 0.08, "p_slip": 0.12, "p_guess": 0.25 },
+      "description": "Lettres connectantes vs non-connectantes, formes contextuelles"
+    },
+    {
+      "id": "tanwin",
+      "label": "Tanwīn",
+      "label_ar": "التَّنْوِين",
+      "module": 2,
+      "prerequisites": ["harakat", "words_m1"],
+      "bkt": { "p_init": 0.05, "p_learn": 0.2, "p_forget": 0.1, "p_slip": 0.12, "p_guess": 0.25 },
+      "description": "Nunation : fathatayn, dammatayn, kasratayn"
+    },
+    {
+      "id": "article_al",
+      "label": "Article ال",
+      "label_ar": "أَل التَّعْرِيف",
+      "module": 2,
+      "prerequisites": ["letter_connection"],
+      "bkt": { "p_init": 0.05, "p_learn": 0.18, "p_forget": 0.1, "p_slip": 0.12, "p_guess": 0.25 },
+      "description": "Al solaire vs lunaire — assimilation du lam"
+    },
+    {
+      "id": "words_m2",
+      "label": "Mots — ثَلْجٌ",
+      "label_ar": "كَلِمَات الثَّلْج",
+      "module": 2,
+      "prerequisites": ["letter_connection", "tanwin"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.18, "p_forget": 0.1, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "Lire et comprendre des mots avec ث ل ج"
+    },
+    {
+      "id": "words_m3",
+      "label": "Mots — صَخْرٌ",
+      "label_ar": "كَلِمَات الصَّخْر",
+      "module": 3,
+      "prerequisites": ["words_m2", "article_al"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.18, "p_forget": 0.1, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "Lettres emphatiques ص خ ر — mots vocalisés"
+    },
+    {
+      "id": "words_m4",
+      "label": "Mots — حَسَنٌ",
+      "label_ar": "كَلِمَات الحَسَن",
+      "module": 4,
+      "prerequisites": ["words_m3"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.18, "p_forget": 0.1, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "Gutturales ح س ن — mots vocalisés"
+    },
+    {
+      "id": "words_m5",
+      "label": "Mots — شَوْطٌ",
+      "label_ar": "كَلِمَات الشَّوْط",
+      "module": 5,
+      "prerequisites": ["words_m4"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.18, "p_forget": 0.1, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "ش و ط — mots avec waw voyelle longue"
+    },
+    {
+      "id": "words_m6",
+      "label": "Mots — زَادٌ",
+      "label_ar": "كَلِمَات الزَّاد",
+      "module": 6,
+      "prerequisites": ["words_m5"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.18, "p_forget": 0.1, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "ز ا د — alif comme voyelle longue"
+    },
+    {
+      "id": "words_m7",
+      "label": "Mots — ضُعْفٌ",
+      "label_ar": "كَلِمَات الضُّعْف",
+      "module": 7,
+      "prerequisites": ["words_m6"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.15, "p_forget": 0.1, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "ض ع ف — emphatiques et pharyngales"
+    },
+    {
+      "id": "morphology_roots",
+      "label": "Racines et patterns",
+      "label_ar": "الجُذُور وَالأَوْزَان",
+      "module": 7,
+      "prerequisites": ["words_m6"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.12, "p_forget": 0.12, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "Racines triconsonantiques — pattern فَعَلَ"
+    },
+    {
+      "id": "words_m8",
+      "label": "Mots — غَيْظٌ",
+      "label_ar": "كَلِمَات الغَيْظ",
+      "module": 8,
+      "prerequisites": ["words_m7", "morphology_roots"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.15, "p_forget": 0.1, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "غ ي ظ — ya comme voyelle longue"
+    },
+    {
+      "id": "words_m9",
+      "label": "Mots — هَذِقٌ",
+      "label_ar": "كَلِمَات الهَذِق",
+      "module": 9,
+      "prerequisites": ["words_m8"],
+      "bkt": { "p_init": 0.02, "p_learn": 0.15, "p_forget": 0.1, "p_slip": 0.15, "p_guess": 0.2 },
+      "description": "ه ذ ق — complétion des 28 lettres"
+    },
+    {
+      "id": "reading_unvoweled",
+      "label": "Lecture sans voyelles",
+      "label_ar": "القِرَاءَة بِدُون حَرَكَات",
+      "module": 9,
+      "prerequisites": ["words_m9", "morphology_roots"],
+      "bkt": { "p_init": 0.01, "p_learn": 0.1, "p_forget": 0.15, "p_slip": 0.2, "p_guess": 0.15 },
+      "description": "Lire des textes arabes sans voyelles — objectif final"
+    }
+  ],
+
+  "modules": [
+    { "id": 1, "name": "مَكْتَبٌ", "translation": "Bureau",    "letters": ["م","ك","ت","ب"], "skill_ids": ["diag_visual","letter_name","harakat","sukun_shadda","short_syllables","long_syllables","words_m1"] },
+    { "id": 2, "name": "ثَلْجٌ",   "translation": "Neige",     "letters": ["ث","ل","ج"],     "skill_ids": ["letter_connection","tanwin","article_al","words_m2"] },
+    { "id": 3, "name": "صَخْرٌ",   "translation": "Rocher",    "letters": ["ص","خ","ر"],     "skill_ids": ["words_m3"] },
+    { "id": 4, "name": "حَسَنٌ",   "translation": "Beau/bon",  "letters": ["ح","س","ن"],     "skill_ids": ["words_m4"] },
+    { "id": 5, "name": "شَوْطٌ",   "translation": "Tour",      "letters": ["ش","و","ط"],     "skill_ids": ["words_m5"] },
+    { "id": 6, "name": "زَادٌ",    "translation": "Provision", "letters": ["ز","ا","د"],     "skill_ids": ["words_m6"] },
+    { "id": 7, "name": "ضُعْفٌ",   "translation": "Faiblesse", "letters": ["ض","ع","ف"],     "skill_ids": ["words_m7","morphology_roots"] },
+    { "id": 8, "name": "غَيْظٌ",   "translation": "Colère",    "letters": ["غ","ي","ظ"],     "skill_ids": ["words_m8"] },
+    { "id": 9, "name": "هَذِقٌ",   "translation": "Habile",    "letters": ["ه","ذ","ق"],     "skill_ids": ["words_m9","reading_unvoweled"] }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "user_id": "a2032ac8-9544-447c-af4f-a2173f43c41b",
+  "created_at": "2026-04-12T23:00:41.707896+00:00",
+  "last_updated": "2026-04-14T15:31:44.682026+00:00",
+  "skills": {
+    "letter_recognition": {
+      "p_mastered": 0.1,
+      "p_l0": 0.1,
+      "p_t": 0.2,
+      "p_g": 0.25,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    },
+    "harakat_reading": {
+      "p_mastered": 0.05,
+      "p_l0": 0.05,
+      "p_t": 0.18,
+      "p_g": 0.25,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    },
+    "long_vowels": {
+      "p_mastered": 0.05,
+      "p_l0": 0.05,
+      "p_t": 0.15,
+      "p_g": 0.25,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    },
+    "tanwin": {
+      "p_mastered": 0.05,
+      "p_l0": 0.05,
+      "p_t": 0.15,
+      "p_g": 0.25,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    },
+    "letter_positions": {
+      "p_mastered": 0.05,
+      "p_l0": 0.05,
+      "p_t": 0.12,
+      "p_g": 0.25,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    },
+    "word_reading": {
+      "p_mastered": 0.08,
+      "p_l0": 0.08,
+      "p_t": 0.15,
+      "p_g": 0.25,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    },
+    "word_comprehension": {
+      "p_mastered": 0.1,
+      "p_l0": 0.1,
+      "p_t": 0.2,
+      "p_g": 0.25,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    },
+    "word_writing": {
+      "p_mastered": 0.05,
+      "p_l0": 0.05,
+      "p_t": 0.12,
+      "p_g": 0.05,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    },
+    "word_building": {
+      "p_mastered": 0.05,
+      "p_l0": 0.05,
+      "p_t": 0.12,
+      "p_g": 0.05,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    },
+    "sentence_reading": {
+      "p_mastered": 0.05,
+      "p_l0": 0.05,
+      "p_t": 0.1,
+      "p_g": 0.25,
+      "p_s": 0.1,
+      "attempts": 0,
+      "correct": 0,
+      "mastered": false,
+      "last_seen": null
+    }
+  },
+  "module_progress": {
+    "1": {
+      "last_evaluation": {
+        "user_id": "a2032ac8-9544-447c-af4f-a2173f43c41b",
+        "module_id": 1,
+        "generated_at": "2026-04-14T15:31:44.682026+00:00",
+        "score": 6.3,
+        "passed": false,
+        "skills": [
+          {
+            "skill_id": "letter_recognition",
+            "label": "Reconnaître les lettres",
+            "description": "Identifier م ك ت ب isolées",
+            "p_mastered": 0.1,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          },
+          {
+            "skill_id": "harakat_reading",
+            "label": "Lire avec harakat",
+            "description": "Lire les voyelles courtes fatha, kasra, damma",
+            "p_mastered": 0.05,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          },
+          {
+            "skill_id": "long_vowels",
+            "label": "Voyelles longues",
+            "description": "Lire ا و ي comme voyelles longues",
+            "p_mastered": 0.05,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          },
+          {
+            "skill_id": "tanwin",
+            "label": "Tanwīn",
+            "description": "Reconnaître et lire ً ٍ ٌ",
+            "p_mastered": 0.05,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          },
+          {
+            "skill_id": "letter_positions",
+            "label": "Positions des lettres",
+            "description": "Formes isolée, initiale, médiane, finale",
+            "p_mastered": 0.05,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          },
+          {
+            "skill_id": "word_reading",
+            "label": "Lecture de mots",
+            "description": "Lire des mots construits avec م ك ت ب",
+            "p_mastered": 0.08,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          },
+          {
+            "skill_id": "word_comprehension",
+            "label": "Compréhension des mots",
+            "description": "Associer un mot arabe à sa traduction",
+            "p_mastered": 0.1,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          },
+          {
+            "skill_id": "word_writing",
+            "label": "Écriture des mots",
+            "description": "Écrire des mots arabes au clavier",
+            "p_mastered": 0.05,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          },
+          {
+            "skill_id": "word_building",
+            "label": "Construction de mots",
+            "description": "Assembler des lettres pour former un mot",
+            "p_mastered": 0.05,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          },
+          {
+            "skill_id": "sentence_reading",
+            "label": "Lecture de phrases",
+            "description": "Lire et comprendre des phrases simples",
+            "p_mastered": 0.05,
+            "status": "weak",
+            "priority": 3,
+            "attempts": 0,
+            "correct": 0,
+            "accuracy": 0,
+            "n_questions": 6
+          }
+        ],
+        "summary": {
+          "mastered": 0,
+          "good": 0,
+          "in_progress": 0,
+          "weak": 10,
+          "total": 10
+        },
+        "weak_skills": [
+          "Reconnaître les lettres",
+          "Lire avec harakat",
+          "Voyelles longues",
+          "Tanwīn",
+          "Positions des lettres",
+          "Lecture de mots",
+          "Compréhension des mots",
+          "Écriture des mots",
+          "Construction de mots",
+          "Lecture de phrases"
+        ],
+        "strong_skills": [],
+        "recommendation": "Continuez vos efforts sur : Reconnaître les lettres, Lire avec harakat, Voyelles longues.",
+        "certificate_eligible": false
+      }
+    }
+  },
+  "diagnostic_done": false,
+  "recommended_module": 1,
+  "total_interactions": 0,
+  "weak_skills": [],
+  "strong_skills": []
+}

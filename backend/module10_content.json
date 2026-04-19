@@ -1,0 +1,555 @@
+{
+  "module": {
+    "id": 10,
+    "slug": "murajaah",
+    "title": "Module 10 — مُرَاجَعَةٌ",
+    "description": "Révision complète de la Partie 1 — les 28 lettres, leurs formes, leurs sons et les règles fondamentales. Évaluation sommative finale.",
+    "arabic_ratio": 0.5,
+    "is_premium": false,
+    "sort_order": 10
+  },
+  "lessons": [
+    {
+      "sort_order": 1,
+      "title": "Révision — Les 28 lettres",
+      "lesson_type": "revision",
+      "xp_reward": 30,
+      "duration_minutes": 20,
+      "content": {
+        "introduction": {
+          "text": "Révision de toutes les lettres apprises dans la Partie 1. Chaque lettre avec sa forme, son nom et son son."
+        },
+        "exercises": [
+          {
+            "id": "m10l1_ex1",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "ص",
+            "xpReward": 3,
+            "options": [
+              "Sin",
+              "Sad",
+              "Shin",
+              "Dad"
+            ],
+            "correctIndex": 1,
+            "explanation": "ص = Sad, son emphatique de 's'."
+          },
+          {
+            "id": "m10l1_ex2",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "ع",
+            "xpReward": 3,
+            "options": [
+              "Ghayn",
+              "Ayn",
+              "Hamza",
+              "Ha"
+            ],
+            "correctIndex": 1,
+            "explanation": "ع = Ayn, gutturale distinctive."
+          },
+          {
+            "id": "m10l1_ex3",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "ق",
+            "xpReward": 3,
+            "options": [
+              "Fa",
+              "Qaf",
+              "Kaf",
+              "Nun"
+            ],
+            "correctIndex": 1,
+            "explanation": "ق = Qaf, deux points au-dessus."
+          },
+          {
+            "id": "m10l1_ex4",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "ذ",
+            "xpReward": 3,
+            "options": [
+              "Zay",
+              "Ra",
+              "Dhal",
+              "Dal"
+            ],
+            "correctIndex": 2,
+            "explanation": "ذ = Dhal, un point au-dessus de Dal."
+          },
+          {
+            "id": "m10l1_ex5",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "ظ",
+            "xpReward": 3,
+            "options": [
+              "Ta",
+              "Tha",
+              "Dha emphatique",
+              "Zay"
+            ],
+            "correctIndex": 2,
+            "explanation": "ظ = Dha, emphatique de ذ."
+          },
+          {
+            "id": "m10l1_ex6",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "غ",
+            "xpReward": 3,
+            "options": [
+              "Ayn",
+              "Ghayn",
+              "Kha",
+              "Ha"
+            ],
+            "correctIndex": 1,
+            "explanation": "غ = Ghayn, un point au-dessus de Ayn."
+          },
+          {
+            "id": "m10l1_ex7",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "ض",
+            "xpReward": 3,
+            "options": [
+              "Sad",
+              "Dad",
+              "Shin",
+              "Ta emphatique"
+            ],
+            "correctIndex": 1,
+            "explanation": "ض = Dad, emphatique avec un point au-dessus."
+          },
+          {
+            "id": "m10l1_ex8",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "ف",
+            "xpReward": 3,
+            "options": [
+              "Qaf",
+              "Ba",
+              "Fa",
+              "Nun"
+            ],
+            "correctIndex": 2,
+            "explanation": "ف = Fa, un point au-dessus."
+          },
+          {
+            "id": "m10l1_ex9",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "ه",
+            "xpReward": 3,
+            "options": [
+              "Ta marbuta",
+              "Ha",
+              "Ain",
+              "Mim"
+            ],
+            "correctIndex": 1,
+            "explanation": "ه = Ha, h doux."
+          },
+          {
+            "id": "m10l1_ex10",
+            "type": "mcq",
+            "prompt": "Identifiez cette lettre",
+            "promptAr": "ح",
+            "xpReward": 3,
+            "options": [
+              "Ha doux",
+              "Kha",
+              "Ha emphatique",
+              "Jim"
+            ],
+            "correctIndex": 2,
+            "explanation": "ح = Ha emphatique, distinct de ه et خ."
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 2,
+      "title": "Activités de consolidation",
+      "lesson_type": "consolidation",
+      "xp_reward": 35,
+      "duration_minutes": 25,
+      "content": {
+        "exercises": [
+          {
+            "id": "m10l2_ex1",
+            "type": "mcq",
+            "prompt": "Quelle lettre manque dans ce mot ? مَـْتَبٌ",
+            "promptAr": "مَـْتَبٌ",
+            "xpReward": 5,
+            "options": [
+              "ك",
+              "ق",
+              "ن",
+              "ل"
+            ],
+            "correctIndex": 0,
+            "explanation": "مَكْتَبٌ = bureau. La lettre manquante est ك (Kaf)."
+          },
+          {
+            "id": "m10l2_ex2",
+            "type": "mcq",
+            "prompt": "Quel mot contient les lettres ث ل ج ?",
+            "promptAr": null,
+            "xpReward": 4,
+            "options": [
+              "مَكْتَبٌ",
+              "ثَلْجٌ",
+              "صَخْرٌ",
+              "حَسَنٌ"
+            ],
+            "correctIndex": 1,
+            "explanation": "ثَلْجٌ = neige, formé de ث ل ج."
+          },
+          {
+            "id": "m10l2_ex3",
+            "type": "mcq",
+            "prompt": "Lisez ce mot et donnez sa signification",
+            "promptAr": "ضُعْفٌ",
+            "xpReward": 5,
+            "options": [
+              "Force",
+              "Colère",
+              "Faiblesse",
+              "Habilité"
+            ],
+            "correctIndex": 2,
+            "explanation": "ضُعْفٌ = faiblesse. Module 7, lettres ض ع ف."
+          },
+          {
+            "id": "m10l2_ex4",
+            "type": "mcq",
+            "prompt": "Quel est le son final de غَيْظٌ ?",
+            "promptAr": "غَيْظٌ",
+            "xpReward": 4,
+            "options": [
+              "ghayza",
+              "ghaydun",
+              "ghaydhun",
+              "ghayz"
+            ],
+            "correctIndex": 2,
+            "explanation": "غَيْظٌ = ghaydhun — tanwīn damm à la fin."
+          },
+          {
+            "id": "m10l2_ex5",
+            "type": "mcq",
+            "prompt": "Combien de lettres contient l'alphabet arabe ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "options": [
+              "24",
+              "26",
+              "28",
+              "30"
+            ],
+            "correctIndex": 2,
+            "explanation": "L'alphabet arabe contient 28 lettres."
+          },
+          {
+            "id": "m10l2_ex6",
+            "type": "mcq",
+            "prompt": "Quelle lettre est commune à مَكْتَبٌ et كِتَابٌ ?",
+            "promptAr": "مَكْتَبٌ — كِتَابٌ",
+            "xpReward": 5,
+            "options": [
+              "م et ب",
+              "ك et ت",
+              "ت et ب",
+              "م et ك"
+            ],
+            "correctIndex": 1,
+            "explanation": "ك et ت apparaissent dans les deux mots — racine ك-ت-ب."
+          },
+          {
+            "id": "m10l2_ex7",
+            "type": "input_text",
+            "prompt": "Écrivez le mot de la Partie 1 qui signifie 'colère'",
+            "promptAr": null,
+            "xpReward": 6,
+            "acceptedAnswers": [
+              "غيظ",
+              "غَيْظٌ",
+              "غيظٌ"
+            ],
+            "explanation": "غَيْظٌ = colère. Module 8, lettres غ ي ظ."
+          },
+          {
+            "id": "m10l2_ex8",
+            "type": "input_text",
+            "prompt": "Écrivez le mot qui signifie 'habile'",
+            "promptAr": null,
+            "xpReward": 6,
+            "acceptedAnswers": [
+              "هذق",
+              "هَذِقٌ",
+              "هذقٌ"
+            ],
+            "explanation": "هَذِقٌ = habile. Module 9, lettres ه ذ ق."
+          },
+          {
+            "id": "m10l2_ex9",
+            "type": "mcq",
+            "prompt": "Quel module couvre les lettres ش و ط ?",
+            "promptAr": null,
+            "xpReward": 4,
+            "options": [
+              "Module 3",
+              "Module 4",
+              "Module 5",
+              "Module 6"
+            ],
+            "correctIndex": 2,
+            "explanation": "Module 5 — شَوْطٌ (tour), lettres ش و ط."
+          },
+          {
+            "id": "m10l2_ex10",
+            "type": "drawing",
+            "prompt": "Tracez la lettre ع (Ayn) en forme isolée",
+            "promptAr": "ع",
+            "xpReward": 8,
+            "letter": "ع",
+            "strokes": 2,
+            "hint": "Commencez par le petit crochet ouvert, puis la queue qui descend."
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 3,
+      "title": "Évaluation sommative — Partie 1",
+      "lesson_type": "evaluation_sommative",
+      "xp_reward": 60,
+      "duration_minutes": 30,
+      "content": {
+        "description": "Évaluation finale de la Partie 1 — Alphabet et écriture. Couvre les 28 lettres, les harakat, le tanwīn, les positions et le vocabulaire des 9 modules.",
+        "passing_score": 0.7,
+        "exercises": [
+          {
+            "id": "m10l3_ex1",
+            "type": "mcq",
+            "prompt": "Identifiez la lettre",
+            "promptAr": "خ",
+            "xpReward": 3,
+            "options": [
+              "Ha",
+              "Jim",
+              "Kha",
+              "Ayn"
+            ],
+            "correctIndex": 2,
+            "explanation": "خ = Kha, un point au-dessus de Ha."
+          },
+          {
+            "id": "m10l3_ex2",
+            "type": "mcq",
+            "prompt": "Comment se prononce كُ ?",
+            "promptAr": "كُ",
+            "xpReward": 3,
+            "options": [
+              "ka",
+              "ki",
+              "kou",
+              "k"
+            ],
+            "correctIndex": 2,
+            "explanation": "كُ = kou — damma au-dessus."
+          },
+          {
+            "id": "m10l3_ex3",
+            "type": "mcq",
+            "prompt": "Quelle lettre est en position médiane dans مَكْتَبٌ ?",
+            "promptAr": "مَكْتَبٌ",
+            "xpReward": 4,
+            "options": [
+              "م",
+              "ك et ت",
+              "ب",
+              "م et ب"
+            ],
+            "correctIndex": 1,
+            "explanation": "ك et ت sont au milieu — formes médianes ـكـ et ـتـ."
+          },
+          {
+            "id": "m10l3_ex4",
+            "type": "mcq",
+            "prompt": "Que signifie ٌ à la fin d'un mot ?",
+            "promptAr": "بٌ",
+            "xpReward": 4,
+            "options": [
+              "Son 'a'",
+              "Son 'in'",
+              "Son 'oun'",
+              "Pas de son"
+            ],
+            "correctIndex": 2,
+            "explanation": "ٌ = tanwīn damm → son 'oun' final."
+          },
+          {
+            "id": "m10l3_ex5",
+            "type": "mcq",
+            "prompt": "Lisez et traduisez",
+            "promptAr": "شَوْطٌ",
+            "xpReward": 5,
+            "options": [
+              "Provision",
+              "Tour",
+              "Rocher",
+              "Neige"
+            ],
+            "correctIndex": 1,
+            "explanation": "شَوْطٌ = shawdun = tour. Module 5."
+          },
+          {
+            "id": "m10l3_ex6",
+            "type": "mcq",
+            "prompt": "Quelle est la forme initiale de ن ?",
+            "promptAr": null,
+            "xpReward": 4,
+            "options": [
+              "ـن",
+              "نـ",
+              "ـنـ",
+              "ن"
+            ],
+            "correctIndex": 1,
+            "explanation": "نـ est la forme initiale de Nun."
+          },
+          {
+            "id": "m10l3_ex7",
+            "type": "mcq",
+            "prompt": "Identifiez la lettre solaire parmi ces lettres",
+            "promptAr": null,
+            "xpReward": 5,
+            "options": [
+              "م",
+              "ك",
+              "ش",
+              "ه"
+            ],
+            "correctIndex": 2,
+            "explanation": "ش (Shin) est une lettre solaire — l'article ال perd son L devant elle."
+          },
+          {
+            "id": "m10l3_ex8",
+            "type": "mcq",
+            "prompt": "Combien de points a la lettre ث ?",
+            "promptAr": "ث",
+            "xpReward": 3,
+            "options": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "correctIndex": 3,
+            "explanation": "ث = Tha, trois points au-dessus."
+          },
+          {
+            "id": "m10l3_ex9",
+            "type": "input_text",
+            "prompt": "Écrivez 'rocher' en arabe",
+            "promptAr": null,
+            "xpReward": 6,
+            "acceptedAnswers": [
+              "صخر",
+              "صَخْرٌ",
+              "صخرٌ"
+            ],
+            "explanation": "صَخْرٌ = rocher. Module 3, lettres ص خ ر."
+          },
+          {
+            "id": "m10l3_ex10",
+            "type": "input_text",
+            "prompt": "Écrivez 'provision' en arabe",
+            "promptAr": null,
+            "xpReward": 6,
+            "acceptedAnswers": [
+              "زاد",
+              "زَادٌ",
+              "زادٌ"
+            ],
+            "explanation": "زَادٌ = provision. Module 6, lettres ز ا د."
+          },
+          {
+            "id": "m10l3_ex11",
+            "type": "mcq",
+            "prompt": "Quel signe représente le sukūn ?",
+            "promptAr": "بْ",
+            "xpReward": 4,
+            "options": [
+              "ً",
+              "ٌ",
+              "ْ",
+              "ّ"
+            ],
+            "correctIndex": 2,
+            "explanation": "ْ = sukūn, petit cercle = consonne sans voyelle."
+          },
+          {
+            "id": "m10l3_ex12",
+            "type": "drawing",
+            "prompt": "Tracez la lettre ب (Ba) avec son point",
+            "promptAr": "ب",
+            "xpReward": 8,
+            "letter": "ب",
+            "strokes": 2,
+            "hint": "La coque horizontale puis le point en dessous."
+          },
+          {
+            "id": "m10l3_ex13",
+            "type": "mcq",
+            "prompt": "Que signifie هَذِقٌ ?",
+            "promptAr": "هَذِقٌ",
+            "xpReward": 5,
+            "options": [
+              "Faible",
+              "Habile",
+              "Beau",
+              "Tour"
+            ],
+            "correctIndex": 1,
+            "explanation": "هَذِقٌ = habile. Dernier module de la Partie 1."
+          },
+          {
+            "id": "m10l3_ex14",
+            "type": "mcq",
+            "prompt": "Quelle voyelle longue correspond à 'ii' ?",
+            "promptAr": null,
+            "xpReward": 4,
+            "options": [
+              "بَا",
+              "بِي",
+              "بُو",
+              "بً"
+            ],
+            "correctIndex": 1,
+            "explanation": "بِي = bii — kasra + ya = voyelle longue 'ii'."
+          },
+          {
+            "id": "m10l3_ex15",
+            "type": "input_text",
+            "prompt": "Écrivez les 4 lettres du Module 1 dans l'ordre",
+            "promptAr": null,
+            "xpReward": 8,
+            "acceptedAnswers": [
+              "مكتب",
+              "م ك ت ب"
+            ],
+            "explanation": "م ك ت ب — les 4 lettres de مَكْتَبٌ (bureau)."
+          }
+        ]
+      }
+    }
+  ]
+}
