@@ -1,0 +1,3521 @@
+[
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BackgroundTasks",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "async_sessionmaker",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "create_async_engine",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Uuid",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "update",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "LessonProgress",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Module",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Module",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Lesson",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "LessonProgress",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Lesson",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Module",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Lesson",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "LessonProgress",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Module",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Module",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Lesson",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Module",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Lesson",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "field_validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigDict",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncGenerator",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Literal",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "selectinload",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "selectinload",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "DeclarativeBase",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_refresh_token",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "decode_token",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "decode_token",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "AuthResponse",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshRequest",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "TokenPair",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogin",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserRead",
+        "importPath": "app.schemas.auth",
+        "description": "app.schemas.auth",
+        "isExtraImport": true,
+        "detail": "app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "bkt_engine",
+        "importPath": "app.bkt.engine",
+        "description": "app.bkt.engine",
+        "isExtraImport": true,
+        "detail": "app.bkt.engine",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "CATEngine",
+        "importPath": "cat_engine",
+        "description": "cat_engine",
+        "isExtraImport": true,
+        "detail": "cat_engine",
+        "documentation": {}
+    },
+    {
+        "label": "ModuleRead",
+        "importPath": "app.schemas.curriculum",
+        "description": "app.schemas.curriculum",
+        "isExtraImport": true,
+        "detail": "app.schemas.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonRead",
+        "importPath": "app.schemas.curriculum",
+        "description": "app.schemas.curriculum",
+        "isExtraImport": true,
+        "detail": "app.schemas.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonCompleteRequest",
+        "importPath": "app.schemas.curriculum",
+        "description": "app.schemas.curriculum",
+        "isExtraImport": true,
+        "detail": "app.schemas.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonCompleteResponse",
+        "importPath": "app.schemas.curriculum",
+        "description": "app.schemas.curriculum",
+        "isExtraImport": true,
+        "detail": "app.schemas.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "generate_letter_sheet",
+        "importPath": "app.services.writing_sheets",
+        "description": "app.services.writing_sheets",
+        "isExtraImport": true,
+        "detail": "app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "generate_module_sheets",
+        "importPath": "app.services.writing_sheets",
+        "description": "app.services.writing_sheets",
+        "isExtraImport": true,
+        "detail": "app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.v1.endpoints.auth",
+        "description": "app.api.v1.endpoints.auth",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints.auth",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.v1.endpoints.curriculum",
+        "description": "app.api.v1.endpoints.curriculum",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.v1.endpoints.writing_sheets",
+        "description": "app.api.v1.endpoints.writing_sheets",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.v1.endpoints.bkt",
+        "description": "app.api.v1.endpoints.bkt",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.v1.endpoints.admin",
+        "description": "app.api.v1.endpoints.admin",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPAuthorizationCredentials",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "BaseSettings",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsConfigDict",
+        "importPath": "pydantic_settings",
+        "description": "pydantic_settings",
+        "isExtraImport": true,
+        "detail": "pydantic_settings",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.core.config",
+        "description": "app.core.config",
+        "isExtraImport": true,
+        "detail": "app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "JSON",
+        "importPath": "sqlalchemy.types",
+        "description": "sqlalchemy.types",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.types",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "canvas",
+        "importPath": "reportlab.pdfgen",
+        "description": "reportlab.pdfgen",
+        "isExtraImport": true,
+        "detail": "reportlab.pdfgen",
+        "documentation": {}
+    },
+    {
+        "label": "A4",
+        "importPath": "reportlab.lib.pagesizes",
+        "description": "reportlab.lib.pagesizes",
+        "isExtraImport": true,
+        "detail": "reportlab.lib.pagesizes",
+        "documentation": {}
+    },
+    {
+        "label": "pdfmetrics",
+        "importPath": "reportlab.pdfbase",
+        "description": "reportlab.pdfbase",
+        "isExtraImport": true,
+        "detail": "reportlab.pdfbase",
+        "documentation": {}
+    },
+    {
+        "label": "TTFont",
+        "importPath": "reportlab.pdfbase.ttfonts",
+        "description": "reportlab.pdfbase.ttfonts",
+        "isExtraImport": true,
+        "detail": "reportlab.pdfbase.ttfonts",
+        "documentation": {}
+    },
+    {
+        "label": "HexColor",
+        "importPath": "reportlab.lib.colors",
+        "description": "reportlab.lib.colors",
+        "isExtraImport": true,
+        "detail": "reportlab.lib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "arabic_reshaper",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "arabic_reshaper",
+        "description": "arabic_reshaper",
+        "detail": "arabic_reshaper",
+        "documentation": {}
+    },
+    {
+        "label": "get_display",
+        "importPath": "bidi.algorithm",
+        "description": "bidi.algorithm",
+        "isExtraImport": true,
+        "detail": "bidi.algorithm",
+        "documentation": {}
+    },
+    {
+        "label": "PdfWriter",
+        "importPath": "pypdf",
+        "description": "pypdf",
+        "isExtraImport": true,
+        "detail": "pypdf",
+        "documentation": {}
+    },
+    {
+        "label": "PdfReader",
+        "importPath": "pypdf",
+        "description": "pypdf",
+        "isExtraImport": true,
+        "detail": "pypdf",
+        "documentation": {}
+    },
+    {
+        "label": "asynccontextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "GZipMiddleware",
+        "importPath": "fastapi.middleware.gzip",
+        "description": "fastapi.middleware.gzip",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.gzip",
+        "documentation": {}
+    },
+    {
+        "label": "api_router",
+        "importPath": "app.api.v1.router",
+        "description": "app.api.v1.router",
+        "isExtraImport": true,
+        "detail": "app.api.v1.router",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "TTFont",
+        "importPath": "fontTools.ttLib",
+        "description": "fontTools.ttLib",
+        "isExtraImport": true,
+        "detail": "fontTools.ttLib",
+        "documentation": {}
+    },
+    {
+        "label": "SVGPathPen",
+        "importPath": "fontTools.pens.svgPathPen",
+        "description": "fontTools.pens.svgPathPen",
+        "isExtraImport": true,
+        "detail": "fontTools.pens.svgPathPen",
+        "documentation": {}
+    },
+    {
+        "label": "TransformPen",
+        "importPath": "fontTools.pens.transformPen",
+        "description": "fontTools.pens.transformPen",
+        "isExtraImport": true,
+        "detail": "fontTools.pens.transformPen",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio.",
+        "description": "asyncio.",
+        "detail": "asyncio.",
+        "documentation": {}
+    },
+    {
+        "label": "AdminStats",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.admin",
+        "description": "backend.app.api.v1.endpoints.admin",
+        "peekOfCode": "class AdminStats(BaseModel):\n    users: int\n    lessons_completed: int\n    xp_distributed: int\n    active_modules: int\n@router.get(\"/stats\", response_model=AdminStats)\nasync def get_admin_stats(\n    db: AsyncSession = Depends(get_db),\n    _: User = Depends(require_admin),\n):",
+        "detail": "backend.app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "TranslationStatus",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.admin",
+        "description": "backend.app.api.v1.endpoints.admin",
+        "peekOfCode": "class TranslationStatus(BaseModel):\n    languages: list[str]\n    last_updated: dict[str, Optional[str]]\n@router.get(\"/translations/status\", response_model=TranslationStatus)\nasync def get_translation_status(_: User = Depends(require_admin)):\n    last_updated = {}\n    for lang in LANGUAGES:\n        f = MESSAGES_DIR / f\"{lang}.json\"\n        if f.exists():\n            mtime = f.stat().st_mtime",
+        "detail": "backend.app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "TranslateResponse",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.admin",
+        "description": "backend.app.api.v1.endpoints.admin",
+        "peekOfCode": "class TranslateResponse(BaseModel):\n    message: str\n    languages_updated: list[str]\n    duration_seconds: float\n@router.post(\"/translate\", response_model=TranslateResponse)\nasync def trigger_translation(\n    force: bool = Query(default=False),\n    _: User = Depends(require_admin),\n):\n    \"\"\"",
+        "detail": "backend.app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "require_admin",
+        "kind": 2,
+        "importPath": "backend.app.api.v1.endpoints.admin",
+        "description": "backend.app.api.v1.endpoints.admin",
+        "peekOfCode": "def require_admin(current_user: User = Depends(get_current_user)) -> User:\n    if not current_user.is_admin:\n        raise HTTPException(status.HTTP_403_FORBIDDEN, detail=\"Accès réservé aux administrateurs\")\n    return current_user\n# ── Stats globales ─────────────────────────────────────────────\nclass AdminStats(BaseModel):\n    users: int\n    lessons_completed: int\n    xp_distributed: int\n    active_modules: int",
+        "detail": "backend.app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.admin",
+        "description": "backend.app.api.v1.endpoints.admin",
+        "peekOfCode": "router = APIRouter(prefix=\"/admin\", tags=[\"admin\"])\ndef require_admin(current_user: User = Depends(get_current_user)) -> User:\n    if not current_user.is_admin:\n        raise HTTPException(status.HTTP_403_FORBIDDEN, detail=\"Accès réservé aux administrateurs\")\n    return current_user\n# ── Stats globales ─────────────────────────────────────────────\nclass AdminStats(BaseModel):\n    users: int\n    lessons_completed: int\n    xp_distributed: int",
+        "detail": "backend.app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "MESSAGES_DIR",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.admin",
+        "description": "backend.app.api.v1.endpoints.admin",
+        "peekOfCode": "MESSAGES_DIR = Path(__file__).parent.parent.parent.parent.parent / \"frontend\" / \"messages\"\nLANGUAGES = [\"en\", \"es\", \"de\", \"nl\"]\nclass TranslationStatus(BaseModel):\n    languages: list[str]\n    last_updated: dict[str, Optional[str]]\n@router.get(\"/translations/status\", response_model=TranslationStatus)\nasync def get_translation_status(_: User = Depends(require_admin)):\n    last_updated = {}\n    for lang in LANGUAGES:\n        f = MESSAGES_DIR / f\"{lang}.json\"",
+        "detail": "backend.app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGES",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.admin",
+        "description": "backend.app.api.v1.endpoints.admin",
+        "peekOfCode": "LANGUAGES = [\"en\", \"es\", \"de\", \"nl\"]\nclass TranslationStatus(BaseModel):\n    languages: list[str]\n    last_updated: dict[str, Optional[str]]\n@router.get(\"/translations/status\", response_model=TranslationStatus)\nasync def get_translation_status(_: User = Depends(require_admin)):\n    last_updated = {}\n    for lang in LANGUAGES:\n        f = MESSAGES_DIR / f\"{lang}.json\"\n        if f.exists():",
+        "detail": "backend.app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "LessonCreate",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.admin_curriculum",
+        "description": "backend.app.api.v1.endpoints.admin_curriculum",
+        "peekOfCode": "class LessonCreate(BaseModel):\n    title:            str   = Field(min_length=2, max_length=200)\n    lesson_type:      str   = Field(default=\"identification\")\n    xp_reward:        int   = Field(default=15, ge=1, le=500)\n    duration_minutes: int   = Field(default=10, ge=1, le=120)\n    sort_order:       int   = Field(default=1,  ge=1)\n    content:          dict  = Field(default_factory=lambda: {\"exercises\": []})\nclass LessonUpdate(BaseModel):\n    title:            Optional[str]  = None\n    lesson_type:      Optional[str]  = None",
+        "detail": "backend.app.api.v1.endpoints.admin_curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonUpdate",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.admin_curriculum",
+        "description": "backend.app.api.v1.endpoints.admin_curriculum",
+        "peekOfCode": "class LessonUpdate(BaseModel):\n    title:            Optional[str]  = None\n    lesson_type:      Optional[str]  = None\n    xp_reward:        Optional[int]  = None\n    duration_minutes: Optional[int]  = None\n    sort_order:       Optional[int]  = None\n    content:          Optional[dict] = None\nclass LessonOut(BaseModel):\n    id:               int\n    course_id:        int",
+        "detail": "backend.app.api.v1.endpoints.admin_curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonOut",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.admin_curriculum",
+        "description": "backend.app.api.v1.endpoints.admin_curriculum",
+        "peekOfCode": "class LessonOut(BaseModel):\n    id:               int\n    course_id:        int\n    title:            str\n    lesson_type:      str\n    xp_reward:        int\n    duration_minutes: int\n    sort_order:       int\n    content:          dict\n    model_config = {\"from_attributes\": True}",
+        "detail": "backend.app.api.v1.endpoints.admin_curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "require_admin",
+        "kind": 2,
+        "importPath": "backend.app.api.v1.endpoints.admin_curriculum",
+        "description": "backend.app.api.v1.endpoints.admin_curriculum",
+        "peekOfCode": "def require_admin(user: User = Depends(get_current_user)) -> User:\n    if not user.is_admin:\n        raise HTTPException(status_code=403, detail=\"Admin requis\")\n    return user\n# ── Schémas ────────────────────────────────────────────────────\nclass LessonCreate(BaseModel):\n    title:            str   = Field(min_length=2, max_length=200)\n    lesson_type:      str   = Field(default=\"identification\")\n    xp_reward:        int   = Field(default=15, ge=1, le=500)\n    duration_minutes: int   = Field(default=10, ge=1, le=120)",
+        "detail": "backend.app.api.v1.endpoints.admin_curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.admin_curriculum",
+        "description": "backend.app.api.v1.endpoints.admin_curriculum",
+        "peekOfCode": "router = APIRouter(prefix=\"/admin/curriculum\", tags=[\"admin-curriculum\"])\n# ── Guard admin ────────────────────────────────────────────────\ndef require_admin(user: User = Depends(get_current_user)) -> User:\n    if not user.is_admin:\n        raise HTTPException(status_code=403, detail=\"Admin requis\")\n    return user\n# ── Schémas ────────────────────────────────────────────────────\nclass LessonCreate(BaseModel):\n    title:            str   = Field(min_length=2, max_length=200)\n    lesson_type:      str   = Field(default=\"identification\")",
+        "detail": "backend.app.api.v1.endpoints.admin_curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.auth",
+        "description": "backend.app.api.v1.endpoints.auth",
+        "peekOfCode": "router = APIRouter(prefix=\"/auth\", tags=[\"auth\"])\n@router.post(\"/register\", response_model=AuthResponse, status_code=status.HTTP_201_CREATED)\nasync def register(payload: UserCreate, db: AsyncSession = Depends(get_db)):\n    existing = await db.execute(select(User).where(User.email == payload.email))\n    if existing.scalar_one_or_none():\n        raise HTTPException(status.HTTP_409_CONFLICT, detail=\"Email already registered.\")\n    user = User(\n        email=payload.email,\n        username=payload.username,\n        hashed_password=hash_password(payload.password),",
+        "detail": "backend.app.api.v1.endpoints.auth",
+        "documentation": {}
+    },
+    {
+        "label": "BKTUpdateRequest",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "class BKTUpdateRequest(BaseModel):\n    skill_id: str\n    correct: bool\n    latency_ms: Optional[int] = None\n    module_id: Optional[int] = None\nclass BKTUpdateResponse(BaseModel):\n    skill_id: str\n    mastery: float\n    correct: bool\nclass SkillReport(BaseModel):",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "BKTUpdateResponse",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "class BKTUpdateResponse(BaseModel):\n    skill_id: str\n    mastery: float\n    correct: bool\nclass SkillReport(BaseModel):\n    skill_id: str\n    skill_name: str\n    mastery: float\n    attempts: int\n    correct: int",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "SkillReport",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "class SkillReport(BaseModel):\n    skill_id: str\n    skill_name: str\n    mastery: float\n    attempts: int\n    correct: int\n    status: str\n    recommended_exercises: int\nclass BKTEvaluationReport(BaseModel):\n    module_id: int",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "BKTEvaluationReport",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "class BKTEvaluationReport(BaseModel):\n    module_id: int\n    module_title: str\n    overall_score: float\n    passed: bool\n    skills: list[SkillReport]\n    recommendation: str\n    generated_at: str\n# ── Stockage BKT (JSON dans user.bkt_profile si disponible, sinon simple) ──\n# On utilise une table simple via LessonProgress pour dériver la maîtrise",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "bkt_update",
+        "kind": 2,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "def bkt_update(p_mastery: float, correct: bool, params: dict) -> float:\n    \"\"\"Met à jour P(L_n) après une réponse correcte ou incorrecte.\"\"\"\n    L, T, G, S = params[\"L0\"], params[\"T\"], params[\"G\"], params[\"S\"]\n    # P(correct | L) = L*(1-S) + (1-L)*G\n    p_correct_given_L  = p_mastery * (1 - S) + (1 - p_mastery) * G\n    p_correct_given_nL = (1 - p_mastery) * G + p_mastery * S  # unused but for clarity\n    if correct:\n        # Bayes: P(L | correct) = P(correct | L) * P(L) / P(correct)\n        p_evidence = p_mastery * (1 - S) + (1 - p_mastery) * G\n        if p_evidence == 0:",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "router = APIRouter(prefix=\"/bkt\", tags=[\"bkt\"])\n# ── Paramètres BKT par compétence ─────────────────────────────\nBKT_PARAMS = {\n    \"letter_recognition\":  {\"L0\": 0.1, \"T\": 0.3, \"G\": 0.2, \"S\": 0.1},\n    \"letter_writing\":      {\"L0\": 0.1, \"T\": 0.25, \"G\": 0.1, \"S\": 0.15},\n    \"harakat\":             {\"L0\": 0.15, \"T\": 0.3, \"G\": 0.25, \"S\": 0.1},\n    \"vocabulary\":          {\"L0\": 0.2, \"T\": 0.35, \"G\": 0.2, \"S\": 0.1},\n    \"letter_forms\":        {\"L0\": 0.1, \"T\": 0.3, \"G\": 0.15, \"S\": 0.1},\n    \"reading\":             {\"L0\": 0.05, \"T\": 0.2, \"G\": 0.15, \"S\": 0.1},\n}",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "BKT_PARAMS",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "BKT_PARAMS = {\n    \"letter_recognition\":  {\"L0\": 0.1, \"T\": 0.3, \"G\": 0.2, \"S\": 0.1},\n    \"letter_writing\":      {\"L0\": 0.1, \"T\": 0.25, \"G\": 0.1, \"S\": 0.15},\n    \"harakat\":             {\"L0\": 0.15, \"T\": 0.3, \"G\": 0.25, \"S\": 0.1},\n    \"vocabulary\":          {\"L0\": 0.2, \"T\": 0.35, \"G\": 0.2, \"S\": 0.1},\n    \"letter_forms\":        {\"L0\": 0.1, \"T\": 0.3, \"G\": 0.15, \"S\": 0.1},\n    \"reading\":             {\"L0\": 0.05, \"T\": 0.2, \"G\": 0.15, \"S\": 0.1},\n}\nDEFAULT_PARAMS = {\"L0\": 0.1, \"T\": 0.3, \"G\": 0.2, \"S\": 0.1}\nSKILL_NAMES = {",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_PARAMS",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "DEFAULT_PARAMS = {\"L0\": 0.1, \"T\": 0.3, \"G\": 0.2, \"S\": 0.1}\nSKILL_NAMES = {\n    \"letter_recognition\": \"Reconnaissance des lettres\",\n    \"letter_writing\":     \"Écriture des lettres\",\n    \"harakat\":            \"Voyelles (harakat)\",\n    \"vocabulary\":         \"Vocabulaire\",\n    \"letter_forms\":       \"Formes des lettres\",\n    \"reading\":            \"Lecture\",\n}\n# Seuils de maîtrise",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "SKILL_NAMES",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "SKILL_NAMES = {\n    \"letter_recognition\": \"Reconnaissance des lettres\",\n    \"letter_writing\":     \"Écriture des lettres\",\n    \"harakat\":            \"Voyelles (harakat)\",\n    \"vocabulary\":         \"Vocabulaire\",\n    \"letter_forms\":       \"Formes des lettres\",\n    \"reading\":            \"Lecture\",\n}\n# Seuils de maîtrise\nMASTERY_THRESHOLD = 0.80",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "MASTERY_THRESHOLD",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "MASTERY_THRESHOLD = 0.80\nGOOD_THRESHOLD    = 0.60\nPROGRESS_THRESHOLD = 0.40\ndef bkt_update(p_mastery: float, correct: bool, params: dict) -> float:\n    \"\"\"Met à jour P(L_n) après une réponse correcte ou incorrecte.\"\"\"\n    L, T, G, S = params[\"L0\"], params[\"T\"], params[\"G\"], params[\"S\"]\n    # P(correct | L) = L*(1-S) + (1-L)*G\n    p_correct_given_L  = p_mastery * (1 - S) + (1 - p_mastery) * G\n    p_correct_given_nL = (1 - p_mastery) * G + p_mastery * S  # unused but for clarity\n    if correct:",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "PROGRESS_THRESHOLD",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.bkt",
+        "description": "backend.app.api.v1.endpoints.bkt",
+        "peekOfCode": "PROGRESS_THRESHOLD = 0.40\ndef bkt_update(p_mastery: float, correct: bool, params: dict) -> float:\n    \"\"\"Met à jour P(L_n) après une réponse correcte ou incorrecte.\"\"\"\n    L, T, G, S = params[\"L0\"], params[\"T\"], params[\"G\"], params[\"S\"]\n    # P(correct | L) = L*(1-S) + (1-L)*G\n    p_correct_given_L  = p_mastery * (1 - S) + (1 - p_mastery) * G\n    p_correct_given_nL = (1 - p_mastery) * G + p_mastery * S  # unused but for clarity\n    if correct:\n        # Bayes: P(L | correct) = P(correct | L) * P(L) / P(correct)\n        p_evidence = p_mastery * (1 - S) + (1 - p_mastery) * G",
+        "detail": "backend.app.api.v1.endpoints.bkt",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.bkt_router",
+        "description": "backend.app.api.v1.endpoints.bkt_router",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/update\")\nasync def update_skill(payload: dict, current_user: User = Depends(get_current_user)):\n    return bkt_engine.update(\n        user_id    = str(current_user.id),\n        skill_id   = payload[\"skill_id\"],\n        correct    = payload[\"correct\"],\n        latency_ms = payload.get(\"latency_ms\", 0),\n        module_id  = payload.get(\"module_id\", 1),\n    )",
+        "detail": "backend.app.api.v1.endpoints.bkt_router",
+        "documentation": {}
+    },
+    {
+        "label": "StartRequest",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.cat_router",
+        "description": "backend.app.api.v1.endpoints.cat_router",
+        "peekOfCode": "class StartRequest(BaseModel):\n    lang: str = Field(default=\"fr\", pattern=\"^(fr|es|en)$\")\nclass RespondRequest(BaseModel):\n    item_id:     str\n    correct:     bool\n    latency_ms:  int = Field(ge=0, le=120_000)\n    confidence:  Optional[float] = Field(default=None, ge=0.0, le=1.0)\n    answer_given: Optional[str] = None   # pour les questions à saisie libre\nclass QuestionOut(BaseModel):\n    item_id:    str",
+        "detail": "backend.app.api.v1.endpoints.cat_router",
+        "documentation": {}
+    },
+    {
+        "label": "RespondRequest",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.cat_router",
+        "description": "backend.app.api.v1.endpoints.cat_router",
+        "peekOfCode": "class RespondRequest(BaseModel):\n    item_id:     str\n    correct:     bool\n    latency_ms:  int = Field(ge=0, le=120_000)\n    confidence:  Optional[float] = Field(default=None, ge=0.0, le=1.0)\n    answer_given: Optional[str] = None   # pour les questions à saisie libre\nclass QuestionOut(BaseModel):\n    item_id:    str\n    axis:       str\n    type:       str",
+        "detail": "backend.app.api.v1.endpoints.cat_router",
+        "documentation": {}
+    },
+    {
+        "label": "QuestionOut",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.cat_router",
+        "description": "backend.app.api.v1.endpoints.cat_router",
+        "peekOfCode": "class QuestionOut(BaseModel):\n    item_id:    str\n    axis:       str\n    type:       str\n    modality:   str\n    question:   dict\n    stimulus:   Optional[dict]\n    choices:    Optional[list]\n    hint:       Optional[dict] = None\n    session_progress: dict",
+        "detail": "backend.app.api.v1.endpoints.cat_router",
+        "documentation": {}
+    },
+    {
+        "label": "StatusOut",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.cat_router",
+        "description": "backend.app.api.v1.endpoints.cat_router",
+        "peekOfCode": "class StatusOut(BaseModel):\n    session_id: str\n    total_items: int\n    stopped:    bool\n    stop_reason: str\n    axes_progress: dict\nclass ProfileOut(BaseModel):\n    session_id:    str\n    global_level:  str\n    global_theta:  float",
+        "detail": "backend.app.api.v1.endpoints.cat_router",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileOut",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.cat_router",
+        "description": "backend.app.api.v1.endpoints.cat_router",
+        "peekOfCode": "class ProfileOut(BaseModel):\n    session_id:    str\n    global_level:  str\n    global_theta:  float\n    axes:          dict\n    strengths:     list\n    weaknesses:    list\n    recommendation: dict\n    skill_vector:  dict\n    total_items:   int",
+        "detail": "backend.app.api.v1.endpoints.cat_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.cat_router",
+        "description": "backend.app.api.v1.endpoints.cat_router",
+        "peekOfCode": "router = APIRouter(prefix=\"/diagnostic\", tags=[\"diagnostic\"])\n# Stockage sessions en mémoire (Redis en production)\n_sessions: dict = {}\n# Instance moteur CAT (singleton)\nfrom pathlib import Path\nimport sys\nsys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))\nfrom cat_engine import CATEngine\n_engine = CATEngine(\n    item_bank_path=Path(__file__).parent.parent.parent.parent / \"item_bank.json\"",
+        "detail": "backend.app.api.v1.endpoints.cat_router",
+        "documentation": {}
+    },
+    {
+        "label": "_engine",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.cat_router",
+        "description": "backend.app.api.v1.endpoints.cat_router",
+        "peekOfCode": "_engine = CATEngine(\n    item_bank_path=Path(__file__).parent.parent.parent.parent / \"item_bank.json\"\n)\n# ── Schémas Pydantic ───────────────────────────────────────────\nclass StartRequest(BaseModel):\n    lang: str = Field(default=\"fr\", pattern=\"^(fr|es|en)$\")\nclass RespondRequest(BaseModel):\n    item_id:     str\n    correct:     bool\n    latency_ms:  int = Field(ge=0, le=120_000)",
+        "detail": "backend.app.api.v1.endpoints.cat_router",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.curriculum",
+        "description": "backend.app.api.v1.endpoints.curriculum",
+        "peekOfCode": "router = APIRouter(prefix=\"/curriculum\", tags=[\"curriculum\"])\n# ── Modules ───────────────────────────────────────────────────\n@router.get(\"/modules\", response_model=list[ModuleRead])\nasync def get_modules(db: AsyncSession = Depends(get_db)):\n    result = await db.execute(select(Module).order_by(Module.sort_order))\n    return result.scalars().all()\n# ── Leçons d'un module ────────────────────────────────────────\n@router.get(\"/modules/{module_id}/lessons\", response_model=list[LessonRead])\nasync def get_module_lessons(\n    module_id: int,",
+        "detail": "backend.app.api.v1.endpoints.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.writing_sheets",
+        "description": "backend.app.api.v1.endpoints.writing_sheets",
+        "peekOfCode": "router = APIRouter(prefix=\"/writing-sheets\", tags=[\"writing-sheets\"])\n@router.get(\"/module/{module_id}\")\nasync def get_module_sheets(module_id: int):\n    \"\"\"Télécharger toutes les fiches d'écriture d'un module (PDF combiné).\"\"\"\n    try:\n        pdf_bytes = generate_module_sheets(module_id)\n    except ValueError as e:\n        raise HTTPException(status_code=404, detail=str(e))\n    return Response(\n        content=pdf_bytes,",
+        "detail": "backend.app.api.v1.endpoints.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "api_router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.router",
+        "description": "backend.app.api.v1.router",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api/v1\")\napi_router.include_router(auth_router)\napi_router.include_router(curriculum_router)\napi_router.include_router(writing_sheets_router)\napi_router.include_router(bkt_router)\napi_router.include_router(admin_router)",
+        "detail": "backend.app.api.v1.router",
+        "documentation": {}
+    },
+    {
+        "label": "bearer",
+        "kind": 5,
+        "importPath": "backend.app.api.deps",
+        "description": "backend.app.api.deps",
+        "peekOfCode": "bearer = HTTPBearer()\nasync def get_current_user(\n    credentials: HTTPAuthorizationCredentials = Depends(bearer),\n    db: AsyncSession = Depends(get_db),\n) -> User:\n    user_id = decode_token(credentials.credentials, expected_type=\"access\")\n    result = await db.execute(select(User).where(User.id == user_id))\n    user = result.scalar_one_or_none()\n    if not user or not user.is_active:\n        raise HTTPException(status.HTTP_401_UNAUTHORIZED, detail=\"Utilisateur introuvable\")",
+        "detail": "backend.app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "BKTEngine",
+        "kind": 6,
+        "importPath": "backend.app.bkt.engine",
+        "description": "backend.app.bkt.engine",
+        "peekOfCode": "class BKTEngine:\n    def __init__(self):\n        PROFILES_DIR.mkdir(parents=True, exist_ok=True)\n    # ── Profil ─────────────────────────────────────────────────\n    def _path(self, user_id: str) -> Path:\n        return PROFILES_DIR / f\"{user_id}.json\"\n    def load_profile(self, user_id: str) -> dict:\n        p = self._path(user_id)\n        if p.exists():\n            with open(p, encoding='utf-8') as f:",
+        "detail": "backend.app.bkt.engine",
+        "documentation": {}
+    },
+    {
+        "label": "MASTERY_THRESHOLD",
+        "kind": 5,
+        "importPath": "backend.app.bkt.engine",
+        "description": "backend.app.bkt.engine",
+        "peekOfCode": "MASTERY_THRESHOLD = 0.80\nWEAK_THRESHOLD    = 0.40\nDEFAULT_PARAMS = {\n    \"p_l0\": 0.10,\n    \"p_t\":  0.20,\n    \"p_g\":  0.25,\n    \"p_s\":  0.10,\n}\nMODULE1_SKILLS = {\n    \"letter_recognition\":  {\"label\": \"Reconnaître les lettres\",   \"description\": \"Identifier م ك ت ب isolées\",                  \"module\": 1, \"order\": 1, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.10}},",
+        "detail": "backend.app.bkt.engine",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_PARAMS",
+        "kind": 5,
+        "importPath": "backend.app.bkt.engine",
+        "description": "backend.app.bkt.engine",
+        "peekOfCode": "DEFAULT_PARAMS = {\n    \"p_l0\": 0.10,\n    \"p_t\":  0.20,\n    \"p_g\":  0.25,\n    \"p_s\":  0.10,\n}\nMODULE1_SKILLS = {\n    \"letter_recognition\":  {\"label\": \"Reconnaître les lettres\",   \"description\": \"Identifier م ك ت ب isolées\",                  \"module\": 1, \"order\": 1, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.10}},\n    \"harakat_reading\":     {\"label\": \"Lire avec harakat\",          \"description\": \"Lire les voyelles courtes fatha, kasra, damma\", \"module\": 1, \"order\": 2, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.05, \"p_t\": 0.18}},\n    \"long_vowels\":         {\"label\": \"Voyelles longues\",           \"description\": \"Lire ا و ي comme voyelles longues\",            \"module\": 1, \"order\": 3, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.05, \"p_t\": 0.15}},",
+        "detail": "backend.app.bkt.engine",
+        "documentation": {}
+    },
+    {
+        "label": "MODULE1_SKILLS",
+        "kind": 5,
+        "importPath": "backend.app.bkt.engine",
+        "description": "backend.app.bkt.engine",
+        "peekOfCode": "MODULE1_SKILLS = {\n    \"letter_recognition\":  {\"label\": \"Reconnaître les lettres\",   \"description\": \"Identifier م ك ت ب isolées\",                  \"module\": 1, \"order\": 1, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.10}},\n    \"harakat_reading\":     {\"label\": \"Lire avec harakat\",          \"description\": \"Lire les voyelles courtes fatha, kasra, damma\", \"module\": 1, \"order\": 2, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.05, \"p_t\": 0.18}},\n    \"long_vowels\":         {\"label\": \"Voyelles longues\",           \"description\": \"Lire ا و ي comme voyelles longues\",            \"module\": 1, \"order\": 3, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.05, \"p_t\": 0.15}},\n    \"tanwin\":              {\"label\": \"Tanwīn\",                     \"description\": \"Reconnaître et lire ً ٍ ٌ\",                    \"module\": 1, \"order\": 4, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.05, \"p_t\": 0.15}},\n    \"letter_positions\":    {\"label\": \"Positions des lettres\",      \"description\": \"Formes isolée, initiale, médiane, finale\",     \"module\": 1, \"order\": 5, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.05, \"p_t\": 0.12}},\n    \"word_reading\":        {\"label\": \"Lecture de mots\",            \"description\": \"Lire des mots construits avec م ك ت ب\",        \"module\": 1, \"order\": 6, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.08, \"p_t\": 0.15}},\n    \"word_comprehension\":  {\"label\": \"Compréhension des mots\",     \"description\": \"Associer un mot arabe à sa traduction\",        \"module\": 1, \"order\": 7, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.10, \"p_t\": 0.20}},\n    \"word_writing\":        {\"label\": \"Écriture des mots\",          \"description\": \"Écrire des mots arabes au clavier\",            \"module\": 1, \"order\": 8, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.05, \"p_t\": 0.12, \"p_g\": 0.05}},\n    \"word_building\":       {\"label\": \"Construction de mots\",       \"description\": \"Assembler des lettres pour former un mot\",     \"module\": 1, \"order\": 9, \"params\": {**DEFAULT_PARAMS, \"p_l0\": 0.05, \"p_t\": 0.12, \"p_g\": 0.05}},",
+        "detail": "backend.app.bkt.engine",
+        "documentation": {}
+    },
+    {
+        "label": "ALL_SKILLS",
+        "kind": 5,
+        "importPath": "backend.app.bkt.engine",
+        "description": "backend.app.bkt.engine",
+        "peekOfCode": "ALL_SKILLS = {**MODULE1_SKILLS}\nPROFILES_DIR = Path(__file__).parent / \"profiles\"\nQUESTION_TYPES = {\n    \"letter_recognition\": \"mcq\",\n    \"harakat_reading\":    \"audio_choice\",\n    \"long_vowels\":        \"audio_choice\",\n    \"tanwin\":             \"mcq\",\n    \"letter_positions\":   \"mcq\",\n    \"word_reading\":       \"pronunciation\",\n    \"word_comprehension\": \"matching\",",
+        "detail": "backend.app.bkt.engine",
+        "documentation": {}
+    },
+    {
+        "label": "PROFILES_DIR",
+        "kind": 5,
+        "importPath": "backend.app.bkt.engine",
+        "description": "backend.app.bkt.engine",
+        "peekOfCode": "PROFILES_DIR = Path(__file__).parent / \"profiles\"\nQUESTION_TYPES = {\n    \"letter_recognition\": \"mcq\",\n    \"harakat_reading\":    \"audio_choice\",\n    \"long_vowels\":        \"audio_choice\",\n    \"tanwin\":             \"mcq\",\n    \"letter_positions\":   \"mcq\",\n    \"word_reading\":       \"pronunciation\",\n    \"word_comprehension\": \"matching\",\n    \"word_writing\":       \"input_text\",",
+        "detail": "backend.app.bkt.engine",
+        "documentation": {}
+    },
+    {
+        "label": "QUESTION_TYPES",
+        "kind": 5,
+        "importPath": "backend.app.bkt.engine",
+        "description": "backend.app.bkt.engine",
+        "peekOfCode": "QUESTION_TYPES = {\n    \"letter_recognition\": \"mcq\",\n    \"harakat_reading\":    \"audio_choice\",\n    \"long_vowels\":        \"audio_choice\",\n    \"tanwin\":             \"mcq\",\n    \"letter_positions\":   \"mcq\",\n    \"word_reading\":       \"pronunciation\",\n    \"word_comprehension\": \"matching\",\n    \"word_writing\":       \"input_text\",\n    \"word_building\":      \"drag_drop\",",
+        "detail": "backend.app.bkt.engine",
+        "documentation": {}
+    },
+    {
+        "label": "bkt_engine",
+        "kind": 5,
+        "importPath": "backend.app.bkt.engine",
+        "description": "backend.app.bkt.engine",
+        "peekOfCode": "bkt_engine = BKTEngine()",
+        "detail": "backend.app.bkt.engine",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "backend.app.core.config",
+        "description": "backend.app.core.config",
+        "peekOfCode": "class Settings(BaseSettings):\n    model_config = SettingsConfigDict(env_file=\".env\", env_file_encoding=\"utf-8\", case_sensitive=False)\n    APP_NAME: str = \"ArabiQ API\"\n    APP_VERSION: str = \"0.1.0\"\n    ENV: Literal[\"development\", \"staging\", \"production\"] = \"development\"\n    DEBUG: bool = True\n    SECRET_KEY: str = \"change-me-in-production\"\n    HOST: str = \"0.0.0.0\"\n    PORT: int = 8000\n    ALLOWED_ORIGINS: list[str] = [\"http://localhost:3000\", \"http://localhost:5173\"]",
+        "detail": "backend.app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "backend.app.core.config",
+        "description": "backend.app.core.config",
+        "peekOfCode": "settings = Settings()",
+        "detail": "backend.app.core.config",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "backend.app.core.security",
+        "description": "backend.app.core.security",
+        "peekOfCode": "def hash_password(plain: str) -> str:\n    return pwd_context.hash(plain)\ndef verify_password(plain: str, hashed: str) -> bool:\n    return pwd_context.verify(plain, hashed)\ndef _create_token(data: dict[str, Any], expires_delta: timedelta) -> str:\n    payload = data.copy()\n    payload[\"exp\"] = datetime.now(timezone.utc) + expires_delta\n    payload[\"iat\"] = datetime.now(timezone.utc)\n    return jwt.encode(payload, settings.SECRET_KEY, algorithm=settings.JWT_ALGORITHM)\ndef create_access_token(user_id: UUID) -> str:",
+        "detail": "backend.app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "kind": 2,
+        "importPath": "backend.app.core.security",
+        "description": "backend.app.core.security",
+        "peekOfCode": "def verify_password(plain: str, hashed: str) -> bool:\n    return pwd_context.verify(plain, hashed)\ndef _create_token(data: dict[str, Any], expires_delta: timedelta) -> str:\n    payload = data.copy()\n    payload[\"exp\"] = datetime.now(timezone.utc) + expires_delta\n    payload[\"iat\"] = datetime.now(timezone.utc)\n    return jwt.encode(payload, settings.SECRET_KEY, algorithm=settings.JWT_ALGORITHM)\ndef create_access_token(user_id: UUID) -> str:\n    return _create_token(\n        {\"sub\": str(user_id), \"type\": \"access\"},",
+        "detail": "backend.app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "kind": 2,
+        "importPath": "backend.app.core.security",
+        "description": "backend.app.core.security",
+        "peekOfCode": "def create_access_token(user_id: UUID) -> str:\n    return _create_token(\n        {\"sub\": str(user_id), \"type\": \"access\"},\n        timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)\n    )\ndef create_refresh_token(user_id: UUID) -> str:\n    return _create_token(\n        {\"sub\": str(user_id), \"type\": \"refresh\"},\n        timedelta(days=settings.REFRESH_TOKEN_EXPIRE_DAYS)\n    )",
+        "detail": "backend.app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "create_refresh_token",
+        "kind": 2,
+        "importPath": "backend.app.core.security",
+        "description": "backend.app.core.security",
+        "peekOfCode": "def create_refresh_token(user_id: UUID) -> str:\n    return _create_token(\n        {\"sub\": str(user_id), \"type\": \"refresh\"},\n        timedelta(days=settings.REFRESH_TOKEN_EXPIRE_DAYS)\n    )\ndef decode_token(token: str, expected_type: str = \"access\") -> UUID:\n    exc = HTTPException(\n        status_code=status.HTTP_401_UNAUTHORIZED,\n        detail=\"Could not validate credentials\",\n        headers={\"WWW-Authenticate\": \"Bearer\"}",
+        "detail": "backend.app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "decode_token",
+        "kind": 2,
+        "importPath": "backend.app.core.security",
+        "description": "backend.app.core.security",
+        "peekOfCode": "def decode_token(token: str, expected_type: str = \"access\") -> UUID:\n    exc = HTTPException(\n        status_code=status.HTTP_401_UNAUTHORIZED,\n        detail=\"Could not validate credentials\",\n        headers={\"WWW-Authenticate\": \"Bearer\"}\n    )\n    try:\n        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.JWT_ALGORITHM])\n        user_id: str | None = payload.get(\"sub\")\n        token_type: str | None = payload.get(\"type\")",
+        "detail": "backend.app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "pwd_context",
+        "kind": 5,
+        "importPath": "backend.app.core.security",
+        "description": "backend.app.core.security",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\ndef hash_password(plain: str) -> str:\n    return pwd_context.hash(plain)\ndef verify_password(plain: str, hashed: str) -> bool:\n    return pwd_context.verify(plain, hashed)\ndef _create_token(data: dict[str, Any], expires_delta: timedelta) -> str:\n    payload = data.copy()\n    payload[\"exp\"] = datetime.now(timezone.utc) + expires_delta\n    payload[\"iat\"] = datetime.now(timezone.utc)\n    return jwt.encode(payload, settings.SECRET_KEY, algorithm=settings.JWT_ALGORITHM)",
+        "detail": "backend.app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "LessonCompleteRequest",
+        "kind": 6,
+        "importPath": "backend.app.db.curriculum",
+        "description": "backend.app.db.curriculum",
+        "peekOfCode": "class LessonCompleteRequest(BaseModel):\n    score: float\n    duration_seconds: int\nclass LessonCompleteResponse(BaseModel):\n    xp_earned: int\n    new_badges: list[str] = []\n    streak_updated: bool = False\n    level_up: bool = False\n    new_level: int | None = None\nclass LessonRead(BaseModel):",
+        "detail": "backend.app.db.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonCompleteResponse",
+        "kind": 6,
+        "importPath": "backend.app.db.curriculum",
+        "description": "backend.app.db.curriculum",
+        "peekOfCode": "class LessonCompleteResponse(BaseModel):\n    xp_earned: int\n    new_badges: list[str] = []\n    streak_updated: bool = False\n    level_up: bool = False\n    new_level: int | None = None\nclass LessonRead(BaseModel):\n    id: int\n    course_id: int\n    title: str",
+        "detail": "backend.app.db.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonRead",
+        "kind": 6,
+        "importPath": "backend.app.db.curriculum",
+        "description": "backend.app.db.curriculum",
+        "peekOfCode": "class LessonRead(BaseModel):\n    id: int\n    course_id: int\n    title: str\n    lesson_type: str\n    xp_reward: int\n    duration_minutes: int\n    is_completed: bool = False\n    content: dict[str, Any]\n    model_config = {\"from_attributes\": True}",
+        "detail": "backend.app.db.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "CourseRead",
+        "kind": 6,
+        "importPath": "backend.app.db.curriculum",
+        "description": "backend.app.db.curriculum",
+        "peekOfCode": "class CourseRead(BaseModel):\n    id: int\n    module_id: int\n    title: str\n    lessons_count: int = 0\n    completion_rate: float = 0.0\n    model_config = {\"from_attributes\": True}\nclass ModuleRead(BaseModel):\n    id: int\n    slug: str",
+        "detail": "backend.app.db.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "ModuleRead",
+        "kind": 6,
+        "importPath": "backend.app.db.curriculum",
+        "description": "backend.app.db.curriculum",
+        "peekOfCode": "class ModuleRead(BaseModel):\n    id: int\n    slug: str\n    title: str\n    description: str\n    lessons_count: int = 0\n    arabic_ratio: float\n    is_locked: bool = False\n    completion_rate: float = 0.0\n    courses: list[CourseRead] = []",
+        "detail": "backend.app.db.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "UserProgressRead",
+        "kind": 6,
+        "importPath": "backend.app.db.curriculum",
+        "description": "backend.app.db.curriculum",
+        "peekOfCode": "class UserProgressRead(BaseModel):\n    user_id: str\n    completed_lessons: list[int]\n    xp_earned: int\n    last_activity_at: datetime | None = None\nclass BadgeRead(BaseModel):\n    id: str\n    name: str\n    description: str\n    icon_url: str",
+        "detail": "backend.app.db.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "BadgeRead",
+        "kind": 6,
+        "importPath": "backend.app.db.curriculum",
+        "description": "backend.app.db.curriculum",
+        "peekOfCode": "class BadgeRead(BaseModel):\n    id: str\n    name: str\n    description: str\n    icon_url: str\n    requirement: str\n    is_earned: bool = False\n    earned_at: datetime | None = None\n    model_config = {\"from_attributes\": True}",
+        "detail": "backend.app.db.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 6,
+        "importPath": "backend.app.db.session",
+        "description": "backend.app.db.session",
+        "peekOfCode": "class Base(DeclarativeBase):\n    pass\nasync def get_db() -> AsyncGenerator[AsyncSession, None]:\n    async with AsyncSessionLocal() as session:\n        try:\n            yield session\n            await session.commit()\n        except Exception:\n            await session.rollback()\n            raise",
+        "detail": "backend.app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "kind": 5,
+        "importPath": "backend.app.db.session",
+        "description": "backend.app.db.session",
+        "peekOfCode": "AsyncSessionLocal = async_sessionmaker(\n    engine,\n    class_=AsyncSession,\n    expire_on_commit=False,\n    autoflush=False,\n)\nclass Base(DeclarativeBase):\n    pass\nasync def get_db() -> AsyncGenerator[AsyncSession, None]:\n    async with AsyncSessionLocal() as session:",
+        "detail": "backend.app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    email: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)\n    username: Mapped[str] = mapped_column(String(80), unique=True, nullable=False)\n    hashed_password: Mapped[str] = mapped_column(String(255), nullable=False)\n    native_language: Mapped[str] = mapped_column(String(10), default=\"fr\")\n    avatar_url: Mapped[str | None] = mapped_column(String(512))\n    xp: Mapped[int] = mapped_column(Integer, default=0)\n    level: Mapped[int] = mapped_column(Integer, default=1)",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Module",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class Module(Base):\n    __tablename__ = \"modules\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True)\n    slug: Mapped[str] = mapped_column(String(80), unique=True, nullable=False)\n    title: Mapped[str] = mapped_column(String(200), nullable=False)\n    description: Mapped[str] = mapped_column(Text, default=\"\")\n    arabic_ratio: Mapped[float] = mapped_column(Float, default=0.1)\n    sort_order: Mapped[int] = mapped_column(Integer, default=0)\n    is_premium: Mapped[bool] = mapped_column(Boolean, default=False)\n    courses: Mapped[list[\"Course\"]] = relationship(",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class Course(Base):\n    __tablename__ = \"courses\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    module_id: Mapped[int] = mapped_column(ForeignKey(\"modules.id\"), nullable=False)\n    title: Mapped[str] = mapped_column(String(200), nullable=False)\n    sort_order: Mapped[int] = mapped_column(Integer, default=0)\n    module: Mapped[\"Module\"] = relationship(back_populates=\"courses\")\n    lessons: Mapped[list[\"Lesson\"]] = relationship(\n        back_populates=\"course\", order_by=\"Lesson.sort_order\", lazy=\"selectin\"\n    )",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Lesson",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class Lesson(Base):\n    __tablename__ = \"lessons\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    course_id: Mapped[int] = mapped_column(ForeignKey(\"courses.id\"), nullable=False)\n    title: Mapped[str] = mapped_column(String(200), nullable=False)\n    lesson_type: Mapped[str] = mapped_column(String(50), nullable=False)\n    xp_reward: Mapped[int] = mapped_column(Integer, default=10)\n    duration_minutes: Mapped[int] = mapped_column(Integer, default=5)\n    sort_order: Mapped[int] = mapped_column(Integer, default=0)\n    content: Mapped[dict] = mapped_column(JSON, default=dict)",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "LessonProgress",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class LessonProgress(Base):\n    __tablename__ = \"lesson_progress\"\n    id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id: Mapped[uuid.UUID] = mapped_column(\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False, index=True\n    )\n    lesson_id: Mapped[int] = mapped_column(ForeignKey(\"lessons.id\"), nullable=False, index=True)\n    score: Mapped[float] = mapped_column(Float, default=0.0)\n    xp_earned: Mapped[int] = mapped_column(Integer, default=0)\n    duration_seconds: Mapped[int] = mapped_column(Integer, default=0)",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Badge",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class Badge(Base):\n    __tablename__ = \"badges\"\n    id: Mapped[str] = mapped_column(String(50), primary_key=True)\n    name: Mapped[str] = mapped_column(String(100), nullable=False)\n    description: Mapped[str] = mapped_column(Text, default=\"\")\n    icon_url: Mapped[str] = mapped_column(String(512), default=\"\")\n    requirement: Mapped[str] = mapped_column(Text, default=\"\")\n    user_badges: Mapped[list[\"UserBadge\"]] = relationship(back_populates=\"badge\")\nclass UserBadge(Base):\n    __tablename__ = \"user_badges\"",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserBadge",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class UserBadge(Base):\n    __tablename__ = \"user_badges\"\n    user_id: Mapped[uuid.UUID] = mapped_column(\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\"), primary_key=True\n    )\n    badge_id: Mapped[str] = mapped_column(ForeignKey(\"badges.id\"), primary_key=True)\n    earned_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)\n    user: Mapped[\"User\"] = relationship(back_populates=\"badges\")\n    badge: Mapped[\"Badge\"] = relationship(back_populates=\"user_badges\")",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "utcnow",
+        "kind": 2,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "def utcnow() -> datetime:\n    return datetime.now(timezone.utc)\nclass User(Base):\n    __tablename__ = \"users\"\n    id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    email: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)\n    username: Mapped[str] = mapped_column(String(80), unique=True, nullable=False)\n    hashed_password: Mapped[str] = mapped_column(String(255), nullable=False)\n    native_language: Mapped[str] = mapped_column(String(10), default=\"fr\")\n    avatar_url: Mapped[str | None] = mapped_column(String(512))",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "kind": 6,
+        "importPath": "backend.app.schemas.auth",
+        "description": "backend.app.schemas.auth",
+        "peekOfCode": "class UserCreate(BaseModel):\n    email: EmailStr\n    username: str = Field(min_length=3, max_length=30)\n    password: str = Field(min_length=8, max_length=128)\n    native_language: Literal[\"fr\", \"es\", \"en\"] = \"fr\"\n    @field_validator(\"password\")\n    @classmethod\n    def password_strength(cls, v: str) -> str:\n        if not any(c.isdigit() for c in v):\n            raise ValueError(\"Password must contain at least one digit.\")",
+        "detail": "backend.app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogin",
+        "kind": 6,
+        "importPath": "backend.app.schemas.auth",
+        "description": "backend.app.schemas.auth",
+        "peekOfCode": "class UserLogin(BaseModel):\n    email: EmailStr\n    password: str\nclass UserRead(BaseModel):\n    id: UUID\n    email: str\n    username: str\n    native_language: str\n    avatar_url: str | None = None\n    xp: int",
+        "detail": "backend.app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserRead",
+        "kind": 6,
+        "importPath": "backend.app.schemas.auth",
+        "description": "backend.app.schemas.auth",
+        "peekOfCode": "class UserRead(BaseModel):\n    id: UUID\n    email: str\n    username: str\n    native_language: str\n    avatar_url: str | None = None\n    xp: int\n    level: int\n    streak: int\n    is_premium: bool",
+        "detail": "backend.app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "TokenPair",
+        "kind": 6,
+        "importPath": "backend.app.schemas.auth",
+        "description": "backend.app.schemas.auth",
+        "peekOfCode": "class TokenPair(BaseModel):\n    access_token: str\n    refresh_token: str\n    token_type: str = \"bearer\"\nclass RefreshRequest(BaseModel):\n    refresh_token: str\nclass AuthResponse(BaseModel):\n    user: UserRead\n    tokens: TokenPair",
+        "detail": "backend.app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshRequest",
+        "kind": 6,
+        "importPath": "backend.app.schemas.auth",
+        "description": "backend.app.schemas.auth",
+        "peekOfCode": "class RefreshRequest(BaseModel):\n    refresh_token: str\nclass AuthResponse(BaseModel):\n    user: UserRead\n    tokens: TokenPair",
+        "detail": "backend.app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "AuthResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.auth",
+        "description": "backend.app.schemas.auth",
+        "peekOfCode": "class AuthResponse(BaseModel):\n    user: UserRead\n    tokens: TokenPair",
+        "detail": "backend.app.schemas.auth",
+        "documentation": {}
+    },
+    {
+        "label": "ModuleRead",
+        "kind": 6,
+        "importPath": "backend.app.schemas.curriculum",
+        "description": "backend.app.schemas.curriculum",
+        "peekOfCode": "class ModuleRead(BaseModel):\n    model_config = ConfigDict(from_attributes=True)\n    id: int\n    slug: str\n    title: str\n    description: str\n    sort_order: int\n    is_premium: bool\nclass LessonRead(BaseModel):\n    model_config = ConfigDict(from_attributes=True)",
+        "detail": "backend.app.schemas.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonRead",
+        "kind": 6,
+        "importPath": "backend.app.schemas.curriculum",
+        "description": "backend.app.schemas.curriculum",
+        "peekOfCode": "class LessonRead(BaseModel):\n    model_config = ConfigDict(from_attributes=True)\n    id: int\n    title: str\n    lesson_type: str\n    xp_reward: int\n    duration_minutes: int\n    sort_order: int\n    content: Optional[Any] = None\n    is_completed: Optional[bool] = False",
+        "detail": "backend.app.schemas.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonCompleteRequest",
+        "kind": 6,
+        "importPath": "backend.app.schemas.curriculum",
+        "description": "backend.app.schemas.curriculum",
+        "peekOfCode": "class LessonCompleteRequest(BaseModel):\n    score: float        # 0.0 à 1.0\n    duration_seconds: int\nclass LessonCompleteResponse(BaseModel):\n    lesson_id: int\n    score: float\n    xp_earned: int\n    total_xp: int\n    level: int",
+        "detail": "backend.app.schemas.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "LessonCompleteResponse",
+        "kind": 6,
+        "importPath": "backend.app.schemas.curriculum",
+        "description": "backend.app.schemas.curriculum",
+        "peekOfCode": "class LessonCompleteResponse(BaseModel):\n    lesson_id: int\n    score: float\n    xp_earned: int\n    total_xp: int\n    level: int",
+        "detail": "backend.app.schemas.curriculum",
+        "documentation": {}
+    },
+    {
+        "label": "ar",
+        "kind": 2,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "def ar(text: str) -> str:\n    return get_display(arabic_reshaper.reshape(text))\n# ── Constantes mise en page ───────────────────────────────────\nW, H = A4\nMARGIN = 30\nCONTENT_W = W - 2 * MARGIN\nCELL = 15\nGRID_LINE = HexColor('#999999')\nDARK = HexColor('#1A1A2E')\nHEADER_H = 65",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "generate_letter_sheet",
+        "kind": 2,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "def generate_letter_sheet(module_id: int, letter_name: str) -> bytes:\n    \"\"\"Génère la fiche d'une lettre spécifique d'un module.\"\"\"\n    letters = MODULES_LETTERS.get(module_id, [])\n    ld = next((l for l in letters if l['name'].lower() == letter_name.lower()), None)\n    if ld is None:\n        raise ValueError(f\"Lettre '{letter_name}' introuvable dans le module {module_id}\")\n    return _make_sheet_buffer(ld)\ndef generate_module_sheets(module_id: int) -> bytes:\n    \"\"\"Génère toutes les fiches d'un module en un seul PDF.\"\"\"\n    letters = MODULES_LETTERS.get(module_id)",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "generate_module_sheets",
+        "kind": 2,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "def generate_module_sheets(module_id: int) -> bytes:\n    \"\"\"Génère toutes les fiches d'un module en un seul PDF.\"\"\"\n    letters = MODULES_LETTERS.get(module_id)\n    if not letters:\n        raise ValueError(f\"Module {module_id} introuvable\")\n    writer = PdfWriter()\n    for ld in letters:\n        sheet_bytes = _make_sheet_buffer(ld)\n        reader = PdfReader(io.BytesIO(sheet_bytes))\n        writer.add_page(reader.pages[0])",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "_FONT_PATHS",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "_FONT_PATHS = [\n    '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',\n    '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',\n]\n_fonts_registered = False\ndef _register_fonts():\n    global _fonts_registered\n    if _fonts_registered:\n        return\n    regular = _FONT_PATHS[0]",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "_fonts_registered",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "_fonts_registered = False\ndef _register_fonts():\n    global _fonts_registered\n    if _fonts_registered:\n        return\n    regular = _FONT_PATHS[0]\n    bold = _FONT_PATHS[1] if os.path.exists(_FONT_PATHS[1]) else regular\n    pdfmetrics.registerFont(TTFont('ArabicR', regular))\n    pdfmetrics.registerFont(TTFont('ArabicB', bold))\n    _fonts_registered = True",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "MARGIN",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "MARGIN = 30\nCONTENT_W = W - 2 * MARGIN\nCELL = 15\nGRID_LINE = HexColor('#999999')\nDARK = HexColor('#1A1A2E')\nHEADER_H = 65\nGRID_ROWS = 4\nBAND_H = CELL * GRID_ROWS\nGRID_W = CONTENT_W - 48\nLETTER_FONT = CELL * 1.55",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "CONTENT_W",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "CONTENT_W = W - 2 * MARGIN\nCELL = 15\nGRID_LINE = HexColor('#999999')\nDARK = HexColor('#1A1A2E')\nHEADER_H = 65\nGRID_ROWS = 4\nBAND_H = CELL * GRID_ROWS\nGRID_W = CONTENT_W - 48\nLETTER_FONT = CELL * 1.55\nWORD_ROWS = 3",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "CELL",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "CELL = 15\nGRID_LINE = HexColor('#999999')\nDARK = HexColor('#1A1A2E')\nHEADER_H = 65\nGRID_ROWS = 4\nBAND_H = CELL * GRID_ROWS\nGRID_W = CONTENT_W - 48\nLETTER_FONT = CELL * 1.55\nWORD_ROWS = 3\nWORD_BAND_H = CELL * WORD_ROWS",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "GRID_LINE",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "GRID_LINE = HexColor('#999999')\nDARK = HexColor('#1A1A2E')\nHEADER_H = 65\nGRID_ROWS = 4\nBAND_H = CELL * GRID_ROWS\nGRID_W = CONTENT_W - 48\nLETTER_FONT = CELL * 1.55\nWORD_ROWS = 3\nWORD_BAND_H = CELL * WORD_ROWS\nWORD_FONT = CELL * 1.25",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "DARK",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "DARK = HexColor('#1A1A2E')\nHEADER_H = 65\nGRID_ROWS = 4\nBAND_H = CELL * GRID_ROWS\nGRID_W = CONTENT_W - 48\nLETTER_FONT = CELL * 1.55\nWORD_ROWS = 3\nWORD_BAND_H = CELL * WORD_ROWS\nWORD_FONT = CELL * 1.25\n# ── Données Module 1 ──────────────────────────────────────────",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "HEADER_H",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "HEADER_H = 65\nGRID_ROWS = 4\nBAND_H = CELL * GRID_ROWS\nGRID_W = CONTENT_W - 48\nLETTER_FONT = CELL * 1.55\nWORD_ROWS = 3\nWORD_BAND_H = CELL * WORD_ROWS\nWORD_FONT = CELL * 1.25\n# ── Données Module 1 ──────────────────────────────────────────\nMODULE1_LETTERS = [",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "GRID_ROWS",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "GRID_ROWS = 4\nBAND_H = CELL * GRID_ROWS\nGRID_W = CONTENT_W - 48\nLETTER_FONT = CELL * 1.55\nWORD_ROWS = 3\nWORD_BAND_H = CELL * WORD_ROWS\nWORD_FONT = CELL * 1.25\n# ── Données Module 1 ──────────────────────────────────────────\nMODULE1_LETTERS = [\n    {",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "BAND_H",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "BAND_H = CELL * GRID_ROWS\nGRID_W = CONTENT_W - 48\nLETTER_FONT = CELL * 1.55\nWORD_ROWS = 3\nWORD_BAND_H = CELL * WORD_ROWS\nWORD_FONT = CELL * 1.25\n# ── Données Module 1 ──────────────────────────────────────────\nMODULE1_LETTERS = [\n    {\n        'letter': 'ب', 'name': 'Ba', 'phoneme': 'b',",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "GRID_W",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "GRID_W = CONTENT_W - 48\nLETTER_FONT = CELL * 1.55\nWORD_ROWS = 3\nWORD_BAND_H = CELL * WORD_ROWS\nWORD_FONT = CELL * 1.25\n# ── Données Module 1 ──────────────────────────────────────────\nMODULE1_LETTERS = [\n    {\n        'letter': 'ب', 'name': 'Ba', 'phoneme': 'b',\n        'color': '#6C3FC5', 'color_lt': '#EDE8FB',",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "LETTER_FONT",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "LETTER_FONT = CELL * 1.55\nWORD_ROWS = 3\nWORD_BAND_H = CELL * WORD_ROWS\nWORD_FONT = CELL * 1.25\n# ── Données Module 1 ──────────────────────────────────────────\nMODULE1_LETTERS = [\n    {\n        'letter': 'ب', 'name': 'Ba', 'phoneme': 'b',\n        'color': '#6C3FC5', 'color_lt': '#EDE8FB',\n        'forms': [('Isolée','ب'), ('Début','بـ'), ('Milieu','ـبـ'), ('Fin','ـب')],",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "WORD_ROWS",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "WORD_ROWS = 3\nWORD_BAND_H = CELL * WORD_ROWS\nWORD_FONT = CELL * 1.25\n# ── Données Module 1 ──────────────────────────────────────────\nMODULE1_LETTERS = [\n    {\n        'letter': 'ب', 'name': 'Ba', 'phoneme': 'b',\n        'color': '#6C3FC5', 'color_lt': '#EDE8FB',\n        'forms': [('Isolée','ب'), ('Début','بـ'), ('Milieu','ـبـ'), ('Fin','ـب')],\n        'words': [",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "WORD_BAND_H",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "WORD_BAND_H = CELL * WORD_ROWS\nWORD_FONT = CELL * 1.25\n# ── Données Module 1 ──────────────────────────────────────────\nMODULE1_LETTERS = [\n    {\n        'letter': 'ب', 'name': 'Ba', 'phoneme': 'b',\n        'color': '#6C3FC5', 'color_lt': '#EDE8FB',\n        'forms': [('Isolée','ب'), ('Début','بـ'), ('Milieu','ـبـ'), ('Fin','ـب')],\n        'words': [\n            ('بَابٌ', 'baabun', 'porte'),",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "WORD_FONT",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "WORD_FONT = CELL * 1.25\n# ── Données Module 1 ──────────────────────────────────────────\nMODULE1_LETTERS = [\n    {\n        'letter': 'ب', 'name': 'Ba', 'phoneme': 'b',\n        'color': '#6C3FC5', 'color_lt': '#EDE8FB',\n        'forms': [('Isolée','ب'), ('Début','بـ'), ('Milieu','ـبـ'), ('Fin','ـب')],\n        'words': [\n            ('بَابٌ', 'baabun', 'porte'),\n            ('كِتَابٌ', 'kitaabun', 'livre'),",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "MODULE1_LETTERS",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "MODULE1_LETTERS = [\n    {\n        'letter': 'ب', 'name': 'Ba', 'phoneme': 'b',\n        'color': '#6C3FC5', 'color_lt': '#EDE8FB',\n        'forms': [('Isolée','ب'), ('Début','بـ'), ('Milieu','ـبـ'), ('Fin','ـب')],\n        'words': [\n            ('بَابٌ', 'baabun', 'porte'),\n            ('كِتَابٌ', 'kitaabun', 'livre'),\n            ('بَيْتٌ', 'baytun', 'maison'),\n            ('بُومَةٌ', 'buumatun', 'hibou'),",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "MODULES_LETTERS",
+        "kind": 5,
+        "importPath": "backend.app.services.writing_sheets",
+        "description": "backend.app.services.writing_sheets",
+        "peekOfCode": "MODULES_LETTERS = {\n    1: MODULE1_LETTERS,\n}\n# ── Fonctions de dessin ───────────────────────────────────────\ndef _draw_grid_band(c, x, y, width, height, cell=CELL):\n    c.setFillColor(HexColor('#FFFFFF'))\n    c.setStrokeColor(HexColor('#777777'))\n    c.setLineWidth(0.5)\n    c.rect(x, y, width, height, fill=1, stroke=1)\n    c.setStrokeColor(GRID_LINE)",
+        "detail": "backend.app.services.writing_sheets",
+        "documentation": {}
+    },
+    {
+        "label": "create_app",
+        "kind": 2,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "def create_app() -> FastAPI:\n    app = FastAPI(\n        title=settings.APP_NAME,\n        version=settings.APP_VERSION,\n        docs_url=\"/docs\" if settings.DEBUG else None,\n        redoc_url=\"/redoc\" if settings.DEBUG else None,\n        lifespan=lifespan,\n    )\n    app.add_middleware(GZipMiddleware, minimum_size=1000)\n    app.add_middleware(",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "backend.app.main",
+        "description": "backend.app.main",
+        "peekOfCode": "app = create_app()",
+        "detail": "backend.app.main",
+        "documentation": {}
+    },
+    {
+        "label": "SkillState",
+        "kind": 6,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "class SkillState:\n    skill_id:   str\n    p_mastery:  float\n    n_attempts: int   = 0\n    n_correct:  int   = 0\n    mastered:   bool  = False\n    last_seen:  float = field(default_factory=time.time)\n@dataclass\nclass Interaction:\n    \"\"\"Une interaction élève — unité de base du dataset DKT.\"\"\"",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "Interaction",
+        "kind": 6,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "class Interaction:\n    \"\"\"Une interaction élève — unité de base du dataset DKT.\"\"\"\n    id:          str\n    user_id:     str\n    skill_id:    str\n    correct:     bool\n    latency_ms:  int\n    p_before:    float   # P(maîtrise) avant la réponse\n    p_after:     float   # P(maîtrise) après la réponse\n    exercise_id: Optional[str]",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "BKTEngine",
+        "kind": 6,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "class BKTEngine:\n    def __init__(self, skill_graph_path: Path = SKILL_GRAPH_PATH):\n        graph = load_skill_graph(skill_graph_path)\n        # Index skills par id\n        self._skills: dict[str, dict] = {\n            s[\"id\"]: s for s in graph[\"skills\"]\n        }\n        self._modules: list[dict] = graph[\"modules\"]\n    # ── État initial d'un élève ────────────────────────────────\n    def init_student_state(",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "DatasetCollector",
+        "kind": 6,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "class DatasetCollector:\n    \"\"\"\n    Collecte les interactions en mémoire et les sérialise\n    en format compatible avec l'entraînement DKT (LSTM).\n    Format DKT : séquences (skill_id, correct) par élève\n    Compatible avec : pyKT, DKT original (Piech 2015)\n    \"\"\"\n    def __init__(self):\n        self._interactions: list[Interaction] = []\n        self._sequences:    dict[str, list]   = {}  # user_id → séquence",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "load_skill_graph",
+        "kind": 2,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "def load_skill_graph(path: Path = SKILL_GRAPH_PATH) -> dict:\n    with open(path, encoding=\"utf-8\") as f:\n        return json.load(f)\n# ── Modèle BKT ────────────────────────────────────────────────\ndef bkt_update(p_mastery: float, correct: bool, params: dict) -> float:\n    \"\"\"\n    Met à jour P(maîtrise) après une réponse.\n    Retourne la nouvelle probabilité de maîtrise.\n    \"\"\"\n    p_l  = params[\"p_learn\"]",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "bkt_update",
+        "kind": 2,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "def bkt_update(p_mastery: float, correct: bool, params: dict) -> float:\n    \"\"\"\n    Met à jour P(maîtrise) après une réponse.\n    Retourne la nouvelle probabilité de maîtrise.\n    \"\"\"\n    p_l  = params[\"p_learn\"]\n    p_f  = params[\"p_forget\"]\n    p_s  = params[\"p_slip\"]\n    p_g  = params[\"p_guess\"]\n    # P(réponse correcte | maîtrise) et P(réponse correcte | non-maîtrise)",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "is_mastered",
+        "kind": 2,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "def is_mastered(p_mastery: float) -> bool:\n    return p_mastery >= MASTERY_THRESHOLD\n# ── Structures de données ──────────────────────────────────────\n@dataclass\nclass SkillState:\n    skill_id:   str\n    p_mastery:  float\n    n_attempts: int   = 0\n    n_correct:  int   = 0\n    mastered:   bool  = False",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "get_bkt_engine",
+        "kind": 2,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "def get_bkt_engine() -> BKTEngine:\n    global _bkt_engine\n    if _bkt_engine is None:\n        _bkt_engine = BKTEngine()\n    return _bkt_engine\ndef get_collector() -> DatasetCollector:\n    global _collector\n    if _collector is None:\n        _collector = DatasetCollector()\n    return _collector",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "get_collector",
+        "kind": 2,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "def get_collector() -> DatasetCollector:\n    global _collector\n    if _collector is None:\n        _collector = DatasetCollector()\n    return _collector\n# ── Test / démo ───────────────────────────────────────────────\nif __name__ == \"__main__\":\n    import random\n    engine    = get_bkt_engine()\n    collector = get_collector()",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "SKILL_GRAPH_PATH",
+        "kind": 5,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "SKILL_GRAPH_PATH = Path(__file__).parent / \"skill_graph.json\"\nMASTERY_THRESHOLD = 0.80   # P(maîtrise) > 0.80 → compétence maîtrisée\nDKT_THRESHOLD     = 20_000 # interactions avant migration DKT\n# ── Chargement du graphe ───────────────────────────────────────\ndef load_skill_graph(path: Path = SKILL_GRAPH_PATH) -> dict:\n    with open(path, encoding=\"utf-8\") as f:\n        return json.load(f)\n# ── Modèle BKT ────────────────────────────────────────────────\ndef bkt_update(p_mastery: float, correct: bool, params: dict) -> float:\n    \"\"\"",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "MASTERY_THRESHOLD",
+        "kind": 5,
+        "importPath": "backend.bkt_engine",
+        "description": "backend.bkt_engine",
+        "peekOfCode": "MASTERY_THRESHOLD = 0.80   # P(maîtrise) > 0.80 → compétence maîtrisée\nDKT_THRESHOLD     = 20_000 # interactions avant migration DKT\n# ── Chargement du graphe ───────────────────────────────────────\ndef load_skill_graph(path: Path = SKILL_GRAPH_PATH) -> dict:\n    with open(path, encoding=\"utf-8\") as f:\n        return json.load(f)\n# ── Modèle BKT ────────────────────────────────────────────────\ndef bkt_update(p_mastery: float, correct: bool, params: dict) -> float:\n    \"\"\"\n    Met à jour P(maîtrise) après une réponse.",
+        "detail": "backend.bkt_engine",
+        "documentation": {}
+    },
+    {
+        "label": "AxisState",
+        "kind": 6,
+        "importPath": "backend.cat_engine",
+        "description": "backend.cat_engine",
+        "peekOfCode": "class AxisState:\n    theta: float = INITIAL_THETA\n    se: float    = INITIAL_SE\n    n_items: int = 0\n    responses: list = field(default_factory=list)\n    converged: bool = False\n@dataclass\nclass CATSession:\n    session_id: str\n    user_id: str",
+        "detail": "backend.cat_engine",
+        "documentation": {}
+    },
+    {
+        "label": "CATSession",
+        "kind": 6,
+        "importPath": "backend.cat_engine",
+        "description": "backend.cat_engine",
+        "peekOfCode": "class CATSession:\n    session_id: str\n    user_id: str\n    lang: str                             # fr / es / en\n    started_at: float\n    items_administered: list = field(default_factory=list)   # [item_id, ...]\n    responses: list = field(default_factory=list)            # [{item_id, correct, latency_ms, timestamp}]\n    axes: dict = field(default_factory=lambda: {ax: AxisState() for ax in AXES})\n    stopped: bool = False\n    stop_reason: str = \"\"",
+        "detail": "backend.cat_engine",
+        "documentation": {}
+    },
+    {
+        "label": "CATEngine",
+        "kind": 6,
+        "importPath": "backend.cat_engine",
+        "description": "backend.cat_engine",
+        "peekOfCode": "class CATEngine:\n    def __init__(self, item_bank_path: Path = ITEM_BANK_PATH):\n        with open(item_bank_path, encoding=\"utf-8\") as f:\n            self._bank: list[dict] = json.load(f)\n        # Index par axe pour accès rapide\n        self._by_axis: dict[str, list[dict]] = {ax: [] for ax in AXES}\n        for item in self._bank:\n            ax = item.get(\"axis\")\n            if ax in self._by_axis:\n                self._by_axis[ax].append(item)",
+        "detail": "backend.cat_engine",
+        "documentation": {}
+    },
+    {
+        "label": "irt_probability",
+        "kind": 2,
+        "importPath": "backend.cat_engine",
+        "description": "backend.cat_engine",
+        "peekOfCode": "def irt_probability(theta: float, a: float, b: float, c: float) -> float:\n    \"\"\"P(correct | θ) selon le modèle logistique 3 paramètres.\"\"\"\n    return c + (1 - c) / (1 + math.exp(-a * (theta - b)))\ndef fisher_information(theta: float, a: float, b: float, c: float) -> float:\n    \"\"\"Information de Fisher pour un item (θ, a, b, c).\"\"\"\n    p = irt_probability(theta, a, b, c)\n    q = 1 - p\n    if p <= c or q <= 0:\n        return 0.0\n    return (a ** 2 * (p - c) ** 2) / ((1 - c) ** 2 * p * q)",
+        "detail": "backend.cat_engine",
+        "documentation": {}
+    },
+    {
+        "label": "fisher_information",
+        "kind": 2,
+        "importPath": "backend.cat_engine",
+        "description": "backend.cat_engine",
+        "peekOfCode": "def fisher_information(theta: float, a: float, b: float, c: float) -> float:\n    \"\"\"Information de Fisher pour un item (θ, a, b, c).\"\"\"\n    p = irt_probability(theta, a, b, c)\n    q = 1 - p\n    if p <= c or q <= 0:\n        return 0.0\n    return (a ** 2 * (p - c) ** 2) / ((1 - c) ** 2 * p * q)\ndef mle_update_theta(theta: float, responses: list[dict]) -> tuple[float, float]:\n    \"\"\"\n    Mise à jour de θ par Maximum Likelihood Estimation.",
+        "detail": "backend.cat_engine",
+        "documentation": {}
+    },
+    {
+        "label": "mle_update_theta",
+        "kind": 2,
+        "importPath": "backend.cat_engine",
+        "description": "backend.cat_engine",
+        "peekOfCode": "def mle_update_theta(theta: float, responses: list[dict]) -> tuple[float, float]:\n    \"\"\"\n    Mise à jour de θ par Maximum Likelihood Estimation.\n    Retourne (theta_new, standard_error).\n    responses: [{\"a\": float, \"b\": float, \"c\": float, \"correct\": bool}]\n    \"\"\"\n    if not responses:\n        return theta, INITIAL_SE\n    # Newton-Raphson sur la log-vraisemblance\n    for _ in range(20):  # max iterations",
+        "detail": "backend.cat_engine",
+        "documentation": {}
+    },
+    {
+        "label": "find_font",
+        "kind": 2,
+        "importPath": "backend.extract_glyphs",
+        "description": "backend.extract_glyphs",
+        "peekOfCode": "def find_font():\n    \"\"\"Cherche la police Noto Naskh Arabic sur le système.\"\"\"\n    candidates = [\n        Path(__file__).parent / \"fonts\" / \"NotoNaskhArabic-Bold.ttf\",\n        Path(__file__).parent / \"fonts\" / \"NotoNaskhArabic-Regular.ttf\",\n        Path(\"C:/Windows/Fonts/NotoNaskhArabic-Bold.ttf\"),\n        Path(\"C:/Windows/Fonts/NotoNaskhArabic-Regular.ttf\"),\n        Path.home() / \"AppData/Local/Microsoft/Windows/Fonts/NotoNaskhArabic-Bold.ttf\",\n    ]\n    for p in candidates:",
+        "detail": "backend.extract_glyphs",
+        "documentation": {}
+    },
+    {
+        "label": "download_font",
+        "kind": 2,
+        "importPath": "backend.extract_glyphs",
+        "description": "backend.extract_glyphs",
+        "peekOfCode": "def download_font():\n    \"\"\"Télécharge Noto Naskh Arabic Bold si absent.\"\"\"\n    import urllib.request\n    fonts_dir = Path(__file__).parent / \"fonts\"\n    fonts_dir.mkdir(exist_ok=True)\n    dest = fonts_dir / \"NotoNaskhArabic-Bold.ttf\"\n    url = \"https://github.com/notofonts/arabic/releases/download/NotoNaskhArabic-v2.004/NotoNaskhArabic-Bold.ttf\"\n    print(f\"[DOWNLOAD] Téléchargement de la police...\")\n    try:\n        urllib.request.urlretrieve(url, dest)",
+        "detail": "backend.extract_glyphs",
+        "documentation": {}
+    },
+    {
+        "label": "normalize_path",
+        "kind": 2,
+        "importPath": "backend.extract_glyphs",
+        "description": "backend.extract_glyphs",
+        "peekOfCode": "def normalize_path(d: str, units_per_em: int, target_size: int = 200) -> str:\n    \"\"\"\n    Normalise un path SVG :\n    - Retourne verticalement (les polices ont Y inversé)\n    - Met à l'échelle pour tenir dans target_size x target_size\n    - Centre dans une viewBox 280x280\n    \"\"\"\n    scale = target_size / units_per_em\n    # Parser les coordonnées pour trouver bbox\n    import re",
+        "detail": "backend.extract_glyphs",
+        "documentation": {}
+    },
+    {
+        "label": "extract_glyph_path",
+        "kind": 2,
+        "importPath": "backend.extract_glyphs",
+        "description": "backend.extract_glyphs",
+        "peekOfCode": "def extract_glyph_path(font, char_code: int, target_size: int = 180) -> dict | None:\n    \"\"\"Extrait le path SVG d'un glyphe et le normalise.\"\"\"\n    try:\n        cmap = font.getBestCmap()\n        if char_code not in cmap:\n            return None\n        glyph_name = cmap[char_code]\n        glyph_set  = font.getGlyphSet()\n        if glyph_name not in glyph_set:\n            return None",
+        "detail": "backend.extract_glyphs",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "backend.extract_glyphs",
+        "description": "backend.extract_glyphs",
+        "peekOfCode": "def main():\n    # Trouver ou télécharger la police\n    font_path = find_font()\n    if not font_path:\n        print(\"[INFO] Police non trouvée localement — tentative de téléchargement...\")\n        font_path = download_font()\n    if not font_path:\n        print(\"[ERREUR] Impossible de trouver la police. Placez NotoNaskhArabic-Bold.ttf dans backend/fonts/\")\n        sys.exit(1)\n    print(f\"[INFO] Chargement de la police...\")",
+        "detail": "backend.extract_glyphs",
+        "documentation": {}
+    },
+    {
+        "label": "LETTERS",
+        "kind": 5,
+        "importPath": "backend.extract_glyphs",
+        "description": "backend.extract_glyphs",
+        "peekOfCode": "LETTERS = [\n    # Module 1\n    (0x0628, 'ba',  'isolated',  'ب'),\n    (0x0643, 'kaf', 'isolated',  'ك'),\n    (0x062A, 'ta',  'isolated',  'ت'),\n    (0x0645, 'mim', 'isolated',  'م'),\n    # Formes initiales\n    (0xFE91, 'ba_initial',  'initial', 'بـ'),\n    (0xFEDF, 'kaf_initial', 'initial', 'كـ'),\n    (0xFE97, 'ta_initial',  'initial', 'تـ'),",
+        "detail": "backend.extract_glyphs",
+        "documentation": {}
+    },
+    {
+        "label": "extract_path",
+        "kind": 2,
+        "importPath": "backend.extract_skeleton",
+        "description": "backend.extract_skeleton",
+        "peekOfCode": "def extract_path(font, char_code: int) -> str | None:\n    \"\"\"Extrait le path SVG d'un glyphe normalisé dans SIZE x SIZE.\"\"\"\n    cmap = font.getBestCmap()\n    if char_code not in cmap:\n        return None\n    glyph_name = cmap[char_code]\n    glyph_set  = font.getGlyphSet()\n    if glyph_name not in glyph_set:\n        return None\n    units = font['head'].unitsPerEm",
+        "detail": "backend.extract_skeleton",
+        "documentation": {}
+    },
+    {
+        "label": "path_to_bitmap",
+        "kind": 2,
+        "importPath": "backend.extract_skeleton",
+        "description": "backend.extract_skeleton",
+        "peekOfCode": "def path_to_bitmap(d: str, size: int) -> np.ndarray:\n    \"\"\"Convertit un path SVG en bitmap binaire.\"\"\"\n    try:\n        path = parse_path(d)\n    except Exception as e:\n        print(f\"  [WARN] parse_path failed: {e}\")\n        return np.zeros((size, size), dtype=bool)\n    # Rasteriser le path en échantillonnant des points\n    img = np.zeros((size, size), dtype=np.uint8)\n    # Collecter les points du contour",
+        "detail": "backend.extract_skeleton",
+        "documentation": {}
+    },
+    {
+        "label": "bitmap_to_skeleton_path",
+        "kind": 2,
+        "importPath": "backend.extract_skeleton",
+        "description": "backend.extract_skeleton",
+        "peekOfCode": "def bitmap_to_skeleton_path(bitmap: np.ndarray, size: int) -> str:\n    \"\"\"Calcule le skeleton et extrait un path SVG simplifié.\"\"\"\n    from skimage.morphology import skeletonize, remove_small_objects\n    from skimage.measure import label, find_contours\n    # Nettoyer\n    clean = remove_small_objects(bitmap, min_size=10)\n    if not clean.any():\n        return \"\"\n    # Skeletonize\n    skel = skeletonize(clean)",
+        "detail": "backend.extract_skeleton",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "backend.extract_skeleton",
+        "description": "backend.extract_skeleton",
+        "peekOfCode": "def main():\n    if not FONT_PATH.exists():\n        print(f\"[ERREUR] Police non trouvée : {FONT_PATH}\")\n        sys.exit(1)\n    print(f\"[INFO] Chargement police...\")\n    font = TTFont(FONT_PATH)\n    results = {}\n    for char_code, key, display in LETTERS:\n        print(f\"  Traitement U+{char_code:04X} ({display} — {key})...\")\n        # 1. Extraire le path SVG",
+        "detail": "backend.extract_skeleton",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_PATH",
+        "kind": 5,
+        "importPath": "backend.extract_skeleton",
+        "description": "backend.extract_skeleton",
+        "peekOfCode": "FONT_PATH = Path(__file__).parent / \"fonts\" / \"NotoNaskhArabic-Bold.ttf\"\nLETTERS = [\n    (0x0628, 'ba',  'ب'),\n    (0x0643, 'kaf', 'ك'),\n    (0x062A, 'ta',  'ت'),\n    (0x0645, 'mim', 'م'),\n]\nSIZE = 200  # taille de la grille raster\ndef extract_path(font, char_code: int) -> str | None:\n    \"\"\"Extrait le path SVG d'un glyphe normalisé dans SIZE x SIZE.\"\"\"",
+        "detail": "backend.extract_skeleton",
+        "documentation": {}
+    },
+    {
+        "label": "LETTERS",
+        "kind": 5,
+        "importPath": "backend.extract_skeleton",
+        "description": "backend.extract_skeleton",
+        "peekOfCode": "LETTERS = [\n    (0x0628, 'ba',  'ب'),\n    (0x0643, 'kaf', 'ك'),\n    (0x062A, 'ta',  'ت'),\n    (0x0645, 'mim', 'م'),\n]\nSIZE = 200  # taille de la grille raster\ndef extract_path(font, char_code: int) -> str | None:\n    \"\"\"Extrait le path SVG d'un glyphe normalisé dans SIZE x SIZE.\"\"\"\n    cmap = font.getBestCmap()",
+        "detail": "backend.extract_skeleton",
+        "documentation": {}
+    },
+    {
+        "label": "SIZE",
+        "kind": 5,
+        "importPath": "backend.extract_skeleton",
+        "description": "backend.extract_skeleton",
+        "peekOfCode": "SIZE = 200  # taille de la grille raster\ndef extract_path(font, char_code: int) -> str | None:\n    \"\"\"Extrait le path SVG d'un glyphe normalisé dans SIZE x SIZE.\"\"\"\n    cmap = font.getBestCmap()\n    if char_code not in cmap:\n        return None\n    glyph_name = cmap[char_code]\n    glyph_set  = font.getGlyphSet()\n    if glyph_name not in glyph_set:\n        return None",
+        "detail": "backend.extract_skeleton",
+        "documentation": {}
+    },
+    {
+        "label": "mp3",
+        "kind": 2,
+        "importPath": "backend.generate_audio",
+        "description": "backend.generate_audio",
+        "peekOfCode": "def mp3(text: str, dest: Path, slow: bool = False) -> bool:\n    try:\n        gTTS(text=text, lang='ar', slow=slow).save(str(dest))\n        return True\n    except Exception as e:\n        print(f\"    [ERR] {e}\")\n        return False\ndef skip_or_make(dest: Path) -> bool:\n    if dest.exists():\n        print(f\"  [SKIP] {dest.name}\")",
+        "detail": "backend.generate_audio",
+        "documentation": {}
+    },
+    {
+        "label": "skip_or_make",
+        "kind": 2,
+        "importPath": "backend.generate_audio",
+        "description": "backend.generate_audio",
+        "peekOfCode": "def skip_or_make(dest: Path) -> bool:\n    if dest.exists():\n        print(f\"  [SKIP] {dest.name}\")\n        return True\n    return False\ndef run(label: str, fn, only: str) -> None:\n    if only and only != label:\n        return\n    print(f\"\\n── {label.capitalize()} {'─' * (44 - len(label))}\")\n    fn()",
+        "detail": "backend.generate_audio",
+        "documentation": {}
+    },
+    {
+        "label": "run",
+        "kind": 2,
+        "importPath": "backend.generate_audio",
+        "description": "backend.generate_audio",
+        "peekOfCode": "def run(label: str, fn, only: str) -> None:\n    if only and only != label:\n        return\n    print(f\"\\n── {label.capitalize()} {'─' * (44 - len(label))}\")\n    fn()\ndef main():\n    only = None\n    if \"--only\" in sys.argv:\n        idx = sys.argv.index(\"--only\")\n        if idx + 1 < len(sys.argv):",
+        "detail": "backend.generate_audio",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "backend.generate_audio",
+        "description": "backend.generate_audio",
+        "peekOfCode": "def main():\n    only = None\n    if \"--only\" in sys.argv:\n        idx = sys.argv.index(\"--only\")\n        if idx + 1 < len(sys.argv):\n            only = sys.argv[idx + 1]\n    if not REGISTRY.exists():\n        print(f\"[ERREUR] Registre introuvable : {REGISTRY}\")\n        sys.exit(1)\n    with open(REGISTRY, encoding='utf-8') as f:",
+        "detail": "backend.generate_audio",
+        "documentation": {}
+    },
+    {
+        "label": "PUBLIC_DIR",
+        "kind": 5,
+        "importPath": "backend.generate_audio",
+        "description": "backend.generate_audio",
+        "peekOfCode": "PUBLIC_DIR = Path(__file__).parent.parent / \"frontend\" / \"public\"\nDIRS = {\n    \"letters\":   PUBLIC_DIR / \"assets\" / \"audio\" / \"letters\",\n    \"syllables\": PUBLIC_DIR / \"assets\" / \"audio\" / \"syllables\",\n    \"positions\": PUBLIC_DIR / \"assets\" / \"audio\" / \"positions\",\n    \"words\":     PUBLIC_DIR / \"assets\" / \"audio\" / \"words\",\n    \"phrases\":   PUBLIC_DIR / \"assets\" / \"audio\" / \"phrases\",\n}\n# Noms arabes complets des lettres\nLETTER_NAMES = {",
+        "detail": "backend.generate_audio",
+        "documentation": {}
+    },
+    {
+        "label": "DIRS",
+        "kind": 5,
+        "importPath": "backend.generate_audio",
+        "description": "backend.generate_audio",
+        "peekOfCode": "DIRS = {\n    \"letters\":   PUBLIC_DIR / \"assets\" / \"audio\" / \"letters\",\n    \"syllables\": PUBLIC_DIR / \"assets\" / \"audio\" / \"syllables\",\n    \"positions\": PUBLIC_DIR / \"assets\" / \"audio\" / \"positions\",\n    \"words\":     PUBLIC_DIR / \"assets\" / \"audio\" / \"words\",\n    \"phrases\":   PUBLIC_DIR / \"assets\" / \"audio\" / \"phrases\",\n}\n# Noms arabes complets des lettres\nLETTER_NAMES = {\n    \"mim\": \"ميم\", \"kaf\": \"كاف\", \"ta\": \"تاء\",",
+        "detail": "backend.generate_audio",
+        "documentation": {}
+    },
+    {
+        "label": "LETTER_NAMES",
+        "kind": 5,
+        "importPath": "backend.generate_audio",
+        "description": "backend.generate_audio",
+        "peekOfCode": "LETTER_NAMES = {\n    \"mim\": \"ميم\", \"kaf\": \"كاف\", \"ta\": \"تاء\",\n    \"ba\":  \"باء\", \"waw\": \"واو\", \"alif\": \"ألف\", \"ya\": \"ياء\",\n}\n# Noms arabes des positions\nPOSITION_NAMES = {\n    \"isolated\": \"مفردة\",\n    \"initial\":  \"في البداية\",\n    \"medial\":   \"في الوسط\",\n    \"final\":    \"في النهاية\",",
+        "detail": "backend.generate_audio",
+        "documentation": {}
+    },
+    {
+        "label": "POSITION_NAMES",
+        "kind": 5,
+        "importPath": "backend.generate_audio",
+        "description": "backend.generate_audio",
+        "peekOfCode": "POSITION_NAMES = {\n    \"isolated\": \"مفردة\",\n    \"initial\":  \"في البداية\",\n    \"medial\":   \"في الوسط\",\n    \"final\":    \"في النهاية\",\n}\ndef mp3(text: str, dest: Path, slow: bool = False) -> bool:\n    try:\n        gTTS(text=text, lang='ar', slow=slow).save(str(dest))\n        return True",
+        "detail": "backend.generate_audio",
+        "documentation": {}
+    },
+    {
+        "label": "apply",
+        "kind": 2,
+        "importPath": "backend.migration_bkt",
+        "description": "backend.migration_bkt",
+        "peekOfCode": "def apply():\n    if not DB_PATH.exists():\n        print(f\"[ERREUR] Base introuvable : {DB_PATH}\")\n        return\n    conn = sqlite3.connect(DB_PATH)\n    cursor = conn.cursor()\n    cursor.execute(CREATE_INTERACTION_LOGS)\n    for idx in CREATE_INDEXES:\n        cursor.execute(idx)\n    conn.commit()",
+        "detail": "backend.migration_bkt",
+        "documentation": {}
+    },
+    {
+        "label": "DB_PATH",
+        "kind": 5,
+        "importPath": "backend.migration_bkt",
+        "description": "backend.migration_bkt",
+        "peekOfCode": "DB_PATH = Path(__file__).parent / \"arabiq.db\"\nCREATE_INTERACTION_LOGS = \"\"\"\nCREATE TABLE IF NOT EXISTS interaction_logs (\n    id           TEXT PRIMARY KEY,\n    user_id      TEXT NOT NULL,\n    skill_id     TEXT NOT NULL,\n    correct      INTEGER NOT NULL,\n    latency_ms   INTEGER NOT NULL,\n    p_before     REAL NOT NULL,\n    p_after      REAL NOT NULL,",
+        "detail": "backend.migration_bkt",
+        "documentation": {}
+    },
+    {
+        "label": "CREATE_INTERACTION_LOGS",
+        "kind": 5,
+        "importPath": "backend.migration_bkt",
+        "description": "backend.migration_bkt",
+        "peekOfCode": "CREATE_INTERACTION_LOGS = \"\"\"\nCREATE TABLE IF NOT EXISTS interaction_logs (\n    id           TEXT PRIMARY KEY,\n    user_id      TEXT NOT NULL,\n    skill_id     TEXT NOT NULL,\n    correct      INTEGER NOT NULL,\n    latency_ms   INTEGER NOT NULL,\n    p_before     REAL NOT NULL,\n    p_after      REAL NOT NULL,\n    exercise_id  TEXT,",
+        "detail": "backend.migration_bkt",
+        "documentation": {}
+    },
+    {
+        "label": "CREATE_INDEXES",
+        "kind": 5,
+        "importPath": "backend.migration_bkt",
+        "description": "backend.migration_bkt",
+        "peekOfCode": "CREATE_INDEXES = [\n    \"CREATE INDEX IF NOT EXISTS idx_intlog_user ON interaction_logs(user_id);\",\n    \"CREATE INDEX IF NOT EXISTS idx_intlog_skill ON interaction_logs(skill_id);\",\n    \"CREATE INDEX IF NOT EXISTS idx_intlog_ts ON interaction_logs(timestamp);\",\n]\ndef apply():\n    if not DB_PATH.exists():\n        print(f\"[ERREUR] Base introuvable : {DB_PATH}\")\n        return\n    conn = sqlite3.connect(DB_PATH)",
+        "detail": "backend.migration_bkt",
+        "documentation": {}
+    },
+    {
+        "label": "apply",
+        "kind": 2,
+        "importPath": "backend.migration_cognitive_profile",
+        "description": "backend.migration_cognitive_profile",
+        "peekOfCode": "def apply():\n    if not DB_PATH.exists():\n        print(f\"[ERREUR] Base introuvable : {DB_PATH}\")\n        return\n    conn = sqlite3.connect(DB_PATH)\n    cursor = conn.cursor()\n    cursor.execute(\"PRAGMA table_info(users)\")\n    existing = {row[1] for row in cursor.fetchall()}\n    added = []\n    for col_name, col_type in COLUMNS:",
+        "detail": "backend.migration_cognitive_profile",
+        "documentation": {}
+    },
+    {
+        "label": "DB_PATH",
+        "kind": 5,
+        "importPath": "backend.migration_cognitive_profile",
+        "description": "backend.migration_cognitive_profile",
+        "peekOfCode": "DB_PATH = Path(__file__).parent / \"arabiq.db\"\nCOLUMNS = [\n    (\"cognitive_profile\", \"TEXT\"),\n    (\"placement_level\",   \"VARCHAR(50)\"),\n    (\"placement_module\",  \"INTEGER\"),\n    (\"placement_lesson\",  \"INTEGER\"),\n    (\"diagnostic_done\",   \"BOOLEAN DEFAULT 0\"),\n    (\"skill_vector\",      \"TEXT\"),\n]\ndef apply():",
+        "detail": "backend.migration_cognitive_profile",
+        "documentation": {}
+    },
+    {
+        "label": "COLUMNS",
+        "kind": 5,
+        "importPath": "backend.migration_cognitive_profile",
+        "description": "backend.migration_cognitive_profile",
+        "peekOfCode": "COLUMNS = [\n    (\"cognitive_profile\", \"TEXT\"),\n    (\"placement_level\",   \"VARCHAR(50)\"),\n    (\"placement_module\",  \"INTEGER\"),\n    (\"placement_lesson\",  \"INTEGER\"),\n    (\"diagnostic_done\",   \"BOOLEAN DEFAULT 0\"),\n    (\"skill_vector\",      \"TEXT\"),\n]\ndef apply():\n    if not DB_PATH.exists():",
+        "detail": "backend.migration_cognitive_profile",
+        "documentation": {}
+    },
+    {
+        "label": "PARTS",
+        "kind": 5,
+        "importPath": "backend.seed-part",
+        "description": "backend.seed-part",
+        "peekOfCode": "PARTS = [\n    {\n        \"id\":          1,\n        \"slug\":        \"alphabet-ecriture\",\n        \"title\":       \"Alphabet et écriture\",\n        \"description\": \"Maîtrisez les 28 lettres arabes, leurs formes, leurs sons et les règles d'écriture fondamentales.\",\n        \"theme\":       \"Alphabet\",\n        \"sort_order\":  1,\n    },\n    {",
+        "detail": "backend.seed-part",
+        "documentation": {}
+    },
+    {
+        "label": "MODULES_PART1",
+        "kind": 5,
+        "importPath": "backend.seed-part",
+        "description": "backend.seed-part",
+        "peekOfCode": "MODULES_PART1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]\nasync def seed(reset: bool = False):\n    async with AsyncSessionLocal() as db:\n        # ── Reset si demandé ────────────────────────────────\n        if reset:\n            await db.execute(text(\"UPDATE modules SET part_id = NULL\"))\n            await db.execute(text(\"DELETE FROM parts\"))\n            await db.commit()\n            print(\"[RESET] Parties supprimées.\")\n        # ── Créer les 5 parties ─────────────────────────────",
+        "detail": "backend.seed-part",
+        "documentation": {}
+    },
+    {
+        "label": "CONTENT_FILE",
+        "kind": 5,
+        "importPath": "backend.seed_module1",
+        "description": "backend.seed_module1",
+        "peekOfCode": "CONTENT_FILE = Path(__file__).parent / \"module1_content.json\"\nasync def seed(reset: bool = False):\n    if not CONTENT_FILE.exists():\n        print(f\"[ERREUR] Fichier introuvable : {CONTENT_FILE}\")\n        print(\"Placez module1_content.json dans le dossier backend/\")\n        return\n    with open(CONTENT_FILE, encoding=\"utf-8\") as f:\n        data = json.load(f)\n    mod_data     = data[\"module\"]\n    lessons_data = data[\"lessons\"]",
+        "detail": "backend.seed_module1",
+        "documentation": {}
+    },
+    {
+        "label": "CONTENT_FILE",
+        "kind": 5,
+        "importPath": "backend.seed_module10",
+        "description": "backend.seed_module10",
+        "peekOfCode": "CONTENT_FILE = Path(__file__).parent / \"module10_content.json\"\nasync def seed(reset: bool = False):\n    if not CONTENT_FILE.exists():\n        print(f\"[ERREUR] {CONTENT_FILE} introuvable.\")\n        return\n    with open(CONTENT_FILE, encoding=\"utf-8\") as f:\n        data = json.load(f)\n    mod_data     = data[\"module\"]\n    lessons_data = data[\"lessons\"]\n    async with AsyncSessionLocal() as db:",
+        "detail": "backend.seed_module10",
+        "documentation": {}
+    },
+    {
+        "label": "_Known",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    for i in range(len(value)):\n        yield i",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "_String",
+        "kind": 6,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    for i in range(len(value)):\n        yield i\ndef _object_keys(value):\n    for key in value:\n        yield key\ndef _is_array(value):",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "parse",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    },
+    {
+        "label": "stringify",
+        "kind": 2,
+        "importPath": "frontend.node_modules.flatted.python.flatted",
+        "description": "frontend.node_modules.flatted.python.flatted",
+        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
+        "detail": "frontend.node_modules.flatted.python.flatted",
+        "documentation": {}
+    }
+]

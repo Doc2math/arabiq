@@ -1,0 +1,173 @@
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
+import { useAuthStore } from '@/store/authStore'
+
+export default function LoginPage() {
+  const router = useRouter()
+  const { login, isLoading, error, clearError } = useAuthStore()
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [showPassword, setShowPassword] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    clearError()
+    try {
+      await login(email, password)
+      router.push('/dashboard')
+    } catch {
+      // error handled in store
+    }
+  }
+
+  return (
+    <div style={{
+      minHeight: '100vh',
+      background: '#F8F7FF',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '20px',
+      fontFamily: 'system-ui, sans-serif',
+    }}>
+      <div style={{ width: '100%', maxWidth: 420 }}>
+
+        {/* Logo */}
+        <div style={{ textAlign: 'center', marginBottom: 32 }}>
+          <div style={{
+            width: 72, height: 72, borderRadius: 20,
+            background: '#6C3FC5', margin: '0 auto 16px',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontSize: 36,
+          }}>
+            🌙
+          </div>
+          <h1 style={{ fontSize: 28, fontWeight: 700, color: '#1A1A2E', margin: 0 }}>
+            LangDad
+          </h1>
+          <p style={{ fontSize: 14, color: '#5A5A7A', marginTop: 6 }}>
+            Apprenez l&apos;arabe à votre rythme
+          </p>
+        </div>
+
+        {/* Card */}
+        <div style={{
+          background: '#FFFFFF',
+          borderRadius: 24,
+          padding: '32px 28px',
+          border: '2px solid #EDE8FB',
+          boxShadow: '0 8px 32px rgba(108, 63, 197, 0.08)',
+        }}>
+          <h2 style={{ fontSize: 20, fontWeight: 700, color: '#1A1A2E', marginBottom: 24, textAlign: 'center' }}>
+            Connexion
+          </h2>
+
+          {/* Error */}
+          {error && (
+            <div style={{
+              background: '#FCEBEB', border: '2px solid #E24B4A',
+              borderRadius: 12, padding: '12px 16px', marginBottom: 20,
+              fontSize: 14, color: '#A32D2D', display: 'flex', gap: 8, alignItems: 'center',
+            }}>
+              <span>✗</span> {error}
+            </div>
+          )}
+
+          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+
+            {/* Email */}
+            <div>
+              <label style={{ fontSize: 13, fontWeight: 600, color: '#5A5A7A', display: 'block', marginBottom: 6 }}>
+                Email
+              </label>
+              <input
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                required
+                placeholder="votre@email.com"
+                style={{
+                  width: '100%', padding: '12px 16px',
+                  borderRadius: 12, border: '2px solid #E8E4F8',
+                  fontSize: 15, color: '#1A1A2E', outline: 'none',
+                  background: '#FAFAFA', boxSizing: 'border-box',
+                  transition: 'border-color .2s',
+                }}
+                onFocus={e => e.target.style.borderColor = '#6C3FC5'}
+                onBlur={e => e.target.style.borderColor = '#E8E4F8'}
+              />
+            </div>
+
+            {/* Password */}
+            <div>
+              <label style={{ fontSize: 13, fontWeight: 600, color: '#5A5A7A', display: 'block', marginBottom: 6 }}>
+                Mot de passe
+              </label>
+              <div style={{ position: 'relative' }}>
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  value={password}
+                  onChange={e => setPassword(e.target.value)}
+                  required
+                  placeholder="••••••••"
+                  style={{
+                    width: '100%', padding: '12px 48px 12px 16px',
+                    borderRadius: 12, border: '2px solid #E8E4F8',
+                    fontSize: 15, color: '#1A1A2E', outline: 'none',
+                    background: '#FAFAFA', boxSizing: 'border-box',
+                    transition: 'border-color .2s',
+                  }}
+                  onFocus={e => e.target.style.borderColor = '#6C3FC5'}
+                  onBlur={e => e.target.style.borderColor = '#E8E4F8'}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  style={{
+                    position: 'absolute', right: 14, top: '50%', transform: 'translateY(-50%)',
+                    background: 'none', border: 'none', cursor: 'pointer',
+                    fontSize: 16, color: '#9A9AB0',
+                  }}
+                >
+                  {showPassword ? '🙈' : '👁'}
+                </button>
+              </div>
+            </div>
+
+            {/* Submit */}
+            <button
+              type="submit"
+              disabled={isLoading}
+              style={{
+                width: '100%', padding: '14px',
+                borderRadius: 14, border: 'none',
+                background: isLoading ? '#B8A0E8' : '#6C3FC5',
+                color: '#FFFFFF', fontSize: 16, fontWeight: 700,
+                cursor: isLoading ? 'default' : 'pointer',
+                transition: 'all .2s', marginTop: 4,
+                letterSpacing: '.02em',
+              }}
+              onMouseEnter={e => { if (!isLoading) (e.currentTarget as HTMLElement).style.background = '#4A2A8A' }}
+              onMouseLeave={e => { if (!isLoading) (e.currentTarget as HTMLElement).style.background = '#6C3FC5' }}
+            >
+              {isLoading ? 'Connexion…' : 'Se connecter'}
+            </button>
+
+          </form>
+        </div>
+
+        {/* Register link */}
+        <p style={{ textAlign: 'center', marginTop: 20, fontSize: 14, color: '#5A5A7A' }}>
+          Pas encore de compte ?{' '}
+          <Link href="/register" style={{ color: '#6C3FC5', fontWeight: 700, textDecoration: 'none' }}>
+            S&apos;inscrire
+          </Link>
+        </p>
+
+      </div>
+    </div>
+  )
+}
