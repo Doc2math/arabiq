@@ -6,7 +6,6 @@ from sqlalchemy.types import JSON
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.session import Base
 
-
 def utcnow() -> datetime:
     return datetime.now(timezone.utc)
 
@@ -28,6 +27,8 @@ class User(Base):
     is_admin: Mapped[bool] = mapped_column(Boolean, default=False)
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
     is_verified: Mapped[bool] = mapped_column(Boolean, default=False)
+    role: Mapped[str] = mapped_column(String(20), default="student")
+    permissions: Mapped[list] = mapped_column(JSON, default=list) 
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, onupdate=utcnow)
     progress: Mapped[list["LessonProgress"]] = relationship(back_populates="user", lazy="select")
@@ -111,3 +112,83 @@ class UserBadge(Base):
     earned_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
     user: Mapped["User"] = relationship(back_populates="badges")
     badge: Mapped["Badge"] = relationship(back_populates="user_badges")
+    
+"""
+Modèles Admin — à ajouter dans app/models/models.py
+Ajoutez ces classes APRÈS les modèles existants
+Et ajoutez les champs supplémentaires dans User
+"""
+
+# ── Champs à ajouter dans la classe User existante ────────────
+# (après is_verified)
+#
+#   role: Mapped[str] = mapped_column(String(20), default="student")
+#   # "student" | "admin" | "superadmin"
+#   permissions: Mapped[list] = mapped_column(JSON, default=list)
+#   # Ex: ["content:create", "users:view", "blog:publish"]
+#
+# ── Fin des champs User ───────────────────────────────────────
+
+
+
+
+class AdminRole(Base):
+    """Rôles admin avec permissions granulaires."""
+    __tablename__ = "admin_roles"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    name: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
+    # Ex: "content_manager", "moderator", "translator"
+    description: Mapped[str] = mapped_column(Text, default="")
+    permissions: Mapped[list] = mapped_column(JSON, default=list)
+    # Ex: ["content:create", "content:edit", "blog:publish"]
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    created_by: Mapped[uuid.UUID | None] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("users.id", ondelete="SET NULL"), nullable=True
+    )
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, onupdate=utcnow)
+
+
+class AdminSession(Base):
+    """Sessions de connexion des admins — pour le rapport d'activité."""
+    __tablename__ = "admin_sessions"
+
+    id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    admin_id: Mapped[uuid.UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    login_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+    logout_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    duration_seconds: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    ip_address: Mapped[str | None] = mapped_column(String(45), nullable=True)
+    user_agent: Mapped[str | None] = mapped_column(String(512), nullable=True)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+
+    admin: Mapped["User"] = relationship("User", foreign_keys=[admin_id])  # type: ignore
+
+
+class AdminAuditLog(Base):
+    """Journal d'audit de toutes les actions admin."""
+    __tablename__ = "admin_audit_log"
+
+    id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    admin_id: Mapped[uuid.UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True
+    )
+    # Action effectuée — ex: "user.block", "content.lesson.create", "translation.trigger"
+    action: Mapped[str] = mapped_column(String(100), nullable=False, index=True)
+    # Type de ressource — ex: "user", "lesson", "module", "payment", "settings"
+    resource_type: Mapped[str | None] = mapped_column(String(50), nullable=True, index=True)
+    # ID de la ressource concernée
+    resource_id: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    # Détails JSON — avant/après, paramètres, résultat
+    details: Mapped[dict] = mapped_column(JSON, default=dict)
+    # Métadonnées réseau
+    ip_address: Mapped[str | None] = mapped_column(String(45), nullable=True)
+    user_agent: Mapped[str | None] = mapped_column(String(512), nullable=True)
+    # Résultat — "success" | "error" | "forbidden"
+    status: Mapped[str] = mapped_column(String(20), default="success")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow, index=True)
+
+    admin: Mapped["User"] = relationship("User", foreign_keys=[admin_id])  # type: ignore

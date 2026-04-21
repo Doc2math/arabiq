@@ -565,7 +565,7 @@ export default function LessonPage() {
   const passed       = finalScore >= passingScore
 
   if (finished) return (
-    <div style={{ maxWidth: 520, margin: '0 auto', padding: '32px 20px' }}>
+    <div style={{ maxWidth: 920, margin: '0 auto', padding: '32px 20px' }}>
       <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
       <div style={{ textAlign: 'center', marginBottom: 28 }}>
         <div style={{ fontSize: 56, marginBottom: 12 }}>{passed ? '🎉' : '💪'}</div>

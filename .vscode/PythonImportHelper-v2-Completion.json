@@ -72,6 +72,62 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BackgroundTasks",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -216,6 +272,54 @@
         "documentation": {}
     },
     {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "HTTPException",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -225,6 +329,38 @@
     },
     {
         "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -277,6 +413,22 @@
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
         "documentation": {}
     },
     {
@@ -417,6 +569,38 @@
     },
     {
         "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "select",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -648,6 +832,22 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -673,6 +873,22 @@
     },
     {
         "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSessionLocal",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
         "importPath": "app.db.session",
         "description": "app.db.session",
         "isExtraImport": true,
@@ -784,6 +1000,14 @@
         "documentation": {}
     },
     {
+        "label": "get_current_user",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "importPath": "app.models.models",
         "description": "app.models.models",
@@ -929,6 +1153,54 @@
     },
     {
         "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "AdminAuditLog",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "AdminSession",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "AdminAuditLog",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "AdminSession",
         "importPath": "app.models.models",
         "description": "app.models.models",
         "isExtraImport": true,
@@ -976,6 +1248,22 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
         "label": "Module",
         "importPath": "app.models.models",
         "description": "app.models.models",
@@ -1048,6 +1336,14 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
         "label": "Field",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -1073,6 +1369,22 @@
     },
     {
         "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -1153,6 +1465,22 @@
     },
     {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -1435,6 +1763,46 @@
         "documentation": {}
     },
     {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "importPath": "datetime",
         "description": "datetime",
@@ -1496,6 +1864,14 @@
         "description": "datetime",
         "isExtraImport": true,
         "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "selectinload",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
         "documentation": {}
     },
     {
@@ -1612,7 +1988,23 @@
         "documentation": {}
     },
     {
+        "label": "hash_password",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
         "label": "decode_token",
+        "importPath": "app.core.security",
+        "description": "app.core.security",
+        "isExtraImport": true,
+        "detail": "app.core.security",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
         "importPath": "app.core.security",
         "description": "app.core.security",
         "isExtraImport": true,
@@ -1742,6 +2134,62 @@
         "documentation": {}
     },
     {
+        "label": "require_superadmin",
+        "importPath": "app.api.admin_audit",
+        "description": "app.api.admin_audit",
+        "isExtraImport": true,
+        "detail": "app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "require_any_admin",
+        "importPath": "app.api.admin_audit",
+        "description": "app.api.admin_audit",
+        "isExtraImport": true,
+        "detail": "app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "audit_log",
+        "importPath": "app.api.admin_audit",
+        "description": "app.api.admin_audit",
+        "isExtraImport": true,
+        "detail": "app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "create_admin_session",
+        "importPath": "app.api.admin_audit",
+        "description": "app.api.admin_audit",
+        "isExtraImport": true,
+        "detail": "app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "close_admin_session",
+        "importPath": "app.api.admin_audit",
+        "description": "app.api.admin_audit",
+        "isExtraImport": true,
+        "detail": "app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "ROLE_PERMISSIONS",
+        "importPath": "app.api.admin_audit",
+        "description": "app.api.admin_audit",
+        "isExtraImport": true,
+        "detail": "app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "ALL_PERMISSIONS",
+        "importPath": "app.api.admin_audit",
+        "description": "app.api.admin_audit",
+        "isExtraImport": true,
+        "detail": "app.api.admin_audit",
+        "documentation": {}
+    },
+    {
         "label": "Response",
         "importPath": "fastapi.responses",
         "description": "fastapi.responses",
@@ -1811,6 +2259,14 @@
         "description": "app.api.v1.endpoints.admin",
         "isExtraImport": true,
         "detail": "app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "importPath": "app.api.v1.endpoints.superadmin",
+        "description": "app.api.v1.endpoints.superadmin",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints.superadmin",
         "documentation": {}
     },
     {
@@ -2073,6 +2529,15 @@
         "documentation": {}
     },
     {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
         "label": "TTFont",
         "importPath": "fontTools.ttLib",
         "description": "fontTools.ttLib",
@@ -2103,15 +2568,6 @@
         "importPath": "numpy",
         "description": "numpy",
         "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "asyncio",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "asyncio",
-        "description": "asyncio",
-        "detail": "asyncio",
         "documentation": {}
     },
     {
@@ -2156,6 +2612,15 @@
         "importPath": "backend.app.api.v1.endpoints.admin",
         "description": "backend.app.api.v1.endpoints.admin",
         "peekOfCode": "class TranslateResponse(BaseModel):\n    message: str\n    languages_updated: list[str]\n    duration_seconds: float\n@router.post(\"/translate\", response_model=TranslateResponse)\nasync def trigger_translation(\n    force: bool = Query(default=False),\n    _: User = Depends(require_admin),\n):\n    \"\"\"",
+        "detail": "backend.app.api.v1.endpoints.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserUpdateRequest",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.admin",
+        "description": "backend.app.api.v1.endpoints.admin",
+        "peekOfCode": "class UserUpdateRequest(PydanticBase):\n    is_active: Optional[bool] = None\n    is_premium: Optional[bool] = None\n    is_admin: Optional[bool] = None\n@router.patch(\"/users/{user_id}\")\nasync def update_user(\n    user_id: str,\n    payload: UserUpdateRequest,\n    request: Request,\n    db: AsyncSession = Depends(get_db),",
         "detail": "backend.app.api.v1.endpoints.admin",
         "documentation": {}
     },
@@ -2430,6 +2895,60 @@
         "documentation": {}
     },
     {
+        "label": "CreateAdminRequest",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.superadmin",
+        "description": "backend.app.api.v1.endpoints.superadmin",
+        "peekOfCode": "class CreateAdminRequest(BaseModel):\n    email: EmailStr\n    username: str\n    password: str\n    role: str = \"admin\"          # \"admin\" | \"superadmin\"\n    permissions: list[str] = []\n    role_template: Optional[str] = None  # utilise ROLE_PERMISSIONS si défini\nclass UpdateAdminRequest(BaseModel):\n    permissions: Optional[list[str]] = None\n    role: Optional[str] = None",
+        "detail": "backend.app.api.v1.endpoints.superadmin",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateAdminRequest",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.superadmin",
+        "description": "backend.app.api.v1.endpoints.superadmin",
+        "peekOfCode": "class UpdateAdminRequest(BaseModel):\n    permissions: Optional[list[str]] = None\n    role: Optional[str] = None\n    is_active: Optional[bool] = None\nclass AdminSummary(BaseModel):\n    id: str\n    username: str\n    email: str\n    role: str\n    permissions: list[str]",
+        "detail": "backend.app.api.v1.endpoints.superadmin",
+        "documentation": {}
+    },
+    {
+        "label": "AdminSummary",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.superadmin",
+        "description": "backend.app.api.v1.endpoints.superadmin",
+        "peekOfCode": "class AdminSummary(BaseModel):\n    id: str\n    username: str\n    email: str\n    role: str\n    permissions: list[str]\n    is_active: bool\n    created_at: str\n    last_login: Optional[str] = None\n    total_sessions: int = 0",
+        "detail": "backend.app.api.v1.endpoints.superadmin",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLogEntry",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.superadmin",
+        "description": "backend.app.api.v1.endpoints.superadmin",
+        "peekOfCode": "class AuditLogEntry(BaseModel):\n    id: str\n    admin_id: str\n    admin_username: str\n    action: str\n    resource_type: Optional[str]\n    resource_id: Optional[str]\n    details: dict\n    status: str\n    ip_address: Optional[str]",
+        "detail": "backend.app.api.v1.endpoints.superadmin",
+        "documentation": {}
+    },
+    {
+        "label": "AdminActivityReport",
+        "kind": 6,
+        "importPath": "backend.app.api.v1.endpoints.superadmin",
+        "description": "backend.app.api.v1.endpoints.superadmin",
+        "peekOfCode": "class AdminActivityReport(BaseModel):\n    admin_id: str\n    admin_username: str\n    period_start: str\n    period_end: str\n    total_sessions: int\n    total_time_seconds: int\n    total_actions: int\n    actions_by_type: dict[str, int]\n    sessions: list[dict]",
+        "detail": "backend.app.api.v1.endpoints.superadmin",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.superadmin",
+        "description": "backend.app.api.v1.endpoints.superadmin",
+        "peekOfCode": "router = APIRouter(prefix=\"/superadmin\", tags=[\"superadmin\"])\n# ── Schémas ────────────────────────────────────────────────────\nclass CreateAdminRequest(BaseModel):\n    email: EmailStr\n    username: str\n    password: str\n    role: str = \"admin\"          # \"admin\" | \"superadmin\"\n    permissions: list[str] = []\n    role_template: Optional[str] = None  # utilise ROLE_PERMISSIONS si défini\nclass UpdateAdminRequest(BaseModel):",
+        "detail": "backend.app.api.v1.endpoints.superadmin",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "kind": 5,
         "importPath": "backend.app.api.v1.endpoints.writing_sheets",
@@ -2443,8 +2962,62 @@
         "kind": 5,
         "importPath": "backend.app.api.v1.router",
         "description": "backend.app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api/v1\")\napi_router.include_router(auth_router)\napi_router.include_router(curriculum_router)\napi_router.include_router(writing_sheets_router)\napi_router.include_router(bkt_router)\napi_router.include_router(admin_router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api/v1\")\napi_router.include_router(auth_router)\napi_router.include_router(curriculum_router)\napi_router.include_router(writing_sheets_router)\napi_router.include_router(bkt_router)\napi_router.include_router(admin_router)\napi_router.include_router(superadmin_router)",
         "detail": "backend.app.api.v1.router",
+        "documentation": {}
+    },
+    {
+        "label": "check_permission",
+        "kind": 2,
+        "importPath": "backend.app.api.admin_audit",
+        "description": "backend.app.api.admin_audit",
+        "peekOfCode": "def check_permission(user: User, permission: str) -> bool:\n    \"\"\"Vérifie si un utilisateur a une permission donnée.\"\"\"\n    if getattr(user, 'role', None) == 'superadmin':\n        return True  # Super admin a tout\n    if not getattr(user, 'is_admin', False):\n        return False\n    user_perms = getattr(user, 'permissions', []) or []\n    return permission in user_perms\ndef require_permission(permission: str):\n    \"\"\"Dépendance FastAPI pour vérifier une permission.\"\"\"",
+        "detail": "backend.app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "require_permission",
+        "kind": 2,
+        "importPath": "backend.app.api.admin_audit",
+        "description": "backend.app.api.admin_audit",
+        "peekOfCode": "def require_permission(permission: str):\n    \"\"\"Dépendance FastAPI pour vérifier une permission.\"\"\"\n    async def checker(current_user: User = Depends(get_current_user)) -> User:\n        if not check_permission(current_user, permission):\n            raise HTTPException(\n                status.HTTP_403_FORBIDDEN,\n                detail=f\"Permission requise : {permission}\"\n            )\n        return current_user\n    return checker",
+        "detail": "backend.app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "require_superadmin",
+        "kind": 2,
+        "importPath": "backend.app.api.admin_audit",
+        "description": "backend.app.api.admin_audit",
+        "peekOfCode": "def require_superadmin(current_user: User = Depends(get_current_user)) -> User:\n    \"\"\"Dépendance : super admin uniquement.\"\"\"\n    if getattr(current_user, 'role', None) != 'superadmin':\n        raise HTTPException(status.HTTP_403_FORBIDDEN, detail=\"Accès super admin requis\")\n    return current_user\ndef require_any_admin(current_user: User = Depends(get_current_user)) -> User:\n    \"\"\"Dépendance : admin ou super admin.\"\"\"\n    if not getattr(current_user, 'is_admin', False):\n        raise HTTPException(status.HTTP_403_FORBIDDEN, detail=\"Accès admin requis\")\n    return current_user",
+        "detail": "backend.app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "require_any_admin",
+        "kind": 2,
+        "importPath": "backend.app.api.admin_audit",
+        "description": "backend.app.api.admin_audit",
+        "peekOfCode": "def require_any_admin(current_user: User = Depends(get_current_user)) -> User:\n    \"\"\"Dépendance : admin ou super admin.\"\"\"\n    if not getattr(current_user, 'is_admin', False):\n        raise HTTPException(status.HTTP_403_FORBIDDEN, detail=\"Accès admin requis\")\n    return current_user\n# ── Logging d'audit ───────────────────────────────────────────\nasync def audit_log(\n    db: AsyncSession,\n    admin: User,\n    action: str,",
+        "detail": "backend.app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "ALL_PERMISSIONS",
+        "kind": 5,
+        "importPath": "backend.app.api.admin_audit",
+        "description": "backend.app.api.admin_audit",
+        "peekOfCode": "ALL_PERMISSIONS = [\n    # Utilisateurs\n    \"users:view\", \"users:edit\", \"users:block\", \"users:delete\", \"users:grant_admin\",\n    # Contenu\n    \"content:view\", \"content:create\", \"content:edit\", \"content:delete\", \"content:publish\",\n    # Blog\n    \"blog:view\", \"blog:create\", \"blog:edit\", \"blog:publish\", \"blog:delete\",\n    # Paiements\n    \"payments:view\", \"payments:refund\", \"payments:manage\",\n    # Traductions",
+        "detail": "backend.app.api.admin_audit",
+        "documentation": {}
+    },
+    {
+        "label": "ROLE_PERMISSIONS",
+        "kind": 5,
+        "importPath": "backend.app.api.admin_audit",
+        "description": "backend.app.api.admin_audit",
+        "peekOfCode": "ROLE_PERMISSIONS = {\n    \"content_manager\": [\n        \"content:view\", \"content:create\", \"content:edit\",\n        \"blog:view\", \"blog:create\", \"blog:edit\", \"blog:publish\",\n    ],\n    \"moderator\": [\n        \"users:view\", \"users:block\",\n        \"content:view\", \"reports:view\",\n    ],\n    \"translator\": [",
+        "detail": "backend.app.api.admin_audit",
         "documentation": {}
     },
     {
@@ -2740,7 +3313,34 @@
         "kind": 6,
         "importPath": "backend.app.models.models",
         "description": "backend.app.models.models",
-        "peekOfCode": "class UserBadge(Base):\n    __tablename__ = \"user_badges\"\n    user_id: Mapped[uuid.UUID] = mapped_column(\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\"), primary_key=True\n    )\n    badge_id: Mapped[str] = mapped_column(ForeignKey(\"badges.id\"), primary_key=True)\n    earned_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)\n    user: Mapped[\"User\"] = relationship(back_populates=\"badges\")\n    badge: Mapped[\"Badge\"] = relationship(back_populates=\"user_badges\")",
+        "peekOfCode": "class UserBadge(Base):\n    __tablename__ = \"user_badges\"\n    user_id: Mapped[uuid.UUID] = mapped_column(\n        ForeignKey(\"users.id\", ondelete=\"CASCADE\"), primary_key=True\n    )\n    badge_id: Mapped[str] = mapped_column(ForeignKey(\"badges.id\"), primary_key=True)\n    earned_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)\n    user: Mapped[\"User\"] = relationship(back_populates=\"badges\")\n    badge: Mapped[\"Badge\"] = relationship(back_populates=\"user_badges\")\n\"\"\"",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "AdminRole",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class AdminRole(Base):\n    \"\"\"Rôles admin avec permissions granulaires.\"\"\"\n    __tablename__ = \"admin_roles\"\n    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)\n    name: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)\n    # Ex: \"content_manager\", \"moderator\", \"translator\"\n    description: Mapped[str] = mapped_column(Text, default=\"\")\n    permissions: Mapped[list] = mapped_column(JSON, default=list)\n    # Ex: [\"content:create\", \"content:edit\", \"blog:publish\"]\n    is_active: Mapped[bool] = mapped_column(Boolean, default=True)",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "AdminSession",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class AdminSession(Base):\n    \"\"\"Sessions de connexion des admins — pour le rapport d'activité.\"\"\"\n    __tablename__ = \"admin_sessions\"\n    id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    admin_id: Mapped[uuid.UUID] = mapped_column(\n        Uuid(as_uuid=True), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False, index=True\n    )\n    login_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)\n    logout_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)\n    duration_seconds: Mapped[int | None] = mapped_column(Integer, nullable=True)",
+        "detail": "backend.app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "AdminAuditLog",
+        "kind": 6,
+        "importPath": "backend.app.models.models",
+        "description": "backend.app.models.models",
+        "peekOfCode": "class AdminAuditLog(Base):\n    \"\"\"Journal d'audit de toutes les actions admin.\"\"\"\n    __tablename__ = \"admin_audit_log\"\n    id: Mapped[uuid.UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    admin_id: Mapped[uuid.UUID] = mapped_column(\n        Uuid(as_uuid=True), ForeignKey(\"users.id\", ondelete=\"CASCADE\"), nullable=False, index=True\n    )\n    # Action effectuée — ex: \"user.block\", \"content.lesson.create\", \"translation.trigger\"\n    action: Mapped[str] = mapped_column(String(100), nullable=False, index=True)\n    # Type de ressource — ex: \"user\", \"lesson\", \"module\", \"payment\", \"settings\"",
         "detail": "backend.app.models.models",
         "documentation": {}
     },

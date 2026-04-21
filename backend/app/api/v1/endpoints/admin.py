@@ -14,6 +14,7 @@ import sys
 import os
 from pathlib import Path
 from datetime import datetime, timezone
+from fastapi import APIRouter, Depends, HTTPException, status, BackgroundTasks, Query, Request
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
@@ -162,3 +163,51 @@ async def trigger_translation(
         languages_updated=updated,
         duration_seconds=duration,
     )
+
+
+# ── Modifier un utilisateur ────────────────────────────────────
+from pydantic import BaseModel as PydanticBase
+
+class UserUpdateRequest(PydanticBase):
+    is_active: Optional[bool] = None
+    is_premium: Optional[bool] = None
+    is_admin: Optional[bool] = None
+
+
+@router.patch("/users/{user_id}")
+async def update_user(
+    user_id: str,
+    payload: UserUpdateRequest,
+    request: Request,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(require_admin),
+):
+    from sqlalchemy import select as sa_select
+    import uuid as uuid_lib
+    result = await db.execute(sa_select(User).where(User.id == uuid_lib.UUID(user_id)))
+    target = result.scalar_one_or_none()
+    if not target:
+        raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Utilisateur introuvable")
+
+    changes = {}
+    if payload.is_active is not None:
+        target.is_active = payload.is_active
+        changes["is_active"] = payload.is_active
+    if payload.is_premium is not None:
+        target.is_premium = payload.is_premium
+        changes["is_premium"] = payload.is_premium
+    if payload.is_admin is not None:
+        target.is_admin = payload.is_admin
+        changes["is_admin"] = payload.is_admin
+
+    await db.commit()
+
+    # Logger l'action
+    action = "user.block" if payload.is_active is False else "user.update"
+    try:
+        from app.api.admin_audit import audit_log as do_audit
+        await do_audit(db, current_user, action, "user", user_id, changes, request)
+    except Exception:
+        pass
+
+    return {"success": True, "changes": changes}
