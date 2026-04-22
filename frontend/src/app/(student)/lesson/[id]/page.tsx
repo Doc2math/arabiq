@@ -602,7 +602,7 @@ export default function LessonPage() {
   )
 
   return (
-    <div style={{ maxWidth: 560, margin: '0 auto', padding: '20px 20px 40px' }}>
+    <div style={{ maxWidth: 960, margin: '0 auto', padding: '20px 20px 40px' }}>
       <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24, gap: 8 }}>
         <button onClick={() => router.push(`/module/${moduleId}`)}

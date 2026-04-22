@@ -37,8 +37,8 @@ ELEVENLABS_VOICE_MALE   = os.getenv("ELEVENLABS_VOICE_MALE", "pNInz6obpgDQGcFmaJ
 ELEVENLABS_VOICE_FEMALE = os.getenv("ELEVENLABS_VOICE_FEMALE", "EXAVITQu4vr4xnSDxMaL")
 
 OPENAI_API_KEY      = os.getenv("OPENAI_API_KEY", "")
-OPENAI_VOICE_MALE   = "onyx"
-OPENAI_VOICE_FEMALE = "nova"
+OPENAI_VOICE_MALE   = "shimmer"
+# OPENAI_VOICE_FEMALE = "echo"
 
 # ── Catalogue audio Module 1 ───────────────────────────────────
 AUDIO_FILES = {

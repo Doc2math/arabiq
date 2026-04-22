@@ -24,9 +24,6 @@ _FONT_PATHS = [
 
 
 
-
-
-
 _fonts_registered = False
 
 def _register_fonts():
@@ -146,7 +143,7 @@ def _make_sheet_buffer(ld: dict) -> bytes:
     c.rect(0, H - HEADER_H, W, HEADER_H, fill=1, stroke=0)
     c.setFillColor(HexColor('#FFFFFF'))
     c.setFont('Helvetica-Bold', 16)
-    c.drawString(MARGIN, H - HEADER_H/2 + 6, 'LangDad')
+    c.drawString(MARGIN, H - HEADER_H/2 + 6, 'LangNadir')
     c.setFont('Helvetica', 9)
     c.drawString(MARGIN, H - HEADER_H/2 - 8, "Fiche d'ecriture — Module 1")
     c.setFont('Helvetica-Bold', 22)
