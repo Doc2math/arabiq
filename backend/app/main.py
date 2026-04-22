@@ -9,13 +9,12 @@ from app.db.session import engine
 from app.models.models import Base
 
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+    # Ne pas créer les tables au démarrage — utilisez migrate.py séparément
     yield
     await engine.dispose()
-
 
 def create_app() -> FastAPI:
     app = FastAPI(

@@ -10,39 +10,45 @@ const C = {
   violet:'#6C3FC5', violetLt:'#EDE8FB',
   orange:'#F07C1E', orangeLt:'#FEF0E3',
   green:'#2BA84A', greenLt:'#E3F7E8',
-  bg:'#F8F7FF', white:'#fff',
-  red:'#E24B4A',
+  bg:'#F8F7FF', white:'#fff', red:'#E24B4A',
   text:'#1A1A2E', text2:'#5A5A7A', text3:'#9A9AB0',
   border:'#E8E4F8',
   sidebar:'#1A1A2E', sidebarActive:'#6C3FC5',
 }
 
 const SIDEBAR_LINKS = [
-  { icon: '📊', label: 'Dashboard',     href: '/admin' },
-  { icon: '👥', label: 'Utilisateurs',  href: '/admin/users' },
-  { icon: '📚', label: 'Curriculum',    href: '/admin/curriculum' },
-  { icon: '📝', label: 'Blog',          href: '/admin/blog' },
-  { icon: '📈', label: 'Statistiques',  href: '/admin/stats' },
-  { icon: '💳', label: 'Paiements',     href: '/admin/payments' },
-  { icon: '🌍', label: 'Traductions',   href: '/admin/translations' },
-  { icon: '⚙️', label: 'Paramètres',   href: '/admin/settings' },
+  { icon: '📊', label: 'Dashboard',    href: '/admin' },
+  { icon: '👥', label: 'Utilisateurs', href: '/admin/users' },
+  { icon: '📚', label: 'Curriculum',   href: '/admin/curriculum' },
+  { icon: '📝', label: 'Blog',         href: '/admin/blog' },
+  { icon: '📈', label: 'Statistiques', href: '/admin/stats' },
+  { icon: '💳', label: 'Paiements',    href: '/admin/payments' },
+  { icon: '🌍', label: 'Traductions',  href: '/admin/translations' },
+  { icon: '⚙️', label: 'Paramètres',  href: '/admin/settings' },
 ]
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const router   = useRouter()
   const pathname = usePathname()
-  const { user, logout } = useAuthStore()
+  const { user, logout, fetchMe } = useAuthStore()
+  const [hydrated, setHydrated]   = useState(false)
   const [translating, setTranslating] = useState(false)
   const [translateMsg, setTranslateMsg] = useState<{ text: string; ok: boolean } | null>(null)
 
+  // Étape 1 — attendre la rehydratation de Zustand
+  useEffect(() => { setHydrated(true) }, [])
+
+  // Étape 2 — vérifier l'auth après rehydratation
   useEffect(() => {
-    if (!user) { router.push('/login'); return }
-    if (!user.is_admin) { router.push('/dashboard'); return }
-  }, [user])
-
-  if (!user || !user.is_admin) return null
-
-  const isSuperAdmin = (user as any).role === 'superadmin'
+    if (!hydrated) return
+    const token = localStorage.getItem('access_token')
+    if (!token) { router.push('/'); return }
+    if (!user && token) {
+      fetchMe().catch(() => router.push('/'))
+    } else if (user && !user.is_admin) {
+      router.push('/dashboard')
+    }
+  }, [hydrated, user])
 
   const handleTranslate = async (force = false) => {
     setTranslating(true)
@@ -56,6 +62,17 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       setTranslating(false)
     }
   }
+
+  // Écran de chargement pendant rehydratation
+  if (!hydrated) return (
+    <div style={{ minHeight: '100vh', background: C.sidebar, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ width: 36, height: 36, borderRadius: 10, background: C.violet, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>🌙</div>
+    </div>
+  )
+
+  if (!user || !user.is_admin) return null
+
+  const isSuperAdmin = (user as any).role === 'superadmin'
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh', fontFamily: 'system-ui, sans-serif' }}>
@@ -74,7 +91,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <span style={{ fontSize: 9, background: '#E91E63', color: '#fff', padding: '2px 6px', borderRadius: 6, fontWeight: 700, marginLeft: 'auto' }}>ADMIN</span>
         </div>
 
-        {/* Nav principal */}
+        {/* Nav */}
         <nav style={{ display: 'flex', flexDirection: 'column', gap: 2, flex: 1 }}>
           {SIDEBAR_LINKS.map(link => {
             const active = pathname === link.href || (link.href !== '/admin' && pathname.startsWith(link.href))
@@ -96,23 +113,21 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             )
           })}
 
-          {/* Séparateur Super Admin */}
+          {/* Lien Super Admin — visible uniquement pour le superadmin */}
           {isSuperAdmin && (
             <>
               <div style={{ borderTop: '1px solid #ffffff20', margin: '8px 0' }} />
-              <Link href="/admin/superadmin"
+              <Link href="/superadmin"
                 style={{
                   display: 'flex', alignItems: 'center', gap: 10,
                   padding: '10px 12px', borderRadius: 10,
                   textDecoration: 'none', transition: 'background .15s',
-                  background: pathname.startsWith('/admin/superadmin') ? '#E91E6340' : 'transparent',
+                  background: 'transparent',
                 }}
-                onMouseEnter={e => { if (!pathname.startsWith('/admin/superadmin')) (e.currentTarget as HTMLElement).style.background = '#ffffff15' }}
-                onMouseLeave={e => { if (!pathname.startsWith('/admin/superadmin')) (e.currentTarget as HTMLElement).style.background = 'transparent' }}>
+                onMouseEnter={e => (e.currentTarget as HTMLElement).style.background = '#ffffff15'}
+                onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = 'transparent'}>
                 <span style={{ fontSize: 15 }}>🛡️</span>
-                <span style={{ fontSize: 13, fontWeight: pathname.startsWith('/admin/superadmin') ? 700 : 500, color: pathname.startsWith('/admin/superadmin') ? '#E91E63' : '#9A9AB0' }}>
-                  Super Admin
-                </span>
+                <span style={{ fontSize: 13, fontWeight: 500, color: '#E91E63' }}>Super Admin</span>
               </Link>
             </>
           )}
@@ -120,7 +135,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
         {/* Logout */}
         <div style={{ borderTop: '1px solid #ffffff20', paddingTop: 12, marginTop: 12 }}>
-          <button onClick={() => { logout(); router.push('/login') }}
+          <button onClick={() => { logout(); router.push('/') }}
             style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 12px', borderRadius: 10, background: 'none', border: 'none', cursor: 'pointer', width: '100%' }}
             onMouseEnter={e => (e.currentTarget as HTMLElement).style.background = '#ffffff15'}
             onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = 'none'}>
@@ -141,8 +156,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           position: 'sticky', top: 0, zIndex: 50,
         }}>
           <span style={{ fontSize: 15, fontWeight: 700, color: C.text, flex: 1 }}>
-            {SIDEBAR_LINKS.find(l => pathname === l.href || pathname.startsWith(l.href + '/'))?.label
-              || (pathname.startsWith('/admin/superadmin') ? 'Super Admin' : 'Admin')}
+            {SIDEBAR_LINKS.find(l => pathname === l.href || pathname.startsWith(l.href + '/'))?.label || 'Admin'}
           </span>
 
           {/* Boutons traduction */}

@@ -1,7 +1,9 @@
 from datetime import datetime
 from typing import Literal
+from pydantic import  ConfigDict
 from uuid import UUID
 from pydantic import BaseModel, EmailStr, Field, field_validator
+import uuid
 
 
 class UserCreate(BaseModel):
@@ -22,20 +24,21 @@ class UserLogin(BaseModel):
     email: EmailStr
     password: str
 
-
 class UserRead(BaseModel):
-    id: UUID
+    model_config = ConfigDict(from_attributes=True)
+    id: uuid.UUID
     email: str
     username: str
     native_language: str
-    avatar_url: str | None = None
+    avatar_url: str | None
     xp: int
     level: int
     streak: int
     is_premium: bool
-    is_admin: bool = False
+    is_admin: bool
+    role: str = "student"           # ← ajouter
+    permissions: list = []          # ← ajouter
     created_at: datetime
-    model_config = {"from_attributes": True}
 
 
 class TokenPair(BaseModel):

@@ -86,12 +86,40 @@ export const useAuthStore = create<AuthState>()(
         set({ user: null, access_token: null, refresh_token: null })
       },
 
+   
+
       fetchMe: async () => {
+        // Récupère le token depuis localStorage (fiable après refresh)
+        const token = localStorage.getItem('access_token')
+        if (!token) {
+          set({ user: null })
+          throw new Error('No token')
+        }
         try {
           const { data } = await authApi.me()
-          set({ user: data })
+          set({ user: data, access_token: token })
         } catch {
-          get().logout()
+          // Token expiré → essayer le refresh
+          const refreshToken = localStorage.getItem('refresh_token')
+          if (refreshToken) {
+            try {
+              const { default: axios } = await import('axios')
+              const res = await axios.post(
+                `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/v1/auth/refresh`,
+                { refresh_token: refreshToken }
+              )
+              localStorage.setItem('access_token', res.data.access_token)
+              localStorage.setItem('refresh_token', res.data.refresh_token)
+              const { data } = await authApi.me()
+              set({ user: data, access_token: res.data.access_token })
+              return
+            } catch {}
+          }
+          // Refresh échoué → déconnecter
+          localStorage.removeItem('access_token')
+          localStorage.removeItem('refresh_token')
+          set({ user: null, access_token: null, refresh_token: null })
+          throw new Error('Session expirée')
         }
       },
 

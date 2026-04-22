@@ -13,12 +13,19 @@ import arabic_reshaper
 from bidi.algorithm import get_display
 from pypdf import PdfWriter, PdfReader
 import os
+import os
 
-# ── Polices ───────────────────────────────────────────────────
+
+_FONTS_DIR = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'fonts'))
 _FONT_PATHS = [
-    '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Regular.ttf',
-    '/usr/share/fonts/truetype/noto/NotoNaskhArabic-Bold.ttf',
+    os.path.join(_FONTS_DIR, 'NotoNaskhArabic-Regular.ttf'),
+    os.path.join(_FONTS_DIR, 'NotoNaskhArabic-Bold.ttf'),
 ]
+
+
+
+
+
 
 _fonts_registered = False
 
