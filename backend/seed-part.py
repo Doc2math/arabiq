@@ -1,130 +1,86 @@
 """
-LangDad — Seed des 5 parties du cours
-======================================
-Crée les 5 parties thématiques et lie les 9 modules existants à la Partie 1.
-
-Usage :
-    cd backend
-    python seed_parts.py
-
-    # Pour réinitialiser :
-    python seed_parts.py --reset
+Script pour créer les 6 parties du curriculum
+Placez dans backend/ et exécutez : python seed_parts.py
 """
 
 import asyncio
 import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent))
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from app.db.session import AsyncSessionLocal
-from app.models.models import Module
-from sqlalchemy import text, select
-
+from app.models.models import Part, Module
+from sqlalchemy import select
 
 PARTS = [
     {
-        "id":          1,
-        "slug":        "alphabet-ecriture",
-        "title":       "Alphabet et écriture",
-        "description": "Maîtrisez les 28 lettres arabes, leurs formes, leurs sons et les règles d'écriture fondamentales.",
-        "theme":       "Alphabet",
-        "sort_order":  1,
+        "number": 1, "degree": 1,
+        "title": "Partie 1 — Les fondations",
+        "description": "Découverte de l'alphabet arabe, des voyelles et des premiers mots. Les 4 lettres de base : م ك ت ب",
+        "color": "#6C3FC5", "icon": "🌱", "sort_order": 1, "is_premium": False,
     },
     {
-        "id":          2,
-        "slug":        "lecture-base",
-        "title":       "Lecture de base",
-        "description": "Apprenez à lire des mots et phrases simples avec harakat, puis progressivement sans voyelles.",
-        "theme":       "Lecture",
-        "sort_order":  2,
+        "number": 2, "degree": 2,
+        "title": "Partie 2 — L'alphabet complet",
+        "description": "Toutes les lettres de l'alphabet arabe, leurs positions et leurs formes.",
+        "color": "#F07C1E", "icon": "📖", "sort_order": 2, "is_premium": False,
     },
     {
-        "id":          3,
-        "slug":        "vocabulaire-fondamental",
-        "title":       "Vocabulaire fondamental",
-        "description": "Acquérez les 500 mots les plus fréquents de l'arabe courant et du Coran.",
-        "theme":       "Vocabulaire",
-        "sort_order":  3,
+        "number": 3, "degree": 3,
+        "title": "Partie 3 — La lecture courante",
+        "description": "Lecture de textes courts, phrases complexes et vocabulaire élargi.",
+        "color": "#2BA84A", "icon": "📝", "sort_order": 3, "is_premium": True,
     },
     {
-        "id":          4,
-        "slug":        "grammaire-base",
-        "title":       "Grammaire de base",
-        "description": "Comprenez les règles essentielles : genre, nombre, cas, verbes au présent et au passé.",
-        "theme":       "Grammaire",
-        "sort_order":  4,
+        "number": 4, "degree": 4,
+        "title": "Partie 4 — La grammaire",
+        "description": "Bases de la grammaire arabe : genre, nombre, cas grammaticaux.",
+        "color": "#1976D2", "icon": "🎯", "sort_order": 4, "is_premium": True,
     },
     {
-        "id":          5,
-        "slug":        "comprehension-expression",
-        "title":       "Compréhension et expression",
-        "description": "Lisez des textes arabes authentiques et exprimez-vous à l'oral et à l'écrit.",
-        "theme":       "Expression",
-        "sort_order":  5,
+        "number": 5, "degree": 5,
+        "title": "Partie 5 — L'expression",
+        "description": "Expression orale et écrite, conjugaison, phrases complexes.",
+        "color": "#9C27B0", "icon": "💬", "sort_order": 5, "is_premium": True,
+    },
+    {
+        "number": 6, "degree": 6,
+        "title": "Partie 6 — La maîtrise",
+        "description": "Textes littéraires, coraniques et journalistiques. Niveau avancé.",
+        "color": "#F9A825", "icon": "🏆", "sort_order": 6, "is_premium": True,
     },
 ]
 
-# Les 9 modules actuels appartiennent tous à la Partie 1
-MODULES_PART1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-
-async def seed(reset: bool = False):
+async def seed():
     async with AsyncSessionLocal() as db:
-
-        # ── Reset si demandé ────────────────────────────────
-        if reset:
-            await db.execute(text("UPDATE modules SET part_id = NULL"))
-            await db.execute(text("DELETE FROM parts"))
+        # Vérifier si déjà seedé
+        result = await db.execute(select(Part))
+        existing = result.scalars().all()
+        if existing:
+            print(f"✓ {len(existing)} parties déjà présentes")
+        else:
+            for p in PARTS:
+                part = Part(**p)
+                db.add(part)
             await db.commit()
-            print("[RESET] Parties supprimées.")
+            print(f"✓ {len(PARTS)} parties créées")
 
-        # ── Créer les 5 parties ─────────────────────────────
-        for p in PARTS:
-            existing = await db.execute(
-                text("SELECT id FROM parts WHERE id = :id"), {"id": p["id"]}
-            )
-            if existing.fetchone():
-                print(f"[INFO] Partie {p['id']} existe déjà : {p['title']}")
-                continue
+        # Associer Module 1 à Partie 1
+        result = await db.execute(select(Part).where(Part.number == 1))
+        part1 = result.scalar_one_or_none()
+        if part1:
+            result = await db.execute(select(Module).where(Module.id == 1))
+            mod1 = result.scalar_one_or_none()
+            if mod1 and mod1.part_id is None:
+                mod1.part_id = part1.id
+                await db.commit()
+                print(f"✓ Module 1 associé à Partie 1")
 
-            await db.execute(text("""
-                INSERT INTO parts (id, slug, title, description, theme, sort_order)
-                VALUES (:id, :slug, :title, :description, :theme, :sort_order)
-            """), p)
-            print(f"[OK] Partie {p['id']} créée : {p['title']}")
-
-        await db.commit()
-
-        # ── Lier les 9 modules à la Partie 1 ───────────────
-        for module_id in MODULES_PART1:
-            mod = await db.get(Module, module_id)
-            if mod:
-                await db.execute(
-                    text("UPDATE modules SET part_id = 1 WHERE id = :id"),
-                    {"id": module_id}
-                )
-                print(f"  [OK] Module {module_id} lié à Partie 1")
-            else:
-                print(f"  [SKIP] Module {module_id} absent en base")
-
-        await db.commit()
-
-        # ── Résumé ──────────────────────────────────────────
-        print("\n[✓] Seed des parties terminé !")
-        result = await db.execute(text("""
-            SELECT p.title, COUNT(m.id) as nb_modules
-            FROM parts p
-            LEFT JOIN modules m ON m.part_id = p.id
-            GROUP BY p.id
-            ORDER BY p.sort_order
-        """))
-        for row in result.fetchall():
-            print(f"    {row[0]} → {row[1]} module(s)")
-
+        print("\nParties disponibles :")
+        result = await db.execute(select(Part).order_by(Part.sort_order))
+        parts = result.scalars().all()
+        for p in parts:
+            print(f"  {p.icon} Partie {p.number} — {p.title}")
 
 if __name__ == "__main__":
-    reset = "--reset" in sys.argv
-    if reset:
-        print("Mode RESET — les parties seront supprimées et recréées.\n")
-    asyncio.run(seed(reset=reset))
+    asyncio.run(seed())

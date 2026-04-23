@@ -35,8 +35,74 @@ class User(Base):
     badges: Mapped[list["UserBadge"]] = relationship(back_populates="user", lazy="select")
 
 
+"""
+Ajouts à faire dans app/models/models.py
+
+1. Ajouter la classe Part AVANT la classe Module
+2. Ajouter part_id dans Module
+3. Ajouter la classe Certification APRÈS UserBadge
+"""
+
+# ── 1. Classe Part — à ajouter AVANT Module ───────────────────
+
+class Part(Base):
+    """Partie du curriculum (6 parties = 6 degrés)."""
+    __tablename__ = "parts"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    number: Mapped[int] = mapped_column(Integer, nullable=False)          # 1 à 6
+    title: Mapped[str] = mapped_column(String(200), nullable=False)
+    description: Mapped[str] = mapped_column(Text, default="")
+    degree: Mapped[int] = mapped_column(Integer, nullable=False)          # = number
+    sort_order: Mapped[int] = mapped_column(Integer, default=0)
+    is_premium: Mapped[bool] = mapped_column(Boolean, default=False)
+    color: Mapped[str] = mapped_column(String(20), default="#6C3FC5")     # couleur UI
+    icon: Mapped[str] = mapped_column(String(10), default="📚")
+
+    modules: Mapped[list["Module"]] = relationship(
+        back_populates="part", order_by="Module.sort_order", lazy="selectin"
+    )
+
+# ── 3. Classe Certification — à ajouter APRÈS UserBadge ───────
+
+class Certification(Base):
+    """Certificat de réussite d'un module."""
+    __tablename__ = "certifications"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        Uuid(as_uuid=True),
+        ForeignKey("users.id", ondelete="CASCADE"),
+        nullable=False, index=True
+    )
+    module_id: Mapped[int] = mapped_column(
+        ForeignKey("modules.id"), nullable=False, index=True
+    )
+    # Score BKT global au moment de la certification
+    bkt_score: Mapped[float] = mapped_column(Float, default=0.0)
+    overall_score: Mapped[float] = mapped_column(Float, default=0.0)
+
+    # PDF généré
+    pdf_url: Mapped[str | None] = mapped_column(String(512), nullable=True)
+
+    # Numéro de certificat unique (ex: LANGDAD-2026-001)
+    certificate_number: Mapped[str] = mapped_column(String(50), unique=True, nullable=False)
+
+    issued_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow
+    )
+    expires_at: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), nullable=True
+    )
+
+    user: Mapped["User"] = relationship("User", foreign_keys=[user_id])  # type: ignore
+    module: Mapped["Module"] = relationship("Module", foreign_keys=[module_id])  # type: ignore
+
 class Module(Base):
     __tablename__ = "modules"
+    
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     slug: Mapped[str] = mapped_column(String(80), unique=True, nullable=False)
     title: Mapped[str] = mapped_column(String(200), nullable=False)
@@ -47,6 +113,8 @@ class Module(Base):
     courses: Mapped[list["Course"]] = relationship(
         back_populates="module", order_by="Course.sort_order", lazy="selectin"
     )
+    part_id: Mapped[int | None] = mapped_column(ForeignKey("parts.id"), nullable=True, index=True)
+    part: Mapped["Part | None"] = relationship(back_populates="modules")    
 
 
 class Course(Base):
