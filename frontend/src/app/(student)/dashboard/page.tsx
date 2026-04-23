@@ -45,10 +45,10 @@ export default function DashboardPage() {
       .finally(() => setLoading(false))
   }, [])
 
-  if (!user) return null
+  if (!user) return null 
 
   return (
-    <div style={{ maxWidth: 960, margin: '0 auto', padding: '32px 24px' }}>
+    <div style={{ maxWidth:1020 , margin: '0 auto', padding: '32px 24px' }}>
 
       {/* Bienvenue */}
       <div style={{

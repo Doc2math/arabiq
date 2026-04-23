@@ -17,8 +17,6 @@ from datetime import datetime, timezone
 from fastapi import APIRouter, Depends, HTTPException, status, BackgroundTasks, Query, Request
 
 router = APIRouter(prefix="/admin", tags=["admin"])
-
-
 def require_admin(current_user: User = Depends(get_current_user)) -> User:
     if not current_user.is_admin:
         raise HTTPException(status.HTTP_403_FORBIDDEN, detail="Accès réservé aux administrateurs")

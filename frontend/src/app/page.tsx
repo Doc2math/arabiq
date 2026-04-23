@@ -114,6 +114,7 @@ export default function LandingPage() {
         padding: '100px 40px 60px', position: 'relative', overflow: 'hidden',
       }}>
         {/* Décoration lettres arabes flottantes */}
+        
         <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
           {ARABIC_LETTERS.map((letter, i) => (
             <div key={i} style={{

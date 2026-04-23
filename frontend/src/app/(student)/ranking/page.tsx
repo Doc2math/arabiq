@@ -64,7 +64,7 @@ export default function RankingPage() {
   const rest   = ranking.slice(3)
 
   return (
-    <div style={{ maxWidth: 680, margin: '0 auto', padding: '32px 24px' }}>
+    <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
 
       {/* Header */}
       <div style={{ marginBottom: 28 }}>

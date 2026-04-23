@@ -31,7 +31,7 @@ export default function BadgesPage() {
   const locked = ALL_BADGES.filter(b => !b.earned)
 
   return (
-    <div style={{ maxWidth: 700, margin: '0 auto', padding: '32px 24px' }}>
+    <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
 
       <div style={{ marginBottom: 28 }}>
         <h1 style={{ fontSize: 22, fontWeight: 700, color: C.text, marginBottom: 6 }}>🏅 Mes badges</h1>

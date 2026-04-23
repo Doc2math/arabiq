@@ -106,7 +106,7 @@ export default function ProgressPage() {
   const globalPct      = totalLessons > 0 ? Math.round((totalCompleted / totalLessons) * 100) : 0
 
   return (
-    <div style={{ maxWidth: 860, margin: '0 auto', padding: '32px 24px' }}>
+    <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
       <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
 
       <div style={{ marginBottom: 28 }}>

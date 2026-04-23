@@ -50,7 +50,7 @@ export default function SettingsPage() {
   const update = (key: string, value: boolean) => setSettings(s => ({ ...s, [key]: value }))
 
   return (
-    <div style={{ maxWidth: 580, margin: '0 auto', padding: '32px 24px' }}>
+    <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
       <h1 style={{ fontSize: 22, fontWeight: 700, color: C.text, marginBottom: 28 }}>⚙️ Paramètres</h1>
 
       {/* Audio */}

@@ -60,7 +60,7 @@ export default function SheetsPage() {
   if (!user) return null
 
   return (
-    <div style={{ maxWidth: 860, margin: '0 auto', padding: '32px 24px' }}>
+    <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
 
       {/* Header */}
       <div style={{ marginBottom: 32 }}>

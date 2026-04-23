@@ -6,9 +6,9 @@ from sqlalchemy.types import JSON
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.session import Base
 
+
 def utcnow() -> datetime:
     return datetime.now(timezone.utc)
-
 
 class User(Base):
     __tablename__ = "users"
@@ -114,20 +114,54 @@ class UserBadge(Base):
     badge: Mapped["Badge"] = relationship(back_populates="user_badges")
     
 """
-Modèles Admin — à ajouter dans app/models/models.py
-Ajoutez ces classes APRÈS les modèles existants
-Et ajoutez les champs supplémentaires dans User
+Ajouts à faire :
+
+1. Dans app/models/models.py — ajouter la classe ExerciseLog après UserBadge
+2. Lancer : alembic revision --autogenerate -m "add_exercise_log"
+3. Lancer : alembic upgrade head
 """
 
-# ── Champs à ajouter dans la classe User existante ────────────
-# (après is_verified)
-#
-#   role: Mapped[str] = mapped_column(String(20), default="student")
-#   # "student" | "admin" | "superadmin"
-#   permissions: Mapped[list] = mapped_column(JSON, default=list)
-#   # Ex: ["content:create", "users:view", "blog:publish"]
-#
-# ── Fin des champs User ───────────────────────────────────────
+class ExerciseLog(Base):
+    """Journal de chaque réponse d'exercice — pour BKT précis + dataset."""
+    __tablename__ = "exercise_log"
+
+    id: Mapped[uuid.UUID] = mapped_column(
+        Uuid(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    user_id: Mapped[uuid.UUID] = mapped_column(
+        Uuid(as_uuid=True),
+        ForeignKey("users.id", ondelete="CASCADE"),
+        nullable=False, index=True
+    )
+    lesson_id: Mapped[int] = mapped_column(
+        ForeignKey("lessons.id"), nullable=False, index=True
+    )
+    # ID de l'exercice dans le JSON (ex: "m1l1_ex1")
+    exercise_id: Mapped[str] = mapped_column(String(50), nullable=False)
+
+    # Compétence ciblée (ex: "letter_recognition", "harakat_reading")
+    skill_id: Mapped[str] = mapped_column(String(50), nullable=False, index=True)
+
+    # Type d'exercice (ex: "mcq", "audio_choice", "drag_drop")
+    exercise_type: Mapped[str] = mapped_column(String(30), nullable=False)
+
+    # Variante de l'exercice (1-4)
+    variant: Mapped[int] = mapped_column(Integer, default=1)
+
+    # Résultat
+    correct: Mapped[bool] = mapped_column(Boolean, nullable=False)
+    response_time_ms: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    hint_used: Mapped[bool] = mapped_column(Boolean, default=False)
+
+    # Numéro de tentative pour cet exercice
+    attempt: Mapped[int] = mapped_column(Integer, default=1)
+
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utcnow, index=True
+    )
+
+    user: Mapped["User"] = relationship("User", foreign_keys=[user_id])  # type: ignore
+    lesson: Mapped["Lesson"] = relationship("Lesson", foreign_keys=[lesson_id])  # type: ignore ── Fin des champs User ───────────────────────────────────────
 
 
 

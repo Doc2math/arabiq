@@ -52,7 +52,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <div style={{ maxWidth: 640, margin: '0 auto', padding: '32px 24px' }}>
+    <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
 
       {/* Header profil */}
       <div style={{ background: `linear-gradient(135deg, ${C.violetDk}, ${C.violet})`, borderRadius: 24, padding: '32px', marginBottom: 24, color: '#fff', display: 'flex', alignItems: 'center', gap: 24 }}>

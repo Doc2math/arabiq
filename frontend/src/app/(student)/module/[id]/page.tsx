@@ -72,7 +72,7 @@ export default function ModulePage() {
   if (!user) return null
 
   return (
-    <div style={{ maxWidth: 720, margin: '0 auto', padding: '32px 24px' }}>
+    <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
 
       {loading ? (
         <div style={{ textAlign: 'center', padding: 60, color: C.text3 }}>Chargement…</div>
