@@ -538,7 +538,22 @@ export default function LessonPage() {
     setProcessing(true)
     const ex = exercises[currentEx]
     if (isCorrect) { setCorrectCount(c => c + 1); setXpEarned(x => x + (ex?.xpReward ?? 5)) }
-    try { await api.post('/api/v1/bkt/update', { skill_id: ex?.skill_id ?? 'letter_recognition', correct: isCorrect, latency_ms: latency, module_id: moduleId }) } catch {}
+
+        try {
+          await api.post('/api/v1/bkt/log', {
+            lesson_id: lessonId,
+            exercise_id: ex?.id ?? 'unknown',
+            skill_id: ex?.skill_id ?? 'letter_recognition',
+            exercise_type: ex?.type ?? 'mcq',
+            variant: ex?.variant ?? 1,
+            correct: isCorrect,
+            response_time_ms: latency,
+            hint_used: false,
+            attempt: 1,
+          })
+        } catch (err) {
+          console.error('BKT log error:', err)  // ← ajouter
+        }
     await new Promise(r => setTimeout(r, 1400))
     if (currentEx + 1 >= totalEx) {
       const score = (correctCount + (isCorrect ? 1 : 0)) / totalEx
