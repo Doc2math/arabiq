@@ -86,7 +86,7 @@ export default function ModuleReportPage() {
   const scoreColor = score >= 80 ? C.green : score >= 60 ? C.orange : C.red
 
   return (
-    <div style={{ maxWidth: 680, margin: '0 auto', padding: '24px 20px 48px' }}>
+    <div style={{ maxWidth: 1020, margin: '0 auto', padding: '24px 20px 48px' }}>
       <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
 
       {/* Header */}

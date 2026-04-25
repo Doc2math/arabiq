@@ -82,7 +82,7 @@ export default function DashboardPage() {
   const globalPct      = totalLessons > 0 ? Math.round((totalCompleted / totalLessons) * 100) : 0
 
   return (
-    <div style={{ maxWidth: 860, margin: '0 auto', padding: '32px 24px' }}>
+    <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
 
       {/* Bienvenue */}
       <div style={{

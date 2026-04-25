@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/authStore'
+import { ReferencesPanel } from '@/components/ReferencesPanel'
 
 const C = {
   violet:'#6C3FC5', violetLt:'#EDE8FB', violetDk:'#4A2A8A',
@@ -95,6 +96,9 @@ export default function StudentLayout({ children }: { children: React.ReactNode 
   const [menuOpen, setMenuOpen]   = useState(false)
   const [hydrated, setHydrated]   = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
+  const [refOpen, setRefOpen]     = useState(false)
+  const [refTab, setRefTab]       = useState<'alphabet'|'rules'>('alphabet')
+  const [refMenuOpen, setRefMenu] = useState(false)
 
   useEffect(() => { setHydrated(true) }, [])
 
@@ -148,6 +152,32 @@ export default function StudentLayout({ children }: { children: React.ReactNode 
               </Link>
             )
           })}
+          <div style={{ position: 'relative' }}
+  onMouseEnter={() => setRefMenu(true)}
+  onMouseLeave={() => setRefMenu(false)}>
+  
+  <button style={{ fontSize: 14, fontWeight: 600, color: C.text2, background: 'none', border: 'none', cursor: 'pointer' }}>
+     Références ▾
+  </button>
+
+  {refMenuOpen && (
+    <div style={{
+      position: 'absolute', top: '100%', left: 0, zIndex: 50,
+      background: '#fff', border: `2px solid ${C.border}`,
+      borderRadius: 14, padding: 6, minWidth: 160,
+      boxShadow: '0 8px 24px rgba(108,63,197,.12)',
+    }}>
+            <button onClick={() => { setRefTab('alphabet'); setRefOpen(true); setRefMenu(false) }}
+              style={{ display: 'block', width: '100%', padding: '9px 14px', borderRadius: 8, border: 'none', background: 'none', cursor: 'pointer', fontSize: 13, fontWeight: 600, color: C.text, textAlign: 'left' }}>
+              🔤 Alphabet
+            </button>
+            <button onClick={() => { setRefTab('rules'); setRefOpen(true); setRefMenu(false) }}
+              style={{ display: 'block', width: '100%', padding: '9px 14px', borderRadius: 8, border: 'none', background: 'none', cursor: 'pointer', fontSize: 13, fontWeight: 600, color: C.text, textAlign: 'left' }}>
+              📋 Règles
+            </button>
+          </div>
+            )}
+          </div>
         </div>
 
         {/* Droite : XP + Série + Langue + Avatar */}
@@ -211,7 +241,13 @@ export default function StudentLayout({ children }: { children: React.ReactNode 
         </div>
       </nav>
 
-      <main>{children}</main>
+                <main>{children}</main>
+                {refOpen && (
+                  <ReferencesPanel
+                    initialTab={refTab}
+                    onClose={() => setRefOpen(false)}
+                  />
+                )}
     </div>
   )
 }

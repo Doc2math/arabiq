@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/authStore'
+import { ArrowLeft } from "lucide-react";
 
 export default function LoginPage() {
   const router = useRouter()
@@ -35,25 +36,36 @@ export default function LoginPage() {
     }
   }
 
-  return (
+  return (<>
+    <p style={{ textAlign: 'left', marginTop: 20, marginLeft: 20, fontSize: 16, color: '#5A5A7A' }}>
+               
+        <Link
+                  href="/"
+                  style={{
+                    color: '#6C3FC5',
+                    fontWeight: 700,
+                    textDecoration: 'none',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px'
+                  }}
+                >
+                  <ArrowLeft strokeWidth={2.25} size={18} color="#6C3FC5" />
+                  Retour à l&apos;accueil
+        </Link>
+              </p>
+        
     <div style={{
       minHeight: '100vh',
       background: '#F8F7FF',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
-      padding: '20px', fontFamily: 'system-ui, sans-serif',
+      padding: '10px', fontFamily: 'system-ui, sans-serif',
     }}>
-      <div style={{ width: '100%', maxWidth: 420 }}>
-
-        {/* Logo */}
-        <div style={{ textAlign: 'center', marginBottom: 32 }}>
-          <div style={{ width: 72, height: 72, borderRadius: 20, background: '#6C3FC5', margin: '0 auto 16px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 36 }}>🌙</div>
-          <h1 style={{ fontSize: 28, fontWeight: 700, color: '#1A1A2E', margin: 0 }}>LangDad</h1>
-          <p style={{ fontSize: 14, color: '#5A5A7A', marginTop: 6 }}>Apprenez l&apos;arabe à votre rythme</p>
-        </div>
-
+      <div style={{ width: '100%', maxWidth: 620 }}>
+        
         {/* Card */}
         <div style={{ background: '#FFFFFF', borderRadius: 24, padding: '32px 28px', border: '2px solid #EDE8FB', boxShadow: '0 8px 32px rgba(108, 63, 197, 0.08)' }}>
-          <h2 style={{ fontSize: 20, fontWeight: 700, color: '#1A1A2E', marginBottom: 24, textAlign: 'center' }}>Connexion</h2>
+          <h2 style={{ fontSize: 32, fontWeight: 700, color: '#1A1A2E', marginBottom: 24, textAlign: 'center' }}>Connexion</h2>
 
           {error && (
             <div style={{ background: '#FCEBEB', border: '2px solid #E24B4A', borderRadius: 12, padding: '12px 16px', marginBottom: 20, fontSize: 14, color: '#A32D2D', display: 'flex', gap: 8 }}>
@@ -95,10 +107,9 @@ export default function LoginPage() {
           Pas encore de compte ?{' '}
           <Link href="/register" style={{ color: '#6C3FC5', fontWeight: 700, textDecoration: 'none' }}>S&apos;inscrire</Link>
         </p>
-        <p style={{ textAlign: 'center', marginTop: 10, fontSize: 14 }}>
-          <Link href="/" style={{ color: '#9A9AB0', textDecoration: 'none', fontSize: 13 }}>← Retour à l&apos;accueil</Link>
-        </p>
+        
       </div>
     </div>
+    </>
   )
 }

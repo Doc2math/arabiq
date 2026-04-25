@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useAuthStore } from '@/store/authStore'
+import { ArrowLeft } from "lucide-react";
 
 export default function RegisterPage() {
   const router = useRouter()
@@ -51,31 +52,40 @@ export default function RegisterPage() {
   }
 
   return (
+      <>
+          <p style={{ textAlign: 'left', marginTop: 20, marginLeft: 20, fontSize: 16, color: '#5A5A7A' }}>
+               
+        <Link
+                  href="/"
+                  style={{
+                    color: '#6C3FC5',
+                    fontWeight: 700,
+                    textDecoration: 'none',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px'
+                  }}
+                >
+                  <ArrowLeft strokeWidth={2.25} size={18} color="#6C3FC5" />
+                  Retour à l&apos;accueil
+        </Link>
+              </p>
+              
     <div style={{
       minHeight: '100vh', background: '#F8F7FF',
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      display: 'flex', justifyContent: 'center',
       padding: '20px', fontFamily: 'system-ui, sans-serif',
     }}>
-      <div style={{ width: '100%', maxWidth: 420 }}>
+      <div style={{ width: '100%', maxWidth: 620 }}>
 
-        {/* Logo */}
-        <div style={{ textAlign: 'center', marginBottom: 32 }}>
-          <div style={{
-            width: 72, height: 72, borderRadius: 20,
-            background: '#6C3FC5', margin: '0 auto 16px',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 36,
-          }}>🌙</div>
-          <h1 style={{ fontSize: 28, fontWeight: 700, color: '#1A1A2E', margin: 0 }}>LangDad</h1>
-          <p style={{ fontSize: 14, color: '#5A5A7A', marginTop: 6 }}>Créez votre compte gratuit</p>
-        </div>
+        
 
         {/* Card */}
         <div style={{
           background: '#FFFFFF', borderRadius: 24, padding: '32px 28px',
           border: '2px solid #EDE8FB', boxShadow: '0 8px 32px rgba(108,63,197,.08)',
         }}>
-          <h2 style={{ fontSize: 20, fontWeight: 700, color: '#1A1A2E', marginBottom: 24, textAlign: 'center' }}>
+          <h2 style={{ fontSize: 32, fontWeight: 700, color: '#1A1A2E', marginBottom: 24, textAlign: 'center' }}>
             Inscription
           </h2>
 
@@ -164,5 +174,6 @@ export default function RegisterPage() {
 
       </div>
     </div>
+    </>
   )
 }
