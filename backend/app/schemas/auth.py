@@ -11,6 +11,7 @@ class UserCreate(BaseModel):
     username: str = Field(min_length=3, max_length=30)
     password: str = Field(min_length=8, max_length=128)
     native_language: Literal["fr", "es", "en"] = "fr"
+    role: Literal["student", "teacher", "institution"] = "student"  # ← ajouter
 
     @field_validator("password")
     @classmethod
@@ -36,8 +37,9 @@ class UserRead(BaseModel):
     streak: int
     is_premium: bool
     is_admin: bool
-    role: str = "student"           # ← ajouter
-    permissions: list = []          # ← ajouter
+    role: str = "student"           
+    permissions: list = []          
+    institution_id: uuid.UUID | None = None
     created_at: datetime
 
 

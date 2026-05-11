@@ -1,0 +1,1420 @@
+{
+  "module": {
+    "id": 2,
+    "slug": "thalj",
+    "title": "Module 2 — ثَلْجٌ",
+    "description": "Les lettres ث ل ج avec les lettres héritées م ك ت ب et les voyelles longues ا و ي.",
+    "arabic_ratio": 0.3,
+    "is_premium": false,
+    "sort_order": 2,
+    "part_id": 1,
+    "degree": 1,
+    "own_letters": ["ث", "ل", "ج"],
+    "degree_name": {
+      "fr": "Découverte",
+      "en": "Discovery",
+      "es": "Descubrimiento",
+      "de": "Entdeckung",
+      "nl": "Ontdekking"
+    }
+  },
+  "lessons": [
+    {
+      "sort_order": 1,
+      "title": "Les 3 nouvelles lettres",
+      "lesson_type": "identification",
+      "xp_reward": 20,
+      "duration_minutes": 15,
+      "skill_id": "letter_recognition",
+      "content": {
+        "introduction": {
+          "text": "Voici les 3 nouvelles lettres du Module 2. Vous connaissez déjà م ك ت ب. Cliquez sur chaque carte pour entendre son nom.",
+          "letters": [
+            { "ar": "ث", "name": "Tha", "phoneme": "th", "audio": "/assets/audio/letters/tha.mp3" },
+            { "ar": "ل", "name": "Lam", "phoneme": "l",  "audio": "/assets/audio/letters/lam.mp3" },
+            { "ar": "ج", "name": "Jim", "phoneme": "j",  "audio": "/assets/audio/letters/jim.mp3" }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m2l1_ex1",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "xpReward": 3,
+            "explanation": "ث = Tha. Identique à Ba et Ta mais avec trois points au-dessus.",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ث",
+                "options": ["Ba", "Ta", "Tha", "Mim"],
+                "correctIndex": 2
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ث",
+                "options": ["Tha", "Nun", "Qaf", "Fa"],
+                "correctIndex": 0
+              },
+              {
+                "level": 3,
+                "lang": "fr",
+                "prompt": "Parmi ces lettres, laquelle est Tha ?",
+                "promptAr": null,
+                "options": ["ب", "ت", "ث", "ن"],
+                "correctIndex": 2
+              },
+              {
+                "level": 4,
+                "lang": "fr",
+                "prompt": "Quelle lettre ressemble à Ta mais avec trois points au-dessus ?",
+                "promptAr": null,
+                "options": ["Ba", "Ta", "Tha", "Nun"],
+                "correctIndex": 2
+              }
+            ]
+          },
+          {
+            "id": "m2l1_ex2",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "xpReward": 3,
+            "explanation": "ل = Lam. Une grande courbe qui descend vers la gauche.",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ل",
+                "options": ["Kaf", "Lam", "Mim", "Jim"],
+                "correctIndex": 1
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ل",
+                "options": ["Ra", "Lam", "Waw", "Nun"],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "lang": "fr",
+                "prompt": "Parmi ces lettres, laquelle est Lam ?",
+                "promptAr": null,
+                "options": ["ك", "ل", "ر", "و"],
+                "correctIndex": 1
+              },
+              {
+                "level": 4,
+                "lang": "fr",
+                "prompt": "Quelle lettre forme d'un hameçon ?",
+                "promptAr": null,
+                "options": ["Kaf", "Lam", "Mim", "Nun"],
+                "correctIndex": 1
+              }
+            ]
+          },
+          {
+            "id": "m2l1_ex3",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "xpReward": 3,
+            "explanation": "ج = Jim. un demi-cercle ouvert vers la gauche avec une queue vers le bas.",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ج",
+                "options": ["Jim", "Mim", "Ba", "Ta"],
+                "correctIndex": 0
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ج",
+                "options": ["Ha", "Kha", "Jim", "Ain"],
+                "correctIndex": 2
+              },
+              {
+                "level": 3,
+                "lang": "fr",
+                "prompt": "Parmi ces lettres, laquelle est Jim ?",
+                "promptAr": null,
+                "options": ["ح", "خ", "ج", "ع"],
+                "correctIndex": 2
+              },
+              {
+                "level": 4,
+                "lang": "fr",
+                "prompt": "Quelle lettre est un demi-cercle ouvert vers la gauche avec une queue vers le bas et un point en dessous ?",
+                "promptAr": null,
+                "options": ["Ha", "Jim", "Kha", "Ain"],
+                "correctIndex": 1
+              }
+            ]
+          },
+          {
+            "id": "m2l1_ex4",
+            "type": "audio_choice",
+            "skill_id": "letter_recognition",
+            "xpReward": 4,
+            "explanation": "Vous avez entendu Tha → ث",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Écoutez et identifiez la lettre",
+                "audioUrl": "/assets/audio/letters/tha.mp3",
+                "options": ["ت", "ث", "ب", "ل"],
+                "correctIndex": 1
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle lettre entendez-vous ?",
+                "audioUrl": "/assets/audio/letters/tha.mp3",
+                "options": ["ث", "ج", "ل", "م"],
+                "correctIndex": 0
+              },
+              {
+                "level": 3,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [{ "text": "ث", "audioUrl": "/assets/audio/letters/tha.mp3" }],
+                "audioPool": [
+                  "/assets/audio/letters/tha.mp3",
+                  "/assets/audio/letters/lam.mp3",
+                  "/assets/audio/letters/jim.mp3",
+                  "/assets/audio/letters/ta.mp3"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "m2l1_ex5",
+            "type": "audio_choice",
+            "skill_id": "letter_recognition",
+            "xpReward": 4,
+            "explanation": "Vous avez entendu Lam → ل",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Écoutez et identifiez la lettre",
+                "audioUrl": "/assets/audio/letters/lam.mp3",
+                "options": ["ج", "ث", "ل", "م"],
+                "correctIndex": 2
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle lettre entendez-vous ?",
+                "audioUrl": "/assets/audio/letters/lam.mp3",
+                "options": ["ر", "ل", "ن", "و"],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [{ "text": "ل", "audioUrl": "/assets/audio/letters/lam.mp3" }],
+                "audioPool": [
+                  "/assets/audio/letters/lam.mp3",
+                  "/assets/audio/letters/tha.mp3",
+                  "/assets/audio/letters/jim.mp3",
+                  "/assets/audio/letters/kaf.mp3"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "m2l1_ex6",
+            "type": "audio_choice",
+            "skill_id": "letter_recognition",
+            "xpReward": 4,
+            "explanation": "Vous avez entendu Jim → ج",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Écoutez et identifiez la lettre",
+                "audioUrl": "/assets/audio/letters/jim.mp3",
+                "options": ["ل", "ج", "ث", "ك"],
+                "correctIndex": 1
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle lettre entendez-vous ?",
+                "audioUrl": "/assets/audio/letters/jim.mp3",
+                "options": ["ح", "ج", "خ", "ع"],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [{ "text": "ج", "audioUrl": "/assets/audio/letters/jim.mp3" }],
+                "audioPool": [
+                  "/assets/audio/letters/jim.mp3",
+                  "/assets/audio/letters/lam.mp3",
+                  "/assets/audio/letters/tha.mp3",
+                  "/assets/audio/letters/mim.mp3"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "m2l1_ex7",
+            "type": "matching_text_audio",
+            "skill_id": "letter_recognition",
+            "xpReward": 7,
+            "prompt": "Écoute et trouve le son qui correspond à chaque lettre",
+            "pairs": [
+              { "text": "ث", "audioUrl": "/assets/audio/letters/tha.mp3" },
+              { "text": "ل", "audioUrl": "/assets/audio/letters/lam.mp3" },
+              { "text": "ج", "audioUrl": "/assets/audio/letters/jim.mp3" }
+            ],
+            "audioPool": [
+              "/assets/audio/letters/tha.mp3",
+              "/assets/audio/letters/lam.mp3",
+              "/assets/audio/letters/jim.mp3",
+              "/assets/audio/letters/ta.mp3",
+              "/assets/audio/letters/kaf.mp3",
+              "/assets/audio/letters/mim.mp3"
+            ]
+          },
+          {
+            "id": "m2l1_ex8",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "xpReward": 4,
+            "prompt": "Combien de points a la lettre tha?",
+            "promptAr": "",
+            "options": ["1 point en dessous", "2 points au-dessus", "3 points au-dessus", "Pas de point"],
+            "correctIndex": 2,
+            "explanation": "ث = Tha — 3 points au-dessus, comme Ta (2) + 1 point supplémentaire."
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 2,
+      "title": "Harakat — les nouvelles syllabes",
+      "lesson_type": "harakat",
+      "xp_reward": 25,
+      "duration_minutes": 20,
+      "skill_id": "harakat_reading",
+      "content": {
+        "introduction": {
+          "text": "Découvrez les syllabes formées avec les nouvelles lettres ث ل ج et les harakat. Cliquez sur chaque carte pour entendre.",
+          "signs": [
+            { "ar": "جَ", "phoneme": "ja",  "description": "Fatha → son 'a'",       "audio": "/assets/audio/syllables/jim_fatha.mp3"  },
+            { "ar": "جِ", "phoneme": "ji",  "description": "Kasra → son 'i'",       "audio": "/assets/audio/syllables/jim_kasra.mp3"  },
+            { "ar": "جُ", "phoneme": "ju",  "description": "Damma → son 'ou'",      "audio": "/assets/audio/syllables/jim_damma.mp3"  },
+            { "ar": "جْ", "phoneme": "j",   "description": "Sukūn → pas de voyelle","audio": "/assets/audio/syllables/jim_sukun.mp3"  },
+            { "ar": "لَ", "phoneme": "la",  "description": "Fatha → son 'a'",       "audio": "/assets/audio/syllables/lam_fatha.mp3"  },
+            { "ar": "لِ", "phoneme": "li",  "description": "Kasra → son 'i'",       "audio": "/assets/audio/syllables/lam_kasra.mp3"  },
+            { "ar": "لُ", "phoneme": "lu",  "description": "Damma → son 'ou'",      "audio": "/assets/audio/syllables/lam_damma.mp3"  },
+            { "ar": "لْ", "phoneme": "l",   "description": "Sukūn → pas de voyelle","audio": "/assets/audio/syllables/lam_sukun.mp3"  },
+            { "ar": "ثَ", "phoneme": "tha", "description": "Fatha → son 'a'",       "audio": "/assets/audio/syllables/tha_fatha.mp3"  },
+            { "ar": "ثِ", "phoneme": "thi", "description": "Kasra → son 'i'",       "audio": "/assets/audio/syllables/tha_kasra.mp3"  },
+            { "ar": "ثُ", "phoneme": "thu", "description": "Damma → son 'ou'",      "audio": "/assets/audio/syllables/tha_damma.mp3"  },
+            { "ar": "ثْ", "phoneme": "th",  "description": "Sukūn → pas de voyelle","audio": "/assets/audio/syllables/tha_sukun.mp3"  }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m2l2_ex1",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez la syllabe",
+            "audioUrl": "/assets/audio/syllables/jim_fatha.mp3",
+            "xpReward": 4,
+            "options": ["جَ", "جِ", "جُ", "جْ"],
+            "correctIndex": 0,
+            "explanation": "جَ = ja — fatha au-dessus.",
+            "prompts": ["Écoutez et identifiez la syllabe", "Quelle syllabe entendez-vous ?", "Reconnaissez la syllabe entendue"]
+          },
+          {
+            "id": "m2l2_ex2",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez la syllabe",
+            "audioUrl": "/assets/audio/syllables/lam_kasra.mp3",
+            "xpReward": 4,
+            "options": ["لَ", "لِ", "لُ", "لْ"],
+            "correctIndex": 1,
+            "explanation": "لِ = li — kasra en dessous.",
+            "prompts": ["Écoutez et identifiez la syllabe", "Quelle syllabe entendez-vous ?", "Reconnaissez la syllabe entendue"]
+          },
+                  {
+            "id": "m2l2_ex3",
+            "type": "mcq",
+            "skill_id": "harakat_reading",
+            "prompt": "Comment se prononce ثُ ?",
+            "promptAr": "ثُ",
+            "audioUrl": "/assets/audio/syllables/tha_damma.mp3",
+            "xpReward": 3,
+            "options": ["tha", "thi", "thu", "th"],
+            "correctIndex": 2,
+            "explanation": "ثُ = thu — damma au-dessus → son 'ou'."
+          },
+          {
+            "id": "m2l2_ex4",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez la syllabe",
+            "audioUrl": "/assets/audio/syllables/jim_damma.mp3",
+            "xpReward": 4,
+            "options": ["جَ", "جِ", "جُ", "جْ"],
+            "correctIndex": 2,
+            "explanation": "جُ = ju — damma → son 'ou'.",
+            "prompts": ["Écoutez et identifiez la syllabe", "Quelle syllabe entendez-vous ?", "Reconnaissez la syllabe entendue"]
+          },
+          {
+            "id": "m2l2_ex5",
+            "type": "mcq",
+            "skill_id": "harakat_reading",
+            "prompt": "Comment se prononce لْ ?",
+            "promptAr": "لْ",
+          
+            "xpReward": 3,
+            "options": ["la", "li", "lu", "l (sans voyelle)"],
+            "correctIndex": 3,
+            "explanation": "لْ = l — sukūn → consonne sans voyelle."
+          },
+          {
+            "id": "m2l2_ex6",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez la syllabe",
+            "audioUrl": "/assets/audio/syllables/tha_fatha.mp3",
+            "xpReward": 4,
+            "options": ["ثَ", "ثِ", "ثُ", "ثْ"],
+            "correctIndex": 0,
+            "explanation": "ثَ = tha — fatha.",
+            "prompts": ["Écoutez et identifiez la syllabe", "Quelle syllabe entendez-vous ?", "Reconnaissez la syllabe entendue"]
+          },
+          {
+            "id": "m2l2_ex7",
+            "type": "matching_text_audio",
+            "skill_id": "harakat_reading",
+            "xpReward": 7,
+            "prompt": "Écoute et trouve le son qui correspond à chaque syllabe",
+            "pairs": [
+              { "text": "جَ", "audioUrl": "/assets/audio/syllables/jim_fatha.mp3" },
+              { "text": "لِ", "audioUrl": "/assets/audio/syllables/lam_kasra.mp3" },
+              { "text": "ثُ", "audioUrl": "/assets/audio/syllables/tha_damma.mp3" },
+              { "text": "لَ", "audioUrl": "/assets/audio/syllables/lam_fatha.mp3" }
+            ],
+            "audioPool": [
+              "/assets/audio/syllables/jim_fatha.mp3",
+              "/assets/audio/syllables/jim_kasra.mp3",
+              "/assets/audio/syllables/lam_fatha.mp3",
+              "/assets/audio/syllables/lam_kasra.mp3",
+              "/assets/audio/syllables/tha_fatha.mp3",
+              "/assets/audio/syllables/tha_damma.mp3",
+              "/assets/audio/syllables/jim_damma.mp3",
+              "/assets/audio/syllables/tha_kasra.mp3"
+            ]
+          },
+          {
+            "id": "m2l2_ex8",
+            "type": "mcq",
+            "skill_id": "harakat_reading",
+            "prompt": "Quelle syllabe représente Jim + kasra ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "options": ["جَ", "جِ", "جُ", "جْ"],
+            "correctIndex": 1,
+            "explanation": "جِ = ji — kasra en dessous → son 'i'."
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 3,
+      "title": "Voyelles longues — nouvelles syllabes",
+      "lesson_type": "harakat",
+      "xp_reward": 25,
+      "duration_minutes": 20,
+      "skill_id": "long_vowels",
+      "content": {
+        "introduction": {
+          "text": "Les voyelles longues ا و ي s'appliquent aussi aux nouvelles lettres ث ل ج. Elles allongent le son.",
+          "signs": [
+            { "ar": "جَا", "phoneme": "jaa", "description": "Fatha + Alif → son 'aa' long", "audio": "/assets/audio/syllables/jim_alif_long.mp3"  },
+            { "ar": "جُو", "phoneme": "juu", "description": "Damma + Waw → son 'uu' long",  "audio": "/assets/audio/syllables/jim_waw_long.mp3"   },
+            { "ar": "جِي", "phoneme": "jii", "description": "Kasra + Ya → son 'ii' long",   "audio": "/assets/audio/syllables/jim_ya_long.mp3"    },
+            { "ar": "لَا", "phoneme": "laa", "description": "Fatha + Alif → son 'aa' long", "audio": "/assets/audio/syllables/lam_alif_long.mp3"  },
+            { "ar": "لُو", "phoneme": "luu", "description": "Damma + Waw → son 'uu' long",  "audio": "/assets/audio/syllables/lam_waw_long.mp3"   },
+            { "ar": "لِي", "phoneme": "lii", "description": "Kasra + Ya → son 'ii' long",   "audio": "/assets/audio/syllables/lam_ya_long.mp3"    },
+            { "ar": "ثَا", "phoneme": "thaa","description": "Fatha + Alif → son 'aa' long", "audio": "/assets/audio/syllables/tha_alif_long.mp3"  },
+            { "ar": "ثُو", "phoneme": "thuu","description": "Damma + Waw → son 'uu' long",  "audio": "/assets/audio/syllables/tha_waw_long.mp3"   },
+            { "ar": "ثِي", "phoneme": "thii","description": "Kasra + Ya → son 'ii' long",   "audio": "/assets/audio/syllables/tha_ya_long.mp3"    }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m2l3_ex1",
+            "type": "mcq",
+            "skill_id": "long_vowels",
+            "prompt": "Comment se prononce جَا ?",
+            "promptAr": "جَا",
+            "xpReward": 4,
+            "options": ["ja", "jaa", "ji", "juu"],
+            "correctIndex": 1,
+            "explanation": "جَا = jaa — fatha + alif = voyelle longue 'aa'."
+          },
+          {
+            "id": "m2l3_ex2",
+            "type": "audio_choice",
+            "skill_id": "long_vowels",
+            "prompt": "Écoutez et identifiez",
+            "audioUrl": "/assets/audio/syllables/lam_waw_long.mp3",
+            "xpReward": 4,
+            "options": ["لَا", "لُو", "لِي", "لَ"],
+            "correctIndex": 1,
+            "explanation": "لُو = luu — damma + waw = 'uu' long.",
+            "prompts": ["Écoutez et identifiez", "Quelle forme reconnaissez-vous ?", "Identifiez après écoute"]
+          },
+          {
+            "id": "m2l3_ex3",
+            "type": "mcq",
+            "skill_id": "long_vowels",
+            "prompt": "Comment se prononce جَمِيلٌ à l'intérieur ?",
+            "promptAr": "جَمِيلٌ",
+            "xpReward": 5,
+            "options": ["jami", "jamii", "jamu", "jamaa"],
+            "correctIndex": 1,
+            "explanation": "مِي = mii — kasra + ya = voyelle longue 'ii'."
+          },
+          {
+            "id": "m2l3_ex4",
+            "type": "audio_choice",
+            "skill_id": "long_vowels",
+            "prompt": "Écoutez et identifiez",
+            "audioUrl": "/assets/audio/syllables/jim_alif_long.mp3",
+            "xpReward": 4,
+            "options": ["جَ", "جَا", "جُو", "جِي"],
+            "correctIndex": 1,
+            "explanation": "جَا = jaa — fatha + alif.",
+            "prompts": ["Écoutez et identifiez", "Quelle forme reconnaissez-vous ?"]
+          },
+          {
+            "id": "m2l3_ex5",
+            "type": "mcq",
+            "skill_id": "long_vowels",
+            "prompt": "Quelle voyelle longue donne le son 'aa' dans جَمَالٌ ?",
+            "promptAr": "جَمَالٌ",
+            "xpReward": 4,
+            "options": ["و", "ي", "ا", "ب"],
+            "correctIndex": 2,
+            "explanation": "ا après fatha = voyelle longue 'aa' dans جَمَالٌ."
+          },
+          {
+            "id": "m2l3_ex6",
+            "type": "matching_text_audio",
+            "skill_id": "long_vowels",
+            "xpReward": 7,
+            "prompt": "Écoute et trouve le son qui correspond à chaque voyelle longue",
+            "pairs": [
+              { "text": "جَا", "audioUrl": "/assets/audio/syllables/jim_alif_long.mp3" },
+              { "text": "لُو", "audioUrl": "/assets/audio/syllables/lam_waw_long.mp3" },
+              { "text": "ثِي", "audioUrl": "/assets/audio/syllables/tha_ya_long.mp3" },
+              { "text": "جِي", "audioUrl": "/assets/audio/syllables/jim_ya_long.mp3" }
+            ],
+            "audioPool": [
+              "/assets/audio/syllables/jim_alif_long.mp3",
+              "/assets/audio/syllables/jim_waw_long.mp3",
+              "/assets/audio/syllables/jim_ya_long.mp3",
+              "/assets/audio/syllables/lam_alif_long.mp3",
+              "/assets/audio/syllables/lam_waw_long.mp3",
+              "/assets/audio/syllables/tha_ya_long.mp3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 4,
+      "title": "Positions des lettres — ث ل ج",
+      "lesson_type": "identification",
+      "xp_reward": 25,
+      "duration_minutes": 20,
+      "skill_id": "letter_positions",
+      "content": {
+        "introduction": {
+          "text": "Les nouvelles lettres ث ل ج ont chacune 4 formes selon leur position dans le mot. Attention : ج ح خ ont une forme particulière au milieu.",
+          "positions": [
+            {
+              "letter": "ث",
+              "name": "Tha",
+              "audio": "/assets/audio/letters/tha.mp3",
+              "forms": [
+                { "position": "Isolée", "ar": "ث",   "example": "كُوثٌ",   "note": "" },
+                { "position": "Début",  "ar": "ثـ",  "example": "ثَابِتٌ",  "note": "" },
+                { "position": "Milieu", "ar": "ـثـ", "example": "مِثَالٌ",  "note": "" },
+                { "position": "Fin",    "ar": "ـث",  "example": "لَبِثَ",   "note": "" }
+              ]
+            },
+            {
+              "letter": "ل",
+              "name": "Lam",
+              "audio": "/assets/audio/letters/lam.mp3",
+              "forms": [
+                { "position": "Isolée", "ar": "ل",   "example": "مَالٌ",   "note": "" },
+                { "position": "Début",  "ar": "لـ",  "example": "لَبِثَ",   "note": "" },
+                { "position": "Milieu", "ar": "ـلـ", "example": "كَلِمَةٌ", "note": "" },
+                { "position": "Fin",    "ar": "ـل",  "example": "جَبَلٌ",   "note": "" }
+              ]
+            },
+            {
+              "letter": "ج",
+              "name": "Jim",
+              "audio": "/assets/audio/letters/jim.mp3",
+              "forms": [
+                { "position": "Isolée", "ar": "ج",   "example": "تَاجٌ",   "note": "" },
+                { "position": "Début",  "ar": "جـ",  "example": "جَمِيلٌ",  "note": "" },
+                { "position": "Milieu", "ar": "ـجـ", "example": "نجمة","note": "Le ج au milieu prend une forme compacte" },
+                { "position": "Fin",    "ar": "ـج",  "example": "ثَلْجٌ",   "note": "" }
+              ]
+            }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m2l4_ex1",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans جَمِيلٌ, la lettre ج est en quelle position ?",
+            "promptAr": "جَمِيلٌ",
+             "silent": true,
+            "options": ["Début", "Milieu", "Fin", "Isolée"],
+            "correctIndex": 0,
+            "explanation": "ج est la première lettre de جَمِيلٌ — forme initiale جـ."
+          },
+          {
+            "id": "m2l4_ex2",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans جَبَلٌ, la lettre ل est en quelle position ?",
+            "promptAr": "جَبَلٌ",
+            "silent": true,
+            "xpReward": 5,
+            "options": ["Initiale", "Médiane", "Finale", "Isolée"],
+            "correctIndex": 2,
+            "explanation": "ل est la dernière lettre de جَبَلٌ — forme finale ـل."
+          },
+          {
+            "id": "m2l4_ex3",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans مِثَالٌ, la lettre ث est en quelle position ?",
+            "promptAr": "مِثَالٌ",
+             "silent": true,
+            "xpReward": 5,
+            "options": ["Initiale", "Médiane", "Finale", "Isolée"],
+            "correctIndex": 1,
+            "explanation": "ث est au milieu de مِثَالٌ — forme médiane ـثـ."
+          },
+          {
+            "id": "m2l4_ex4",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Quelle est la forme initiale de ل ?",
+            "promptAr": "ل",
+             "silent": true,
+            "xpReward": 4,
+            "options": ["ـل", "لـ", "ـلـ", "ل"],
+            "correctIndex": 1,
+            "explanation": "لـ est la forme initiale de Lam."
+          },
+          {
+            "id": "m2l4_ex5",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans كَلِمَةٌ, la lettre ل est en quelle position ?",
+            "promptAr": "كَلِمَةٌ",
+             "silent": true,
+            "xpReward": 5,
+            "options": ["Initiale", "Médiane", "Finale", "Isolée"],
+            "correctIndex": 1,
+            "explanation": "ل est au milieu de كَلِمَةٌ — forme médiane ـلـ."
+          },
+          {
+            "id": "m2l4_ex6",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans ثَلْجٌ, la lettre ج est en quelle position ?",
+            "promptAr": "ثَلْجٌ",
+             "silent": true,
+            "xpReward": 5,
+            "options": ["Initiale", "Médiane", "Finale", "Isolée"],
+            "correctIndex": 2,
+            "explanation": "ج est à la fin de ثَلْجٌ — forme finale ـج."
+          },
+          {
+            "id": "m2l4_ex7",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Quelle forme de ث voit-on dans ثَابِتٌ ?",
+            "promptAr": "ثَابِتٌ",
+             "silent": true,
+            "xpReward": 5,
+            "options": ["ثـ (initiale)", "ـثـ (médiane)", "ـث (finale)", "ث (isolée)"],
+            "correctIndex": 0,
+            "explanation": "ث est au début de ثَابِتٌ — forme initiale ثـ."
+          },
+          {
+            "id": "m2l4_ex8",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Combien de formes peut avoir ل ?",
+            "promptAr": null,
+             "silent": true,
+            "xpReward": 3,
+            "options": ["1", "2", "3", "4"],
+            "correctIndex": 3,
+            "explanation": "Comme toutes les lettres arabes qui se connectent : 4 formes — isolée, initiale, médiane, finale."
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 5,
+      "title": "Premiers mots — lecture et compréhension",
+      "lesson_type": "mots",
+      "xp_reward": 30,
+      "duration_minutes": 25,
+      "skill_id": "word_reading",
+      "content": {
+        "introduction": {
+          "text": "Découvrez les premiers mots du Module 2. Chaque mot contient au moins une lettre de ث ل ج. Cliquez sur chaque carte pour entendre.",
+          "words": [
+            { "ar": "ثَلْجٌ",   "phoneme": "thaljun",   "translation": "Neige/glace", "type": "nom",   "audio": "/assets/audio/words/thalj.mp3",   "image": "/assets/images/words/thalj.jpg"   },
+            { "ar": "جِيلٌ",   "phoneme": "jiilun",     "translation": "Génération",  "type": "nom",   "audio": "/assets/audio/words/jiil.mp3",    "image": "/assets/images/words/jiil.jpg"    },
+            { "ar": "كَلْبٌ",  "phoneme": "kalbun",     "translation": "Chien",       "type": "nom",   "audio": "/assets/audio/words/kalb.mp3",    "image": "/assets/images/words/kalb.jpg"    },
+            { "ar": "جَمِيلٌ", "phoneme": "jamiilun",   "translation": "Beau",        "type": "adjectif","audio": "/assets/audio/words/jamiil.mp3", "image": "/assets/images/words/jamiil.jpg"  },
+            { "ar": "كَلِمَةٌ","phoneme": "kalimatun",  "translation": "Mot",         "type": "nom",   "audio": "/assets/audio/words/kalima.mp3",  "image": "/assets/images/words/kalima.jpg"  },
+            { "ar": "جَبَلٌ",  "phoneme": "jabalun",    "translation": "Montagne",    "type": "nom",   "audio": "/assets/audio/words/jabal.mp3",   "image": "/assets/images/words/jabal.jpg"   },
+            { "ar": "مَالٌ",   "phoneme": "maalun",     "translation": "Argent",      "type": "nom",   "audio": "/assets/audio/words/maal.mp3",    "image": "/assets/images/words/maal.jpg"    },
+            { "ar": "لَبِثَ",  "phoneme": "labitha",    "translation": "Il resta",    "type": "verbe", "audio": "/assets/audio/words/labitha.mp3", "image": "/assets/images/words/labitha.jpg" }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m2l5_ex1",
+            "type": "audio_choice",
+            "skill_id": "word_reading",
+            "prompt": "Écoutez et identifiez le mot",
+            "audioUrl": "/assets/audio/words/jamiil.mp3",
+            "xpReward": 5,
+            "options": ["كَلْبٌ", "جَمِيلٌ", "جَبَلٌ", "ثَلْجٌ"],
+            "correctIndex": 1,
+            "explanation": "جَمِيلٌ = jamiilun = beau."
+          },
+          {
+            "id": "m2l5_ex2",
+            "type": "matching",
+            "skill_id": "word_comprehension",
+            "prompt": "Associez chaque mot arabe à sa traduction",
+            "xpReward": 8,
+            "pairs": [
+              { "ar": "كَلْبٌ",  "fr": "Chien"    },
+              { "ar": "جَبَلٌ",  "fr": "Montagne" },
+              { "ar": "مَالٌ",   "fr": "Argent"   },
+              { "ar": "جِيلٌ",   "fr": "Génération" }
+            ]
+          },
+          {
+            "id": "m2l5_ex3",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Que signifie جَمِيلٌ ?",
+            "promptAr": "جَمِيلٌ",
+            "silent": true,
+            "xpReward": 4,
+            "options": ["Montagne", "Chien", "Beau", "Argent"],
+            "correctIndex": 2,
+            "explanation": "جَمِيلٌ = jamiilun = beau (adjectif)."
+          },
+          {
+            "id": "m2l5_ex4",
+            "type": "audio_choice",
+            "skill_id": "word_reading",
+            "prompt": "Écoutez et identifiez le mot",
+            "audioUrl": "/assets/audio/words/thalj.mp3",
+            "xpReward": 5,
+            "options": ["جِيلٌ", "كَلْبٌ", "ثَلْجٌ", "جَبَلٌ"],
+            "correctIndex": 2,
+            "explanation": "ثَلْجٌ = thaljun = neige."
+          },
+          {
+            "id": "m2l5_ex5",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Quel mot signifie 'Mot' ?",
+            "promptAr": null,
+            "silent": true,
+            "xpReward": 4,
+            "options": ["جِيلٌ", "كَلِمَةٌ", "مَالٌ", "ثَلْجٌ"],
+            "correctIndex": 1,
+            "explanation": "كَلِمَةٌ = kalimatun = mot."
+          },
+          {
+            "id": "m2l5_ex6",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Quelle est la nature du mot لَبِثَ ?",
+            "promptAr": "لَبِثَ",
+            "silent": true,
+            "xpReward": 3,
+            "options": ["Nom", "Verbe", "Adjectif", "Autre"],
+            "correctIndex": 1,
+            "explanation": "لَبِثَ = labitha = il resta — c'est un verbe au passé."
+          },
+          {
+            "id": "m2l5_ex_txa1",
+            "type": "matching_text_audio",
+            "skill_id": "word_reading",
+            "xpReward": 8,
+            "prompt": "Écoute et trouve le son qui correspond à chaque mot",
+            "pairs": [
+              { "text": "ثَلْجٌ",   "audioUrl": "/assets/audio/words/thalj.mp3"   },
+              { "text": "كَلْبٌ",   "audioUrl": "/assets/audio/words/kalb.mp3"    },
+              { "text": "جَبَلٌ",   "audioUrl": "/assets/audio/words/jabal.mp3"   },
+              { "text": "جَمِيلٌ",  "audioUrl": "/assets/audio/words/jamiil.mp3"  }
+            ],
+            "audioPool": [
+              "/assets/audio/words/thalj.mp3",
+              "/assets/audio/words/kalb.mp3",
+              "/assets/audio/words/jabal.mp3",
+              "/assets/audio/words/jamiil.mp3",
+              "/assets/audio/words/jiil.mp3",
+              "/assets/audio/words/maal.mp3",
+              "/assets/audio/words/kalima.mp3",
+              "/assets/audio/words/labitha.mp3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 6,
+      "title": "Vocabulaire élargi — noms, verbes, adjectifs",
+      "lesson_type": "mots",
+      "xp_reward": 30,
+      "duration_minutes": 25,
+      "skill_id": "word_comprehension",
+      "content": {
+        "introduction": {
+          "text": "Plus de mots du Module 2. Notez leur nature : nom (اسم), verbe (فعل), adjectif (صِفَة). Cliquez pour entendre.",
+          "words": [
+            { "ar": "ثَابِتٌ",   "phoneme": "thabitun",    "translation": "Fixe, stable",     "type": "adjectif", "audio": "/assets/audio/words/thabit.mp3",    "image": "/assets/images/words/thabit.jpg"    },
+            { "ar": "تِمْثَالٌ", "phoneme": "timthaalun",  "translation": "Statue",            "type": "nom",      "audio": "/assets/audio/words/timthaal.mp3",  "image": "/assets/images/words/timthaal.jpg"  },
+            { "ar": "مِثَالٌ",   "phoneme": "mithaalun",   "translation": "Exemple",           "type": "nom",      "audio": "/assets/audio/words/mithaal.mp3",   "image": "/assets/images/words/mithaal.jpg"   },
+            { "ar": "مَلِكٌ",    "phoneme": "malikun",     "translation": "Roi",               "type": "nom",      "audio": "/assets/audio/words/malik.mp3",     "image": "/assets/images/words/malik.jpg"     },
+            { "ar": "مَمْلَكَةٌ","phoneme": "mamlakатun", "translation": "Royaume",           "type": "nom",      "audio": "/assets/audio/words/mamlaka.mp3",   "image": "/assets/images/words/mamlaka.jpg"   },
+            { "ar": "ثَبَّتَ",   "phoneme": "thabbata",    "translation": "Il fixa",           "type": "verbe",    "audio": "/assets/audio/words/thabbata.mp3",  "image": "/assets/images/words/thabbata.jpg"  },
+            { "ar": "كَلَّمَ",   "phoneme": "kallama",     "translation": "Il parla à",        "type": "verbe",    "audio": "/assets/audio/words/kallama.mp3",   "image": "/assets/images/words/kallama.jpg"   },
+            { "ar": "مَلَكَ",    "phoneme": "malaka",      "translation": "Il régna",          "type": "verbe",    "audio": "/assets/audio/words/malaka.mp3",    "image": "/assets/images/words/malaka.jpg"    },
+            { "ar": "جَمَالٌ",   "phoneme": "jamaalun",    "translation": "Beauté / Jamal",    "type": "nom",      "audio": "/assets/audio/words/jamaal.mp3",    "image": "/assets/images/words/jamaal.jpg"    },
+            { "ar": "كُلْثُومٌ", "phoneme": "kulthuumun",  "translation": "Kulthoum (prénom)", "type": "nom",      "audio": "/assets/audio/words/kulthuum.mp3",  "image": "/assets/images/words/kulthuum.jpg"  }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m2l6_ex1",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Que signifie تِمْثَالٌ ?",
+            "promptAr": "تِمْثَالٌ",
+            "xpReward": 4,
+            "silent": true,
+            "options": ["Exemple", "Statue", "Roi", "Beauté"],
+            "correctIndex": 1,
+            "explanation": "تِمْثَالٌ = timthaalun = statue."
+          },
+          {
+            "id": "m2l6_ex2",
+            "type": "matching",
+            "skill_id": "word_comprehension",
+            "prompt": "Associez les mots à leurs traductions",
+            "xpReward": 8,
+            "pairs": [
+              { "ar": "ثَبَّتَ",   "fr": "Il fixa"   },
+              { "ar": "كَلَّمَ",   "fr": "Il parla à" },
+              { "ar": "مَلَكَ",    "fr": "Il régna"  },
+              { "ar": "لَبِثَ",    "fr": "Il resta"  }
+            ]
+          },
+          {
+            "id": "m2l6_ex3",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Quelle est la nature du mot ثَابِتٌ ?",
+            "promptAr": "ثَابِتٌ",
+            "silent": true,
+            "xpReward": 3,
+            "options": ["Verbe", "Nom", "Adjectif", "Autre"],
+            "correctIndex": 2,
+            "explanation": "ثَابِتٌ = thabitun = fixe, stable — c'est un adjectif."
+          },
+          {
+            "id": "m2l6_ex4",
+            "type": "audio_choice",
+            "skill_id": "word_reading",
+            "prompt": "Écoutez et identifiez le mot",
+            "audioUrl": "/assets/audio/words/kulthuum.mp3",
+            "xpReward": 5,
+            "options": ["جَمَالٌ", "مَلِكٌ", "كُلْثُومٌ", "مَمْلَكَةٌ"],
+            "correctIndex": 2,
+            "explanation": "كُلْثُومٌ = Kulthoum — prénom féminin."
+          },
+          {
+            "id": "m2l6_ex5",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Quel mot signifie 'Royaume' ?",
+            "promptAr": null,
+            "silent": true,
+            "xpReward": 4,
+            "options": ["مَلِكٌ", "مَمْلَكَةٌ", "مِثَالٌ", "جَمَالٌ"],
+            "correctIndex": 1,
+            "explanation": "مَمْلَكَةٌ = mamlakатun = royaume."
+          },
+          {
+            "id": "m2l6_ex6",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Parmi ces mots, lequel est un verbe ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "silent": true,
+            "options": ["مَلِكٌ", "كَلَّمَ", "ثَابِتٌ", "مِثَالٌ"],
+            "correctIndex": 1,
+            "explanation": "كَلَّمَ = kallama = il parla à — c'est un verbe."
+          },
+          {
+            "id": "m2l6_ex_txa1",
+            "type": "matching_text_audio",
+            "skill_id": "word_reading",
+            "xpReward": 8,
+            "prompt": "Écoute et trouve le son qui correspond à chaque mot",
+            "pairs": [
+              { "text": "تِمْثَالٌ", "audioUrl": "/assets/audio/words/timthaal.mp3"  },
+              { "text": "مَلِكٌ",    "audioUrl": "/assets/audio/words/malik.mp3"     },
+              { "text": "كَلَّمَ",   "audioUrl": "/assets/audio/words/kallama.mp3"   },
+              { "text": "جَمَالٌ",   "audioUrl": "/assets/audio/words/jamaal.mp3"    }
+            ],
+            "audioPool": [
+              "/assets/audio/words/timthaal.mp3",
+              "/assets/audio/words/malik.mp3",
+              "/assets/audio/words/kallama.mp3",
+              "/assets/audio/words/jamaal.mp3",
+              "/assets/audio/words/mithaal.mp3",
+              "/assets/audio/words/thabbata.mp3",
+              "/assets/audio/words/mamlaka.mp3",
+              "/assets/audio/words/kulthuum.mp3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+  "sort_order": 7,
+  "title": "Écriture au clavier",
+  "lesson_type": "ecriture_clavier",
+  "xp_reward": 30,
+  "duration_minutes": 25,
+  "skill_id": "word_writing",
+  "content": {
+    "introduction": {
+      "text": "Entraînez-vous à écrire les nouvelles lettres et mots. N'oubliez pas les points de ث (3 points) et ج (1 point en dessous)."
+    },
+    "passing_score": 0.8,
+    "exercises": [
+      {
+        "id": "m2l7_ex1",
+        "type": "input_text",
+        "category": "letter",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez la lettre Tha",
+        "xpReward": 3,
+        "acceptedAnswers": ["ث"],
+        "explanation": "ث = Tha — 3 points au-dessus."
+      },
+      {
+        "id": "m2l7_ex2",
+        "type": "input_text",
+        "category": "letter",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez la lettre Lam",
+        "xpReward": 3,
+        "acceptedAnswers": ["ل"],
+        "explanation": "ل = Lam — grande courbe descendante."
+      },
+      {
+        "id": "m2l7_ex3",
+        "type": "input_text",
+        "category": "letter",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez la lettre Jim",
+        "xpReward": 3,
+        "acceptedAnswers": ["ج"],
+        "explanation": "ج = Jim — demi-cercle avec point en dessous."
+      },
+      {
+        "id": "m2l7_ex4",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'neige' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["ثلج", "ثَلْجٌ", "ثلجٌ"],
+        "explanation": "ثلج = thalj = neige."
+      },
+      {
+        "id": "m2l7_ex5",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'chien' en arabe",
+        "xpReward": 5,
+        "acceptedAnswers": ["كلب", "كَلْبٌ", "كلبٌ"],
+        "explanation": "كلب = kalb = chien."
+      },
+      {
+        "id": "m2l7_ex6",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'roi' en arabe",
+        "xpReward": 5,
+        "acceptedAnswers": ["ملك", "مَلِكٌ", "ملكٌ"],
+        "explanation": "ملك = malik = roi."
+      },
+      {
+        "id": "m2l7_ex7",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'beau' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["جميل", "جَمِيلٌ", "جميلٌ"],
+        "explanation": "جميل = jamiil = beau."
+      },
+      {
+        "id": "m2l7_ex8",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'montagne' en arabe",
+        "xpReward": 5,
+        "acceptedAnswers": ["جبل", "جَبَلٌ", "جبلٌ"],
+        "explanation": "جبل = jabal = montagne."
+      },
+      {
+        "id": "m2l7_ex9",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'mot' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["كلمة", "كَلِمَةٌ", "كلمةٌ"],
+        "explanation": "كلمة = kalima = mot."
+      },
+      {
+        "id": "m2l7_ex10",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'royaume' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["مملكة", "مَمْلَكَةٌ", "مملكةٌ"],
+        "explanation": "مملكة = mamlaka = royaume."
+      },
+      {
+        "id": "m2l7_ex11",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'exemple' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["مثال", "مِثَالٌ", "مثالٌ"],
+        "explanation": "مثال = mithaal = exemple."
+      },
+      {
+        "id": "m2l7_ex12",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'statue' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["تمثال", "تِمْثَالٌ", "تمثالٌ"],
+        "explanation": "تمثال = timthaal = statue."
+      }
+    ]
+  }
+},
+    {
+      "sort_order": 8,
+      "title": "Construire des mots — drag & drop",
+      "lesson_type": "exercices",
+      "xp_reward": 30,
+      "duration_minutes": 20,
+      "skill_id": "word_building",
+      "content": {
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m2l8_ex1",
+            "type": "drag_drop",
+            "skill_id": "word_building",
+            "prompt": "Assemblez les lettres pour former 'neige'",
+            "letters": ["ثـ", "ـلْـ", "ج"],
+            "correctWord": "ثلج",
+            "targetLength": 3,
+            "xpReward": 8,
+            "explanation": "ثلج = ث + ل + ج = neige.",
+            "audioUrl": "/assets/audio/words/thalj.mp3"
+          },
+          {
+            "id": "m2l8_ex2",
+            "type": "drag_drop",
+            "skill_id": "word_building",
+            "prompt": "Assemblez les lettres pour former 'chien'",
+            "letters": ["كـ", "ـلْـ", "ب"],
+            "correctWord": "كلب",
+            "targetLength": 3,
+            "xpReward": 8,
+            "explanation": "كلب = ك + ل + ب = chien.",
+            "audioUrl": "/assets/audio/words/kalb.mp3"
+          },
+          {
+            "id": "m2l8_ex3",
+            "type": "mcq",
+            "skill_id": "word_building",
+            "prompt": "Quelle lettre manque pour compléter ce mot ?",
+            "promptAr": "جَ - يلٌ",
+            "xpReward": 6,
+            "options": ["ـثـ", "ـلـ", "ـمـ", "ـكـ"],
+            "correctIndex": 1,
+            "explanation": "جَمِيلٌ = beau. La lettre م est au milieu.",
+            "prompts": ["Quelle lettre manque ?", "Complétez le mot", "Trouvez la lettre manquante"]
+          },
+          {
+            "id": "m2l8_ex4",
+            "type": "drag_drop",
+            "skill_id": "word_building",
+            "prompt": "Assemblez les lettres pour former 'roi'",
+            "letters": ["مـ", "ـلِـ", "ك"],
+            "correctWord": "ملك",
+            "targetLength": 3,
+            "xpReward": 7,
+            "explanation": "ملك = م + ل + ك = roi.",
+            "audioUrl": "/assets/audio/words/malik.mp3"
+          },
+          {
+            "id": "m2l8_ex5",
+            "type": "mcq",
+            "skill_id": "word_building",
+            "prompt": "Quelle lettre manque dans مِ□َالٌ ?",
+            "promptAr": "مِ□َالٌ",
+            "xpReward": 6,
+            "options": ["ـجـ", "ـثـ", "ـلـ", "ـبـ"],
+            "correctIndex": 1,
+            "explanation": "مِثَالٌ = exemple. La lettre ث est au milieu.",
+            "prompts": ["Quelle lettre manque ?", "Complétez le mot"]
+          },
+          {
+            "id": "m2l8_ex6",
+            "type": "mcq",
+            "skill_id": "word_building",
+            "prompt": "Dans كَلِمَةٌ, quelle est la forme de ل au milieu ?",
+            "promptAr": "كَلِمَةٌ",
+            "xpReward": 5,
+            "options": ["لـ (initiale)", "ـلـ (médiane)", "ـل (finale)", "ل (isolée)"],
+            "correctIndex": 1,
+            "explanation": "ل est au milieu de كَلِمَةٌ — forme médiane ـلـ."
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 9,
+      "title": "Phrases simples — lire et comprendre",
+      "lesson_type": "lecture_phrase",
+      "xp_reward": 35,
+      "duration_minutes": 25,
+      "skill_id": "sentence_reading",
+      "content": {
+        "introduction": {
+          "text": "Lisez ces phrases construites avec les mots des modules 1 et 2. Cliquez pour entendre la lecture.",
+          "words": [
+            { "ar": "مَلَكَ مَلِكٌ مَمْلَكَةً",      "phoneme": "malaka malikun mamlakatan",      "translation": "Un roi régna sur un royaume",      "type": "phrase", "audio": "/assets/audio/phrases/malaka_malik.mp3"    },
+            { "ar": "تِمْثَالٌ جَمِيلٌ",              "phoneme": "timthaalun jamiilun",            "translation": "Une belle statue",                "type": "phrase", "audio": "/assets/audio/phrases/timthaal_jamiil.mp3" },
+            { "ar": "كَلَّمَ جَمَالٌ مَلِكاً",        "phoneme": "kallama jamaalun malikan",       "translation": "Jamal a parlé à un roi",          "type": "phrase", "audio": "/assets/audio/phrases/kallama_jamaal.mp3"  },
+            { "ar": "جَلَبَتْ كُلْثُومُ جُبَّةً",     "phoneme": "jalabat kulthuumu jubbatan",     "translation": "Kulthoum a apporté une robe",     "type": "phrase", "audio": "/assets/audio/phrases/jalabat_kulthuum.mp3"}
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m2l9_ex1",
+            "type": "audio_choice",
+            "skill_id": "sentence_reading",
+            "prompt": "Écoutez et identifiez la phrase",
+            "audioUrl": "/assets/audio/phrases/timthaal_jamiil.mp3",
+            "xpReward": 6,
+            "options": [
+              "مَلَكَ مَلِكٌ مَمْلَكَةً",
+              "تِمْثَالٌ جَمِيلٌ",
+              "كَلَّمَ جَمَالٌ مَلِكاً",
+              "جَلَبَتْ كُلْثُومُ جُبَّةً"
+            ],
+            "correctIndex": 1,
+            "explanation": "تِمْثَالٌ جَمِيلٌ = timthaalun jamiilun = une belle statue."
+          },
+          {
+            "id": "m2l9_ex2",
+            "type": "mcq",
+            "skill_id": "sentence_reading",
+            "prompt": "Que signifie مَلَكَ مَلِكٌ مَمْلَكَةً ?",
+            "promptAr": "مَلَكَ مَلِكٌ مَمْلَكَةً",
+            "xpReward": 5,
+            "options": [
+              "Un roi a écrit un livre",
+              "Un roi régna sur un royaume",
+              "Un roi a parlé à un ministre",
+              "Un roi est mort"
+            ],
+            "correctIndex": 1,
+            "explanation": "مَلَكَ = il régna, مَلِكٌ = roi, مَمْلَكَةً = royaume (COD)."
+          },
+          {
+            "id": "m2l9_ex3",
+            "type": "word_order",
+            "skill_id": "sentence_reading",
+            "prompt": "Remettez les mots dans l'ordre : 'Jamal a parlé à un roi'",
+            "words": ["جَمَالٌ", "كَلَّمَ", "مَلِكاً"],
+            "correctSentence": "كَلَّمَ جَمَالٌ مَلِكاً",
+            "audioUrl": "/assets/audio/phrases/kallama_jamaal.mp3",
+            "xpReward": 7,
+            "explanation": "كَلَّمَ جَمَالٌ مَلِكاً — verbe + sujet + objet."
+          },
+          {
+            "id": "m2l9_ex4",
+            "type": "mcq",
+            "skill_id": "sentence_reading",
+            "prompt": "Que signifie جَلَبَتْ كُلْثُومُ جُبَّةً ?",
+            "promptAr": "جَلَبَتْ كُلْثُومُ جُبَّةً",
+            "xpReward": 6,
+            "options": [
+              "Kulthoum a mangé un repas",
+              "Kulthoum a apporté une robe",
+              "Kulthoum a parlé à un roi",
+              "Kulthoum a écrit une lettre"
+            ],
+            "correctIndex": 1,
+            "explanation": "جَلَبَتْ = elle apporta, كُلْثُومُ = Kulthoum, جُبَّةً = une robe."
+          },
+          {
+            "id": "m2l9_ex5",
+            "type": "mcq",
+            "skill_id": "sentence_reading",
+            "prompt": "Quel mot manque dans cette phrase ?",
+            "promptAr": "تِمْثَالٌ ___",
+            "xpReward": 5,
+            "options": ["مَلِكٌ", "جَمِيلٌ", "كَلِمَةٌ", "ثَلْجٌ"],
+            "correctIndex": 1,
+            "explanation": "تِمْثَالٌ جَمِيلٌ = une belle statue — جَمِيلٌ est l'adjectif.",
+            "prompts": ["Quel mot manque ?", "Complétez la phrase", "Trouvez le mot manquant"]
+          },
+          {
+            "id": "m2l9_ex6",
+            "type": "matching",
+            "skill_id": "sentence_reading",
+            "prompt": "Associez chaque phrase à sa traduction",
+            "xpReward": 8,
+            "pairs": [
+              { "ar": "تِمْثَالٌ جَمِيلٌ",        "fr": "Une belle statue"         },
+              { "ar": "كَلَّمَ جَمَالٌ مَلِكاً",   "fr": "Jamal a parlé à un roi"  }
+            ]
+          },
+          {
+            "id": "m2l9_ex_txa1",
+            "type": "matching_text_audio",
+            "skill_id": "sentence_reading",
+            "xpReward": 9,
+            "prompt": "Écoute et trouve le son qui correspond à chaque phrase",
+            "pairs": [
+              { "text": "مَلَكَ مَلِكٌ مَمْلَكَةً",    "audioUrl": "/assets/audio/phrases/malaka_malik.mp3"    },
+              { "text": "تِمْثَالٌ جَمِيلٌ",           "audioUrl": "/assets/audio/phrases/timthaal_jamiil.mp3" },
+              { "text": "كَلَّمَ جَمَالٌ مَلِكاً",     "audioUrl": "/assets/audio/phrases/kallama_jamaal.mp3"  },
+              { "text": "جَلَبَتْ كُلْثُومُ جُبَّةً",  "audioUrl": "/assets/audio/phrases/jalabat_kulthuum.mp3"}
+            ],
+            "audioPool": [
+              "/assets/audio/phrases/malaka_malik.mp3",
+              "/assets/audio/phrases/timthaal_jamiil.mp3",
+              "/assets/audio/phrases/kallama_jamaal.mp3",
+              "/assets/audio/phrases/jalabat_kulthuum.mp3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 10,
+      "title": "Évaluation globale du Module 2",
+      "lesson_type": "evaluation",
+      "xp_reward": 60,
+      "duration_minutes": 30,
+      "skill_id": "evaluation",
+      "content": {
+        "description": "Évaluation finale du Module 2. Le système choisit les exercices selon votre profil.",
+        "passing_score": 0.7,
+        "exercises": [
+          {
+            "id": "m2l10_ex1",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "prompt": "Identifiez la lettre",
+            "promptAr": "ج",
+            "xpReward": 3,
+            "options": ["Tha", "Lam", "Jim", "Mim"],
+            "correctIndex": 2,
+            "explanation": "ج = Jim — demi-cercle avec un point en dessous."
+          },
+          {
+            "id": "m2l10_ex2",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez",
+            "audioUrl": "/assets/audio/syllables/lam_fatha.mp3",
+            "xpReward": 4,
+            "options": ["لَ", "لِ", "لُ", "لْ"],
+            "correctIndex": 0,
+            "explanation": "لَ = la — fatha."
+          },
+          {
+            "id": "m2l10_ex3",
+            "type": "mcq",
+            "skill_id": "long_vowels",
+            "prompt": "Comment se prononce جَمِيلٌ à l'intérieur ?",
+            "promptAr": "جَمِيلٌ",
+            "xpReward": 4,
+            "options": ["jamilu", "jamiilu", "jamalu", "jamaalu"],
+            "correctIndex": 1,
+            "explanation": "مِي = kasra + ya = voyelle longue 'ii'."
+          },
+          {
+            "id": "m2l10_ex4",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Position de ل dans جَبَلٌ",
+            "promptAr": "جَبَلٌ",
+            "xpReward": 5,
+            "options": ["Initiale", "Médiane", "Finale", "Isolée"],
+            "correctIndex": 2,
+            "explanation": "ل est à la fin de جَبَلٌ — forme finale ـل."
+          },
+          {
+            "id": "m2l10_ex5",
+            "type": "audio_choice",
+            "skill_id": "word_reading",
+            "prompt": "Écoutez et identifiez le mot",
+            "audioUrl": "/assets/audio/words/jabal.mp3",
+            "xpReward": 5,
+            "options": ["كَلِمَةٌ", "جَبَلٌ", "مَلِكٌ", "ثَلْجٌ"],
+            "correctIndex": 1,
+            "explanation": "جَبَلٌ = jabalun = montagne."
+          },
+          {
+            "id": "m2l10_ex6",
+            "type": "matching",
+            "skill_id": "word_comprehension",
+            "prompt": "Associez les mots à leurs traductions",
+            "xpReward": 8,
+            "pairs": [
+              { "ar": "مَلِكٌ",    "fr": "Roi"      },
+              { "ar": "مَمْلَكَةٌ","fr": "Royaume"  },
+              { "ar": "تِمْثَالٌ", "fr": "Statue"   }
+            ]
+          },
+          {
+            "id": "m2l10_ex7",
+            "type": "input_text",
+            "skill_id": "word_writing",
+            "prompt": "Écrivez 'chien' en arabe",
+            "xpReward": 5,
+            "acceptedAnswers": ["كلب", "كَلْبٌ", "كلبٌ"],
+            "explanation": "كلب = kalb = chien."
+          },
+          {
+            "id": "m2l10_ex8",
+            "type": "word_order",
+            "skill_id": "sentence_reading",
+            "prompt": "Remettez dans l'ordre : 'Un roi régna sur un royaume'",
+            "words": ["مَمْلَكَةً", "مَلِكٌ", "مَلَكَ"],
+            "correctSentence": "مَلَكَ مَلِكٌ مَمْلَكَةً",
+            "audioUrl": "/assets/audio/phrases/malaka_malik.mp3",
+            "xpReward": 8,
+            "explanation": "مَلَكَ مَلِكٌ مَمْلَكَةً — verbe + sujet + objet."
+          },
+          {
+            "id": "m2l10_ex9",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Que signifie كَلَّمَ ?",
+            "promptAr": "كَلَّمَ",
+            "xpReward": 4,
+            "options": ["Il écrivit", "Il régna", "Il parla à", "Il resta"],
+            "correctIndex": 2,
+            "explanation": "كَلَّمَ = kallama = il parla à."
+          },
+          {
+            "id": "m2l10_ex10",
+            "type": "matching_text_audio",
+            "skill_id": "word_reading",
+            "xpReward": 8,
+            "prompt": "Écoute et trouve le son qui correspond à chaque mot",
+            "pairs": [
+              { "text": "ثَلْجٌ",   "audioUrl": "/assets/audio/words/thalj.mp3"   },
+              { "text": "جَمِيلٌ",  "audioUrl": "/assets/audio/words/jamiil.mp3"  },
+              { "text": "مَلِكٌ",   "audioUrl": "/assets/audio/words/malik.mp3"   },
+              { "text": "كَلِمَةٌ", "audioUrl": "/assets/audio/words/kalima.mp3"  }
+            ],
+            "audioPool": [
+              "/assets/audio/words/thalj.mp3",
+              "/assets/audio/words/jamiil.mp3",
+              "/assets/audio/words/malik.mp3",
+              "/assets/audio/words/kalima.mp3",
+              "/assets/audio/words/kalb.mp3",
+              "/assets/audio/words/jabal.mp3",
+              "/assets/audio/words/maal.mp3",
+              "/assets/audio/words/timthaal.mp3"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

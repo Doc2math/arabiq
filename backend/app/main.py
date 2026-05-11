@@ -7,6 +7,8 @@ from app.api.v1.router import api_router
 from app.core.config import settings
 from app.db.session import engine
 from app.models.models import Base
+from fastapi.staticfiles import StaticFiles
+
 
 
 
@@ -24,6 +26,7 @@ def create_app() -> FastAPI:
         redoc_url="/redoc" if settings.DEBUG else None,
         lifespan=lifespan,
     )
+    app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
     app.add_middleware(GZipMiddleware, minimum_size=1000)
     app.add_middleware(
         CORSMiddleware,
@@ -37,7 +40,7 @@ def create_app() -> FastAPI:
     @app.get("/health", include_in_schema=False)
     async def health():
         return JSONResponse({"status": "ok", "version": settings.APP_VERSION})
-
+    
     return app
 
 

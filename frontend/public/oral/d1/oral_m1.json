@@ -1,0 +1,146 @@
+{
+  "module": 1,
+  "degree": 1,
+  "letters": [
+    {
+      "ar": "بَ", "phoneme": "ba", "name": "Ba — fatha",
+      "audio": "/assets/audio/syllables/ba_fatha.mp3"
+    },
+    {
+      "ar": "بِ", "phoneme": "bi", "name": "Ba — kasra",
+      "audio": "/assets/audio/syllables/ba_kasra.mp3"
+    },
+    {
+      "ar": "بُ", "phoneme": "bu", "name": "Ba — damma",
+      "audio": "/assets/audio/syllables/ba_damma.mp3"
+    },
+    {
+      "ar": "بَا", "phoneme": "baa", "name": "Ba — longue aa",
+      "audio": "/assets/audio/syllables/ba_alif_long.mp3"
+    },
+    {
+      "ar": "بُو", "phoneme": "buu", "name": "Ba — longue uu",
+      "audio": "/assets/audio/syllables/ba_waw_long.mp3"
+    },
+    {
+      "ar": "بِي", "phoneme": "bii", "name": "Ba — longue ii",
+      "audio": "/assets/audio/syllables/ba_ya_long.mp3"
+    },
+    {
+      "ar": "مَ", "phoneme": "ma", "name": "Mim — fatha",
+      "audio": "/assets/audio/syllables/mim_fatha.mp3"
+    },
+    {
+      "ar": "مِ", "phoneme": "mi", "name": "Mim — kasra",
+      "audio": "/assets/audio/syllables/mim_kasra.mp3"
+    },
+    {
+      "ar": "مُ", "phoneme": "mu", "name": "Mim — damma",
+      "audio": "/assets/audio/syllables/mim_damma.mp3"
+    },
+    {
+      "ar": "مَا", "phoneme": "maa", "name": "Mim — longue aa",
+      "audio": "/assets/audio/syllables/mim_alif_long.mp3"
+    },
+    {
+      "ar": "مُو", "phoneme": "muu", "name": "Mim — longue uu",
+      "audio": "/assets/audio/syllables/mim_waw_long.mp3"
+    },
+    {
+      "ar": "مِي", "phoneme": "mii", "name": "Mim — longue ii",
+      "audio": "/assets/audio/syllables/mim_ya_long.mp3"
+    },
+    {
+      "ar": "كَ", "phoneme": "ka", "name": "Kaf — fatha",
+      "audio": "/assets/audio/syllables/kaf_fatha.mp3"
+    },
+    {
+      "ar": "كِ", "phoneme": "ki", "name": "Kaf — kasra",
+      "audio": "/assets/audio/syllables/kaf_kasra.mp3"
+    },
+    {
+      "ar": "كُ", "phoneme": "ku", "name": "Kaf — damma",
+      "audio": "/assets/audio/syllables/kaf_damma.mp3"
+    },
+    {
+      "ar": "كَا", "phoneme": "kaa", "name": "Kaf — longue aa",
+      "audio": "/assets/audio/syllables/kaf_alif_long.mp3"
+    },
+    {
+      "ar": "كُو", "phoneme": "kuu", "name": "Kaf — longue uu",
+      "audio": "/assets/audio/syllables/kaf_waw_long.mp3"
+    },
+    {
+      "ar": "كِي", "phoneme": "kii", "name": "Kaf — longue ii",
+      "audio": "/assets/audio/syllables/kaf_ya_long.mp3"
+    },
+    {
+      "ar": "تَ", "phoneme": "ta", "name": "Ta — fatha",
+      "audio": "/assets/audio/syllables/ta_fatha.mp3"
+    },
+    {
+      "ar": "تِ", "phoneme": "ti", "name": "Ta — kasra",
+      "audio": "/assets/audio/syllables/ta_kasra.mp3"
+    },
+    {
+      "ar": "تُ", "phoneme": "tu", "name": "Ta — damma",
+      "audio": "/assets/audio/syllables/ta_damma.mp3"
+    },
+    {
+      "ar": "تَا", "phoneme": "taa", "name": "Ta — longue aa",
+      "audio": "/assets/audio/syllables/ta_alif_long.mp3"
+    },
+    {
+      "ar": "تُو", "phoneme": "tuu", "name": "Ta — longue uu",
+      "audio": "/assets/audio/syllables/ta_waw_long.mp3"
+    },
+    {
+      "ar": "تِي", "phoneme": "tii", "name": "Ta — longue ii",
+      "audio": "/assets/audio/syllables/ta_ya_long.mp3"
+    }
+  ],
+  "words": [
+    { "ar": "مَكْتَبٌ", "translation": "bureau", "syllables": "مَكْ - تَ - بٌ", "audio": "/assets/audio/words/maktab.mp3" },
+    { "ar": "كِتَابٌ", "translation": "livre", "syllables": "كِ - تَا - بٌ", "audio": "/assets/audio/words/kitab.mp3" },
+    { "ar": "بَابٌ", "translation": "porte", "syllables": "بَا - بٌ", "audio": "/assets/audio/words/bab.mp3" },
+    { "ar": "كَتَبَ", "translation": "il a écrit", "syllables": "كَ - تَ - بَ", "audio": "/assets/audio/words/kataba.mp3" },
+    { "ar": "بَيْتٌ", "translation": "maison", "syllables": "بَيْ - تٌ", "audio": "/assets/audio/words/bayt.mp3" },
+    { "ar": "كُوبٌ", "translation": "tasse", "syllables": "كُو - بٌ", "audio": "/assets/audio/words/kub.mp3" },
+    { "ar": "بُومَةٌ", "translation": "hibou", "syllables": "بُو - مَ - ةٌ", "audio": "/assets/audio/words/buma.mp3" },
+    { "ar": "مَامَا", "translation": "maman", "syllables": "مَا - مَا", "audio": "/assets/audio/words/mama.mp3" },
+    { "ar": "كُتُبٌ", "translation": "des livres", "syllables": "كُ - تُ - بٌ", "audio": "/assets/audio/words/kutub.mp3" },
+    { "ar": "كاتِبٌ", "translation": "écrivain", "syllables": "كَا - تِ - بٌ", "audio": "/assets/audio/words/katib.mp3" },
+    { "ar": "مَكْتَبَةٌ", "translation": "bibliothèque", "syllables": "مَكْ - تَ - بَ - ةٌ", "audio": "/assets/audio/words/maktaba.mp3" },
+    { "ar": "بَابَا", "translation": "papa", "syllables": "بَا - بَا", "audio": "/assets/audio/words/baba.mp3" },
+    { "ar": "كَتْكُوتٌ", "translation": "poussin", "syllables": "كَتْ - كُو - تٌ", "audio": "/assets/audio/words/katkut.mp3" },
+    { "ar": "مَاتَ", "translation": "il est mort", "syllables": "مَا - تَ", "audio": "/assets/audio/words/mata.mp3" },
+    { "ar": "بَاتَ", "translation": "il a passé la nuit", "syllables": "بَا - تَ", "audio": "/assets/audio/words/bata.mp3" },
+    { "ar": "بَكَتْ", "translation": "elle a pleuré", "syllables": "بَ - كَتْ", "audio": "/assets/audio/words/bakat.mp3" }
+  ],
+  "sentences": [
+    {
+      "ar": "مَاتَ كَتْكُوتٌ",
+      "translation": "Un poussin est mort",
+      "phoneme": "maata katkuutun",
+      "audio": "/assets/audio/phrases/mata_katkut.mp3"
+    },
+    {
+      "ar": "بَاتَ بُوبِي بِبَابِي",
+      "translation": "Bobi a passé la nuit à ma porte",
+      "phoneme": "baata buubi bibaabi",
+      "audio": "/assets/audio/phrases/bata_bubi.mp3"
+    },
+    {
+      "ar": "كَتَبَ كاتِبٌ كِتَاباً",
+      "translation": "Un écrivain a écrit un livre",
+      "phoneme": "kataba kaatibun kitaaban",
+      "audio": "/assets/audio/phrases/kataba_katib.mp3"
+    },
+    {
+      "ar": "بَكَتْ مَامَا",
+      "translation": "Maman a pleuré",
+      "phoneme": "bakat maama",
+      "audio": "/assets/audio/phrases/bakat_mama.mp3"
+    }
+  ]
+}

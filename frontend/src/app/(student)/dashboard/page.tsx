@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import { useAuthStore } from '@/store/authStore'
 import { api } from '@/lib/api'
 
@@ -41,7 +42,7 @@ interface PartData {
   completed_lessons: number
 }
 
-function ProgressBar({ value, max, color, bg }: { value: number; max: number; color: string; bg: string }) {
+function ProgressBar({ value, max, color, bg, label }: { value: number; max: number; color: string; bg: string; label: string }) {
   const pct = max > 0 ? Math.round((value / max) * 100) : 0
   return (
     <div>
@@ -49,7 +50,7 @@ function ProgressBar({ value, max, color, bg }: { value: number; max: number; co
         <div style={{ height: '100%', borderRadius: 3, background: color, width: `${pct}%`, transition: 'width .6s' }} />
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 5 }}>
-        <span style={{ fontSize: 11, color: C.text3 }}>{value}/{max} leçons</span>
+        <span style={{ fontSize: 11, color: C.text3 }}>{label}</span>
         <span style={{ fontSize: 11, color, fontWeight: 700 }}>{pct}%</span>
       </div>
     </div>
@@ -59,6 +60,9 @@ function ProgressBar({ value, max, color, bg }: { value: number; max: number; co
 export default function DashboardPage() {
   const router = useRouter()
   const { user } = useAuthStore()
+  const t = useTranslations('dashboard')
+  const tCommon = useTranslations('common')
+
   const [parts, setParts] = useState<PartData[]>([])
   const [loading, setLoading] = useState(true)
   const [expandedPart, setExpandedPart] = useState<number | null>(1)
@@ -67,7 +71,6 @@ export default function DashboardPage() {
     api.get('/api/v1/curriculum/parts')
       .then(res => {
         setParts(res.data)
-        // Auto-expand la première partie avec du contenu
         const firstWithContent = res.data.find((p: PartData) => p.total_lessons > 0)
         if (firstWithContent) setExpandedPart(firstWithContent.id)
       })
@@ -81,6 +84,18 @@ export default function DashboardPage() {
   const totalCompleted = parts.reduce((s, p) => s + p.completed_lessons, 0)
   const globalPct      = totalLessons > 0 ? Math.round((totalCompleted / totalLessons) * 100) : 0
 
+  const DEGREE_NAMES = ['', t('degree', { number: 1 }), t('degree', { number: 2 }), t('degree', { number: 3 }), t('degree', { number: 4 }), t('degree', { number: 5 }), t('degree', { number: 6 })]
+
+  // Noms traduits des degrés — on les hardcode car ils viennent de fr.json via t()
+  const DEGREE_LABELS: Record<number, string> = {
+    1: 'Découverte',
+    2: 'Fondations',
+    3: 'Développement',
+    4: 'Maîtrise',
+    5: 'Perfectionnement',
+    6: 'Excellence',
+  }
+
   return (
     <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
 
@@ -93,23 +108,23 @@ export default function DashboardPage() {
       }}>
         <div style={{ position: 'absolute', right: -40, top: -40, width: 200, height: 200, borderRadius: '50%', background: 'rgba(255,255,255,0.05)', pointerEvents: 'none' }} />
         <div>
-          <p style={{ fontSize: 14, opacity: 0.75, marginBottom: 4 }}>Bon retour,</p>
+          <p style={{ fontSize: 14, opacity: 0.75, marginBottom: 4 }}>{t('welcome', { name: '' }).replace('{name}', '').trim()},</p>
           <h1 style={{ fontSize: 26, fontWeight: 700, marginBottom: 6 }}>{user.username} 👋</h1>
-          <p style={{ fontSize: 13, opacity: 0.8 }}>Continuez votre apprentissage de l&apos;arabe</p>
+          <p style={{ fontSize: 13, opacity: 0.8 }}>{t('welcome', { name: user.username })}</p>
         </div>
         <div style={{ textAlign: 'right' }}>
           <div style={{ fontSize: 48, marginBottom: 4 }}>🌙</div>
-          <div style={{ fontSize: 13, opacity: 0.7 }}>Niveau {user.level}</div>
+          <div style={{ fontSize: 13, opacity: 0.7 }}>{t('level', { level: user.level })}</div>
         </div>
       </div>
 
       {/* Stats */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 24 }}>
-        {[
-          { label: 'XP total',      value: user.xp,            icon: '⚡', color: C.orange, bg: C.orangeLt },
-          { label: 'Série',         value: `${user.streak}j`,  icon: '🔥', color: C.green,  bg: C.greenLt  },
-          { label: 'Niveau',        value: user.level,         icon: '🏆', color: C.violet, bg: C.violetLt },
-          { label: 'Progression',   value: `${globalPct}%`,    icon: '📈', color: C.blue,   bg: C.blueLt   },
+       {[
+  { label: t('stats.xp'),       value: user.xp,           icon: '⚡', color: C.orange, bg: C.orangeLt },
+  { label: t('stats.streak'),   value: `${user.streak}j`, icon: '🔥', color: C.green,  bg: C.greenLt  },
+  { label: t('stats.level'),    value: user.level,        icon: '🏆', color: C.violet, bg: C.violetLt },
+  { label: t('stats.progress'), value: `${globalPct}%`,   icon: '📈', color: C.blue,   bg: C.blueLt   },
         ].map((s, i) => (
           <div key={i} style={{ background: C.white, border: `2px solid ${C.border}`, borderRadius: 16, padding: '16px', display: 'flex', alignItems: 'center', gap: 10 }}>
             <div style={{ width: 40, height: 40, borderRadius: 10, background: s.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{s.icon}</div>
@@ -121,13 +136,13 @@ export default function DashboardPage() {
         ))}
       </div>
 
-      {/* Curriculum — 6 parties */}
+      {/* Curriculum */}
       <h2 style={{ fontSize: 18, fontWeight: 700, color: C.text, marginBottom: 16 }}>
-        Curriculum — 6 Parties
+        {t('title')}
       </h2>
 
       {loading ? (
-        <div style={{ textAlign: 'center', padding: 60, color: C.text3 }}>Chargement…</div>
+        <div style={{ textAlign: 'center', padding: 60, color: C.text3 }}>{tCommon('loading')}</div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           {parts.map(part => {
@@ -143,7 +158,6 @@ export default function DashboardPage() {
                 transition: 'border-color .2s',
                 opacity: isLocked ? 0.6 : 1,
               }}>
-                {/* En-tête partie */}
                 <button
                   onClick={() => hasContent && setExpandedPart(isExpanded ? null : part.id)}
                   style={{
@@ -155,7 +169,6 @@ export default function DashboardPage() {
                     transition: 'background .2s',
                   }}>
 
-                  {/* Icône partie */}
                   <div style={{
                     width: 48, height: 48, borderRadius: 14, flexShrink: 0,
                     background: hasContent ? `${part.color}20` : C.bg,
@@ -165,11 +178,13 @@ export default function DashboardPage() {
                     {isLocked ? '🔒' : part.icon}
                   </div>
 
-                  {/* Info */}
                   <div style={{ flex: 1, textAlign: 'left' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+                      <span style={{ fontSize: 10, fontWeight: 700, padding: '2px 8px', borderRadius: 8, background: `${part.color}20`, color: part.color }}>
+                        {DEGREE_LABELS[part.degree] ?? `Degré ${part.degree}`}
+                      </span>
                       <span style={{ fontSize: 15, fontWeight: 700, color: hasContent ? C.text : C.text3 }}>
-                        Degré {part.degree} — {part.title.split('—')[1]?.trim() ?? part.title}
+                        {part.title.split('—')[1]?.trim() ?? part.title}
                       </span>
                       {part.is_premium && (
                         <span style={{ fontSize: 10, fontWeight: 700, padding: '2px 8px', borderRadius: 8, background: C.orangeLt, color: C.orange }}>PREMIUM</span>
@@ -184,6 +199,7 @@ export default function DashboardPage() {
                         max={part.total_lessons}
                         color={part.color}
                         bg={`${part.color}15`}
+                        label={t('lessons', { count: `${part.completed_lessons}/${part.total_lessons}` })}
                       />
                     )}
                     {!hasContent && (
@@ -196,38 +212,23 @@ export default function DashboardPage() {
                   )}
                 </button>
 
-                {/* Modules de la partie */}
                 {isExpanded && hasContent && (
                   <div style={{ padding: '16px 20px', display: 'flex', flexDirection: 'column', gap: 10 }}>
-                    {part.modules.map((mod, mi) => {
-                      const modPct = mod.lessons_count > 0 ? Math.round((mod.completed_count / mod.lessons_count) * 100) : 0
+                    {part.modules.map(mod => {
+                      const modPct      = mod.lessons_count > 0 ? Math.round((mod.completed_count / mod.lessons_count) * 100) : 0
                       const isCompleted = mod.completed_count === mod.lessons_count && mod.lessons_count > 0
 
                       return (
                         <button key={mod.id}
                           onClick={() => router.push(`/module/${mod.id}`)}
-                          style={{
-                            background: C.bg, border: `2px solid ${C.border}`,
-                            borderRadius: 14, padding: '14px 16px',
-                            cursor: 'pointer', textAlign: 'left',
-                            display: 'flex', alignItems: 'center', gap: 14,
-                            transition: 'all .15s',
-                          }}
+                          style={{ background: C.bg, border: `2px solid ${C.border}`, borderRadius: 14, padding: '14px 16px', cursor: 'pointer', textAlign: 'left', display: 'flex', alignItems: 'center', gap: 14, transition: 'all .15s' }}
                           onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.borderColor = part.color; el.style.background = `${part.color}08` }}
                           onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.borderColor = C.border; el.style.background = C.bg }}>
 
-                          {/* Numéro module */}
-                          <div style={{
-                            width: 36, height: 36, borderRadius: 10, flexShrink: 0,
-                            background: isCompleted ? part.color : `${part.color}20`,
-                            color: isCompleted ? '#fff' : part.color,
-                            display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            fontSize: 14, fontWeight: 700,
-                          }}>
+                          <div style={{ width: 36, height: 36, borderRadius: 10, flexShrink: 0, background: isCompleted ? part.color : `${part.color}20`, color: isCompleted ? '#fff' : part.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, fontWeight: 700 }}>
                             {isCompleted ? '✓' : `M${mod.sort_order}`}
                           </div>
 
-                          {/* Info module */}
                           <div style={{ flex: 1, minWidth: 0 }}>
                             <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 4, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                               {mod.title}
@@ -240,11 +241,10 @@ export default function DashboardPage() {
                             </div>
                           </div>
 
-                          {/* XP + flèche */}
                           <div style={{ textAlign: 'right', flexShrink: 0 }}>
                             <div style={{ fontSize: 12, fontWeight: 700, color: C.orange }}>⚡ {mod.total_xp} XP</div>
                             <div style={{ fontSize: 12, color: part.color, fontWeight: 600, marginTop: 2 }}>
-                              {modPct === 100 ? 'Terminé ✓' : modPct > 0 ? 'Continuer →' : 'Commencer →'}
+                              {modPct === 100 ? `${t('completed')} ✓` : modPct > 0 ? `${t('continueLesson')} →` : `${t('startModule')} →`}
                             </div>
                           </div>
                         </button>

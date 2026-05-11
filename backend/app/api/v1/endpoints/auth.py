@@ -16,11 +16,12 @@ async def register(payload: UserCreate, db: AsyncSession = Depends(get_db)):
     if existing.scalar_one_or_none():
         raise HTTPException(status.HTTP_409_CONFLICT, detail="Email already registered.")
     user = User(
-        email=payload.email,
-        username=payload.username,
-        hashed_password=hash_password(payload.password),
-        native_language=payload.native_language,
-    )
+    email=payload.email,
+    username=payload.username,
+    hashed_password=hash_password(payload.password),
+    native_language=payload.native_language,
+    role=payload.role,  # ← ajouter
+      )
     db.add(user)
     await db.flush()
     tokens = TokenPair(

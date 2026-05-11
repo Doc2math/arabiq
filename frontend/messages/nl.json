@@ -1,0 +1,562 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "confirm": "Bevestigen",
+    "delete": "Verwijderen",
+    "edit": "Bewerken",
+    "back": "Terug",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "close": "Sluiten",
+    "search": "Zoeken",
+    "filter": "Filteren",
+    "all": "Alles",
+    "yes": "Ja",
+    "no": "Nee",
+    "or": "of",
+    "and": "en",
+    "required": "Vereist",
+    "optional": "Optioneel",
+    "refresh": "Vernieuwen",
+    "download": "Downloaden",
+    "copy": "Kopiëren",
+    "send": "Versturen",
+    "submit": "Indienen",
+    "continue": "Doorgaan",
+    "finish": "Afsluiten",
+    "start": "Beginnen",
+    "retry": "Opnieuw proberen",
+    "logout": "Uitloggen",
+    "login": "Inloggen",
+    "register": "Registreren",
+    "profile": "Mijn profiel",
+    "settings": "Instellingen",
+    "home": "Startpagina"
+  },
+  "nav": {
+    "modules": "Modules",
+    "progress": "Voortgang",
+    "sheets": "Bladen",
+    "ranking": "Ranking",
+    "tools": "Tools",
+    "references": "Referenties",
+    "alphabet": "Alfabet",
+    "rules": "Regels",
+    "mySchool": "Mijn school",
+    "certificates": "Mijn certificaten"
+  },
+  "auth": {
+    "login": {
+      "title": "Inloggen",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "forgotPassword": "Wachtwoord vergeten?",
+      "noAccount": "Nog geen account?",
+      "submitBtn": "Inloggen",
+      "loading": "Inloggen…",
+      "error": "E-mail of wachtwoord incorrect"
+    },
+    "register": {
+      "title": "Registratie",
+      "chooseType": "Kies uw accounttype",
+      "email": "E-mail",
+      "username": "Gebruikersnaam",
+      "password": "Wachtwoord",
+      "confirmPassword": "Bevestig wachtwoord",
+      "passwordHint": "Min. 8 karakters met een cijfer",
+      "alreadyAccount": "Al een account?",
+      "submitBtn": "Maak mijn account aan",
+      "loading": "Aanmaken…",
+      "passwordMismatch": "Wachtwoorden komen niet overeen",
+      "passwordTooShort": "Het wachtwoord moet ten minste 8 karakters bevatten",
+      "passwordNoDigit": "Het wachtwoord moet ten minste één cijfer bevatten",
+      "accountTypes": {
+        "student": {
+          "label": "Leerling",
+          "desc": "Ik leer Arabisch op mijn eigen tempo"
+        },
+        "teacher": {
+          "label": "Leraar",
+          "desc": "Ik geef les in een klas of privatelessen"
+        },
+        "institution": {
+          "label": "Instelling",
+          "desc": "School, taalinstituut, vereniging"
+        }
+      },
+      "continueAs": "Doorgaan als {type} →",
+      "teacherNote": "Na registratie wordt u doorgestuurd naar het aanmaken van uw instituutspace. Profiteer van 30 dagen gratis proefperiode."
+    }
+  },
+  "dashboard": {
+    "title": "Mijn modules",
+    "welcome": "Hallo {name}!",
+    "continueLesson": "Doorgaan",
+    "startModule": "Beginnen",
+    "locked": "Vergrendeld",
+    "completed": "Voltooid",
+    "inProgress": "Bezig",
+    "xp": "{xp} XP",
+    "level": "Niveau {level}",
+    "streak": "{days} dagen",
+    "module": "Module {number}",
+    "lessons": "{count} lessen",
+    "degree": "Graaf {number}",
+    "stats": {
+      "xp": "Totaal XP",
+      "streak": "Reeks",
+      "level": "Niveau",
+      "progress": "Voortgang"
+    }
+  },
+  "lesson": {
+    "start": "Begin de les",
+    "next": "Volgende",
+    "check": "Controleren",
+    "correct": "Correct!",
+    "incorrect": "Niet helemaal",
+    "explanation": "Uitleg",
+    "score": "Score: {score}%",
+    "xpEarned": "+{xp} XP",
+    "completed": "Les voltooid!",
+    "passingScore": "Minimumscore: {score}%",
+    "listen": "Luisteren",
+    "exercise": "Oefening {current}/{total}",
+    "types": {
+      "identification": "Identificatie",
+      "harakat": "Harakat",
+      "mots": "Woordenschat",
+      "ecriture_clavier": "Schrijven",
+      "exercices": "Oefeningen",
+      "lecture_phrase": "Lezen",
+      "evaluation": "Evaluatie"
+    },
+    "intro": {
+      "letters": "De letters",
+      "signs": "De tekens",
+      "words": "De woorden",
+      "positions": "Posities",
+      "practice": "Oefenen →"
+    },
+    "writing": {
+      "prompt": "Schrijf in het Arabisch",
+      "hint": "Activeer het Arabische toetsenbord (Windows: Alt+Shift)",
+      "accepted": "Antwoord geaccepteerd",
+      "tryAgain": "Probeer opnieuw"
+    }
+  },
+  "progress": {
+    "title": "Mijn voortgang",
+    "overview": "Overzicht",
+    "byModule": "Per module",
+    "bySkill": "Per vaardigheid",
+    "totalXP": "Totaal XP",
+    "streak": "Huidige reeks",
+    "lessonsCompleted": "Voltooide lessen",
+    "avgScore": "Gemiddelde score",
+    "skills": {
+      "letter_recognition": "Letterherkenning",
+      "letter_writing": "Letter schrijven",
+      "harakat_reading": "Klinkers (harakat)",
+      "long_vowels": "Lange klinkers",
+      "tanwin": "Tanwīn",
+      "letter_positions": "Posities van letters",
+      "word_reading": "Woorden lezen",
+      "word_comprehension": "Woordbegrip",
+      "word_writing": "Woorden schrijven",
+      "word_building": "Woordconstructie",
+      "sentence_reading": "Zinnen lezen"
+    },
+    "status": {
+      "mastered": "Beheerst",
+      "good": "Goed",
+      "in_progress": "Bezig",
+      "weak": "Moet opnieuw worden gedaan"
+    }
+  },
+  "sheets": {
+    "title": "Schrijfbladen",
+    "subtitle": "Download de schrijfbladen om met de hand of op een touchscreen te oefenen. Elk blad bevat de letter in al zijn posities met oefengrids.",
+    "howTo": "Hoe deze bladen te gebruiken?",
+    "howToDesc": "Print ze op A4-papier of gebruik ze op een tablet met een stylus. Elk blad bevat 3 voortgangsmodellen: zwart (na te volgen), grijs (te volgen), grijs (zelfstandig). Compatibel met zwart-wit afdrukken.",
+    "available": "{count} bladen beschikbaar",
+    "comingSoon": "Binnenkort beschikbaar",
+    "downloadAll": "Alles downloaden ({count} bladen)",
+    "downloadLetter": "Blad {name}",
+    "preparingSheets": "Bladen worden voorbereid voor deze module.",
+    "forms": {
+      "isolated": "isolated",
+      "initial": "begin",
+      "medial": "midden",
+      "final": "eind"
+    },
+    "tips": {
+      "title": "Tips voor goed oefenen",
+      "pen": {
+        "title": "Balpen of stylus",
+        "desc": "Gebruik een balpen of stylus op een tablet voor een soepele lijn."
+      },
+      "repeat": {
+        "title": "Herhaal 3 keer",
+        "desc": "Volg het zwarte model, dan de grijze, en schrijf vervolgens zelf op de lege lijnen."
+      },
+      "direction": {
+        "title": "Observeer de richting",
+        "desc": "Arabisch wordt van rechts naar links geschreven. Begin altijd vanaf de rechterkant."
+      },
+      "oneLetter": {
+        "title": "Eén letter tegelijk",
+        "desc": "Beheers elke positie (op zichzelf, begin, midden, einde) voordat je verder gaat naar de volgende."
+      }
+    }
+  },
+  "ranking": {
+    "title": "Ranglijst",
+    "rank": "#{rank}",
+    "you": "Jij",
+    "xp": "{xp} XP",
+    "level": "Niv. {level}",
+    "periods": {
+      "all": "Alle tijden",
+      "week": "Deze week",
+      "month": "Deze maand"
+    }
+  },
+  "profile": {
+    "title": "Mijn profiel",
+    "memberSince": "Lid sinds {date}",
+    "personalInfo": "Persoonlijke informatie",
+    "username": "Gebruikersnaam",
+    "email": "Email",
+    "language": "Leerlingtaal",
+    "editBtn": "Bewerken",
+    "saveBtn": "Opslaan",
+    "cancelBtn": "Annuleren",
+    "saved": "Profiel bijgewerkt",
+    "institution": {
+      "title": "Instelling ruimte",
+      "createBtn": "Maak een instelling ruimte",
+      "manageBtn": "Mijn instelling",
+      "studentDesc": "Ben je een leraar of schooldirecteur? Maak een instelling ruimte om je studenten te beheren.",
+      "adminDesc": "Je beheert een instelling ruimte. Toegang tot je dashboard."
+    },
+    "dangerZone": {
+      "title": "Gevarenzone",
+      "deleteAccount": "Verwijder mijn account"
+    }
+  },
+  "institution": {
+    "create": {
+      "title": "Maak je instelling ruimte",
+      "subtitle": "Beheer je studenten, volg hun voortgang en krijg toegang tot gedetailleerde onderwijsrapporten.",
+      "trialNote": "Gratis proef van 30 dagen — geen creditcard vereist.",
+      "steps": {
+        "type": "Type",
+        "plan": "Plan",
+        "info": "Informatie"
+      },
+      "types": {
+        "school": {
+          "label": "School",
+          "desc": "Basisschool, middelbare school, universiteit"
+        },
+        "teacher": {
+          "label": "Onafhankelijke leraar",
+          "desc": "Bijles of in groep"
+        },
+        "center": {
+          "label": "Taalcentrum",
+          "desc": "Instituut, cultureel centrum, vereniging"
+        }
+      },
+      "plans": {
+        "title": "Kies je plan",
+        "trialNote": "30 dagen gratis proef op alle plannen",
+        "popular": "POPULAIR",
+        "selected": "Geselecteerd",
+        "students": "tot {max} studenten"
+      },
+      "info": {
+        "name": "Naam van de instelling",
+        "contactEmail": "Contactemail",
+        "city": "Stad",
+        "website": "Website (optioneel)",
+        "submitBtn": "Maak mijn instelling",
+        "loading": "Aan het maken...",
+        "trialConfirm": "Door je ruimte te creëren, geniet je van 30 dagen gratis proef. Geen creditcard vereist."
+      }
+    },
+    "dashboard": {
+      "title": "Mijn instelling",
+      "tabs": {
+        "overview": "Overzicht",
+        "students": "Studenten"
+      },
+      "stats": {
+        "activeStudents": "Actieve studenten",
+        "avgScore": "Gemiddelde score",
+        "avgXP": "Gemiddelde XP",
+        "capacity": "Gebruikte plaatsen"
+      },
+      "capacity": {
+        "title": "Capaciteit van het plan",
+        "remaining": "{count} plaatsen over",
+        "upgrade": "Overweeg je plan te upgraden!"
+      },
+      "students": {
+        "search": "Zoek een student...",
+        "addBtn": "Toevoegen",
+        "noStudents": "Geen studenten gevonden",
+        "columns": {
+          "student": "Student",
+          "email": "Email",
+          "group": "Groep",
+          "xp": "XP",
+          "level": "Niveau",
+          "status": "Status",
+          "actions": "Acties"
+        },
+        "status": {
+          "active": "Actief",
+          "inactive": "Inactief"
+        },
+        "add": {
+          "title": "Voeg een student toe",
+          "email": "Email",
+          "username": "Gebruikersnaam",
+          "password": "Wachtwoord",
+          "group": "Groep (optioneel)",
+          "submitBtn": "Maak leerling aan",
+          "loading": "Aan het maken..."
+        },
+        "remove": "{name} uit de instelling verwijderen?"
+      },
+      "progress": {
+        "title": "Voortgang van {name}",
+        "tabs": {
+          "summary": "Samenvatting",
+          "skills": "Vaardigheden",
+          "modules": "Modules"
+        },
+        "strengths": "Sterke punten",
+        "weaknesses": "Te verbeteren",
+        "noData": "Geen gegevens beschikbaar",
+        "noExercises": "Nog geen oefeningen voltooid",
+        "noModules": "Geen modules gestart"
+      }
+    }
+  },
+  "moduleReport": {
+    "title": "Onderwijsrapport",
+    "scores": {
+      "dailyWork": "Dagelijks werk",
+      "evaluation": "Algemene evaluatie",
+      "final": "Eindgemiddelde",
+      "passed": "Module geslaagd",
+      "failed": "Niet geaccepteerd",
+      "good": "Voldoende",
+      "improve": "Te verbeteren",
+      "insufficient": "Onvoldoende"
+    },
+    "diagnostic": {
+      "solid": "Sterke beheersing",
+      "forgetting": "Vergeten of evaluatiestress",
+      "shortTerm": "Korte termijn geheugen",
+      "gaps": "Fundamentele hiaten"
+    },
+    "recommendation": "Aanbeveling",
+    "skills": "Details per vaardigheid",
+    "certificate": {
+      "title": "Certificaat van voltooiing",
+      "desc": "Je hebt de {module} voltooid met een gemiddelde van {score}%."
+    },
+    "actions": {
+      "mainMenu": "Hoofdmenu",
+      "nextModule": "Module {number} →",
+      "practice": "Blijf oefenen"
+    }
+  },
+  "tools": {
+    "title": "Arabische hulpmiddelen",
+    "editor": {
+      "placeholder": "Schrijf hier in het Arabisch...",
+      "colorPalette": "Kleurenpalet",
+      "customColor": "Aangepaste kleur",
+      "fontSize": "Grootte",
+      "direction": {
+        "rtl": "RTL",
+        "ltr": "LTR"
+      },
+      "normalize": "NFC",
+      "copy": "Kopiëren",
+      "download": "Downloaden",
+      "fullscreen": "Volledig scherm",
+      "numbers": "Arabische cijfers"
+    }
+  },
+  "landing": {
+    "nav": {
+      "features": "Functionaliteiten",
+      "modules": "Modules",
+      "testimonials": "Getuigenissen",
+      "blog": "Blog",
+      "login": "Inloggen",
+      "register": "Registreren →",
+      "startFree": "Gratis beginnen →"
+    },
+    "hero": {
+      "badge": "Platform voor Arabische taalverwerving",
+      "title1": "Leer Arabisch",
+      "title2": "in jouw tempo",
+      "desc": "LangDad begeleidt je stap voor stap in het leren van het Arabische alfabet, lezen en schrijven.",
+      "startBtn": "Gratis beginnen →",
+      "loginBtn": "Inloggen",
+      "demo": {
+        "question": "Welke letter is dit?",
+        "excellent": "+3 XP ⚡ Uitstekend!"
+      }
+    },
+    "stats": {
+      "lessons": "Lessens",
+      "exercises": "Oefeningen",
+      "modules": "Modules",
+      "degrees": "Graden"
+    },
+    "features": {
+      "badge": "FUNCTIONALITEITEN",
+      "title": "Alles wat je nodig hebt",
+      "desc": "Een complete didactische benadering voor effectief Arabisch leren.",
+      "items": {
+        "bkt": {
+          "title": "Adaptief leren",
+          "desc": "Onze BKT-engine analyseert je voortgang in realtime en past de oefeningen aan je niveau aan."
+        },
+        "sheets": {
+          "title": "Schrijfpagina's",
+          "desc": "Print of traceer de letters op een touchscreen met geleide roosters en progressieve sjablonen."
+        },
+        "audio": {
+          "title": "Natuurlijke audio",
+          "desc": "Elke letter, lettergreep en woord wordt uitgesproken door een native speaker."
+        },
+        "gamification": {
+          "title": "Gamificatie",
+          "desc": "XP, niveaus, reeksen en ranglijsten: blijf gemotiveerd met een beloningssysteem."
+        },
+        "multiplatform": {
+          "title": "Multi-platform",
+          "desc": "Leer op computer, tablet of mobiel. Je voortgang synchroniseert overal."
+        },
+        "languages": {
+          "title": "5 interface talen",
+          "desc": "Beschikbaar in het Frans, Engels, Spaans, Duits en Nederlands."
+        }
+      }
+    },
+    "curriculum": {
+      "badge": "CURRICULUM",
+      "title": "Een gestructureerd pad",
+      "desc": "Elk module introduceert nieuwe letters met progressieve oefeningen.",
+      "available": "BESCHIKBAAR",
+      "comingSoon": "BINNENKORT",
+      "startBtn": "Beginnen →",
+      "preparingBtn": "🔒 In voorbereiding",
+      "module1desc": "De 4 eerste letters en de basis van de Arabische leesvaardigheid",
+      "module2desc": "Langdurige klinkers en nieuwe letters",
+      "module3desc": "Uitbreiding van de woordenschat"
+    },
+    "testimonials": {
+      "badge": "GETUIGENISSEN",
+      "title": "Zij leren met LangDad"
+    },
+    "cta": {
+      "title": "Klaar om je reis te beginnen?",
+      "desc": "Sluit je aan bij duizenden leerlingen en beheers het Arabische alfabet met LangDad.",
+      "registerBtn": "Maak mijn gratis account aan →",
+      "loginBtn": "Inloggen"
+    },
+    "footer": {
+      "copyright": "© 2026 LangDad — Leerplatform voor Arabisch",
+      "privacy": "Privacy",
+      "terms": "Algemene voorwaarden",
+      "contact": "Contact"
+    }
+  },
+  "certificates": {
+    "title": "Mijn certificaten",
+    "subtitle": "Jouw LangDad behaalde certificaten",
+    "viewBtn": "Bekijk mijn certificaten →",
+    "empty": {
+      "title": "Nog geen certificaat",
+      "desc": "Voltooi de evaluatie van een module met een score ≥ 80% om je certificaat te ontvangen.",
+      "btn": "Ga door met leren →"
+    },
+    "score": "Score : {score}%",
+    "issuedOn": "Uitgegeven op {date}",
+    "downloadBtn": "Download PDF",
+    "verifyBtn": "Verifiëren",
+    "deleteBtn": "Verwijderen",
+    "deleteConfirm": "Dit certificaat verwijderen? Je kunt een nieuw certificaat genereren.",
+    "deleteError": "Fout bij het verwijderen",
+    "encourage": "Ga door met leren om nieuwe certificaten te behalen. Elk module dat met ≥ 80% wordt voltooid, geeft recht op een officieel LangDad certificaat.",
+    "navLink": "Mijn certificaten"
+  },
+  "blog": {
+    "badge": "BLOG LANGDAD",
+    "hero_title": "Arabisch leren,",
+    "hero_title_highlight": "één artikel tegelijk",
+    "hero_subtitle": "Onderwijstips, taalkundige uitleg en nieuws van het LangDad platform.",
+    "search_placeholder": "Zoek een artikel...",
+    "featured_label": "⭐ UITGELICHT",
+    "read_article": "Lees het artikel →",
+    "read": "Lezen →",
+    "no_results": "Geen artikelen gevonden.",
+    "reset": "Resetten",
+    "loading": "Laden…",
+    "newsletter_title": "Blijf op de hoogte",
+    "newsletter_subtitle": "Schrijf je in om nieuwe artikelen en updates van LangDad te ontvangen.",
+    "newsletter_placeholder": "jouw@email.com",
+    "newsletter_button": "Abonneren →",
+    "back_to_blog": "← Terug naar de blog",
+    "start_learning": "Begin met leren →",
+    "privacy": "Privacy",
+    "terms": "Algemene voorwaarden",
+    "contact": "Contact",
+    "login": "Inloggen",
+    "register": "Registreren →",
+    "register_free": "Begin gratis →",
+    "nav_home": "Startpagina",
+    "nav_features": "Functionaliteiten",
+    "nav_modules": "Modules",
+    "nav_blog": "Blog",
+    "cat_all": "Alle",
+    "cat_pedagogy": "Pedagogie",
+    "cat_arabic": "Arabisch",
+    "cat_tips": "Tips",
+    "cat_news": "Nieuws"
+  },
+  "oral": {
+    "letters": "Letters",
+    "words": "Woorden",
+    "sentences": "Zinnen",
+    "quit": "Afsluiten ✕",
+    "listen": "Luisteren",
+    "pronounce": "Uitspreken",
+    "finished": "Ik ben klaar",
+    "analyzing": "Analyseren…",
+    "next": "Volgende →",
+    "listening": "Luisteren…",
+    "pass": "Doorgeven",
+    "of": "/",
+    "level_l1": "Opnieuw te doen",
+    "level_l2": "Moeilijk",
+    "level_l3": "In ontwikkeling",
+    "level_l4": "Bijna!",
+    "level_l5": "Goed!",
+    "level_l6": "Zeer goed!",
+    "level_l7": "Uitstekend!"
+  }
+}

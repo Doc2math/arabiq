@@ -12,6 +12,8 @@ interface User {
   streak: number
   is_premium: boolean
   is_admin: boolean
+  role: string
+  institution_id: string | null
   created_at: string
 }
 
@@ -22,7 +24,7 @@ interface AuthState {
   isLoading: boolean
   error: string | null
   login: (email: string, password: string) => Promise<void>
-  register: (email: string, username: string, password: string) => Promise<void>
+  register: (email: string, username: string, password: string, role?: string) => Promise<void>
   logout: () => void
   fetchMe: () => Promise<void>
   clearError: () => void
@@ -58,10 +60,10 @@ export const useAuthStore = create<AuthState>()(
         }
       },
 
-      register: async (email, username, password) => {
+      register: async (email, username, password, role = 'student') => {
         set({ isLoading: true, error: null })
         try {
-          const { data } = await authApi.register({ email, username, password })
+          const { data } = await authApi.register({ email, username, password, role })
           localStorage.setItem('access_token', data.tokens.access_token)
           localStorage.setItem('refresh_token', data.tokens.refresh_token)
           set({

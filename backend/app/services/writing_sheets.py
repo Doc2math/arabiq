@@ -65,10 +65,10 @@ MODULE1_LETTERS = [
         'words': [
             ('بَابٌ', 'baabun', 'porte'),
             ('كِتَابٌ', 'kitaabun', 'livre'),
-            ('بَيْتٌ', 'baytun', 'maison'),
+            ('مبيت', 'baytun', 'maison'),
             ('بُومَةٌ', 'buumatun', 'hibou'),
         ],
-        'note': 'Ba: coque horizontale + 1 point dessous. Apres ا و ر ز د ذ en fin de mot -> forme isolee.',
+        'note': 'Ba: coque horizontale + 1 point dessous.',
     },
     {
         'letter': 'م', 'name': 'Mim', 'phoneme': 'm',
@@ -76,9 +76,9 @@ MODULE1_LETTERS = [
         'forms': [('Isolée','م'), ('Début','مـ'), ('Milieu','ـمـ'), ('Fin','ـم')],
         'words': [
             ('مَكْتَبٌ', 'maktabun', 'bureau'),
-            ('مَامَا', 'maama', 'maman'),
-            ('مَكْتَبَةٌ', 'maktabatun', 'bibliotheque'),
-            ('مَاتَ', 'maata', 'il est mort'),
+            ('تمر', 'maama', 'maman'),
+            ('كتم', 'maktabatun', 'bibliotheque'),
+            ('تمام', 'maata', 'il est mort'),
         ],
         'note': 'Mim: cercle ferme + queue vers le bas. Forme compacte au milieu des mots.',
     },
@@ -88,9 +88,9 @@ MODULE1_LETTERS = [
         'forms': [('Isolée','ك'), ('Début','كـ'), ('Milieu','ـكـ'), ('Fin','ـك')],
         'words': [
             ('كِتَابٌ', 'kitaabun', 'livre'),
-            ('كاتِبٌ', 'kaatibun', 'ecrivain'),
-            ('كُتُبٌ', 'kutubun', 'livres'),
-            ('كَتَبَ', 'kataba', 'il a ecrit'),
+            ('مكتب', 'kaatibun', 'ecrivain'),
+            ('ملك', 'kutubun', 'livres'),
+            ('ملاك', 'kataba', 'il a ecrit'),
         ],
         'note': "Kaf: forme en L avec trait diagonal. En finale peut aussi s'ecrire K selon le style.",
     },
@@ -107,11 +107,50 @@ MODULE1_LETTERS = [
         'note': 'Ta: 2 points au-dessus. Ta marbuta (ة) uniquement en fin de mot.',
     },
 ]
+MODULE2_LETTERS = [
+    {
+        'letter': 'ث', 'name': 'Tha', 'phoneme': 'th',
+        'color': '#6C3FC5', 'color_lt': '#EDE8FB',
+        'forms': [('Isolée','ث'), ('Début','ثـ'), ('Milieu','ـثـ'), ('Fin','ـث')],
+        'words': [
+            ('ثَلْجٌ',   'thaljun',   'neige'),
+            ('ثَابِتٌ',  'thabitun',  'fixe'),
+            ('مِثَالٌ',  'mithaalun', 'exemple'),
+            ('ثَبَّتَ',  'thabbata',  'il fixa'),
+        ],
+        'note': 'Tha: identique à Ta mais avec 3 points au-dessus.',
+    },
+    {
+        'letter': 'ل', 'name': 'Lam', 'phoneme': 'l',
+        'color': '#F07C1E', 'color_lt': '#FEF0E3',
+        'forms': [('Isolée','ل'), ('Début','لـ'), ('Milieu','ـلـ'), ('Fin','ـل')],
+        'words': [
+            ('كَلْبٌ',   'kalbun',    'chien'),
+            ('جَبَلٌ',   'jabalun',   'montagne'),
+            ('كَلِمَةٌ', 'kalimatun', 'mot'),
+            ('جبال',   'labitha',   'il resta'),
+        ],
+        'note': 'Lam: grande courbe descendante vers la gauche.',
+    },
+    {
+        'letter': 'ج', 'name': 'Jim', 'phoneme': 'j',
+        'color': '#2BA84A', 'color_lt': '#E3F7E8',
+        'forms': [('Isolée','ج'), ('Début','جـ'), ('Milieu','ـجـ'), ('Fin','ـج')],
+        'words': [
+            ('جَبَلٌ',  'jamiilun',  'beau'),
+            ('نجل',   'jabalun',   'montagne'),
+            ('ثلج',    'jiilun',    'génération'),
+            ('تاج',  'jamaalun',  'beauté'),
+        ],
+        'note': 'Jim: demi-cercle avec un point en dessous.',
+    },
+]
 
-# Registre des modules → lettres (à enrichir au fil des modules)
 MODULES_LETTERS = {
     1: MODULE1_LETTERS,
+    2: MODULE2_LETTERS,
 }
+
 
 # ── Fonctions de dessin ───────────────────────────────────────
 def _draw_grid_band(c, x, y, width, height, cell=CELL):
@@ -139,11 +178,11 @@ def _make_sheet_buffer(ld: dict) -> bytes:
     color_lt = HexColor(ld['color_lt'])
 
     # ── Header ─────────────────────────────────────────────
-    c.setFillColor(color)
+    c.setFillColor(color) 
     c.rect(0, H - HEADER_H, W, HEADER_H, fill=1, stroke=0)
     c.setFillColor(HexColor('#FFFFFF'))
     c.setFont('Helvetica-Bold', 16)
-    c.drawString(MARGIN, H - HEADER_H/2 + 6, 'LangNadir')
+    c.drawString(MARGIN, H - HEADER_H/2 + 6, 'LangDad')
     c.setFont('Helvetica', 9)
     c.drawString(MARGIN, H - HEADER_H/2 - 8, "Fiche d'ecriture — Module 1")
     c.setFont('Helvetica-Bold', 22)
@@ -161,7 +200,7 @@ def _make_sheet_buffer(ld: dict) -> bytes:
     c.drawString(MARGIN, y, 'Formes selon la position')
     c.setStrokeColor(color)
     c.setLineWidth(1.2)
-    c.line(MARGIN, y - 3, MARGIN + 175, y - 3)
+    c.line(MARGIN, y - 3, MARGIN + 120, y - 3)
     y -= 12
 
     forms = ld['forms']
@@ -202,7 +241,7 @@ def _make_sheet_buffer(ld: dict) -> bytes:
     c.drawString(MARGIN, y, "Entrainement — lettres")
     c.setStrokeColor(color)
     c.setLineWidth(1.2)
-    c.line(MARGIN, y - 3, MARGIN + 165, y - 3)
+    c.line(MARGIN, y - 3, MARGIN + 112, y - 3)
     c.setFillColor(HexColor('#333333'))
     c.setFont('Helvetica-Bold', 7.5)
     c.drawRightString(W - MARGIN, y, 'Direction : droite vers gauche')
@@ -249,7 +288,7 @@ def _make_sheet_buffer(ld: dict) -> bytes:
     c.drawString(MARGIN, y, "Entrainement — mots")
     c.setStrokeColor(color)
     c.setLineWidth(1.2)
-    c.line(MARGIN, y - 3, MARGIN + 155, y - 3)
+    c.line(MARGIN, y - 3, MARGIN + 106, y - 3)
     y -= 10
 
     for word_ar, phoneme, translation in ld['words']:

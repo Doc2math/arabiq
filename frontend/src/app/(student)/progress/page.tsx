@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { useAuthStore } from '@/store/authStore'
 import { api, curriculumApi } from '@/lib/api'
 
@@ -30,16 +31,7 @@ interface SkillMastery {
   status: 'mastered' | 'good' | 'in_progress' | 'weak'
 }
 
-const STATUS_CONFIG = {
-  mastered:    { label: 'Maîtrisé',       color: C.green,  bg: C.greenLt },
-  good:        { label: 'Bien',           color: C.blue,   bg: C.blueLt  },
-  in_progress: { label: 'En cours',       color: C.orange, bg: C.orangeLt },
-  weak:        { label: 'À retravailler', color: C.red,    bg: C.redLt   },
-}
-
-function StatCard({ icon, value, label, color, bg }: {
-  icon: string; value: string | number; label: string; color: string; bg: string
-}) {
+function StatCard({ icon, value, label, color, bg }: { icon: string; value: string | number; label: string; color: string; bg: string }) {
   return (
     <div style={{ background: C.white, border: `2px solid ${C.border}`, borderRadius: 18, padding: '20px', display: 'flex', alignItems: 'center', gap: 14 }}>
       <div style={{ width: 48, height: 48, borderRadius: 14, background: bg, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, flexShrink: 0 }}>{icon}</div>
@@ -61,20 +53,25 @@ function ProgressBar({ value, color, bg }: { value: number; color: string; bg: s
 
 export default function ProgressPage() {
   const { user } = useAuthStore()
+  const t       = useTranslations('progress')
+  const tCommon = useTranslations('common')
+
   const [moduleProgress, setModuleProgress] = useState<ModuleProgress[]>([])
-  const [skills, setSkills] = useState<SkillMastery[]>([])
-  const [loading, setLoading] = useState(true)
+  const [skills, setSkills]                 = useState<SkillMastery[]>([])
+  const [loading, setLoading]               = useState(true)
+
+  const STATUS_CONFIG = {
+    mastered:    { label: t('status.mastered'),    color: C.green,  bg: C.greenLt  },
+    good:        { label: t('status.good'),        color: C.blue,   bg: C.blueLt   },
+    in_progress: { label: t('status.in_progress'), color: C.orange, bg: C.orangeLt },
+    weak:        { label: t('status.weak'),        color: C.red,    bg: C.redLt    },
+  }
 
   useEffect(() => {
     if (!user) return
-
-    Promise.all([
-      curriculumApi.modules(),
-      // Pour chaque module, récupérer les leçons avec leur statut
-    ]).then(async ([modRes]) => {
+    Promise.all([curriculumApi.modules()]).then(async ([modRes]) => {
       const mods = modRes.data
       const progList: ModuleProgress[] = []
-
       for (const mod of mods) {
         try {
           const lesRes = await curriculumApi.lessons(mod.id)
@@ -87,14 +84,9 @@ export default function ProgressPage() {
         }
       }
       setModuleProgress(progList)
-
-      // Récupérer les compétences BKT du dernier rapport
       const cached = localStorage.getItem('langdad_last_report')
       if (cached) {
-        try {
-          const report = JSON.parse(cached)
-          setSkills(report.skills ?? [])
-        } catch {}
+        try { setSkills(JSON.parse(cached).skills ?? []) } catch {}
       }
     }).catch(() => {}).finally(() => setLoading(false))
   }, [user])
@@ -107,59 +99,55 @@ export default function ProgressPage() {
 
   return (
     <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
 
       <div style={{ marginBottom: 28 }}>
-        <h1 style={{ fontSize: 24, fontWeight: 700, color: C.text, marginBottom: 6 }}>📈 Ma progression</h1>
-        <p style={{ fontSize: 14, color: C.text2 }}>Suivez votre avancement et vos compétences</p>
+        <h1 style={{ fontSize: 24, fontWeight: 700, color: C.text, marginBottom: 6 }}>📈 {t('title')}</h1>
+        <p style={{ fontSize: 14, color: C.text2 }}>{t('overview')}</p>
       </div>
 
       {/* Stats globales */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 14, marginBottom: 28 }}>
-        <StatCard icon="⚡" value={user.xp} label="XP total"         color={C.orange} bg={C.orangeLt} />
-        <StatCard icon="🏆" value={`Niv. ${user.level}`} label="Niveau actuel" color={C.violet} bg={C.violetLt} />
-        <StatCard icon="🔥" value={`${user.streak}j`} label="Série actuelle"  color={C.green}  bg={C.greenLt} />
-        <StatCard icon="✓"  value={`${totalCompleted}/${totalLessons}`} label="Leçons complétées" color={C.blue} bg={C.blueLt} />
+        <StatCard icon="⚡" value={user.xp}                          label={t('totalXP')}           color={C.orange} bg={C.orangeLt} />
+        <StatCard icon="🏆" value={`Niv. ${user.level}`}             label={t('overview')}          color={C.violet} bg={C.violetLt} />
+        <StatCard icon="🔥" value={`${user.streak}j`}               label={t('streak')}             color={C.green}  bg={C.greenLt}  />
+        <StatCard icon="✓"  value={`${totalCompleted}/${totalLessons}`} label={t('lessonsCompleted')} color={C.blue}  bg={C.blueLt}   />
       </div>
 
       {/* Progression globale */}
       <div style={{ background: C.white, border: `2px solid ${C.border}`, borderRadius: 20, padding: '24px', marginBottom: 24 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
-          <span style={{ fontSize: 15, fontWeight: 700, color: C.text }}>Progression globale</span>
+          <span style={{ fontSize: 15, fontWeight: 700, color: C.text }}>{t('overview')}</span>
           <span style={{ fontSize: 16, fontWeight: 700, color: C.violet }}>{globalPct}%</span>
         </div>
         <ProgressBar value={globalPct} color={`linear-gradient(90deg,${C.violet},${C.orange})`} bg={C.violetLt} />
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8 }}>
-          <span style={{ fontSize: 12, color: C.text3 }}>{totalCompleted} leçons complétées</span>
+          <span style={{ fontSize: 12, color: C.text3 }}>{totalCompleted} {t('lessonsCompleted')}</span>
           <span style={{ fontSize: 12, color: C.text3 }}>{totalLessons - totalCompleted} restantes</span>
         </div>
       </div>
 
-      {/* Progression par module */}
-      <h2 style={{ fontSize: 16, fontWeight: 700, color: C.text, marginBottom: 14 }}>Par module</h2>
+      {/* Par module */}
+      <h2 style={{ fontSize: 16, fontWeight: 700, color: C.text, marginBottom: 14 }}>{t('byModule')}</h2>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 28 }}>
         {loading ? (
-          <div style={{ textAlign: 'center', padding: 40, color: C.text3 }}>Chargement…</div>
+          <div style={{ textAlign: 'center', padding: 40, color: C.text3 }}>{tCommon('loading')}</div>
         ) : moduleProgress.map((mod, i) => {
-          const pct = mod.total > 0 ? Math.round((mod.completed / mod.total) * 100) : 0
+          const pct    = mod.total > 0 ? Math.round((mod.completed / mod.total) * 100) : 0
           const colors = [C.violet, C.orange, C.green, C.blue]
           const bgs    = [C.violetLt, C.orangeLt, C.greenLt, C.blueLt]
           const color  = colors[i % colors.length]
           const bg     = bgs[i % bgs.length]
-
           return (
             <div key={mod.id} style={{ background: C.white, border: `2px solid ${C.border}`, borderRadius: 16, padding: '18px 20px' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
                 <div>
                   <span style={{ fontSize: 14, fontWeight: 700, color: C.text }}>{mod.title}</span>
                   <div style={{ display: 'flex', gap: 12, marginTop: 4 }}>
-                    <span style={{ fontSize: 12, color: C.text3 }}>{mod.completed}/{mod.total} leçons</span>
+                    <span style={{ fontSize: 12, color: C.text3 }}>{mod.completed}/{mod.total} {t('lessonsCompleted')}</span>
                     {mod.xp > 0 && <span style={{ fontSize: 12, color: C.orange, fontWeight: 600 }}>+{mod.xp} XP</span>}
                   </div>
                 </div>
-                <div style={{ textAlign: 'right' }}>
-                  <span style={{ fontSize: 18, fontWeight: 700, color }}>{pct}%</span>
-                </div>
+                <span style={{ fontSize: 18, fontWeight: 700, color }}>{pct}%</span>
               </div>
               <ProgressBar value={pct} color={color} bg={bg} />
             </div>
@@ -170,7 +158,7 @@ export default function ProgressPage() {
       {/* Compétences BKT */}
       {skills.length > 0 && (
         <>
-          <h2 style={{ fontSize: 16, fontWeight: 700, color: C.text, marginBottom: 14 }}>Maîtrise par compétence</h2>
+          <h2 style={{ fontSize: 16, fontWeight: 700, color: C.text, marginBottom: 14 }}>{t('bySkill')}</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(240px,1fr))', gap: 12, marginBottom: 28 }}>
             {skills.map(skill => {
               const cfg = STATUS_CONFIG[skill.status]
@@ -194,15 +182,15 @@ export default function ProgressPage() {
         </>
       )}
 
-      {/* Message si pas encore de données BKT */}
+      {/* Pas encore de données */}
       {skills.length === 0 && !loading && (
         <div style={{ background: C.violetLt, borderRadius: 16, padding: '24px', textAlign: 'center', border: `2px solid ${C.violet}20` }}>
           <div style={{ fontSize: 36, marginBottom: 10 }}>🎯</div>
           <p style={{ fontSize: 14, fontWeight: 700, color: C.violetDk, marginBottom: 6 }}>
-            Complétez l'évaluation du Module 1
+            {t('avgScore')}
           </p>
           <p style={{ fontSize: 13, color: C.text2 }}>
-            Votre analyse de compétences BKT apparaîtra ici après la première évaluation.
+            {t('overview')}
           </p>
         </div>
       )}

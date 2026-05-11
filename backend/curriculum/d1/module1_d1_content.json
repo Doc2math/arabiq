@@ -1,0 +1,2697 @@
+{
+  "module": {
+  "id": 1,
+  "slug": "maktab",
+  "title": "Module 1 — مَكْتَبٌ",
+  "description": "Les lettres م ك ت ب avec ا و ي comme voyelles longues. Premiers mots et phrases simples.",
+  "arabic_ratio": 0.3,
+  "is_premium": false,
+  "sort_order": 1,
+  "part_id": 1,
+  "degree": 1,
+  "degree_name": {
+    "fr": "Découverte",
+    "en": "Discovery",
+    "es": "Descubrimiento",
+    "de": "Entdeckung",
+    "nl": "Ontdekking"
+  }
+},
+  "lessons": [
+    {
+      "sort_order": 1,
+      "title": "Les 4 lettres dorées",
+      "lesson_type": "identification",
+      "xp_reward": 20,
+      "duration_minutes": 15,
+      "skill_id": "letter_recognition",
+      "content": {
+        "introduction": {
+          "text": "Voici les 4 lettres du Module 1. Cliquez sur chaque carte pour entendre son nom. Mémorisez bien leur forme avant de passer aux exercices.",
+          "letters": [
+            {
+              "ar": "م",
+              "name": "Mim",
+              "phoneme": "m",
+              "audio": "/assets/audio/letters/mim.mp3"
+            },
+            {
+              "ar": "ك",
+              "name": "Kaf",
+              "phoneme": "k",
+              "audio": "/assets/audio/letters/kaf.mp3"
+            },
+            {
+              "ar": "ت",
+              "name": "Ta",
+              "phoneme": "t",
+              "audio": "/assets/audio/letters/ta.mp3"
+            },
+            {
+              "ar": "ب",
+              "name": "Ba",
+              "phoneme": "b",
+              "audio": "/assets/audio/letters/ba.mp3"
+            }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m1l1_ex1",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "xpReward": 3,
+            "explanation": "م = Mim. Elle ressemble à un cercle avec une petite queue vers le bas.",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "م",
+                "options": [
+                  "Ba",
+                  "Mim",
+                  "Kaf",
+                  "Ta"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "م",
+                "options": [
+                  "Fa",
+                  "Mim",
+                  "Qaf",
+                  "Nun"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "lang": "fr",
+                "prompt": "Parmi ces lettres, laquelle est Mim ?",
+                "promptAr": null,
+                "options": [
+                  "ن",
+                  "م",
+                  "ف",
+                  "ق"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 4,
+                "lang": "fr",
+                "prompt": "Quelle lettre ressemble à un cercle avec une petite queue vers le bas ?",
+                "promptAr": null,
+                "options": [
+                  "Kaf",
+                  "Ba",
+                  "Mim",
+                  "Ta"
+                ],
+                "correctIndex": 2
+              }
+            ]
+          },
+          {
+            "id": "m1l1_ex2",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "xpReward": 3,
+            "explanation": "ب = Ba. Une coque plate avec un seul point en dessous.",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ب",
+                "options": [
+                  "Ta",
+                  "Kaf",
+                  "Ba",
+                  "Mim"
+                ],
+                "correctIndex": 2
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ب",
+                "options": [
+                  "Ta",
+                  "Ba",
+                  "Tha",
+                  "Nun"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "lang": "fr",
+                "prompt": "Parmi ces lettres, laquelle est Ba ?",
+                "promptAr": null,
+                "options": [
+                  "ت",
+                  "ث",
+                  "ب",
+                  "ن"
+                ],
+                "correctIndex": 2
+              },
+              {
+                "level": 4,
+                "lang": "fr",
+                "prompt": "Quelle lettre a une coque plate avec un seul point en dessous ?",
+                "audio": "/assets/audio/letters/ba.mp3",
+                "promptAr": null,
+                "options": [
+                  "Ta",
+                  "Tha",
+                  "Nun",
+                  "Ba"
+                ],
+                "correctIndex": 3
+              }
+            ]
+          },
+          {
+            "id": "m1l1_ex3",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "xpReward": 3,
+            "explanation": "ك = Kaf.",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "audio": "/assets/audio/letters/kaf.mp3",
+                "promptAr": "ك",
+                "options": [
+                  "Kaf",
+                  "Mim",
+                  "Ba",
+                  "Ta"
+                ],
+                "correctIndex": 0
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ك",
+                "options": [
+                  "Lam",
+                  "Kaf",
+                  "Ra",
+                  "Waw"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "lang": "fr",
+                "prompt": "Parmi ces lettres, laquelle est Kaf ?",
+
+                "promptAr": null,
+                "options": [
+                  "ل",
+                  "ك",
+                  "ر",
+                  "و"
+                ],
+                "correctIndex": 1
+              }
+            ]
+          },
+          {
+            "id": "m1l1_ex4",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "xpReward": 3,
+            "explanation": "ت = Ta. Identique à Ba mais avec deux points au-dessus.",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "audioUrl": "/assets/audio/letters/ta.mp3",
+                "promptAr": "ت",
+                "options": [
+                  "Ba",
+                  "Ta",
+                  "Mim",
+                  "Kaf"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle est cette lettre ?",
+                "promptAr": "ت",
+                "audioUrl": "/assets/audio/letters/ta.mp3",
+                "options": [
+                  "Ba",
+                  "Ta",
+                  "Tha",
+                  "Nun"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "lang": "fr",
+                "prompt": "Parmi ces lettres, laquelle est Ta ?",
+                "promptAr": null,
+                "options": [
+                  "ب",
+                  "ت",
+                  "ث",
+                  "ن"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 4,
+                "lang": "fr",
+                "prompt": "Quelle lettre ressemble à Ba mais avec deux points au-dessus au lieu d'un seul en dessous ?",
+                "promptAr": null,
+                "options": [
+                  "Nun",
+                  "Ba",
+                  "Ta",
+                  "Tha"
+                ],
+                "correctIndex": 2
+              }
+            ]
+          },
+          {
+            "id": "m1l1_ex5",
+            "type": "audio_choice",
+            "skill_id": "letter_recognition",
+            "xpReward": 4,
+            "explanation": "Vous avez entendu Mim → م",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Écoutez et identifiez la lettre",
+                "audioUrl": "/assets/audio/letters/mim.mp3",
+                "options": [
+                  "ت",
+                  "ب",
+                  "م",
+                  "ك"
+                ],
+                "correctIndex": 2
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle lettre entendez-vous ?",
+                "audioUrl": "/assets/audio/letters/mim.mp3",
+                "options": [
+                  "م",
+                  "ن",
+                  "ف",
+                  "ق"
+                ],
+                "correctIndex": 0
+              },
+              {
+                "level": 3,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [
+                  {
+                    "text": "م",
+                    "audioUrl": "/assets/audio/letters/mim.mp3"
+                  }
+                ],
+                "audioPool": [
+                  "/assets/audio/letters/mim.mp3",
+                  "/assets/audio/letters/ba.mp3",
+                  "/assets/audio/letters/kaf.mp3",
+                  "/assets/audio/letters/ta.mp3"
+                ]
+              },
+              {
+                "level": 4,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [
+                  {
+                    "text": "م",
+                    "audioUrl": "/assets/audio/letters/mim.mp3"
+                  }
+                ],
+                "audioPool": [
+                  "/assets/audio/letters/mim.mp3",
+                  "/assets/audio/letters/nun.mp3",
+                  "/assets/audio/letters/fa.mp3",
+                  "/assets/audio/letters/qaf.mp3"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "m1l1_ex6",
+            "type": "audio_choice",
+            "skill_id": "letter_recognition",
+            "xpReward": 4,
+            "explanation": "Vous avez entendu Ba → ب",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Écoutez et identifiez la lettre",
+                "audioUrl": "/assets/audio/letters/ba.mp3",
+                "options": [
+                  "م",
+                  "ب",
+                  "ك",
+                  "ت"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle lettre entendez-vous ?",
+                "audioUrl": "/assets/audio/letters/ba.mp3",
+                "options": [
+                  "ت",
+                  "ب",
+                  "ث",
+                  "ن"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [
+                  {
+                    "text": "ب",
+                    "audioUrl": "/assets/audio/letters/ba.mp3"
+                  }
+                ],
+                "audioPool": [
+                  "/assets/audio/letters/ba.mp3",
+                  "/assets/audio/letters/mim.mp3",
+                  "/assets/audio/letters/kaf.mp3",
+                  "/assets/audio/letters/ta.mp3"
+                ]
+              },
+              {
+                "level": 4,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [
+                  {
+                    "text": "ب",
+                    "audioUrl": "/assets/audio/letters/ba.mp3"
+                  }
+                ],
+                "audioPool": [
+                  "/assets/audio/letters/ba.mp3",
+                  "/assets/audio/letters/ta.mp3",
+                  "/assets/audio/letters/tha.mp3",
+                  "/assets/audio/letters/nun.mp3"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "m1l1_ex7",
+            "type": "audio_choice",
+            "skill_id": "letter_recognition",
+            "xpReward": 4,
+            "explanation": "Vous avez entendu Kaf → ك",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Écoutez et identifiez la lettre",
+                "audioUrl": "/assets/audio/letters/kaf.mp3",
+                "options": [
+                  "ك",
+                  "ت",
+                  "ب",
+                  "م"
+                ],
+                "correctIndex": 0
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle lettre entendez-vous ?",
+                "audioUrl": "/assets/audio/letters/kaf.mp3",
+                "options": [
+                  "ل",
+                  "ك",
+                  "ر",
+                  "و"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [
+                  {
+                    "text": "ك",
+                    "audioUrl": "/assets/audio/letters/kaf.mp3"
+                  }
+                ],
+                "audioPool": [
+                  "/assets/audio/letters/kaf.mp3",
+                  "/assets/audio/letters/ba.mp3",
+                  "/assets/audio/letters/mim.mp3",
+                  "/assets/audio/letters/ta.mp3"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "m1l1_ex8",
+            "type": "audio_choice",
+            "skill_id": "letter_recognition",
+            "xpReward": 4,
+            "explanation": "Vous avez entendu Ta → ت",
+            "variants": [
+              {
+                "level": 1,
+                "lang": "fr",
+                "prompt": "Écoutez et identifiez la lettre",
+                "audioUrl": "/assets/audio/letters/ta.mp3",
+                "options": [
+                  "ب",
+                  "م",
+                  "ك",
+                  "ت"
+                ],
+                "correctIndex": 3
+              },
+              {
+                "level": 2,
+                "lang": "fr",
+                "prompt": "Quelle lettre entendez-vous ?",
+                "audioUrl": "/assets/audio/letters/ta.mp3",
+                "options": [
+                  "ب",
+                  "ت",
+                  "ث",
+                  "ن"
+                ],
+                "correctIndex": 1
+              },
+              {
+                "level": 3,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [
+                  {
+                    "text": "ت",
+                    "audioUrl": "/assets/audio/letters/ta.mp3"
+                  }
+                ],
+                "audioPool": [
+                  "/assets/audio/letters/ta.mp3",
+                  "/assets/audio/letters/ba.mp3",
+                  "/assets/audio/letters/mim.mp3",
+                  "/assets/audio/letters/kaf.mp3"
+                ]
+              },
+              {
+                "level": 4,
+                "type": "matching_text_audio",
+                "lang": "fr",
+                "prompt": "Écoute les sons et trouve celui qui correspond à cette lettre",
+                "pairs": [
+                  {
+                    "text": "ت",
+                    "audioUrl": "/assets/audio/letters/ta.mp3"
+                  }
+                ],
+                "audioPool": [
+                  "/assets/audio/letters/ta.mp3",
+                  "/assets/audio/letters/ba.mp3",
+                  "/assets/audio/letters/tha.mp3",
+                  "/assets/audio/letters/nun.mp3"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 2,
+      "title": "Harakat — les voyelles courtes",
+      "lesson_type": "harakat",
+      "xp_reward": 25,
+      "duration_minutes": 20,
+      "skill_id": "harakat_reading",
+      "content": {
+        "introduction": {
+          "text": "Les harakat sont de petits signes qui donnent leur son aux lettres. Cliquez sur chaque carte pour entendre la syllabe.",
+          "signs": [
+            {
+              "ar": "بَ",
+              "phoneme": "ba",
+              "description": "Fatha → son 'a'",
+              "audio": "/assets/audio/syllables/ba_fatha.mp3"
+            },
+            {
+              "ar": "بِ",
+              "phoneme": "bi",
+              "description": "Kasra → son 'i'",
+              "audio": "/assets/audio/syllables/ba_kasra.mp3"
+            },
+            {
+              "ar": "بُ",
+              "phoneme": "bu",
+              "description": "Damma → son 'ou'",
+              "audio": "/assets/audio/syllables/ba_damma.mp3"
+            },
+            {
+              "ar": "بْ",
+              "phoneme": "b",
+              "description": "Sukūn → pas de voyelle",
+              "audio": "/assets/audio/syllables/ba_sukun.mp3"
+            },
+            {
+              "ar": "كَ",
+              "phoneme": "ka",
+              "description": "Fatha → son 'a'",
+              "audio": "/assets/audio/syllables/kaf_fatha.mp3"
+            },
+            {
+              "ar": "كِ",
+              "phoneme": "ki",
+              "description": "Kasra → son 'i'",
+              "audio": "/assets/audio/syllables/kaf_kasra.mp3"
+            },
+            {
+              "ar": "كُ",
+              "phoneme": "ku",
+              "description": "Damma → son 'ou'",
+              "audio": "/assets/audio/syllables/kaf_damma.mp3"
+            },
+            {
+            "ar": "كْ",
+                "phoneme": "k",
+                "description": "Sukūn → pas de voyelle",
+                "audio": "/assets/audio/syllables/kaf_sukun.mp3"
+                },
+                {
+                "ar": "تْ",
+                "phoneme": "t",
+                "description": "Sukūn → pas de voyelle",
+                "audio": "/assets/audio/syllables/ta_sukun.mp3"
+                },
+            {
+              "ar": "تَ",
+              "phoneme": "ta",
+              "description": "Fatha → son 'a'",
+              "audio": "/assets/audio/syllables/ta_fatha.mp3"
+            },
+            {
+              "ar": "تِ",
+              "phoneme": "ti",
+              "description": "Kasra → son 'i'",
+              "audio": "/assets/audio/syllables/ta_kasra.mp3"
+            },
+            {
+              "ar": "تُ",
+              "phoneme": "tu",
+              "description": "Damma → son 'ou'",
+              "audio": "/assets/audio/syllables/ta_damma.mp3"
+            },
+            {
+              "ar": "مَ",
+              "phoneme": "ma",
+              "description": "Fatha → son 'a'",
+              "audio": "/assets/audio/syllables/mim_fatha.mp3"
+            },
+            {
+              "ar": "مِ",
+              "phoneme": "mi",
+              "description": "Kasra → son 'i'",
+              "audio": "/assets/audio/syllables/mim_kasra.mp3"
+            },
+            {
+              "ar": "مُ",
+              "phoneme": "mu",
+              "description": "Damma → son 'ou'",
+              "audio": "/assets/audio/syllables/mim_damma.mp3"
+            },
+            {
+              "ar": "مْ",
+              "phoneme": "m",
+              "description": "Sukūn → pas de voyelle",
+              "audio": "/assets/audio/syllables/mim_sukun.mp3"
+            }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m1l2_ex1",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez la syllabe",
+            "audioUrl": "/assets/audio/syllables/ba_fatha.mp3",
+            "xpReward": 4,
+            "options": [
+              "بَ",
+              "بِ",
+              "بُ",
+              "بْ"
+            ],
+            "correctIndex": 0,
+            "explanation": "بَ = ba — fatha au-dessus.",
+            "prompts": [
+              "Écoutez et identifiez la syllabe",
+              "Quelle syllabe entendez-vous ?",
+              "Reconnaissez la syllabe entendue",
+              "Identifiez la syllabe après écoute"
+            ]
+          },
+          {
+            "id": "m1l2_ex2",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez la syllabe",
+            "audioUrl": "/assets/audio/syllables/kaf_kasra.mp3",
+            "xpReward": 4,
+            "options": [
+              "كَ",
+              "كِ",
+              "كُ",
+              "كْ"
+            ],
+            "correctIndex": 1,
+            "explanation": "كِ = ki — kasra en dessous.",
+            "prompts": [
+              "Écoutez et identifiez la syllabe",
+              "Quelle syllabe entendez-vous ?",
+              "Reconnaissez la syllabe entendue",
+              "Identifiez la syllabe après écoute"
+            ]
+          },
+          {
+            "id": "m1l2_ex3",
+            "type": "mcq",
+            "skill_id": "harakat_reading",
+            "prompt": "Comment se prononce cette syllabe ?",
+            "audioUrl": "/assets/audio/syllables/ta_damma.mp3",
+            "promptAr": "تُ",
+            "xpReward": 3,
+            "options": [
+              "ta",
+              "ti",
+              "tou",
+              "bou"
+            ],
+            "correctIndex": 2,
+            "explanation": "تُ = tou — damma au-dessus → son 'ou'."
+          },
+          {
+            "id": "m1l2_ex4",
+            "type": "mcq",
+            "skill_id": "harakat_reading",
+            "prompt": "Quel signe représente la kasra ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "options": [
+              "َ",
+              "ِ",
+              "ُ",
+              "ْ"
+            ],
+            "correctIndex": 1,
+            "explanation": "ِ = kasra — petit trait en dessous → son 'i'."
+          },
+          {
+            "id": "m1l2_ex5",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez la syllabe",
+            "audioUrl": "/assets/audio/syllables/mim_damma.mp3",
+            "xpReward": 4,
+            "options": [
+              "مَ",
+              "مِ",
+              "مُ",
+              "مْ"
+            ],
+            "correctIndex": 2,
+            "explanation": "مُ = mu — damma → son 'ou'.",
+            "prompts": [
+              "Écoutez et identifiez la syllabe",
+              "Quelle syllabe entendez-vous ?",
+              "Reconnaissez la syllabe entendue",
+              "Identifiez la syllabe après écoute"
+            ]
+          },
+          {
+            "id": "m1l2_ex6",
+            "type": "mcq",
+            "skill_id": "harakat_reading",
+            "prompt": "Comment se prononce مْ ?",
+            "audioUrl": "/assets/audio/syllables/mim_sukun.mp3",
+            "promptAr": "مْ",
+            "xpReward": 3,
+            "options": [
+              "ma",
+              "mi",
+              "mu",
+              "m (sans voyelle)"
+            ],
+            "correctIndex": 3,
+            "explanation": "مْ = m — sukūn → consonne sans voyelle."
+          },
+          {
+            "id": "m1l2_ex7",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez la syllabe",
+            "audioUrl": "/assets/audio/syllables/ta_kasra.mp3",
+            "xpReward": 4,
+            "options": [
+              "تَ",
+              "تِ",
+              "تُ",
+              "تْ"
+            ],
+            "correctIndex": 1,
+            "explanation": "تِ = ti — kasra en dessous.",
+            "prompts": [
+              "Écoutez et identifiez la syllabe",
+              "Quelle syllabe entendez-vous ?",
+              "Reconnaissez la syllabe entendue",
+              "Identifiez la syllabe après écoute"
+            ]
+          },
+          {
+            "id": "m1l2_ex8",
+            "type": "matching_text_audio",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoute et trouve le son qui correspond à chaque syllabe",
+            "xpReward": 7,
+            "pairs": [
+              {
+                "text": "بَ",
+                "audioUrl": "/assets/audio/syllables/ba_fatha.mp3"
+              },
+              {
+                "text": "كِ",
+                "audioUrl": "/assets/audio/syllables/kaf_kasra.mp3"
+              },
+              {
+                "text": "مُ",
+                "audioUrl": "/assets/audio/syllables/mim_damma.mp3"
+              },
+              {
+                "text": "تَ",
+                "audioUrl": "/assets/audio/syllables/ta_fatha.mp3"
+              }
+            ],
+            "audioPool": [
+              "/assets/audio/syllables/ba_fatha.mp3",
+              "/assets/audio/syllables/ba_kasra.mp3",
+              "/assets/audio/syllables/ba_damma.mp3",
+              "/assets/audio/syllables/kaf_fatha.mp3",
+              "/assets/audio/syllables/kaf_kasra.mp3",
+              "/assets/audio/syllables/kaf_damma.mp3",
+              "/assets/audio/syllables/ta_fatha.mp3",
+              "/assets/audio/syllables/ta_kasra.mp3",
+              "/assets/audio/syllables/mim_fatha.mp3",
+              "/assets/audio/syllables/mim_damma.mp3",
+              "/assets/audio/syllables/mim_kasra.mp3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 3,
+      "title": "Voyelles longues — ا و ي",
+      "lesson_type": "harakat",
+      "xp_reward": 25,
+      "duration_minutes": 20,
+      "skill_id": "long_vowels",
+      "content": {
+        "introduction": {
+          "text": "ا و ي jouent le rôle de voyelles longues. Elles allongent le son de la lettre qui les précède.",
+            "signs": [
+            { "ar": "بَا", "phoneme": "baa", "description": "Fatha + Alif → son 'aa' long", "audio": "/assets/audio/syllables/ba_alif_long.mp3"  },
+            { "ar": "بُو", "phoneme": "buu", "description": "Damma + Waw → son 'uu' long",  "audio": "/assets/audio/syllables/ba_waw_long.mp3"   },
+            { "ar": "بِي", "phoneme": "bii", "description": "Kasra + Ya → son 'ii' long",   "audio": "/assets/audio/syllables/ba_ya_long.mp3"    },
+            { "ar": "كَا", "phoneme": "kaa", "description": "Fatha + Alif → son 'aa' long", "audio": "/assets/audio/syllables/kaf_alif_long.mp3" },
+            { "ar": "كُو", "phoneme": "kuu", "description": "Damma + Waw → son 'uu' long",  "audio": "/assets/audio/syllables/kaf_waw_long.mp3"  },
+            { "ar": "كِي", "phoneme": "kii", "description": "Kasra + Ya → son 'ii' long",   "audio": "/assets/audio/syllables/kaf_ya_long.mp3"   },
+            { "ar": "تَا", "phoneme": "taa", "description": "Fatha + Alif → son 'aa' long", "audio": "/assets/audio/syllables/ta_alif_long.mp3"  },
+            { "ar": "تُو", "phoneme": "tuu", "description": "Damma + Waw → son 'uu' long",  "audio": "/assets/audio/syllables/ta_waw_long.mp3"   },
+            { "ar": "تِي", "phoneme": "tii", "description": "Kasra + Ya → son 'ii' long",   "audio": "/assets/audio/syllables/ta_ya_long.mp3"    },
+            { "ar": "مَا", "phoneme": "maa", "description": "Fatha + Alif → son 'aa' long", "audio": "/assets/audio/syllables/mim_alif_long.mp3" },
+            { "ar": "مُو", "phoneme": "muu", "description": "Damma + Waw → son 'uu' long",  "audio": "/assets/audio/syllables/mim_waw_long.mp3"  },
+            { "ar": "مِي", "phoneme": "mii", "description": "Kasra + Ya → son 'ii' long",   "audio": "/assets/audio/syllables/mim_ya_long.mp3"   }
+            ]
+                    },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m1l3_ex1",
+            "type": "mcq",
+            "skill_id": "long_vowels",
+            "prompt": "Comment se prononce بَا ?",
+            "promptAr": "بَا",
+            "xpReward": 4,
+            "options": [
+              "ba",
+              "baa",
+              "bi",
+              "buu"
+            ],
+            "correctIndex": 1,
+            "explanation": "بَا = baa — fatha + alif = voyelle longue 'aa'."
+          },
+          {
+            "id": "m1l3_ex2",
+            "type": "audio_choice",
+            "skill_id": "long_vowels",
+            "prompt": "Écoutez et identifiez",
+            "audioUrl": "/assets/audio/syllables/ba_waw_long.mp3",
+            "xpReward": 4,
+            "options": [
+              "بَا",
+              "بُو",
+              "بِي",
+              "بَ"
+            ],
+            "correctIndex": 1,
+            "explanation": "بُو = buu — damma + waw = 'uu' long.",
+            "prompts": [
+              "Écoutez et identifiez",
+              "Quelle forme reconnaissez-vous ?",
+              "Identifiez après écoute"
+            ]
+          },
+          {
+            "id": "m1l3_ex3",
+            "type": "mcq",
+            "skill_id": "long_vowels",
+            "prompt": "Quelle voyelle longue donne le son 'ii' ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "options": [
+              "ا",
+              "و",
+              "ي",
+              "ب"
+            ],
+            "correctIndex": 2,
+            "explanation": "ي après kasra = voyelle longue 'ii'."
+          },
+          {
+            "id": "m1l3_ex4",
+            "type": "audio_choice",
+            "skill_id": "long_vowels",
+            "prompt": "Écoutez et identifiez",
+            "audioUrl": "/assets/audio/syllables/kaf_alif_long.mp3",
+            "xpReward": 4,
+            "options": [
+              "كَ",
+              "كَا",
+              "كُو",
+              "كِي"
+            ],
+            "correctIndex": 1,
+            "explanation": "كَا = kaa — fatha + alif.",
+            "prompts": [
+              "Écoutez et identifiez",
+              "Quelle forme reconnaissez-vous ?",
+              "Identifiez après écoute"
+            ]
+          },
+          {
+            "id": "m1l3_ex5",
+            "type": "mcq",
+            "skill_id": "long_vowels",
+            "prompt": "Comment se prononce كُوبٌ ?",
+            "promptAr": "كُوبٌ",
+            "xpReward": 5,
+            "options": [
+              "kabun",
+              "kuubun",
+              "kibun",
+              "kaabun"
+            ],
+            "correctIndex": 1,
+            "explanation": "كُوبٌ = kuubun — damma + waw = 'uu' long."
+          },
+          {
+            "id": "m1l3_ex6",
+            "type": "mcq",
+            "skill_id": "long_vowels",
+            "prompt": "Quelle voyelle longue correspond à ا ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "options": [
+              "ii",
+              "uu",
+              "aa",
+              "a"
+            ],
+            "correctIndex": 2,
+            "explanation": "ا après fatha = voyelle longue 'aa'."
+          },
+          {
+            "id": "m1l3_ex7",
+            "type": "matching_text_audio",
+            "skill_id": "long_vowels",
+            "prompt": "Écoute et trouve le son qui correspond à chaque voyelle longue",
+            "xpReward": 7,
+            "pairs": [
+              {
+                "text": "بَا",
+                "audioUrl": "/assets/audio/syllables/ba_alif_long.mp3"
+              },
+              {
+                "text": "بُو",
+                "audioUrl": "/assets/audio/syllables/ba_waw_long.mp3"
+              },
+              {
+                "text": "كَا",
+                "audioUrl": "/assets/audio/syllables/kaf_alif_long.mp3"
+              },
+              {
+                "text": "كِي",
+                "audioUrl": "/assets/audio/syllables/kaf_ya_long.mp3"
+              }
+            ],
+            "audioPool": [
+              "/assets/audio/syllables/ba_alif_long.mp3",
+              "/assets/audio/syllables/ba_waw_long.mp3",
+              "/assets/audio/syllables/ba_ya_long.mp3",
+              "/assets/audio/syllables/kaf_alif_long.mp3",
+              "/assets/audio/syllables/kaf_waw_long.mp3",
+              "/assets/audio/syllables/kaf_ya_long.mp3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 4,
+      "title": "Tanwīn — la nunation",
+      "lesson_type": "harakat",
+      "xp_reward": 25,
+
+      "duration_minutes": 15,
+      "skill_id": "tanwin",
+      "content": {
+        "introduction": {
+          "text": "Le tanwīn ajoute un son 'n' à la fin d'un mot. Il existe 3 formes. C'est le son 'un' dans مَكْتَبٌ.",
+           "signs": [
+                    { "ar": "بًا", "phoneme": "ban", "description": "Tanw\u012bn fath \u2192 son 'an'",  "audio": "/assets/audio/syllables/ba_tanwin_fath.mp3"  },
+                    { "ar": "\u0628\u064d", "phoneme": "bin", "description": "Tanw\u012bn kasr \u2192 son 'in'",  "audio": "/assets/audio/syllables/ba_tanwin_kasr.mp3"  },
+                    { "ar": "\u0628\u064c", "phoneme": "bun", "description": "Tanw\u012bn damm \u2192 son 'oun'", "audio": "/assets/audio/syllables/ba_tanwin_damm.mp3"  },
+                    { "ar": "تًا - ةً", "phoneme": "tan", "description": "Tanw\u012bn fath \u2192 son 'an'",  "audio": "/assets/audio/syllables/ta_tanwin_fath.mp3"  },
+                    { "ar": "\u062a\u064d", "phoneme": "tin", "description": "Tanw\u012bn kasr \u2192 son 'in'",  "audio": "/assets/audio/syllables/ta_tanwin_kasr.mp3"  },
+                    { "ar": "\u062a\u064c", "phoneme": "tun", "description": "Tanw\u012bn damm \u2192 son 'oun'", "audio": "/assets/audio/syllables/ta_tanwin_damm.mp3"  },
+                    { "ar": "كًا", "phoneme": "kan",           "description": "Tanw\u012bn fath \u2192 son 'an'",  "audio": "/assets/audio/syllables/kaf_tanwin_fath.mp3" },
+                    { "ar": "\u0643\u064d", "phoneme": "kin", "description": "Tanw\u012bn kasr \u2192 son 'in'",  "audio": "/assets/audio/syllables/kaf_tanwin_kasr.mp3" },
+                    { "ar": "\u0643\u064c", "phoneme": "kun", "description": "Tanw\u012bn damm \u2192 son 'oun'", "audio": "/assets/audio/syllables/kaf_tanwin_damm.mp3" },
+                    { "ar": "مًا", "phoneme": "man", "description": "Tanw\u012bn fath \u2192 son 'an'",  "audio": "/assets/audio/syllables/mim_tanwin_fath.mp3" },
+                    { "ar": "\u0645\u064d", "phoneme": "min", "description": "Tanw\u012bn kasr \u2192 son 'in'",  "audio": "/assets/audio/syllables/mim_tanwin_kasr.mp3" },
+                    { "ar": "\u0645\u064c", "phoneme": "mun", "description": "Tanw\u012bn damm \u2192 son 'oun'", "audio": "/assets/audio/syllables/mim_tanwin_damm.mp3" }
+                    ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m1l4_ex1",
+            "type": "mcq",
+            "skill_id": "tanwin",
+            "prompt": "Comment se prononce مَكْتَبٌ à la fin ?",
+            "promptAr": "مَكْتَبٌ",
+            "xpReward": 4,
+            "options": [
+              "maktaba",
+              "maktabun",
+              "maktabin",
+              "maktab"
+            ],
+            "correctIndex": 1,
+            "explanation": "ٌ = tanwīn damm → son 'un' final."
+          },
+          {
+            "id": "m1l4_ex2",
+            "type": "audio_choice",
+            "skill_id": "tanwin",
+            "prompt": "Écoutez et identifiez le tanwīn",
+            "audioUrl": "/assets/audio/syllables/ba_tanwin_fath.mp3",
+            "xpReward": 4,
+            "options": [
+              "بًا",
+              "بٍ",
+              "بٌ",
+              "بَ"
+            ],
+            "correctIndex": 0,
+            "explanation": "بً = ban — tanwīn fath → 'an'.",
+            "prompts": [
+              "Écoutez et identifiez le tanwīn",
+              "Quel tanwīn entendez-vous ?",
+              "Identifiez le signe de tanwīn"
+            ]
+          },
+          {
+            "id": "m1l4_ex3",
+            "type": "mcq",
+            "skill_id": "tanwin",
+            "prompt": "Quel signe représente le tanwīn damm ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "options": [
+              "ً",
+              "ٍ",
+              "ٌ",
+              "ْ"
+            ],
+            "correctIndex": 2,
+            "explanation": "ٌ = tanwīn damm → son 'oun'."
+          },
+          {
+            "id": "m1l4_ex4",
+            "type": "mcq",
+            "skill_id": "tanwin",
+            "prompt": "Comment se prononce كِتَابٌ ?",
+            "promptAr": "كِتَابٌ",
+            "xpReward": 4,
+            "options": [
+              "kitaba",
+              "kitabin",
+              "kitabun",
+              "kitab"
+            ],
+            "correctIndex": 2,
+            "explanation": "كِتَابٌ = kitaabun — tanwīn damm à la fin."
+          },
+          {
+            "id": "m1l4_ex5",
+            "type": "mcq",
+            "skill_id": "tanwin",
+            "prompt": "Combien de formes de tanwīn existe-t-il ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "correctIndex": 2,
+            "explanation": "3 formes : tanwīn fath (an), kasr (in), damm (un)."
+          },
+          {
+            "id": "m1l4_ex6",
+            "type": "audio_choice",
+            "skill_id": "tanwin",
+            "prompt": "Écoutez et identifiez le tanwīn",
+            "audioUrl": "/assets/audio/syllables/ba_tanwin_damm.mp3",
+            "xpReward": 4,
+            "options": [
+              "بًا",
+              "بٍ",
+              "بٌ",
+              "بُ"
+            ],
+            "correctIndex": 2,
+            "explanation": "بٌ = bun — tanwīn damm.",
+            "prompts": [
+              "Écoutez et identifiez le tanwīn",
+              "Quel tanwīn entendez-vous ?",
+              "Identifiez le signe de tanwīn"
+            ]
+          },
+          {
+            "id": "m1l4_ex7",
+            "type": "mcq",
+            "skill_id": "tanwin",
+            "prompt": "Identifiez la forme avec tanwīn kasr",
+            "promptAr": null,
+            "xpReward": 4,
+            "options": [
+              "مَكْتَبٌ",
+              "كِتَابٍ",
+              "بَابً",
+              "تَمَّ"
+            ],
+            "correctIndex": 1,
+            "explanation": "كِتَابٍ = kitaabin — tanwīn kasr (son 'in')."
+          },
+          {
+            "id": "m1l4_ex8",
+            "type": "matching_text_audio",
+            "skill_id": "tanwin",
+            "prompt": "Écoute et trouve le son qui correspond à chaque tanwīn",
+            "xpReward": 7,
+            "pairs": [
+              {
+                "text": "بًا",
+                "audioUrl": "/assets/audio/syllables/ba_tanwin_fath.mp3"
+              },
+              {
+                "text": "بٍ",
+                "audioUrl": "/assets/audio/syllables/ba_tanwin_kasr.mp3"
+              },
+              {
+                "text": "بٌ",
+                "audioUrl": "/assets/audio/syllables/ba_tanwin_damm.mp3"
+              },
+              {
+                "text": "تٍ",
+                "audioUrl": "/assets/audio/syllables/ta_tanwin_kasr.mp3"
+              }
+            ],
+            "audioPool": [
+              "/assets/audio/syllables/ba_tanwin_fath.mp3",
+              "/assets/audio/syllables/ba_tanwin_kasr.mp3",
+              "/assets/audio/syllables/ta_tanwin_damm.mp3",
+              "/assets/audio/syllables/ba_tanwin_damm.mp3",
+              "/assets/audio/syllables/ta_tanwin_fath.mp3",
+              "/assets/audio/syllables/ta_tanwin_kasr.mp3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 5,
+      "title": "Positions des lettres — début, milieu, fin",
+      "lesson_type": "identification",
+      "xp_reward": 25,
+      "duration_minutes": 20,
+      "skill_id": "letter_positions",
+      "content": {
+        "introduction": {
+          "text": "En arabe, toutes les lettres s'attachent à la lettre qui les précède (à droite). Mais 6 lettres ne s'attachent jamais à la lettre qui les suit (à gauche) : ا  د  ذ  ر  ز  و",
+          
+          "positions": [
+            {
+              "letter": "م",
+              "name": "Mim",
+              "audio": "/assets/audio/letters/mim.mp3",
+              "forms": [
+               
+                {
+                  "position" : "Isolée",
+                  "ar": "م",
+                  "example": "كَلامٌ",
+                  "note": ""
+                },
+                 {
+                  "position": "Fin",
+                  "ar": "ـم",
+                  "example":"قَلَمٌ",
+                  "note": ""
+                },
+               
+                {
+                  "position": "Milieu",
+                  "ar": "ـمـ",
+                  "example": "نَمِرٌ",
+                  "note": ""
+                },
+                 {
+                  "position": "Début",
+                  "ar": "مـ",
+                  "example": "مَكْتَبٌ",
+                  "note": ""
+                }
+                 
+                
+                
+              ]
+            },
+            {
+              "letter": "ك",
+              "name": "Kaf",
+              "audio": "/assets/audio/letters/kaf.mp3",
+              "forms": [
+                 {
+                  "position": "Isolée",
+                  "ar": "ك",
+                  "note": "",
+                  "example":"مَلاكٌ"
+                },
+                {
+                  "position": "Fin",
+                  "ar": "ـك",
+                  "example": "مَلِك",
+                  "note": "Peut aussi s'écrire ـک"
+                },
+               
+                {
+                  "position": "Milieu",
+                  "ar": "ـكـ",
+                  "example": "مَكْتَبٌ",
+                  "note": ""
+                },
+                
+                 {
+                  "position": "Début",
+                  "ar": "كـ",
+                  "example": "كِتَابٌ",
+                  "note": ""
+                }
+               
+                
+                
+                
+              ]
+            },
+            {
+              "letter": "ت",
+              "name": "Ta",
+              "audio": "/assets/audio/letters/ta.mp3",
+              "forms": [
+                {
+                  "position": "Isolée",
+                  "ar": "ت",
+                  "example": "نَباتٌ",
+                  "note": ""
+                }
+                ,
+                
+                {
+                  "position": "Fin (Ta ouverte)",
+                  "ar": "ـت",
+                  "example": "بِنْتٌ",
+                  "note": ""
+                },
+                {
+                  "position": "Milieu",
+                  "ar": "ـتـ",
+                  "example": "مَكْتَبٌ",
+                  "note": ""
+                },
+                {
+                  "position": "Début",
+                  "ar": "تـ",
+                  "example": "تُفَّاحَةٌ",
+                  "note": ""
+                }
+                
+                
+              ]
+            },
+            {
+              "letter": "ب",
+              "name": "Ba",
+              "audio": "/assets/audio/letters/ba.mp3",
+              "forms": [
+                
+                
+                {
+                  "position": "Isolée",
+                  "ar": "ب",
+                  "example": "كِتَابٌ",
+                  "note": ""
+                },
+               {
+                  "position": "Fin",
+                  "ar": "ـب",
+                  "example": "مَكْتَبٌ",
+                  "note": ""
+                },
+                {
+                  "position": "Milieu",
+                  "ar": "ـبـ",
+                  "example": "سَبْتٌ",
+                  "note": ""
+                },
+                
+                 {
+                  "position": "Début",
+                  "ar": "بـ",
+                  "example": "بَيْتٌ",
+                  "note": ""
+                }
+              ]
+            }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m1l5_ex1",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans مَكْتَبٌ, la lettre ب est en quelle position ?",
+            "promptAr": "مَكْتَبٌ",
+            "xpReward": 5,
+            "options": [
+              "Début",
+              "Milieu",
+              "Fin (finale)",
+              "Isolée"
+            ],
+            "correctIndex": 2,
+            "explanation": "ب est la dernière lettre — forme finale ـب."
+          },
+          {
+            "id": "m1l5_ex2",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans كِتَابٌ, la lettre ك est en quelle position ?",
+            "promptAr": "كِتَابٌ",
+            "xpReward": 5,
+            "options": [
+              "Isolée",
+              "Finale",
+              "Initiale (début)",
+              "Médiane (milieu)"
+            ],
+            "correctIndex": 2,
+            "explanation": "ك est la première lettre — forme initiale كـ."
+          },
+          {
+            "id": "m1l5_ex3",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Combien de formes peut avoir une lettre arabe ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "correctIndex": 3,
+            "explanation": "Jusqu'à 4 formes : isolée, initiale, médiane, finale."
+          },
+          {
+            "id": "m1l5_ex4",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Quelle est la forme initiale (début) de ب ?",
+            "promptAr": "ب",
+            "xpReward": 4,
+            "options": [
+              "ـب",
+              "بـ",
+              "ـبـ",
+              "ب"
+            ],
+            "correctIndex": 1,
+            "explanation": "بـ est la forme initiale — utilisée au début d'un mot."
+          },
+          {
+            "id": "m1l5_ex5",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans مَكْتَبٌ, la lettre ت est en quelle position ?",
+            "promptAr": "مَكْتَبٌ",
+            "xpReward": 5,
+            "options": [
+              "Initiale",
+              "Médiane (milieu)",
+              "Finale",
+              "Isolée"
+            ],
+            "correctIndex": 1,
+            "explanation": "ت est au milieu de مَكْتَبٌ — forme médiane ـتـ."
+          },
+          {
+            "id": "m1l5_ex6",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "La forme ـك correspond à quelle position ?",
+            "promptAr": "ـك",
+            "xpReward": 4,
+            "options": [
+              "Initiale",
+              "Médiane",
+              "Finale",
+              "Isolée"
+            ],
+            "correctIndex": 2,
+            "explanation": "ـك = forme finale — ك en fin de mot."
+          },
+          {
+            "id": "m1l5_ex7",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans مَكْتَبٌ, quelle est la forme de ت au milieu ?",
+            "promptAr": "مَكْتَبٌ",
+            "xpReward": 6,
+            "options": [
+              "تـ (initiale)",
+              "ـتـ (médiane)",
+              "ـت (finale)",
+              "ت (isolée)"
+            ],
+            "correctIndex": 1,
+            "explanation": "ت est au milieu de مَكْتَبٌ — forme médiane ـتـ."
+          },
+          {
+            "id": "m1l5_ex8",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Dans بَابٌ, le premier ب est en quelle position ?",
+            "promptAr": "بَابٌ",
+            "xpReward": 5,
+            "options": [
+              "Isolée",
+              "Initiale (بـ)",
+              "Médiane",
+              "Finale"
+            ],
+            "correctIndex": 1,
+            "explanation": "Le premier ب dans بَابٌ est en position initiale — forme بـ."
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 6,
+      "title": "Premiers mots — lecture et compréhension",
+      "lesson_type": "mots",
+      "xp_reward": 30,
+      "duration_minutes": 25,
+      "skill_id": "word_reading",
+      "content": {
+        "introduction": {
+          "text": "Découvrez les premiers mots construits avec م ك ت ب et les voyelles longues ا و ي. Cliquez sur chaque carte pour entendre la prononciation.",
+          "words": [
+            {
+              "ar": "مَكْتَبٌ",
+              "phoneme": "maktabun",
+              "translation": "Bureau",
+              "type": "nom",
+              "audio": "/assets/audio/words/maktab.mp3",
+              "image": "/assets/images/words/maktab.jpg"
+            },
+            {
+              "ar": "كِتَابٌ",
+              "phoneme": "kitaabun",
+              "translation": "Un livre",
+              "type": "nom",
+              "audio": "/assets/audio/words/kitab.mp3",
+              "image": "/assets/images/words/kitab.jpg"
+            },
+            {
+              "ar": "بَابٌ",
+              "phoneme": "baabun",
+              "translation": "Porte",
+              "type": "nom",
+              "audio": "/assets/audio/words/bab.mp3",
+              "image": "/assets/images/words/bab.jpg"
+            },
+            {
+              "ar": "كَتَبَ",
+              "phoneme": "kataba",
+              "translation": "Il a écrit",
+              "type": "verbe",
+              "audio": "/assets/audio/words/kataba.mp3",
+              "image": "/assets/images/words/kataba.jpg"
+            },
+            {
+              "ar": "بَيْتٌ",
+              "phoneme": "baytun",
+              "translation": "Maison",
+              "type": "nom",
+              "audio": "/assets/audio/words/bayt.mp3",
+              "image": "/assets/images/words/bayt.jpg"
+            },
+            {
+              "ar": "كُوبٌ",
+              "phoneme": "kuubun",
+              "translation": "Tasse",
+              "type": "nom",
+              "audio": "/assets/audio/words/kub.mp3",
+              "image": "/assets/images/words/kub.jpg"
+            },
+            {
+              "ar": "بُومَةٌ",
+              "phoneme": "buumatun",
+              "translation": "Hibou",
+              "type": "nom",
+              "audio": "/assets/audio/words/buma.mp3",
+              "image": "/assets/images/words/buma.jpg"
+            },
+            {
+              "ar": "مَامَا",
+              "phoneme": "maama",
+              "translation": "Maman",
+              "type": "nom",
+              "audio": "/assets/audio/words/mama.mp3",
+              "image": "/assets/images/words/mama.jpg"
+            }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m1l6_ex1",
+            "type": "audio_choice",
+            "skill_id": "word_reading",
+            "prompt": "Écoutez et identifiez le mot",
+            "audioUrl": "/assets/audio/words/kitab.mp3",
+            "xpReward": 5,
+            "options": [
+              "مَكْتَبٌ",
+              "كِتَابٌ",
+              "بَابٌ",
+              "كُوبٌ"
+            ],
+            "correctIndex": 1,
+            "explanation": "كِتَابٌ = kitaabun = un livre."
+          },
+          {
+            "id": "m1l6_ex2",
+            "type": "matching",
+            "skill_id": "word_comprehension",
+            "prompt": "Associez chaque mot arabe à sa traduction",
+            "xpReward": 8,
+            "pairs": [
+              {
+                "ar": "بَابٌ",
+                "fr": "Porte"
+              },
+              {
+                "ar": "كِتَابٌ",
+                "fr": "Un livre"
+              },
+              {
+                "ar": "مَكْتَبٌ",
+                "fr": "Bureau"
+              },
+              {
+                "ar": "بَيْتٌ",
+                "fr": "Maison"
+              }
+            ]
+          },
+          {
+            "id": "m1l6_ex3",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Que signifie كَتَبَ ?",
+            "promptAr": "كَتَبَ",
+            "xpReward": 4,
+            "options": [
+              "Un livre",
+              "Bibliothèque",
+              "Il a écrit",
+              "Écrivain"
+            ],
+            "correctIndex": 2,
+            "explanation": "كَتَبَ = kataba = il a écrit (verbe au passé)."
+          },
+          {
+            "id": "m1l6_ex4",
+            "type": "audio_choice",
+            "skill_id": "word_reading",
+            "prompt": "Écoutez et identifiez le mot",
+            "audioUrl": "/assets/audio/words/buma.mp3",
+            "xpReward": 5,
+            "options": [
+              "كُوبٌ",
+              "بَابٌ",
+              "بُومَةٌ",
+              "مَامَا"
+            ],
+            "correctIndex": 2,
+            "explanation": "بُومَةٌ = buumatun = hibou."
+          },
+          {
+            "id": "m1l6_ex5",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Quel mot signifie 'Maison' ?",
+            "promptAr": null,
+            "xpReward": 4,
+            "options": [
+              "مَكْتَبٌ",
+              "بَيْتٌ",
+              "كِتَابٌ",
+              "بَابٌ"
+            ],
+            "correctIndex": 1,
+            "explanation": "بَيْتٌ = baytun = maison."
+          },
+          {
+            "id": "m1l6_ex6",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Quelle est la nature du mot كَتَبَ ?",
+            "promptAr": "كَتَبَ",
+            "xpReward": 3,
+            "options": [
+              "Nom",
+              "Verbe",
+              "Adjectif",
+              "Autre"
+            ],
+            "correctIndex": 1,
+            "explanation": "كَتَبَ est un verbe au passé — 'il a écrit'."
+          },
+          {
+            "id": "m1l6_ex_img1",
+            "type": "matching_image_word",
+            "skill_id": "word_comprehension",
+            "prompt": "Associe chaque image au mot arabe correspondant",
+            "xpReward": 8,
+            "pairs": [
+              {
+                "image": "/assets/images/words/maktab.jpg",
+                "ar": "مَكْتَبٌ"
+              },
+              {
+                "image": "/assets/images/words/kitab.jpg",
+                "ar": "كِتَابٌ"
+              },
+              {
+                "image": "/assets/images/words/bab.jpg",
+                "ar": "بَابٌ"
+              },
+              {
+                "image": "/assets/images/words/bayt.jpg",
+                "ar": "بَيْتٌ"
+              }
+            ]
+          },
+               
+          {
+            "id": "m1l6_ex_txa1",
+            "type": "matching_text_audio",
+            "skill_id": "word_reading",
+            "prompt": "Écoute et trouve le son qui correspond à chaque mot écrit",
+            "xpReward": 8,
+            "pairs": [
+              {
+                "text": "مَكْتَبٌ",
+                "audioUrl": "/assets/audio/words/maktab.mp3"
+              },
+              {
+                "text": "كِتَابٌ",
+                "audioUrl": "/assets/audio/words/kitab.mp3"
+              },
+              {
+                "text": "بَابٌ",
+                "audioUrl": "/assets/audio/words/bab.mp3"
+              },
+              {
+                "text": "بَيْتٌ",
+                "audioUrl": "/assets/audio/words/bayt.mp3"
+              }
+            ],
+            "audioPool": [
+              "/assets/audio/words/maktab.mp3",
+              "/assets/audio/words/kitab.mp3",
+              "/assets/audio/words/bab.mp3",
+              "/assets/audio/words/bayt.mp3",
+              "/assets/audio/words/kub.mp3",
+              "/assets/audio/words/buma.mp3",
+              "/assets/audio/words/mama.mp3",
+              "/assets/audio/words/kataba.mp3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 7,
+      "title": "Vocabulaire élargi — noms, verbes, adjectifs",
+      "lesson_type": "mots",
+      "xp_reward": 30,
+      "duration_minutes": 25,
+      "skill_id": "word_comprehension",
+      "content": {
+        "introduction": {
+          "text": "Découvrez plus de mots. Notez leur nature : nom (اسم), verbe (فعل). Cliquez pour entendre.",
+          "words": [
+            {
+              "ar": "كُتُبٌ",
+              "phoneme": "kutubun",
+              "translation": "Des livres",
+              "type": "nom",
+              "audio": "/assets/audio/words/kutub.mp3",
+              "image": "/assets/images/words/kutub.jpg"
+            },
+            {
+              "ar": "كاتِبٌ",
+              "phoneme": "kaatibun",
+              "translation": "Écrivain",
+              "type": "nom",
+              "audio": "/assets/audio/words/katib.mp3",
+              "image": "/assets/images/words/katib.jpg"
+            },
+            {
+              "ar": "مَكْتَبَةٌ",
+              "phoneme": "maktabatun",
+              "translation": "Bibliothèque",
+              "type": "nom",
+              "audio": "/assets/audio/words/maktaba.mp3",
+              "image": "/assets/images/words/maktaba.jpg"
+            },
+            {
+              "ar": "كِتَابَةٌ",
+              "phoneme": "kitaabatun",
+              "translation": "Écriture",
+              "type": "nom",
+              "audio": "/assets/audio/words/kitaba_nom.mp3",
+              "image": "/assets/images/words/kitaba_nom.jpg"
+            },
+            {
+              "ar": "بَابَا",
+              "phoneme": "baaba",
+              "translation": "Papa",
+              "type": "nom",
+              "audio": "/assets/audio/words/baba.mp3",
+              "image": "/assets/images/words/baba.jpg"
+            },
+            {
+              "ar": "كَتْكُوتٌ",
+              "phoneme": "katkuutun",
+              "translation": "Poussin",
+              "type": "nom",
+              "audio": "/assets/audio/words/katkut.mp3",
+              "image": "/assets/images/words/katkut.jpg"
+            },
+            {
+              "ar": "مَاتَ",
+              "phoneme": "maata",
+              "translation": "Il est mort",
+              "type": "verbe",
+              "audio": "/assets/audio/words/mata.mp3",
+              "image": "/assets/images/words/mata.jpg"
+            },
+            {
+              "ar": "بَاتَ",
+              "phoneme": "baata",
+              "translation": "Il a passé la nuit",
+              "type": "verbe",
+              "audio": "/assets/audio/words/bata.mp3",
+              "image": "/assets/images/words/bata.jpg"
+            },
+            {
+              "ar": "تَمَّ",
+              "phoneme": "tamma",
+              "translation": "Il a été achevé",
+              "type": "verbe",
+              "audio": "/assets/audio/words/tamma.mp3",
+              "image": "/assets/images/words/tamma.jpg"
+            },
+            {
+              "ar": "كَتَمَ",
+              "phoneme": "katama",
+              "translation": "Il a caché",
+              "type": "verbe",
+              "audio": "/assets/audio/words/katam.mp3",
+              "image": "/assets/images/words/katam.jpg"
+            },
+            {
+              "ar": "بَكَتْ",
+              "phoneme": "bakat",
+              "translation": "Elle a pleuré",
+              "type": "verbe",
+              "audio": "/assets/audio/words/bakat.mp3",
+              "image": "/assets/images/words/bakat.jpg"
+            }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m1l7_ex1",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Que signifie مَكْتَبَةٌ ?",
+            "promptAr": "مَكْتَبَةٌ",
+            "xpReward": 4,
+            "options": [
+              "Bureau",
+              "Livre",
+              "Bibliothèque",
+              "Écriture"
+            ],
+            "correctIndex": 2,
+            "explanation": "مَكْتَبَةٌ = maktabatun = bibliothèque."
+          },
+          {
+            "id": "m1l7_ex2",
+            "type": "matching",
+            "skill_id": "word_comprehension",
+            "prompt": "Associez les mots à leurs traductions",
+            "xpReward": 8,
+            "pairs": [
+              {
+                "ar": "مَاتَ",
+                "fr": "Il est mort"
+              },
+              {
+                "ar": "بَاتَ",
+                "fr": "Il a passé la nuit"
+              },
+              {
+                "ar": "تَمَّ",
+                "fr": "Il a été achevé"
+              },
+              {
+                "ar": "بَكَتْ",
+                "fr": "Elle a pleuré"
+              }
+            ]
+          },
+          {
+            "id": "m1l7_ex3",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Quelle est la nature du mot كاتِبٌ ?",
+            "promptAr": "كاتِبٌ",
+            "xpReward": 3,
+            "options": [
+              "Verbe",
+              "Nom",
+              "Adjectif",
+              "Autre"
+            ],
+            "correctIndex": 1,
+            "explanation": "كاتِبٌ = kaatibun = écrivain — c'est un nom."
+          },
+          {
+            "id": "m1l7_ex4",
+            "type": "audio_choice",
+            "skill_id": "word_reading",
+            "prompt": "Écoutez et identifiez le mot",
+            "audioUrl": "/assets/audio/words/katkut.mp3",
+            "xpReward": 5,
+            "options": [
+              "كُتُبٌ",
+              "كاتِبٌ",
+              "كَتْكُوتٌ",
+              "كِتَابَةٌ"
+            ],
+            "correctIndex": 2,
+            "explanation": "كَتْكُوتٌ = katkuutun = poussin."
+          },
+          {
+            "id": "m1l7_ex5",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Quel mot signifie 'Il a caché' ?",
+            "promptAr": null,
+            "xpReward": 4,
+            "options": [
+              "مَاتَ",
+              "بَاتَ",
+              "كَتَمَ",
+              "تَمَّ"
+            ],
+            "correctIndex": 2,
+            "explanation": "كَتَمَ = katama = il a caché."
+          },
+          {
+            "id": "m1l7_ex6",
+            "type": "mcq",
+            "skill_id": "word_comprehension",
+            "prompt": "Parmi ces mots, lequel est un verbe ?",
+            "promptAr": null,
+            "xpReward": 3,
+            "options": [
+              "كاتِبٌ",
+              "كِتَابٌ",
+              "بَاتَ",
+              "مَكْتَبَةٌ"
+            ],
+            "correctIndex": 2,
+            "explanation": "بَاتَ = baata = il a passé la nuit — c'est un verbe."
+          },
+          {
+            "id": "m1l7_ex_img1",
+            "type": "matching_image_word",
+            "skill_id": "word_comprehension",
+            "prompt": "Associe chaque image au mot arabe correspondant",
+            "xpReward": 8,
+            "pairs": [
+              {
+                "image": "/assets/images/words/katib.jpg",
+                "ar": "كاتِبٌ"
+              },
+              {
+                "image": "/assets/images/words/maktaba.jpg",
+                "ar": "مَكْتَبَةٌ"
+              },
+              {
+                "image": "/assets/images/words/baba.jpg",
+                "ar": "بَابَا"
+              },
+              {
+                "image": "/assets/images/words/katkut.jpg",
+                "ar": "كَتْكُوتٌ"
+              }
+            ]
+          },
+          {
+            "id": "m1l7_ex_txa1",
+            "type": "matching_text_audio",
+            "skill_id": "word_reading",
+            "prompt": "Écoute et trouve le son qui correspond à chaque mot écrit",
+            "xpReward": 8,
+            "pairs": [
+              {
+                "text": "كاتِبٌ",
+                "audioUrl": "/assets/audio/words/katib.mp3"
+              },
+              {
+                "text": "كَتْكُوتٌ",
+                "audioUrl": "/assets/audio/words/katkut.mp3"
+              },
+              {
+                "text": "مَاتَ",
+                "audioUrl": "/assets/audio/words/mata.mp3"
+              },
+              {
+                "text": "بَكَتْ",
+                "audioUrl": "/assets/audio/words/bakat.mp3"
+              }
+            ],
+            "audioPool": [
+              "/assets/audio/words/katib.mp3",
+              "/assets/audio/words/katkut.mp3",
+              "/assets/audio/words/mata.mp3",
+              "/assets/audio/words/bakat.mp3",
+              "/assets/audio/words/bata.mp3",
+              "/assets/audio/words/tamma.mp3",
+              "/assets/audio/words/katam.mp3",
+              "/assets/audio/words/maktaba.mp3"
+            ]
+          }
+        ]
+      }
+    },
+   {
+  "sort_order": 8,
+  "title": "Écriture au clavier",
+  "lesson_type": "ecriture_clavier",
+  "xp_reward": 30,
+  "duration_minutes": 25,
+  "skill_id": "word_writing",
+  "content": {
+    "introduction": {
+      "text": "Entraînez-vous à écrire les lettres et mots en arabe. Activez le clavier arabe sur votre appareil (Windows : Alt+Shift)."
+    },
+    "passing_score": 0.8,
+    "exercises": [
+      {
+        "id": "m1l8_ex1",
+        "type": "input_text",
+        "category": "letter",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez la lettre Mim",
+        "xpReward": 3,
+        "acceptedAnswers": ["م"],
+        "explanation": "م = Mim."
+      },
+      {
+        "id": "m1l8_ex2",
+        "type": "input_text",
+        "category": "letter",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez la lettre Kaf",
+        "xpReward": 3,
+        "acceptedAnswers": ["ك"],
+        "explanation": "ك = Kaf."
+      },
+      {
+        "id": "m1l8_ex3",
+        "type": "input_text",
+        "category": "letter",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez la lettre Ta",
+        "xpReward": 3,
+        "acceptedAnswers": ["ت"],
+        "explanation": "ت = Ta."
+      },
+      {
+        "id": "m1l8_ex4",
+        "type": "input_text",
+        "category": "letter",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez la lettre Ba",
+        "xpReward": 3,
+        "acceptedAnswers": ["ب"],
+        "explanation": "ب = Ba."
+      },
+      {
+        "id": "m1l8_ex5",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'bureau' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["مكتب", "مَكْتَبٌ", "مكتبٌ"],
+        "explanation": "مكتب = maktab = bureau."
+      },
+      {
+        "id": "m1l8_ex6",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'livre' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["كتاب", "كِتَابٌ", "كتابٌ"],
+        "explanation": "كتاب = kitaab = livre."
+      },
+      {
+        "id": "m1l8_ex7",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'porte' en arabe",
+        "xpReward": 5,
+        "acceptedAnswers": ["باب", "بَابٌ", "بابٌ"],
+        "explanation": "باب = baab = porte."
+      },
+      {
+        "id": "m1l8_ex8",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'maison' en arabe",
+        "xpReward": 5,
+        "acceptedAnswers": ["بيت", "بَيْتٌ", "بيتٌ"],
+        "explanation": "بيت = bayt = maison."
+      },
+      {
+        "id": "m1l8_ex9",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez 'il a écrit' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["كتب", "كَتَبَ", "كتبَ"],
+        "explanation": "كتب = kataba = il a écrit."
+      },
+      {
+        "id": "m1l8_ex10",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'bibliothèque' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["مكتبة", "مَكْتَبَةٌ", "مكتبةٌ"],
+        "explanation": "مكتبة = maktabatun = bibliothèque."
+      },
+      {
+        "id": "m1l8_ex11",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'écrivain' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["كاتب", "كاتِبٌ", "كاتبٌ"],
+        "explanation": "كاتب = kaatib = écrivain."
+      },
+      {
+        "id": "m1l8_ex12",
+        "type": "input_text",
+        "category": "word",
+        "skill_id": "word_writing",
+        "prompt": "Écrivez le mot 'poussin' en arabe",
+        "xpReward": 6,
+        "acceptedAnswers": ["كتكوت", "كَتْكُوتٌ", "كتكوتٌ"],
+        "explanation": "كتكوت = katkuut = poussin."
+      }
+    ]
+  }
+},
+    {
+      "sort_order": 9,
+      "title": "Construire des mots — drag & drop",
+      "lesson_type": "exercices",
+      "xp_reward": 30,
+      "duration_minutes": 20,
+      "skill_id": "word_building",
+      "content": {
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m1l9_ex1",
+            "type": "drag_drop",
+            "skill_id": "word_building",
+            "prompt": "Assemblez les lettres pour former le mot 'bureau'",
+            "letters": [
+              "مـ",
+              "ـكـ",
+              "ـتـ",
+              "ـب"
+            ],
+            "correctWord": "مكتب",
+            "targetLength": 4,
+            "xpReward": 8,
+            "explanation": "مكتب = م + ك + ت + ب = bureau.",
+            "audioUrl": "/assets/audio/words/maktab.mp3"
+          },
+          {
+            "id": "m1l9_ex2",
+            "type": "drag_drop",
+            "skill_id": "word_building",
+            "prompt": "Assemblez les lettres pour former 'livre'",
+            "letters": [
+              "كـ",
+              "ـتـ",
+              "ـا",
+              "ب"
+            ],
+            "correctWord": "كتاب",
+            "targetLength": 4,
+            "xpReward": 8,
+            "explanation": "كتاب = ك + ـتـ + ا + ب = livre.",
+            "audioUrl": "/assets/audio/words/kitab.mp3"
+          },
+          {
+            "id": "m1l9_ex3",
+            "type": "mcq",
+            "skill_id": "word_building",
+            "prompt": "Quelle lettre manque pour compléter ce mot ?",
+            "promptAr": "كِ□َابٌ",
+            "xpReward": 6,
+            "options": [
+              "ـتـ ",
+              "ـبـ ",
+              "ـمـ ",
+              "ـكـ "
+            ],
+            "correctIndex": 0,
+            "explanation": "كِتَابٌ = livre. La lettre ت est au milieu → forme médiane ـتـ.",
+            "prompts": [
+              "Quelle lettre manque pour compléter ce mot ?",
+              "Complétez le mot — quelle lettre manque ?",
+              "Trouvez la lettre manquante"
+            ]
+          },
+          {
+            "id": "m1l9_ex4",
+            "type": "mcq",
+            "skill_id": "word_building",
+            "prompt": "Quelle lettre manque pour compléter ce mot ?",
+            "promptAr": "مَكْ - بٌ",
+            "xpReward": 6,
+            "options": [
+              "ـبـ ",
+              "ـتـ ",
+              "ـمـ ",
+              "ـكـ "
+            ],
+            "correctIndex": 1,
+            "explanation": "مَكْتَبٌ = bureau. La lettre ت est au milieu → forme médiane ـتـ.",
+            "prompts": [
+              "Quelle lettre manque pour compléter ce mot ?",
+              "Complétez le mot — quelle lettre manque ?",
+              "Trouvez la lettre manquante"
+            ]
+          },
+          {
+            "id": "m1l9_ex5",
+            "type": "drag_drop",
+            "skill_id": "word_building",
+            "prompt": "Assemblez les lettres pour former 'maison'",
+            "letters": [
+              "بـ",
+              "ـيـ",
+              "ـت"
+            ],
+            "correctWord": "بيت",
+            "targetLength": 3,
+            "xpReward": 7,
+            "explanation": "بيت = ب + ي + ت = maison.",
+            "audioUrl": "/assets/audio/words/bayt.mp3"
+          },
+          {
+            "id": "m1l9_ex6",
+            "type": "mcq",
+            "skill_id": "word_building",
+            "prompt": "Dans بَابٌ, quelle est la forme du second ب (en fin de mot) ?",
+            "promptAr": "بَابٌ",
+            "xpReward": 5,
+            "options": [
+              "بـ (initiale)",
+              "ـبـ (médiane)",
+              "ـب (finale)",
+              "ب (isolée)"
+            ],
+            "correctIndex": 3,
+            "explanation": "Le second ب dans بَابٌ est en position finale — forme ـب."
+          }
+        ]
+      }
+    },
+    {
+      "sort_order": 10,
+      "title": "Phrases simples — lire et comprendre",
+      "lesson_type": "lecture_phrase",
+      "xp_reward": 35,
+      "duration_minutes": 25,
+      "skill_id": "sentence_reading",
+      "content": {
+        "introduction": {
+          "text": "Lisez ces phrases construites avec les mots du module. Cliquez pour entendre la lecture.",
+          "words": [
+            {
+              "ar": "مَاتَ كَتْكُوتٌ",
+              "phoneme": "maata katkuutun",
+              "translation": "Un poussin est mort",
+              "type": "phrase",
+              "audio": "/assets/audio/phrases/mata_katkut.mp3"
+            },
+            {
+              "ar": "بَاتَ بُوبِي بِبَابِي",
+              "phoneme": "baata buubi bibaabi",
+              "translation": "Bobi a passé la nuit à ma porte",
+              "type": "phrase",
+              "audio": "/assets/audio/phrases/bata_bubi.mp3"
+            },
+            {
+              "ar": "كَتَبَ كاتِبٌ كِتَاباً",
+              "phoneme": "kataba kaatibun",
+              "translation": "Un écrivain a écrit un livre",
+              "type": "phrase",
+              "audio": "/assets/audio/phrases/kataba_katib.mp3"
+            },
+            {
+              "ar": "بَكَتْ مَامَا",
+              "phoneme": "bakat maama",
+              "translation": "Maman a pleuré",
+              "type": "phrase",
+              "audio": "/assets/audio/phrases/bakat_mama.mp3"
+            }
+          ]
+        },
+        "passing_score": 0.8,
+        "exercises": [
+          {
+            "id": "m1l10_ex1",
+            "type": "audio_choice",
+            "skill_id": "sentence_reading",
+            "prompt": "Écoutez et identifiez la phrase",
+            "audioUrl": "/assets/audio/phrases/bakat_mama.mp3",
+            "xpReward": 6,
+            "options": [
+              "مَاتَ كَتْكُوتٌ",
+              "بَكَتْ مَامَا",
+              "كَتَبَ كاتِبٌ",
+              "بَاتَ بُوبِي"
+            ],
+            "correctIndex": 1,
+            "explanation": "بَكَتْ مَامَا = bakat maama = Maman a pleuré."
+          },
+          {
+            "id": "m1l10_ex2",
+            "type": "mcq",
+            "skill_id": "sentence_reading",
+            "prompt": "Que signifie مَاتَ كَتْكُوتٌ ?",
+            "promptAr": "مَاتَ كَتْكُوتٌ",
+            "xpReward": 5,
+            "options": [
+              "Un poussin a pleuré",
+              "Un poussin est mort",
+              "Un poussin a écrit",
+              "Un poussin est né"
+            ],
+            "correctIndex": 1,
+            "explanation": "مَاتَ = il est mort, كَتْكُوتٌ = poussin."
+          },
+          {
+            "id": "m1l10_ex3",
+            "type": "word_order",
+            "skill_id": "sentence_reading",
+            "prompt": "Remettez les mots dans l'ordre pour former la phrase : 'Maman a pleuré'",
+            "words": [
+              "مَامَا",
+              "بَكَتْ"
+            ],
+            "correctSentence": "بَكَتْ مَامَا",
+            "audioUrl": "/assets/audio/phrases/bakat_mama.mp3",
+            "xpReward": 7,
+            "explanation": "بَكَتْ مَامَا — le verbe vient avant le nom en arabe."
+          },
+          {
+            "id": "m1l10_ex4",
+            "type": "word_order",
+            "skill_id": "sentence_reading",
+            "prompt": "Remettez les mots dans l'ordre : 'Un poussin est mort'",
+            "words": [
+              "كَتْكُوتٌ",
+              "مَاتَ"
+            ],
+            "correctSentence": "مَاتَ كَتْكُوتٌ",
+            "audioUrl": "/assets/audio/phrases/mata_katkut.mp3",
+            "xpReward": 7,
+            "explanation": "مَاتَ كَتْكُوتٌ — verbe + sujet."
+          },
+          {
+            "id": "m1l10_ex5",
+            "type": "mcq",
+            "skill_id": "sentence_reading",
+            "prompt": "Quel mot manque dans cette phrase ?",
+            "promptAr": "كَتَبَ ___ كِتَاباً",
+            "xpReward": 6,
+            "options": [
+              "مَامَا",
+              "كاتِبٌ",
+              "بَابٌ",
+              "بَيْتٌ"
+            ],
+            "correctIndex": 1,
+            "explanation": "كَتَبَ كاتِبٌ كِتَاباً = un écrivain a écrit un livre.",
+            "prompts": [
+              "Quel mot manque dans cette phrase ?",
+              "Complétez la phrase",
+              "Trouvez le mot manquant"
+            ]
+          },
+          {
+            "id": "m1l10_ex6",
+            "type": "matching",
+            "skill_id": "sentence_reading",
+            "prompt": "Associez chaque phrase à sa traduction",
+            "xpReward": 8,
+            "pairs": [
+              {
+                "ar": "بَكَتْ مَامَا",
+                "fr": "Maman a pleuré"
+              },
+              {
+                "ar": "مَاتَ كَتْكُوتٌ",
+                "fr": "Un poussin est mort"
+              }
+            ]
+          },
+          {
+            "id": "m1l10_ex_txa1",
+            "type": "matching_text_audio",
+            "skill_id": "sentence_reading",
+            "prompt": "Écoute et trouve le son qui correspond à chaque phrase",
+            "xpReward": 9,
+            "pairs": [
+              {
+                "text": "بَكَتْ مَامَا",
+                "audioUrl": "/assets/audio/phrases/bakat_mama.mp3"
+              },
+              {
+                "text": "مَاتَ كَتْكُوتٌ",
+                "audioUrl": "/assets/audio/phrases/mata_katkut.mp3"
+              },
+              {
+                "text": "كَتَبَ كاتِبٌ كِتَاباً",
+                "audioUrl": "/assets/audio/phrases/kataba_katib.mp3"
+              },
+              {
+                "text": "بَاتَ بُوبِي بِبَابِي",
+                "audioUrl": "/assets/audio/phrases/bata_bubi.mp3"
+              }
+            ],
+            "audioPool": [
+              "/assets/audio/phrases/bakat_mama.mp3",
+              "/assets/audio/phrases/mata_katkut.mp3",
+              "/assets/audio/phrases/kataba_katib.mp3",
+              "/assets/audio/phrases/bata_bubi.mp3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+  "sort_order": 11,
+  "title": "Prononciation — Révision Module 1",
+  "lesson_type": "oral_practice",
+  "xp_reward": 0,
+  "duration_minutes": 10,
+  "content": {
+    "exercises": [
+      {
+        "id": "oral_m1_letters",
+        "type": "oral_reading",
+        "skill_id": "word_reading",
+        "xpReward": 0,
+        "words": [
+          { "arabic": "بَ", "translation": "Ba", "syllables": "بَ", "audio_url": "/assets/audio/letters/ba_fatha.mp3" },
+          { "arabic": "مَ", "translation": "Ma", "syllables": "مَ","audio_url": "/assets/audio/letters/mim_fatha.mp3" },
+          { "arabic": "كَ", "translation": "Ka", "syllables": "كَ", "audio_url": "/assets/audio/letters/kaf_fatha.mp3" },
+          { "arabic": "تَ", "translation": "Ta", "syllables": "تَ", "audio_url": "/assets/audio/letters/ta.mp3" }
+        ]
+      },
+      {
+        "id": "oral_m1_words",
+        "type": "oral_reading",
+        "skill_id": "word_reading",
+        "xpReward": 0,
+        "words": [
+          { "arabic": "بَيْت", "translation": "maison", "syllables": "بَيْ - ت", "audio_url": "/assets/audio/words/bayt.mp3" },
+          { "arabic": "كِتَاب", "translation": "livre", "syllables": "كِ - تَا - ب", "audio_url": "/assets/audio/words/kitab.mp3" },
+          { "arabic": "بَاب", "translation": "porte", "syllables": "بَا - ب", "audio_url": "/assets/audio/words/bab.mp3" },
+          { "arabic": "مَكْتَبَةٌ", "translation": "pomme", "syllables": "تُفْ - فَا - ح", "audio_url": "/assets/audio/words/maktaba.mp3" }
+        ]
+      }
+    ]
+  }
+},
+    {
+      "sort_order": 12,
+      "title": "Évaluation globale du Module 1",
+      "lesson_type": "evaluation",
+      "xp_reward": 60,
+      "duration_minutes": 30,
+      "skill_id": "evaluation",
+      "content": {
+        "description": "Évaluation finale du Module 1. Le système choisit les exercices selon votre profil.",
+        "passing_score": 0.7,
+        "exercises": [
+          {
+            "id": "m1l11_ex1",
+            "type": "mcq",
+            "skill_id": "letter_recognition",
+            "prompt": "Identifiez la lettre",
+            "promptAr": "ك",
+            "xpReward": 3,
+            "options": [
+              "Ba",
+              "Mim",
+              "Kaf",
+              "Ta"
+            ],
+            "correctIndex": 2,
+            "explanation": "ك = Kaf."
+          },
+          {
+            "id": "m1l11_ex2",
+            "type": "audio_choice",
+            "skill_id": "harakat_reading",
+            "prompt": "Écoutez et identifiez",
+            "audioUrl": "/assets/audio/syllables/mim_fatha.mp3",
+            "xpReward": 4,
+            "options": [
+              "مَ",
+              "مِ",
+              "مُ",
+              "مْ"
+            ],
+            "correctIndex": 0,
+            "explanation": "مَ = ma — fatha."
+          },
+          {
+            "id": "m1l11_ex3",
+            "type": "mcq",
+            "skill_id": "long_vowels",
+            "prompt": "Comment se prononce كُوبٌ ?",
+            "promptAr": "كُوبٌ",
+            "xpReward": 4,
+            "options": [
+              "kabun",
+              "kuubun",
+              "kibun",
+              "kaabun"
+            ],
+            "correctIndex": 1,
+            "explanation": "كُوبٌ = kuubun."
+          },
+          {
+            "id": "m1l11_ex4",
+            "type": "mcq",
+            "skill_id": "tanwin",
+            "prompt": "Que signifie ٌ à la fin d'un mot ?",
+            "promptAr": "بٌ",
+            "xpReward": 4,
+            "options": [
+              "son 'a'",
+              "son 'in'",
+              "son 'oun'",
+              "pas de son"
+            ],
+            "correctIndex": 2,
+            "explanation": "ٌ = tanwīn damm → son 'oun'."
+          },
+          {
+            "id": "m1l11_ex5",
+            "type": "mcq",
+            "skill_id": "letter_positions",
+            "prompt": "Position de ب dans مَكْتَبٌ",
+            "promptAr": "مَكْتَبٌ",
+            "xpReward": 5,
+            "options": [
+              "Initiale",
+              "Médiane",
+              "Finale",
+              "Isolée"
+            ],
+            "correctIndex": 2,
+            "explanation": "ب est à la fin — forme finale ـب."
+          },
+          {
+            "id": "m1l11_ex6",
+            "type": "audio_choice",
+            "skill_id": "word_reading",
+            "prompt": "Écoutez et identifiez le mot",
+            "audioUrl": "/assets/audio/words/bayt.mp3",
+            "xpReward": 5,
+            "options": [
+              "بَابٌ",
+              "بَيْتٌ",
+              "بُومَةٌ",
+              "بَابَا"
+            ],
+            "correctIndex": 1,
+            "explanation": "بَيْتٌ = baytun = maison."
+          },
+          {
+            "id": "m1l11_ex7",
+            "type": "matching",
+            "skill_id": "word_comprehension",
+            "prompt": "Associez les mots à leurs traductions",
+            "xpReward": 8,
+            "pairs": [
+              {
+                "ar": "كاتِبٌ",
+                "fr": "Écrivain"
+              },
+              {
+                "ar": "مَكْتَبَةٌ",
+                "fr": "Bibliothèque"
+              },
+              {
+                "ar": "كَتْكُوتٌ",
+                "fr": "Poussin"
+              }
+            ]
+          },
+          {
+            "id": "m1l11_ex8",
+            "type": "input_text",
+            "skill_id": "word_writing",
+            "prompt": "Écrivez 'bibliothèque' en arabe",
+            "xpReward": 6,
+            "acceptedAnswers": [
+              "مكتبة",
+              "مَكْتَبَةٌ",
+              "مكتبةٌ"
+            ],
+            "explanation": "مكتبة = maktabatun = bibliothèque."
+          },
+          {
+            "id": "m1l11_ex9",
+            "type": "word_order",
+            "skill_id": "sentence_reading",
+            "prompt": "Remettez dans l'ordre : 'Un écrivain a écrit un livre'",
+            "words": [
+              "كِتَاباً",
+              "كاتِبٌ",
+              "كَتَبَ"
+            ],
+            "correctSentence": "كَتَبَ كاتِبٌ كِتَاباً",
+            "audioUrl": "/assets/audio/phrases/kataba_katib.mp3",
+            "xpReward": 8,
+            "explanation": "كَتَبَ كاتِبٌ كِتَاباً — verbe + sujet + objet."
+          },
+          {
+            "id": "m1l11_ex10",
+            "type": "drag_drop",
+            "skill_id": "word_building",
+            "prompt": "Assemblez les lettres pour former 'poussin'",
+            "letters": [
+              "كـ",
+              "ـتـ",
+              "ـكُو",
+              "ت"
+            ],
+            "correctWord": "كتكوت",
+            "targetLength": 4,
+            "xpReward": 7,
+            "explanation": "كتكوت = katkuut = poussin.",
+            "audioUrl": "/assets/audio/words/katkut.mp3"
+          },
+          {
+            "id": "m1l11_ex11",
+            "type": "matching_text_audio",
+            "skill_id": "word_reading",
+            "prompt": "Écoute et trouve le son qui correspond à chaque mot",
+            "xpReward": 8,
+            "pairs": [
+              {
+                "text": "مَكْتَبٌ",
+                "audioUrl": "/assets/audio/words/maktab.mp3"
+              },
+              {
+                "text": "كِتَابٌ",
+                "audioUrl": "/assets/audio/words/kitab.mp3"
+              },
+              {
+                "text": "بَيْتٌ",
+                "audioUrl": "/assets/audio/words/bayt.mp3"
+              },
+              {
+                "text": "كاتِبٌ",
+                "audioUrl": "/assets/audio/words/katib.mp3"
+              }
+            ],
+            "audioPool": [
+              "/assets/audio/words/maktab.mp3",
+              "/assets/audio/words/kitab.mp3",
+              "/assets/audio/words/bayt.mp3",
+              "/assets/audio/words/katib.mp3",
+              "/assets/audio/words/bab.mp3",
+              "/assets/audio/words/katkut.mp3",
+              "/assets/audio/words/buma.mp3",
+              "/assets/audio/words/mama.mp3"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

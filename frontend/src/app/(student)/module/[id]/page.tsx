@@ -38,6 +38,7 @@ const LESSON_TYPES: Record<string, { icon: string; label: string; color: string 
   ecriture_clavier: { icon: '⌨️', label: 'Écriture',        color: '#1976D2' },
   exercices:        { icon: '🧩', label: 'Exercices',       color: '#9C27B0' },
   lecture_phrase:   { icon: '📖', label: 'Lecture',         color: '#F07C1E' },
+  oral_practice: { icon: '🎤', label: 'Prononciation', color: '#0097A7' },
   evaluation:       { icon: '🏆', label: 'Évaluation',      color: '#E91E63' },
 }
 
@@ -62,12 +63,14 @@ export default function ModulePage() {
       setLessons(sorted)
     }).catch(() => {}).finally(() => setLoading(false))
   }, [moduleId])
+  
 
-  const completed  = lessons.filter(l => l.is_completed).length
-  const pct        = lessons.length > 0 ? Math.round((completed / lessons.length) * 100) : 0
-  const nextLesson = lessons.find(l => !l.is_completed)
+  const regularLessons = lessons.filter(l => l.lesson_type !== 'oral_practice')
+  const completed  = regularLessons.filter(l => l.is_completed).length
+  const pct        = regularLessons.length > 0 ? Math.round((completed / regularLessons.length) * 100) : 0
+  const nextLesson = regularLessons.find(l => !l.is_completed)
   const totalXP    = lessons.reduce((s, l) => s + l.xp_reward, 0)
-  const totalMin   = lessons.reduce((s, l) => s + l.duration_minutes, 0)
+  const totalMin = lessons.reduce((s, l) => s + l.duration_minutes, 0)
 
   if (!user) return null
 
@@ -153,7 +156,9 @@ export default function ModulePage() {
               const cfg       = LESSON_TYPES[lesson.lesson_type] || LESSON_TYPES['exercices']
               const isCompleted = lesson.is_completed
               const isCurrent   = lesson.id === nextLesson?.id
-              const isLocked    = !isCompleted && !isCurrent && i > 0 && !lessons[i - 1]?.is_completed
+              const isLocked = lesson.lesson_type === 'oral_practice'
+                ? false
+                : !isCompleted && !isCurrent && i > 0 && !lessons[i - 1]?.is_completed
 
               return (
                 <button key={lesson.id}
@@ -191,6 +196,11 @@ export default function ModulePage() {
                       <span style={{ fontSize: 10, background: `${cfg.color}18`, color: cfg.color, padding: '2px 8px', borderRadius: 8, fontWeight: 700, whiteSpace: 'nowrap' }}>
                         {cfg.icon} {cfg.label}
                       </span>
+                      {lesson.lesson_type === 'oral_practice' && (
+                        <span style={{ fontSize: 10, background: '#E0F7FA', color: '#006064', padding: '2px 8px', borderRadius: 8, fontWeight: 700 }}>
+                          Optionnel
+                        </span>
+                      )}
                     </div>
                     <div style={{ display: 'flex', gap: 14, fontSize: 12, color: C.text3 }}>
                       <span>⏱ {lesson.duration_minutes} min</span>
@@ -200,7 +210,17 @@ export default function ModulePage() {
 
                   {/* Flèche */}
                   {!isLocked && (
-                    <span style={{ fontSize: 18, color: isCompleted ? C.green : C.violet, flexShrink: 0 }}>→</span>
+                    <span style={{ fontSize: 18, color: isCompleted ? C.green : C.violet, flexShrink: 0 }}>
+                                          {!isLocked && (
+                      lesson.lesson_type === 'oral_practice' ? (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 4, alignItems: 'flex-end' }}>
+                          <span style={{ fontSize: 18, color: '#0097A7', flexShrink: 0 }}>→</span>
+                          <span style={{ fontSize: 10, color: C.text3 }}>Passer</span>
+                        </div>
+                      ) : (
+                        <span style={{ fontSize: 18, color: isCompleted ? C.green : C.violet, flexShrink: 0 }}>→</span>
+                      )
+                    )}</span>
                   )}
                 </button>
               )

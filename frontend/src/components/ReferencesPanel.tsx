@@ -17,12 +17,35 @@ const C = {
 // ── Audio MP3 ──────────────────────────────────────────────────
 const AUDIO_BASE = '/assets/audio'
 
-// Fichiers disponibles — compléter au fur et à mesure
 const LETTER_AUDIO: Record<string, string> = {
-  'م': `${AUDIO_BASE}/letters/mim.mp3`,
-  'ك': `${AUDIO_BASE}/letters/kaf.mp3`,
-  'ت': `${AUDIO_BASE}/letters/ta.mp3`,
+  'ا': `${AUDIO_BASE}/letters/alif.mp3`,
   'ب': `${AUDIO_BASE}/letters/ba.mp3`,
+  'ت': `${AUDIO_BASE}/letters/ta.mp3`,
+  'ث': `${AUDIO_BASE}/letters/tha.mp3`,
+  'ج': `${AUDIO_BASE}/letters/jim.mp3`,
+  'ح': `${AUDIO_BASE}/letters/ha_guttu.mp3`,
+  'خ': `${AUDIO_BASE}/letters/kha.mp3`,
+  'د': `${AUDIO_BASE}/letters/dal.mp3`,
+  'ذ': `${AUDIO_BASE}/letters/dhal.mp3`,
+  'ر': `${AUDIO_BASE}/letters/ra.mp3`,
+  'ز': `${AUDIO_BASE}/letters/zay.mp3`,
+  'س': `${AUDIO_BASE}/letters/sin.mp3`,
+  'ش': `${AUDIO_BASE}/letters/shin.mp3`,
+  'ص': `${AUDIO_BASE}/letters/sad.mp3`,
+  'ض': `${AUDIO_BASE}/letters/dad.mp3`,
+  'ط': `${AUDIO_BASE}/letters/ta_emph.mp3`,
+  'ظ': `${AUDIO_BASE}/letters/dha_emph.mp3`,
+  'ع': `${AUDIO_BASE}/letters/ayn.mp3`,
+  'غ': `${AUDIO_BASE}/letters/ghayn.mp3`,
+  'ف': `${AUDIO_BASE}/letters/fa.mp3`,
+  'ق': `${AUDIO_BASE}/letters/qaf.mp3`,
+  'ك': `${AUDIO_BASE}/letters/kaf.mp3`,
+  'ل': `${AUDIO_BASE}/letters/lam.mp3`,
+  'م': `${AUDIO_BASE}/letters/mim.mp3`,
+  'ن': `${AUDIO_BASE}/letters/nun.mp3`,
+  'ه': `${AUDIO_BASE}/letters/ha.mp3`,
+  'و': `${AUDIO_BASE}/letters/waw.mp3`,
+  'ي': `${AUDIO_BASE}/letters/ya.mp3`,
 }
 
 const WORD_AUDIO: Record<string, string> = {
@@ -34,31 +57,18 @@ const WORD_AUDIO: Record<string, string> = {
 
 let _audio: HTMLAudioElement | null = null
 
+// ✅ Son local uniquement — pas de fallback Web Speech API
 function playAudio(ar: string) {
   if (typeof window === 'undefined') return
 
-  // Chercher le fichier : mot d'abord, puis lettre, puis lettre sans harakat
   const clean = ar.replace(/[\u064B-\u065F\u0670]/g, '')
   const src   = WORD_AUDIO[ar] ?? LETTER_AUDIO[ar] ?? LETTER_AUDIO[clean]
 
+  if (!src) return  // ← pas de fallback TTS, on ne joue rien si fichier absent
+
   if (_audio) { _audio.pause(); _audio.currentTime = 0 }
-
-  if (src) {
-    _audio = new Audio(src)
-    _audio.play().catch(() => tts(ar))
-  } else {
-    tts(ar)
-  }
-}
-
-function tts(text: string) {
-  if (typeof window === 'undefined') return
-  window.speechSynthesis.cancel()
-  const u = new SpeechSynthesisUtterance(text)
-  u.lang = 'ar-SA'; u.rate = 0.75
-  const v = window.speechSynthesis.getVoices().find(v => v.lang.startsWith('ar'))
-  if (v) u.voice = v
-  window.speechSynthesis.speak(u)
+  _audio = new Audio(src)
+  _audio.play().catch(() => {})  // ← erreur silencieuse, pas de TTS
 }
 
 // ── Info liaison ───────────────────────────────────────────────
@@ -75,8 +85,7 @@ const JOIN_INFO = {
   },
 }
 
-// ── 28 Lettres — ordre arabe RTL ──────────────────────────────
-// (de ا à ي, affichées de droite à gauche dans la grille)
+// ── 28 Lettres — ordre arabe (Alif → Ya) ──────────────────────
 const ALPHABET = [
   { name:'Alif',      ar:'ا', isolated:'ا', initial:'ا',   medial:'ا',   final:'ا',   phoneme:'/a/',   join:'right_only', color:'#6C3FC5', bg:'#EDE8FB' },
   { name:'Ba',        ar:'ب', isolated:'ب', initial:'بـ',  medial:'ـبـ', final:'ـب',  phoneme:'/b/',   join:'both',       color:'#1976D2', bg:'#E6F1FB' },
@@ -160,6 +169,7 @@ const RULES = [
     ],
     example: { ar: 'مَكْتَبٌ', tr: 'mak-ta-bun', fr: 'bureau', note: "كْ : Kaf + sukun → bloc KT sans voyelle entre les deux" },
   },
+  
 ]
 
 // ══════════════════════════════════════════════════════════════
@@ -169,44 +179,40 @@ function AlphabetGrid() {
   const [selected, setSelected] = useState<number | null>(null)
   const [playing,  setPlaying]  = useState<number | null>(null)
 
-  // Ordre RTL : inverser le tableau pour afficher ا à droite
-  const rtlAlphabet = [...ALPHABET].reverse()
-
-  const handleClick = (originalIndex: number) => {
-    setPlaying(originalIndex)
-    playAudio(ALPHABET[originalIndex].ar)
+  const handleClick = (idx: number) => {
+    setPlaying(idx)
+    playAudio(ALPHABET[idx].ar)
     setTimeout(() => setPlaying(null), 1000)
-    setSelected(selected === originalIndex ? null : originalIndex)
+    setSelected(selected === idx ? null : idx)
   }
 
   return (
     <div>
       <p style={{ fontSize: 11, color: C.text3, marginBottom: 12, textAlign: 'center' }}>
-        🔊 Cliquer sur une lettre pour l&apos;entendre · Cliquer à nouveau pour fermer
+        🔊 Les lettres avec le badge son sont disponibles en audio · Cliquer pour le détail
       </p>
 
-      {/* Grille RTL — 4 colonnes, ordre de droite à gauche */}
+      {/*
+        ✅ Grille RTL :
+        - ALPHABET dans l'ordre naturel (Alif index 0 → Ya index 27)
+        - direction: 'rtl' place le premier élément en haut à DROITE
+        - Résultat : Alif en haut à droite, Ya en bas à gauche (lecture arabe naturelle)
+      */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(4, 1fr)',
         gap: 7,
-        direction: 'rtl',  // ← ordre RTL
+        direction: 'rtl',
       }}>
-        {rtlAlphabet.map((letter) => {
-          // Retrouver l'index original
-          const origIdx = ALPHABET.findIndex(l => l.ar === letter.ar)
-          const isSel   = selected === origIdx
-          const isPlay  = playing  === origIdx
+        {ALPHABET.map((letter, idx) => {
+          const isSel    = selected === idx
+          const isPlay   = playing  === idx
+          const hasAudio = !!LETTER_AUDIO[letter.ar]
 
           return (
-            <button key={letter.ar} onClick={() => handleClick(origIdx)}
+            <button key={letter.ar} onClick={() => handleClick(idx)}
               style={{
-                // Couleur de fond : propre à chaque lettre
-                background: isSel
-                  ? letter.color
-                  : isPlay
-                    ? letter.bg
-                    : letter.bg,          // ← fond coloré même au repos
+                background: isSel ? letter.color : letter.bg,
                 border: `2px solid ${isSel ? letter.color : letter.color + '60'}`,
                 borderRadius: 12,
                 padding: '10px 4px',
@@ -216,15 +222,23 @@ function AlphabetGrid() {
                 flexDirection: 'column',
                 alignItems: 'center',
                 gap: 3,
-                direction: 'ltr',        // ← texte LTR dans la carte
+                direction: 'ltr',
                 transform: isPlay ? 'scale(1.1)' : 'scale(1)',
                 boxShadow: isPlay ? `0 4px 14px ${letter.color}50` : 'none',
+                position: 'relative',
               }}>
 
-              {/* Grande lettre arabe */}
+              {/* Badge son — uniquement si fichier audio disponible */}
+              {hasAudio && (
+                <span style={{
+                  position: 'absolute', top: 4, right: 5,
+                  fontSize: 8, opacity: isSel ? 0.9 : 0.55,
+                }}>🔊</span>
+              )}
+
               <span style={{
                 fontFamily: "'Noto Naskh Arabic','Amiri',serif",
-                fontSize: 38,            // ← augmenté de 30 à 38
+                fontSize: 38,
                 lineHeight: 1.1,
                 direction: 'rtl',
                 color: isSel ? C.white : letter.color,
@@ -232,7 +246,6 @@ function AlphabetGrid() {
                 {letter.ar}
               </span>
 
-              {/* Nom */}
               <span style={{
                 fontSize: 8, fontWeight: 700, lineHeight: 1,
                 color: isSel ? 'rgba(255,255,255,0.95)' : C.text,
@@ -240,7 +253,6 @@ function AlphabetGrid() {
                 {letter.name}
               </span>
 
-              {/* Phonème */}
               <span style={{
                 fontSize: 7.5,
                 color: isSel ? 'rgba(255,255,255,0.75)' : C.text2,
@@ -249,7 +261,7 @@ function AlphabetGrid() {
               </span>
 
               {isPlay && (
-                <span style={{ fontSize: 9, color: isSel ? C.white : letter.color }}>🔊</span>
+                <span style={{ fontSize: 9, color: isSel ? C.white : letter.color }}>▶</span>
               )}
             </button>
           )
@@ -267,7 +279,6 @@ function AlphabetGrid() {
             border: `2px solid ${l.color}50`,
             borderRadius: 16, padding: 14,
           }}>
-            {/* En-tête */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 14 }}>
               <span style={{
                 fontFamily: "'Noto Naskh Arabic','Amiri',serif",
@@ -283,7 +294,6 @@ function AlphabetGrid() {
               </div>
             </div>
 
-            {/* Info liaison */}
             <div style={{
               background: join.bg,
               border: `1.5px solid ${join.color}40`,
@@ -299,7 +309,6 @@ function AlphabetGrid() {
               </div>
             </div>
 
-            {/* 4 positions */}
             <p style={{ fontSize: 10, fontWeight: 700, color: C.text3, marginBottom: 8, textTransform: 'uppercase' as const, letterSpacing: '.06em' }}>
               4 Positions dans le mot
             </p>
@@ -334,7 +343,6 @@ function AlphabetGrid() {
               })}
             </div>
 
-            {/* Note non-liante */}
             {l.join === 'right_only' && (
               <div style={{
                 marginTop: 10, padding: '8px 12px',
@@ -369,7 +377,6 @@ function RulesList() {
             border: `2px solid ${isOpen ? rule.color : C.border}`,
             borderRadius: 14, overflow: 'hidden', transition: 'border-color .2s',
           }}>
-            {/* En-tête */}
             <button onClick={() => setOpen(isOpen ? null : rule.id)}
               style={{
                 width: '100%', padding: '12px 14px', border: 'none', cursor: 'pointer',
@@ -395,10 +402,8 @@ function RulesList() {
               }}>▾</span>
             </button>
 
-            {/* Contenu */}
             {isOpen && (
               <div style={{ padding: '0 14px 14px', background: C.white }}>
-                {/* Description */}
                 <div style={{
                   background: rule.bg, borderLeft: `3px solid ${rule.color}`,
                   borderRadius: '0 10px 10px 0', padding: '10px 12px', marginBottom: 12,
@@ -406,7 +411,6 @@ function RulesList() {
                   <p style={{ fontSize: 12, color: C.text2, lineHeight: 1.7 }}>{rule.content}</p>
                 </div>
 
-                {/* Tableau */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 5, marginBottom: 12 }}>
                   {rule.rows.map((r, ri) => (
                     <div key={ri} style={{
@@ -435,7 +439,6 @@ function RulesList() {
                   ))}
                 </div>
 
-                {/* Exemple cliquable */}
                 <div style={{
                   background: `${rule.color}10`, border: `1.5px solid ${rule.color}30`,
                   borderRadius: 10, padding: '10px 12px',
@@ -508,7 +511,6 @@ export function ReferencesPanel({ initialTab = 'alphabet', onClose }: References
         display: 'flex', flexDirection: 'column', overflow: 'hidden',
       }}>
 
-        {/* En-tête */}
         <div style={{
           background: `linear-gradient(135deg, ${C.violetDk}, ${C.violet})`,
           padding: '16px 20px', flexShrink: 0,
@@ -526,7 +528,6 @@ export function ReferencesPanel({ initialTab = 'alphabet', onClose }: References
           }}>✕</button>
         </div>
 
-        {/* Onglets */}
         <div style={{ display: 'flex', borderBottom: `2px solid ${C.border}`, background: C.bg, flexShrink: 0 }}>
           {([
             { key: 'alphabet' as const, label: '🔤 Alphabet', sub: '28 lettres' },
@@ -547,12 +548,10 @@ export function ReferencesPanel({ initialTab = 'alphabet', onClose }: References
           ))}
         </div>
 
-        {/* Contenu scrollable */}
         <div style={{ flex: 1, overflowY: 'auto', padding: '14px 14px 20px' }}>
           {tab === 'alphabet' ? <AlphabetGrid /> : <RulesList />}
         </div>
 
-        {/* Pied */}
         <div style={{
           padding: '8px 14px', borderTop: `1px solid ${C.border}`,
           background: C.bg, flexShrink: 0, textAlign: 'center' as const,

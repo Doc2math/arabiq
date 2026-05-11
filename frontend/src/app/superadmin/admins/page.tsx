@@ -22,12 +22,8 @@ interface Admin {
   username: string
   email: string
   role: string
-  permissions: string[]
   is_active: boolean
   created_at: string
-  last_login: string | null
-  total_sessions: number
-  total_actions: number
 }
 
 const ROLE_TEMPLATES: Record<string, string[]> = {
@@ -47,14 +43,6 @@ const ALL_PERMISSIONS = [
   { group: 'Rapports',     perms: ['reports:view'] },
 ]
 
-function timeAgo(dateStr: string): string {
-  const diff = (Date.now() - new Date(dateStr).getTime()) / 1000
-  if (diff < 60) return 'à l\'instant'
-  if (diff < 3600) return `il y a ${Math.floor(diff / 60)}min`
-  if (diff < 86400) return `il y a ${Math.floor(diff / 3600)}h`
-  return `il y a ${Math.floor(diff / 86400)}j`
-}
-
 export default function SuperAdminAdminsPage() {
   const router = useRouter()
   const { user } = useAuthStore()
@@ -67,8 +55,9 @@ export default function SuperAdminAdminsPage() {
   const [msg, setMsg] = useState<{ text: string; ok: boolean } | null>(null)
 
   const fetchAdmins = async () => {
+    setLoading(true)
     try {
-      const res = await api.get('/api/v1/superadmin/admins')
+      const res = await api.get('/api/v1/admin/admins')
       setAdmins(res.data)
     } catch {}
     setLoading(false)
@@ -78,7 +67,7 @@ export default function SuperAdminAdminsPage() {
 
   const openEdit = (admin: Admin) => {
     setEditingAdmin(admin)
-    setEditPerms([...(admin.permissions ?? [])])
+    setEditPerms([])
     setEditRole(admin.role)
     setMsg(null)
   }
@@ -95,8 +84,7 @@ export default function SuperAdminAdminsPage() {
     if (!editingAdmin) return
     setSaving(true)
     try {
-      await api.patch(`/api/v1/superadmin/admins/${editingAdmin.id}`, {
-        permissions: editPerms,
+      await api.patch(`/api/v1/admin/users/${editingAdmin.id}`, {
         role: editRole,
       })
       setMsg({ text: 'Modifications sauvegardées', ok: true })
@@ -110,8 +98,16 @@ export default function SuperAdminAdminsPage() {
 
   const toggleActive = async (admin: Admin) => {
     try {
-      await api.patch(`/api/v1/superadmin/admins/${admin.id}`, { is_active: !admin.is_active })
+      await api.patch(`/api/v1/admin/users/${admin.id}`, { is_active: !admin.is_active })
       setAdmins(prev => prev.map(a => a.id === admin.id ? { ...a, is_active: !a.is_active } : a))
+    } catch {}
+  }
+
+  const demoteAdmin = async (adminId: string) => {
+    if (!confirm('Rétrograder cet admin en student ?')) return
+    try {
+      await api.post(`/api/v1/admin/admins/demote/${adminId}`)
+      await fetchAdmins()
     } catch {}
   }
 
@@ -135,6 +131,10 @@ export default function SuperAdminAdminsPage() {
       {/* Liste */}
       {loading ? (
         <div style={{ textAlign: 'center', padding: 40, color: C.text3 }}>Chargement…</div>
+      ) : admins.length === 0 ? (
+        <div style={{ textAlign: 'center', padding: 40, color: C.text3, background: C.white, borderRadius: 16, border: `2px solid ${C.border}` }}>
+          Aucun admin enregistré
+        </div>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           {admins.map(admin => (
@@ -142,7 +142,7 @@ export default function SuperAdminAdminsPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
 
                 {/* Avatar */}
-                <div style={{ width: 44, height: 44, borderRadius: '50%', background: admin.role === 'superadmin' ? C.pink : C.violet, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 15, fontWeight: 700, flexShrink: 0 }}>
+                <div style={{ width: 44, height: 44, borderRadius: '50%', background: C.violet, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 15, fontWeight: 700, flexShrink: 0 }}>
                   {admin.username.slice(0, 2).toUpperCase()}
                 </div>
 
@@ -150,47 +150,37 @@ export default function SuperAdminAdminsPage() {
                 <div style={{ flex: 1 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
                     <span style={{ fontSize: 15, fontWeight: 700, color: C.text }}>{admin.username}</span>
-                    <span style={{ fontSize: 10, fontWeight: 700, padding: '2px 8px', borderRadius: 8, background: admin.role === 'superadmin' ? C.pinkLt : C.violetLt, color: admin.role === 'superadmin' ? C.pink : C.violet }}>
-                      {admin.role}
+                    <span style={{ fontSize: 10, fontWeight: 700, padding: '2px 8px', borderRadius: 8, background: C.violetLt, color: C.violet }}>
+                      ADMIN
                     </span>
-                    {!admin.is_active && <span style={{ fontSize: 10, fontWeight: 700, padding: '2px 8px', borderRadius: 8, background: C.redLt, color: C.red }}>SUSPENDU</span>}
+                    {!admin.is_active && (
+                      <span style={{ fontSize: 10, fontWeight: 700, padding: '2px 8px', borderRadius: 8, background: C.redLt, color: C.red }}>
+                        SUSPENDU
+                      </span>
+                    )}
                   </div>
-                  <p style={{ fontSize: 12, color: C.text3, marginBottom: 6 }}>{admin.email}</p>
-                  <div style={{ display: 'flex', gap: 14, fontSize: 11, color: C.text3 }}>
-                    <span>🔗 {admin.total_sessions} sessions</span>
-                    <span>⚡ {admin.total_actions} actions</span>
-                    {admin.last_login && <span>🕐 Dernière connexion {timeAgo(admin.last_login)}</span>}
-                    <span>📅 Créé le {new Date(admin.created_at).toLocaleDateString('fr-FR')}</span>
-                  </div>
+                  <p style={{ fontSize: 12, color: C.text3, marginBottom: 4 }}>{admin.email}</p>
+                  <p style={{ fontSize: 11, color: C.text3 }}>
+                    Créé le {new Date(admin.created_at).toLocaleDateString('fr-FR')}
+                  </p>
                 </div>
 
                 {/* Actions */}
-                {admin.role !== 'superadmin' && (
-                  <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
-                    <button onClick={() => openEdit(admin)}
-                      style={{ padding: '8px 14px', borderRadius: 10, border: `2px solid ${C.violet}`, background: C.violetLt, color: C.violet, fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>
-                      ✏️ Modifier
-                    </button>
-                    <button onClick={() => router.push(`/superadmin/admins/${admin.id}`)}
-                      style={{ padding: '8px 14px', borderRadius: 10, border: `2px solid ${C.border}`, background: 'transparent', color: C.text2, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
-                      📊 Rapport
-                    </button>
-                    <button onClick={() => toggleActive(admin)}
-                      style={{ padding: '8px 14px', borderRadius: 10, border: `2px solid ${admin.is_active ? C.red : C.green}`, background: 'transparent', color: admin.is_active ? C.red : C.green, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
-                      {admin.is_active ? '🚫 Suspendre' : '✓ Réactiver'}
-                    </button>
-                  </div>
-                )}
-              </div>
-
-              {/* Permissions */}
-              {admin.permissions?.length > 0 && (
-                <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap', marginTop: 12, paddingTop: 12, borderTop: `1px solid ${C.border}` }}>
-                  {admin.permissions.map(p => (
-                    <span key={p} style={{ fontSize: 10, background: C.violetLt, color: C.violet, padding: '2px 8px', borderRadius: 6, fontWeight: 600 }}>{p}</span>
-                  ))}
+                <div style={{ display: 'flex', gap: 8, flexShrink: 0, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+                  <button onClick={() => openEdit(admin)}
+                    style={{ padding: '8px 14px', borderRadius: 10, border: `2px solid ${C.violet}`, background: C.violetLt, color: C.violet, fontSize: 12, fontWeight: 700, cursor: 'pointer' }}>
+                    ✏️ Modifier
+                  </button>
+                  <button onClick={() => toggleActive(admin)}
+                    style={{ padding: '8px 14px', borderRadius: 10, border: `2px solid ${admin.is_active ? C.red : C.green}`, background: 'transparent', color: admin.is_active ? C.red : C.green, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
+                    {admin.is_active ? '🚫 Suspendre' : '✓ Réactiver'}
+                  </button>
+                  <button onClick={() => demoteAdmin(admin.id)}
+                    style={{ padding: '8px 14px', borderRadius: 10, border: `2px solid ${C.orange}`, background: 'transparent', color: C.orange, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
+                    ↓ Rétrograder
+                  </button>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
@@ -215,13 +205,13 @@ export default function SuperAdminAdminsPage() {
             <div style={{ marginBottom: 16 }}>
               <label style={{ fontSize: 12, fontWeight: 700, color: C.text2, display: 'block', marginBottom: 8 }}>Rôle</label>
               <select value={editRole} onChange={e => setEditRole(e.target.value)}
-                style={{ padding: '9px 14px', borderRadius: 10, border: `2px solid ${C.border}`, fontSize: 13, color: C.text, outline: 'none', cursor: 'pointer' }}>
+                style={{ padding: '9px 14px', borderRadius: 10, border: `2px solid ${C.border}`, fontSize: 13, color: C.text, outline: 'none', cursor: 'pointer', width: '100%' }}>
+                <option value="student">Student</option>
                 <option value="admin">Admin</option>
-                <option value="superadmin">Super Admin</option>
               </select>
             </div>
 
-            {/* Templates */}
+            {/* Templates permissions */}
             <div style={{ marginBottom: 16 }}>
               <label style={{ fontSize: 12, fontWeight: 700, color: C.text2, display: 'block', marginBottom: 8 }}>Modèle de permissions</label>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
@@ -240,7 +230,9 @@ export default function SuperAdminAdminsPage() {
 
             {/* Permissions */}
             <div style={{ marginBottom: 20 }}>
-              <label style={{ fontSize: 12, fontWeight: 700, color: C.text2, display: 'block', marginBottom: 10 }}>Permissions ({editPerms.length})</label>
+              <label style={{ fontSize: 12, fontWeight: 700, color: C.text2, display: 'block', marginBottom: 10 }}>
+                Permissions ({editPerms.length})
+              </label>
               {ALL_PERMISSIONS.map(group => (
                 <div key={group.group} style={{ marginBottom: 12 }}>
                   <p style={{ fontSize: 11, fontWeight: 700, color: C.text3, marginBottom: 6 }}>{group.group}</p>

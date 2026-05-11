@@ -19,12 +19,14 @@ const C = {
 const SIDEBAR_LINKS = [
   { icon: '📊', label: 'Dashboard',    href: '/admin' },
   { icon: '👥', label: 'Utilisateurs', href: '/admin/users' },
+  { href: '/admin/institutions', label: '🏫 Institutions' },
   { icon: '📚', label: 'Curriculum',   href: '/admin/curriculum' },
   { icon: '📝', label: 'Blog',         href: '/admin/blog' },
   { icon: '📈', label: 'Statistiques', href: '/admin/stats' },
   { icon: '💳', label: 'Paiements',    href: '/admin/payments' },
   { icon: '🌍', label: 'Traductions',  href: '/admin/translations' },
   { icon: '⚙️', label: 'Paramètres',  href: '/admin/settings' },
+  
 ]
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -35,17 +37,15 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const [translating, setTranslating] = useState(false)
   const [translateMsg, setTranslateMsg] = useState<{ text: string; ok: boolean } | null>(null)
 
-  // Étape 1 — attendre la rehydratation de Zustand
   useEffect(() => { setHydrated(true) }, [])
 
-  // Étape 2 — vérifier l'auth après rehydratation
   useEffect(() => {
     if (!hydrated) return
     const token = localStorage.getItem('access_token')
     if (!token) { router.push('/'); return }
     if (!user && token) {
       fetchMe().catch(() => router.push('/'))
-    } else if (user && !user.is_admin) {
+    } else if (user && !['admin', 'superadmin'].includes((user as any).role)) {
       router.push('/dashboard')
     }
   }, [hydrated, user])
@@ -63,14 +63,13 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     }
   }
 
-  // Écran de chargement pendant rehydratation
   if (!hydrated) return (
     <div style={{ minHeight: '100vh', background: C.sidebar, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ width: 36, height: 36, borderRadius: 10, background: C.violet, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18 }}>🌙</div>
     </div>
   )
 
-  if (!user || !user.is_admin) return null
+  if (!user || !['admin', 'superadmin'].includes((user as any).role)) return null
 
   const isSuperAdmin = (user as any).role === 'superadmin'
 
@@ -110,6 +109,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                   {link.label}
                 </span>
               </Link>
+
+             
             )
           })}
 
@@ -122,10 +123,10 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                   display: 'flex', alignItems: 'center', gap: 10,
                   padding: '10px 12px', borderRadius: 10,
                   textDecoration: 'none', transition: 'background .15s',
-                  background: 'transparent',
+                  background: pathname.startsWith('/superadmin') ? '#E91E6330' : 'transparent',
                 }}
                 onMouseEnter={e => (e.currentTarget as HTMLElement).style.background = '#ffffff15'}
-                onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = 'transparent'}>
+                onMouseLeave={e => (e.currentTarget as HTMLElement).style.background = pathname.startsWith('/superadmin') ? '#E91E6330' : 'transparent'}>
                 <span style={{ fontSize: 15 }}>🛡️</span>
                 <span style={{ fontSize: 13, fontWeight: 500, color: '#E91E63' }}>Super Admin</span>
               </Link>

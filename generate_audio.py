@@ -37,17 +37,41 @@ ELEVENLABS_VOICE_MALE   = os.getenv("ELEVENLABS_VOICE_MALE", "pNInz6obpgDQGcFmaJ
 ELEVENLABS_VOICE_FEMALE = os.getenv("ELEVENLABS_VOICE_FEMALE", "EXAVITQu4vr4xnSDxMaL")
 
 OPENAI_API_KEY      = os.getenv("OPENAI_API_KEY", "")
-OPENAI_VOICE_MALE   = "onyx"
-OPENAI_VOICE_FEMALE = "nova"
+OPENAI_VOICE_MALE   = "shimmer"
+# OPENAI_VOICE_FEMALE = "echo"
 
-# ── Catalogue audio Module 1 ───────────────────────────────────
+# ── Catalogue audio ────────────────────────────────────────────
 AUDIO_FILES = {
 
-    # ── Lettres ──────────────────────────────────────────────
-    "letters/mim.mp3":  { "text": "ميم",  "gender": "female" },
-    "letters/kaf.mp3":  { "text": "كاف",  "gender": "female" },
-    "letters/ta.mp3":   { "text": "تاء",  "gender": "female" },
-    "letters/ba.mp3":   { "text": "باء",  "gender": "female" },
+    # ── 28 Lettres (noms complets pour prononciation correcte) ──
+    "letters/alif.mp3":      { "text": "أَلِف",    "gender": "female" },
+    "letters/ba.mp3":        { "text": "بَاء",     "gender": "female" },
+    "letters/ta.mp3":        { "text": "تَاء",     "gender": "female" },
+    "letters/tha.mp3":       { "text": "ثَاء",     "gender": "female" },
+    "letters/jim.mp3":       { "text": "جِيم",     "gender": "female" },
+    "letters/ha_guttu.mp3":  { "text": "حَاء",     "gender": "female" },  # ح
+    "letters/kha.mp3":       { "text": "خَاء",     "gender": "female" },
+    "letters/dal.mp3":       { "text": "دَال",     "gender": "female" },
+    "letters/dhal.mp3":      { "text": "ذَال",     "gender": "female" },
+    "letters/ra.mp3":        { "text": "رَاء",     "gender": "female" },
+    "letters/zay.mp3":       { "text": "زَاي",     "gender": "female" },
+    "letters/sin.mp3":       { "text": "سِين",     "gender": "female" },
+    "letters/shin.mp3":      { "text": "شِين",     "gender": "female" },
+    "letters/sad.mp3":       { "text": "صَاد",     "gender": "female" },
+    "letters/dad.mp3":       { "text": "ضَاد",     "gender": "female" },
+    "letters/ta_emph.mp3":   { "text": "طَاء",     "gender": "female" },  # ط
+    "letters/dha_emph.mp3":  { "text": "ظَاء",     "gender": "female" },  # ظ
+    "letters/ayn.mp3":       { "text": "عَيْن",    "gender": "female" },
+    "letters/ghayn.mp3":     { "text": "غَيْن",    "gender": "female" },
+    "letters/fa.mp3":        { "text": "فَاء",     "gender": "female" },
+    "letters/qaf.mp3":       { "text": "قَاف",     "gender": "female" },
+    "letters/kaf.mp3":       { "text": "كَاف",     "gender": "female" },
+    "letters/lam.mp3":       { "text": "لَام",     "gender": "female" },
+    "letters/mim.mp3":       { "text": "مِيم",     "gender": "female" },
+    "letters/nun.mp3":       { "text": "نُون",     "gender": "female" },
+    "letters/ha.mp3":        { "text": "هَاء",     "gender": "female" },  # ه
+    "letters/waw.mp3":       { "text": "وَاو",     "gender": "female" },
+    "letters/ya.mp3":        { "text": "يَاء",     "gender": "female" },
 
     # ── Syllabes harakat ─────────────────────────────────────
     "syllables/ba_fatha.mp3":  { "text": "بَ", "gender": "female" },
@@ -77,6 +101,15 @@ AUDIO_FILES = {
     "syllables/ba_tanwin_fath.mp3": { "text": "بً", "gender": "female" },
     "syllables/ba_tanwin_kasr.mp3": { "text": "بٍ", "gender": "female" },
     "syllables/ba_tanwin_damm.mp3": { "text": "بٌ", "gender": "female" },
+    "syllables/ta_tanwin_fath.mp3":  {"text": "\u062a\u064b", "gender": "female"},
+    "syllables/ta_tanwin_kasr.mp3":  {"text": "\u062a\u064d", "gender": "female"},
+    "syllables/ta_tanwin_damm.mp3":  {"text": "\u062a\u064c", "gender": "female"},
+    "syllables/kaf_tanwin_fath.mp3": {"text": "\u0643\u064b", "gender": "female"},
+    "syllables/kaf_tanwin_kasr.mp3": {"text": "\u0643\u064d", "gender": "female"},
+    "syllables/kaf_tanwin_damm.mp3": {"text": "\u0643\u064c", "gender": "female"},
+    "syllables/mim_tanwin_fath.mp3": {"text": "\u0645\u064b", "gender": "female"},
+    "syllables/mim_tanwin_kasr.mp3": {"text": "\u0645\u064d", "gender": "female"},
+    "syllables/mim_tanwin_damm.mp3": {"text": "\u0645\u064c", "gender": "female"},
 
     # ── Mots ─────────────────────────────────────────────────
     "words/maktab.mp3":     { "text": "مَكْتَبٌ",   "gender": "male"   },
@@ -160,12 +193,12 @@ def generate_openai(text: str, gender: str, api_key: str, output_path: Path) -> 
 
 # ── Main ──────────────────────────────────────────────────────
 def main():
-    parser = argparse.ArgumentParser(description="Génération audio LangDad Module 1")
+    parser = argparse.ArgumentParser(description="Génération audio LangDad")
     parser.add_argument("--api", choices=["elevenlabs", "openai"], default="elevenlabs")
     parser.add_argument("--key", required=False, default="", help="Clé API (optionnel si dans .env)")
     parser.add_argument("--fallback-key", default="", help="Clé OpenAI pour fallback")
     parser.add_argument("--skip-existing", action="store_true", default=True)
-    parser.add_argument("--only", help="Générer seulement un dossier (letters, syllables, words, phrases)")
+    parser.add_argument("--only", help="Générer seulement un dossier : letters | syllables | words | phrases")
     args = parser.parse_args()
 
     # Résoudre la clé API
@@ -182,12 +215,15 @@ def main():
 
     fallback_key = args.fallback_key or OPENAI_API_KEY
 
-    print(f"\n🎙️  Génération audio LangDad Module 1")
+    total = sum(1 for k in AUDIO_FILES if not args.only or k.startswith(args.only))
+
+    print(f"\n🎙️  Génération audio LangDad")
     print(f"   API        : {args.api}")
     print(f"   Voix homme : {ELEVENLABS_VOICE_MALE}")
     print(f"   Voix femme : {ELEVENLABS_VOICE_FEMALE}")
     print(f"   Sortie     : {OUTPUT_DIR}")
-    print(f"   Total      : {len(AUDIO_FILES)} fichiers\n")
+    print(f"   Filtre     : {args.only or 'tous'}")
+    print(f"   Total      : {total} fichiers\n")
 
     success = 0
     skipped = 0

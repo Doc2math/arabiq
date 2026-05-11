@@ -35,11 +35,13 @@ export function LanguageSelector({ scrolled = true }: LanguageSelectorProps) {
     return () => document.removeEventListener('mousedown', handler)
   }, [])
 
-  const select = (code: string) => {
-    setCurrent(code)
-    localStorage.setItem('langdad_lang', code)
-    setOpen(false)
-  }
+const select = (code: string) => {
+  setCurrent(code)
+  localStorage.setItem('langdad_lang', code)
+  document.cookie = `NEXT_LOCALE=${code}; path=/; max-age=31536000`
+  setOpen(false)
+  setTimeout(() => window.location.reload(), 100)
+}
 
   const lang = LANGUAGES.find(l => l.code === current) ?? LANGUAGES[0]
 

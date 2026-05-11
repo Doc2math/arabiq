@@ -1,0 +1,562 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "close": "Schließen",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "all": "Alle",
+    "yes": "Ja",
+    "no": "Nein",
+    "or": "oder",
+    "and": "und",
+    "required": "Erforderlich",
+    "optional": "Optional",
+    "refresh": "Aktualisieren",
+    "download": "Herunterladen",
+    "copy": "Kopieren",
+    "send": "Senden",
+    "submit": "Einreichen",
+    "continue": "Fortfahren",
+    "finish": "Fertigstellen",
+    "start": "Beginnen",
+    "retry": "Erneut versuchen",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "profile": "Mein Profil",
+    "settings": "Einstellungen",
+    "home": "Startseite"
+  },
+  "nav": {
+    "modules": "Module",
+    "progress": "Fortschritt",
+    "sheets": "Blätter",
+    "ranking": "Rangliste",
+    "tools": "Werkzeuge",
+    "references": "Referenzen",
+    "alphabet": "Alphabet",
+    "rules": "Regeln",
+    "mySchool": "Meine Schule",
+    "certificates": "Meine Zertifikate"
+  },
+  "auth": {
+    "login": {
+      "title": "Anmeldung",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "forgotPassword": "Passwort vergessen?",
+      "noAccount": "Noch kein Konto?",
+      "submitBtn": "Anmelden",
+      "loading": "Anmeldung…",
+      "error": "E-Mail oder Passwort falsch"
+    },
+    "register": {
+      "title": "Registrierung",
+      "chooseType": "Wählen Sie Ihren Kontotyp",
+      "email": "E-Mail",
+      "username": "Benutzername",
+      "password": "Passwort",
+      "confirmPassword": "Passwort bestätigen",
+      "passwordHint": "Mindestens 8 Zeichen mit einer Zahl",
+      "alreadyAccount": "Bereits ein Konto?",
+      "submitBtn": "Mein Konto erstellen",
+      "loading": "Erstellung…",
+      "passwordMismatch": "Die Passwörter stimmen nicht überein",
+      "passwordTooShort": "Das Passwort muss mindestens 8 Zeichen enthalten",
+      "passwordNoDigit": "Das Passwort muss mindestens eine Zahl enthalten",
+      "accountTypes": {
+        "student": {
+          "label": "Schüler",
+          "desc": "Ich lerne Arabisch in meinem Tempo"
+        },
+        "teacher": {
+          "label": "Lehrer",
+          "desc": "Ich leite eine Klasse oder Nachhilfe"
+        },
+        "institution": {
+          "label": "Institution",
+          "desc": "Schule, Sprachzentrum, Verein"
+        }
+      },
+      "continueAs": "Fortfahren als {type} →",
+      "teacherNote": "Nach der Registrierung werden Sie zur Erstellung Ihres Institutsraums weitergeleitet. Genießen Sie 30 Tage kostenlose Testphase."
+    }
+  },
+  "dashboard": {
+    "title": "Meine Module",
+    "welcome": "Hallo {name}!",
+    "continueLesson": "Fortfahren",
+    "startModule": "Beginnen",
+    "locked": "Gesperrt",
+    "completed": "Abgeschlossen",
+    "inProgress": "In Bearbeitung",
+    "xp": "{xp} XP",
+    "level": "Level {level}",
+    "streak": "{days} Tage",
+    "module": "Modul {number}",
+    "lessons": "{count} Lektionen",
+    "degree": "Grad {number}",
+    "stats": {
+      "xp": "Gesamt-XP",
+      "streak": "Serie",
+      "level": "Niveau",
+      "progress": "Fortschritt"
+    }
+  },
+  "lesson": {
+    "start": "Lektion starten",
+    "next": "Weiter",
+    "check": "Überprüfen",
+    "correct": "Richtig!",
+    "incorrect": "Nicht ganz",
+    "explanation": "Erklärung",
+    "score": "Punktzahl: {score}%",
+    "xpEarned": "+{xp} XP",
+    "completed": "Lektion abgeschlossen!",
+    "passingScore": "Mindestpunktzahl: {score}%",
+    "listen": "Hören",
+    "exercise": "Übung {current}/{total}",
+    "types": {
+      "identification": "Identifikation",
+      "harakat": "Harakat",
+      "mots": "Wortschatz",
+      "ecriture_clavier": "Schreiben",
+      "exercices": "Übungen",
+      "lecture_phrase": "Lesen",
+      "evaluation": "Bewertung"
+    },
+    "intro": {
+      "letters": "Die Buchstaben",
+      "signs": "Die Zeichen",
+      "words": "Die Wörter",
+      "positions": "Positionen",
+      "practice": "Üben →"
+    },
+    "writing": {
+      "prompt": "Schreiben Sie auf Arabisch",
+      "hint": "Aktivieren Sie die arabische Tastatur (Windows: Alt+Shift)",
+      "accepted": "Antwort akzeptiert",
+      "tryAgain": "Bitte erneut versuchen"
+    }
+  },
+  "progress": {
+    "title": "Mein Fortschritt",
+    "overview": "Überblick",
+    "byModule": "Nach Modul",
+    "bySkill": "Nach Fähigkeit",
+    "totalXP": "Gesamt-XP",
+    "streak": "Aktuelle Serie",
+    "lessonsCompleted": "Abgeschlossene Lektionen",
+    "avgScore": "Durchschnittspunktzahl",
+    "skills": {
+      "letter_recognition": "Buchstaben erkennen",
+      "letter_writing": "Buchstaben schreiben",
+      "harakat_reading": "Vokale (harakat)",
+      "long_vowels": "Lange Vokale",
+      "tanwin": "Tanwīn",
+      "letter_positions": "Buchstabenpositionen",
+      "word_reading": "Wörter lesen",
+      "word_comprehension": "Wortverständnis",
+      "word_writing": "Wörter schreiben",
+      "word_building": "Wörter bilden",
+      "sentence_reading": "Sätze lesen"
+    },
+    "status": {
+      "mastered": "Beherrscht",
+      "good": "Gut",
+      "in_progress": "In Bearbeitung",
+      "weak": "Zurückzuarbeiten"
+    }
+  },
+  "sheets": {
+    "title": "Schreibblätter",
+    "subtitle": "Laden Sie die Schreibblätter herunter, um von Hand oder auf einem Touchscreen zu üben. Jedes Blatt enthält den Buchstaben in allen seinen Positionen mit Übungsgittern.",
+    "howTo": "Wie benutzt man diese Blätter?",
+    "howToDesc": "Drucken Sie sie auf A4-Papier oder verwenden Sie sie auf einem Tablet mit einem Stylus. Jedes Blatt enthält 3 progressive Vorlagen: schwarz (zum Nachahmen), grau (zum Nachzeichnen), grau (selbstständig). Druckerfreundlich in Schwarz-Weiß.",
+    "available": "{count} Blätter verfügbar",
+    "comingSoon": "Bald verfügbar",
+    "downloadAll": "Alles herunterladen ({count} Blätter)",
+    "downloadLetter": "Blatt {name}",
+    "preparingSheets": "Blätter werden für dieses Modul vorbereitet.",
+    "forms": {
+      "isolated": "isoliert",
+      "initial": "Anfang",
+      "medial": "Mitte",
+      "final": "Ende"
+    },
+    "tips": {
+      "title": "Tipps für gutes Üben",
+      "pen": {
+        "title": "Stift oder Stylus",
+        "desc": "Verwenden Sie einen Kugelschreiber oder einen Stylus auf dem Tablet für eine flüssige Schrift."
+      },
+      "repeat": {
+        "title": "3 Mal wiederholen",
+        "desc": "Folgen Sie der schwarzen Vorlage, dann den grauen, und schreiben Sie dann selbstständig auf die leeren Linien."
+      },
+      "direction": {
+        "title": "Beobachte die Richtung",
+        "desc": "Arabisch wird von rechts nach links geschrieben. Beginne immer von der rechten Seite."
+      },
+      "oneLetter": {
+        "title": "Einen Buchstaben nach dem anderen",
+        "desc": "Meistere jede Position (isoliert, Anfang, Mitte, Ende), bevor du zur nächsten übergehst."
+      }
+    }
+  },
+  "ranking": {
+    "title": "Rangliste",
+    "rank": "#{rank}",
+    "you": "Du",
+    "xp": "{xp} XP",
+    "level": "Stufe {level}",
+    "periods": {
+      "all": "Alle Zeiten",
+      "week": "Diese Woche",
+      "month": "Diesen Monat"
+    }
+  },
+  "profile": {
+    "title": "Mein Profil",
+    "memberSince": "Mitglied seit {date}",
+    "personalInfo": "Persönliche Informationen",
+    "username": "Benutzername",
+    "email": "E-Mail",
+    "language": "Zielsprache",
+    "editBtn": "Bearbeiten",
+    "saveBtn": "Speichern",
+    "cancelBtn": "Abbrechen",
+    "saved": "Profil aktualisiert",
+    "institution": {
+      "title": "Institution Bereich",
+      "createBtn": "Institution Bereich erstellen",
+      "manageBtn": "Meine Institution",
+      "studentDesc": "Bist du Lehrer oder Schulleiter? Erstelle einen Institution Bereich, um deine Schüler zu verwalten.",
+      "adminDesc": "Du verwaltest einen Institution Bereich. Greife auf dein Dashboard zu."
+    },
+    "dangerZone": {
+      "title": "Gefahrzone",
+      "deleteAccount": "Mein Konto löschen"
+    }
+  },
+  "institution": {
+    "create": {
+      "title": "Erstelle deinen Institution Bereich",
+      "subtitle": "Verwalte deine Schüler, verfolge ihren Fortschritt und erhalte detaillierte Bildungsberichte.",
+      "trialNote": "30 Tage kostenlos — ohne Kreditkarte.",
+      "steps": {
+        "type": "Typ",
+        "plan": "Plan",
+        "info": "Infos"
+      },
+      "types": {
+        "school": {
+          "label": "Schule",
+          "desc": "Grundschule, Sekundarschule, Universität"
+        },
+        "teacher": {
+          "label": "Freiberuflicher Lehrer",
+          "desc": "Nachhilfe oder Gruppenunterricht"
+        },
+        "center": {
+          "label": "Sprachzentrum",
+          "desc": "Institut, Kulturzentrum, Verein"
+        }
+      },
+      "plans": {
+        "title": "Wähle deinen Plan",
+        "trialNote": "30 Tage kostenloser Test bei allen Plänen",
+        "popular": "BELIEBT",
+        "selected": "Ausgewählt",
+        "students": "bis zu {max} Schüler"
+      },
+      "info": {
+        "name": "Name der Institution",
+        "contactEmail": "Kontakt E-Mail",
+        "city": "Stadt",
+        "website": "Webseite (optional)",
+        "submitBtn": "Meine Institution erstellen",
+        "loading": "Erstellung läuft...",
+        "trialConfirm": "Mit der Erstellung deines Bereichs erhältst du 30 Tage kostenlos. Keine Kreditkarte erforderlich."
+      }
+    },
+    "dashboard": {
+      "title": "Meine Institution",
+      "tabs": {
+        "overview": "Übersicht",
+        "students": "Schüler"
+      },
+      "stats": {
+        "activeStudents": "Aktive Schüler",
+        "avgScore": "Durchschnittlicher Punktestand",
+        "avgXP": "Durchschnittliches XP",
+        "capacity": "Genutzte Plätze"
+      },
+      "capacity": {
+        "title": "Kapazität des Plans",
+        "remaining": "{count} Plätze verbleibend",
+        "upgrade": "Denke daran, deinen Plan zu upgraden!"
+      },
+      "students": {
+        "search": "Suche einen Schüler...",
+        "addBtn": "Hinzufügen",
+        "noStudents": "Keine Schüler gefunden",
+        "columns": {
+          "student": "Schüler",
+          "email": "E-Mail",
+          "group": "Gruppe",
+          "xp": "XP",
+          "level": "Stufe",
+          "status": "Status",
+          "actions": "Aktionen"
+        },
+        "status": {
+          "active": "Aktiv",
+          "inactive": "Inaktiv"
+        },
+        "add": {
+          "title": "Schüler hinzufügen",
+          "email": "E-Mail",
+          "username": "Benutzername",
+          "password": "Passwort",
+          "group": "Gruppe (optional)",
+          "submitBtn": "Schüler erstellen",
+          "loading": "Erstellung..."
+        },
+        "remove": "{name} von der Institution entfernen?"
+      },
+      "progress": {
+        "title": "Fortschritt von {name}",
+        "tabs": {
+          "summary": "Zusammenfassung",
+          "skills": "Fähigkeiten",
+          "modules": "Module"
+        },
+        "strengths": "Stärken",
+        "weaknesses": "Verbesserungsbedarfe",
+        "noData": "Keine Daten verfügbar",
+        "noExercises": "Noch kein Übung abgeschlossen",
+        "noModules": "Kein Modul begonnen"
+      }
+    }
+  },
+  "moduleReport": {
+    "title": "Leistungsbericht",
+    "scores": {
+      "dailyWork": "Tägliche Arbeit",
+      "evaluation": "Gesamtbewertung",
+      "final": "Abschlussdurchschnitt",
+      "passed": "Modul bestanden",
+      "failed": "Nicht bestanden",
+      "good": "Zufriedenstellend",
+      "improve": "Zu verbessern",
+      "insufficient": "Unzureichend"
+    },
+    "diagnostic": {
+      "solid": "Solide Beherrschung",
+      "forgetting": "Vergessen oder Prüfungsstress",
+      "shortTerm": "Kurzzeitgedächtnis",
+      "gaps": "Fundamentale Lücken"
+    },
+    "recommendation": "Empfehlung",
+    "skills": "Detail nach Fähigkeit",
+    "certificate": {
+      "title": "Zertifikat für den Erfolg",
+      "desc": "Sie haben das {module} mit einem Durchschnitt von {score}% abgeschlossen."
+    },
+    "actions": {
+      "mainMenu": "Hauptmenü",
+      "nextModule": "Modul {number} →",
+      "practice": "Weiter üben"
+    }
+  },
+  "tools": {
+    "title": "Arabische Werkzeuge",
+    "editor": {
+      "placeholder": "Hier auf Arabisch schreiben...",
+      "colorPalette": "Farbpalette",
+      "customColor": "Benutzerdefinierte Farbe",
+      "fontSize": "Größe",
+      "direction": {
+        "rtl": "RTL",
+        "ltr": "LTR"
+      },
+      "normalize": "NFC",
+      "copy": "Kopieren",
+      "download": "Herunterladen",
+      "fullscreen": "Vollbild",
+      "numbers": "Arabische Zahlen"
+    }
+  },
+  "landing": {
+    "nav": {
+      "features": "Funktionen",
+      "modules": "Module",
+      "testimonials": "Testimonials",
+      "blog": "Blog",
+      "login": "Anmelden",
+      "register": "Registrieren →",
+      "startFree": "Kostenlos anfangen →"
+    },
+    "hero": {
+      "badge": "Plattform zum Arabisch lernen",
+      "title1": "Lerne Arabisch",
+      "title2": "in deinem Tempo",
+      "desc": "LangDad führt dich Schritt für Schritt durch das Erlernen des arabischen Alphabets, Lesens und Schreibens.",
+      "startBtn": "Kostenlos anfangen →",
+      "loginBtn": "Einloggen",
+      "demo": {
+        "question": "Welcher Buchstabe ist das?",
+        "excellent": "+3 XP ⚡ Ausgezeichnet!"
+      }
+    },
+    "stats": {
+      "lessons": "Lektionen",
+      "exercises": "Übungen",
+      "modules": "Module",
+      "degrees": "Grad"
+    },
+    "features": {
+      "badge": "FUNKTIONEN",
+      "title": "Alles, was du brauchst",
+      "desc": "Ein umfassender pädagogischer Ansatz, um Arabisch effektiv zu lernen.",
+      "items": {
+        "bkt": {
+          "title": "Adaptives Lernen",
+          "desc": "Unser BKT-Motor analysiert deinen Fortschritt in Echtzeit und passt die Übungen an dein Niveau an."
+        },
+        "sheets": {
+          "title": "Schreibblätter",
+          "desc": "Drucke oder zeichne die Buchstaben auf einem Touchscreen mit geführten Rastern und progressiven Vorlagen."
+        },
+        "audio": {
+          "title": "Native Audio",
+          "desc": "Jeder Buchstabe, jede Silbe und jedes Wort wird von einem Muttersprachler ausgesprochen."
+        },
+        "gamification": {
+          "title": "Gamification",
+          "desc": "XP, Level, Serien und Ranglisten: Bleibe motiviert mit einem Belohnungssystem."
+        },
+        "multiplatform": {
+          "title": "Plattformübergreifend",
+          "desc": "Lerne auf Computer, Tablet oder Smartphone. Dein Fortschritt synchronisiert sich überall."
+        },
+        "languages": {
+          "title": "5 Benutzeroberflächen-Sprachen",
+          "desc": "Verfügbar in Französisch, Englisch, Spanisch, Deutsch und Niederländisch."
+        }
+      }
+    },
+    "curriculum": {
+      "badge": "LEHRPLAN",
+      "title": "Ein strukturierter Weg",
+      "desc": "Jedes Modul führt neue Buchstaben mit fortschreitenden Übungen ein.",
+      "available": "VERFÜGBAR",
+      "comingSoon": "BALD",
+      "startBtn": "Loslegen →",
+      "preparingBtn": "🔒 In Vorbereitung",
+      "module1desc": "Die ersten 4 Buchstaben und die Grundlagen des Arabischen Lesens",
+      "module2desc": "Lange Vokale und neue Buchstaben",
+      "module3desc": "Erweiterung des Wortschatzes"
+    },
+    "testimonials": {
+      "badge": "ZEUGNISSE",
+      "title": "Sie lernen mit LangDad"
+    },
+    "cta": {
+      "title": "Bereit, Ihre Reise zu beginnen?",
+      "desc": "Schließen Sie sich Tausenden von Lernenden an und meistern Sie das arabische Alphabet mit LangDad.",
+      "registerBtn": "Mein kostenloses Konto erstellen →",
+      "loginBtn": "Einloggen"
+    },
+    "footer": {
+      "copyright": "© 2026 LangDad — Lernplattform für Arabisch",
+      "privacy": "Datenschutz",
+      "terms": "AGB",
+      "contact": "Kontakt"
+    }
+  },
+  "certificates": {
+    "title": "Meine Zertifikate",
+    "subtitle": "Ihre Erfolgszertifikate von LangDad",
+    "viewBtn": "Meine Zertifikate anzeigen →",
+    "empty": {
+      "title": "Noch kein Zertifikat",
+      "desc": "Vervollständigen Sie die Bewertung eines Moduls mit einer Punktzahl von ≥ 80%, um Ihr Zertifikat zu erhalten.",
+      "btn": "Weiter lernen →"
+    },
+    "score": "Punktzahl: {score}%",
+    "issuedOn": "Ausgestellt am {date}",
+    "downloadBtn": "PDF herunterladen",
+    "verifyBtn": "Überprüfen",
+    "deleteBtn": "Löschen",
+    "deleteConfirm": "Dieses Zertifikat löschen? Sie können ein neues erstellen.",
+    "deleteError": "Fehler beim Löschen",
+    "encourage": "Setzen Sie Ihr Lernen fort, um neue Zertifikate zu erhalten. Jedes Modul, das mit ≥ 80% abgeschlossen wird, berechtigt Sie zu einem offiziellen LangDad-Zertifikat.",
+    "navLink": "Meine Zertifikate"
+  },
+  "blog": {
+    "badge": "BLOG LANGDAD",
+    "hero_title": "Arabisch lernen,",
+    "hero_title_highlight": "einen Artikel nach dem anderen",
+    "hero_subtitle": "Pädagogische Tipps, sprachliche Erklärungen und Neuigkeiten von der Plattform LangDad.",
+    "search_placeholder": "Suche nach einem Artikel...",
+    "featured_label": "⭐ IM FOKUS",
+    "read_article": "Artikel lesen →",
+    "read": "Lesen →",
+    "no_results": "Kein Artikel gefunden.",
+    "reset": "Zurücksetzen",
+    "loading": "Laden…",
+    "newsletter_title": "Bleiben Sie informiert",
+    "newsletter_subtitle": "Melden Sie sich an, um neue Artikel und Updates von LangDad zu erhalten.",
+    "newsletter_placeholder": "ihre@email.com",
+    "newsletter_button": "Abonnieren →",
+    "back_to_blog": "← Zurück zum Blog",
+    "start_learning": "Anfangen zu lernen →",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "contact": "Kontakt",
+    "login": "Einloggen",
+    "register": "Registrieren →",
+    "register_free": "Kostenlos beginnen →",
+    "nav_home": "Startseite",
+    "nav_features": "Funktionen",
+    "nav_modules": "Module",
+    "nav_blog": "Blog",
+    "cat_all": "Alle",
+    "cat_pedagogy": "Pädagogik",
+    "cat_arabic": "Arabisch",
+    "cat_tips": "Tipps",
+    "cat_news": "Nachrichten"
+  },
+  "oral": {
+    "letters": "Buchstaben",
+    "words": "Wörter",
+    "sentences": "Sätze",
+    "quit": "Beenden ✕",
+    "listen": "Hören",
+    "pronounce": "Aussprechen",
+    "finished": "Ich bin fertig",
+    "analyzing": "Analysiere…",
+    "next": "Nächster →",
+    "listening": "Hören…",
+    "pass": "Bestehen",
+    "of": "/",
+    "level_l1": "Neu arbeiten",
+    "level_l2": "Schwierig",
+    "level_l3": "In Fortschritt",
+    "level_l4": "Fast !",
+    "level_l5": "Gut !",
+    "level_l6": "Sehr gut !",
+    "level_l7": "Ausgezeichnet !"
+  }
+}

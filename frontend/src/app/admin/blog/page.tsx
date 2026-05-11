@@ -1,166 +1,255 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useCallback } from 'react'
+import { useRouter } from 'next/navigation'
 import { useAuthStore } from '@/store/authStore'
+import { api } from '@/lib/api'
 
 const C = {
   violet:'#6C3FC5', violetLt:'#EDE8FB', violetDk:'#4A2A8A',
   orange:'#F07C1E', orangeLt:'#FEF0E3',
   green:'#2BA84A', greenLt:'#E3F7E8',
   red:'#E24B4A', redLt:'#FCEBEB',
-   blue:'#1976D2',
-  bg:'#F8F7FF', white:'#fff',
+  bg:'#F8F7FF', white:'#FFFFFF',
   text:'#1A1A2E', text2:'#5A5A7A', text3:'#9A9AB0',
   border:'#E8E4F8',
 }
 
 interface BlogPost {
-  id: number
+  id: string
   title: string
   slug: string
-  status: 'draft' | 'published' | 'archived'
-  author: string
-  created_at: string
-  views: number
+  excerpt: string
   category: string
+  emoji: string
+  color: string
+  featured: boolean
+  published: boolean
+  author_name: string
+  created_at: string
+  updated_at: string
+  read_time: number
 }
 
-const MOCK_POSTS: BlogPost[] = [
-  { id: 1, title: 'Comment apprendre l\'alphabet arabe en 30 jours', slug: 'alphabet-arabe-30-jours', status: 'published', author: 'admin', created_at: '2026-04-01', views: 1240, category: 'Pédagogie' },
-  { id: 2, title: 'Les 10 erreurs courantes en calligraphie arabe', slug: 'erreurs-calligraphie', status: 'published', author: 'admin', created_at: '2026-04-10', views: 876, category: 'Calligraphie' },
-  { id: 3, title: 'Module 2 — Nouvelles lettres disponibles', slug: 'module-2-nouveautes', status: 'draft', author: 'admin', created_at: '2026-04-15', views: 0, category: 'Annonces' },
-]
-
-const STATUS_CFG = {
-  published: { label: 'Publié',   color: C.green,  bg: C.greenLt  },
-  draft:     { label: 'Brouillon',color: C.orange, bg: C.orangeLt },
-  archived:  { label: 'Archivé', color: C.text3,  bg: C.bg       },
-}
-
-const CATEGORIES = ['Pédagogie', 'Calligraphie', 'Annonces', 'Conseils', 'Culture arabe']
+const CATEGORIES = ['Tous', 'Pédagogie', 'Arabe', 'Conseils', 'Actualités']
 
 export default function AdminBlogPage() {
+  const router = useRouter()
   const { user } = useAuthStore()
-  const [posts, setPosts] = useState<BlogPost[]>(MOCK_POSTS)
-  const [showEditor, setShowEditor] = useState(false)
-  const [filter, setFilter] = useState<'all'|'published'|'draft'>('all')
-  const [newPost, setNewPost] = useState({ title: '', category: 'Pédagogie', content: '' })
+  const [posts, setPosts] = useState<BlogPost[]>([])
+  const [loading, setLoading] = useState(true)
+  const [filter, setFilter] = useState('Tous')
+  const [search, setSearch] = useState('')
+  const [deleting, setDeleting] = useState<string | null>(null)
+  const [confirmDelete, setConfirmDelete] = useState<string | null>(null)
 
-  if (!user) return null
+  const fetchPosts = useCallback(async () => {
+    try {
+      const res = await api.get('/api/v1/admin/blog/posts')
+      setPosts(res.data)
+    } catch {
+      console.error('Erreur chargement articles')
+    } finally {
+      setLoading(false)
+    }
+  }, [])
 
-  const filtered = posts.filter(p => filter === 'all' ? true : p.status === filter)
+  useEffect(() => { fetchPosts() }, [fetchPosts])
+
+  const handleDelete = async (id: string) => {
+    setDeleting(id)
+    try {
+      await api.delete(`/api/v1/admin/blog/posts/${id}`)
+      setPosts(prev => prev.filter(p => p.id !== id))
+    } catch {
+      console.error('Erreur suppression')
+    } finally {
+      setDeleting(null)
+      setConfirmDelete(null)
+    }
+  }
+
+  const handleTogglePublish = async (post: BlogPost) => {
+    try {
+      await api.put(`/api/v1/admin/blog/posts/${post.id}`, {
+        published: !post.published,
+      })
+      setPosts(prev => prev.map(p => p.id === post.id ? { ...p, published: !p.published } : p))
+    } catch {
+      console.error('Erreur mise à jour')
+    }
+  }
+
+  const handleToggleFeatured = async (post: BlogPost) => {
+    try {
+      await api.put(`/api/v1/admin/blog/posts/${post.id}`, {
+        featured: !post.featured,
+      })
+      setPosts(prev => prev.map(p => p.id === post.id ? { ...p, featured: !p.featured } : p))
+    } catch {
+      console.error('Erreur mise à jour')
+    }
+  }
+
+  if (!user || !['admin', 'superadmin'].includes(user.role)) {
+    return <div style={{ padding: 60, textAlign: 'center', color: C.text3 }}>Accès refusé.</div>
+  }
+
+  const filtered = posts.filter(p => {
+    const matchCat = filter === 'Tous' || p.category === filter
+    const matchSearch = p.title.toLowerCase().includes(search.toLowerCase())
+    return matchCat && matchSearch
+  })
+
+  const published = posts.filter(p => p.published).length
+  const drafts = posts.filter(p => !p.published).length
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+    <div style={{ maxWidth: 1100, margin: '0 auto', padding: '32px 24px' }}>
 
-      {/* Header */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      {/* En-tête */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 28, flexWrap: 'wrap', gap: 12 }}>
         <div>
-          <h1 style={{ fontSize: 20, fontWeight: 700, color: C.text, marginBottom: 4 }}>📝 Blog</h1>
-          <p style={{ fontSize: 13, color: C.text2 }}>Gérez les articles et publications</p>
+          <h1 style={{ fontSize: 22, fontWeight: 700, color: C.text, marginBottom: 4 }}>Blog</h1>
+          <p style={{ fontSize: 13, color: C.text3 }}>
+            {posts.length} articles · {published} publiés · {drafts} brouillons
+          </p>
         </div>
-        <button onClick={() => setShowEditor(!showEditor)}
-          style={{ padding: '10px 20px', borderRadius: 12, background: showEditor ? C.red : C.violet, color: '#fff', border: 'none', cursor: 'pointer', fontSize: 13, fontWeight: 700 }}>
-          {showEditor ? '✕ Fermer' : '+ Nouvel article'}
+        <button
+          onClick={() => router.push('/admin/blog/editor')}
+          style={{ padding: '11px 22px', borderRadius: 12, background: C.violet, color: '#fff', border: 'none', cursor: 'pointer', fontSize: 14, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 8 }}
+        >
+          + Nouvel article
         </button>
       </div>
 
-      {/* Éditeur rapide */}
-      {showEditor && (
-        <div style={{ background: C.white, border: `2px solid ${C.violet}`, borderRadius: 20, padding: '24px' }}>
-          <h3 style={{ fontSize: 15, fontWeight: 700, color: C.text, marginBottom: 16 }}>✏️ Nouvel article</h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-            <div>
-              <label style={{ fontSize: 12, fontWeight: 600, color: C.text2, display: 'block', marginBottom: 6 }}>Titre</label>
-              <input type="text" value={newPost.title} onChange={e => setNewPost(p => ({ ...p, title: e.target.value }))}
-                placeholder="Titre de l'article…"
-                style={{ width: '100%', padding: '11px 14px', borderRadius: 12, border: `2px solid ${C.border}`, fontSize: 14, color: C.text, outline: 'none', boxSizing: 'border-box' }}
-                onFocus={e => e.target.style.borderColor = C.violet}
-                onBlur={e => e.target.style.borderColor = C.border} />
-            </div>
-            <div>
-              <label style={{ fontSize: 12, fontWeight: 600, color: C.text2, display: 'block', marginBottom: 6 }}>Catégorie</label>
-              <select value={newPost.category} onChange={e => setNewPost(p => ({ ...p, category: e.target.value }))}
-                style={{ padding: '10px 14px', borderRadius: 12, border: `2px solid ${C.border}`, fontSize: 13, color: C.text, outline: 'none', cursor: 'pointer' }}>
-                {CATEGORIES.map(cat => <option key={cat}>{cat}</option>)}
-              </select>
-            </div>
-            <div>
-              <label style={{ fontSize: 12, fontWeight: 600, color: C.text2, display: 'block', marginBottom: 6 }}>Contenu</label>
-              <textarea value={newPost.content} onChange={e => setNewPost(p => ({ ...p, content: e.target.value }))}
-                placeholder="Rédigez votre article…"
-                rows={8}
-                style={{ width: '100%', padding: '12px 14px', borderRadius: 12, border: `2px solid ${C.border}`, fontSize: 13, color: C.text, outline: 'none', resize: 'vertical', fontFamily: 'inherit', boxSizing: 'border-box' }}
-                onFocus={e => e.target.style.borderColor = C.violet}
-                onBlur={e => e.target.style.borderColor = C.border} />
-            </div>
-            <div style={{ display: 'flex', gap: 10 }}>
-              <button style={{ flex: 1, padding: '12px', borderRadius: 12, border: `2px solid ${C.border}`, background: 'transparent', color: C.text2, cursor: 'pointer', fontSize: 13, fontWeight: 600 }}>
-                💾 Enregistrer brouillon
-              </button>
-              <button style={{ flex: 2, padding: '12px', borderRadius: 12, background: C.green, color: '#fff', border: 'none', cursor: 'pointer', fontSize: 13, fontWeight: 700 }}>
-                🚀 Publier
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Stats */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 12 }}>
+      {/* Stats rapides */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 12, marginBottom: 24 }}>
         {[
-          { label: 'Total articles',  value: posts.length,                                     color: C.violet, bg: C.violetLt },
-          { label: 'Publiés',         value: posts.filter(p => p.status === 'published').length, color: C.green,  bg: C.greenLt  },
-          { label: 'Brouillons',      value: posts.filter(p => p.status === 'draft').length,    color: C.orange, bg: C.orangeLt },
-          { label: 'Vues totales',    value: posts.reduce((s, p) => s + p.views, 0).toLocaleString(), color: C.blue, bg: '#E6F1FB' },
-        ].map((s, i) => (
-          <div key={i} style={{ background: C.white, border: `2px solid ${C.border}`, borderRadius: 14, padding: '14px 16px' }}>
-            <div style={{ fontSize: 22, fontWeight: 700, color: s.color, marginBottom: 4 }}>{s.value}</div>
-            <div style={{ fontSize: 11, color: C.text3 }}>{s.label}</div>
+          { label: 'Total', val: posts.length, color: C.violet, bg: C.violetLt },
+          { label: 'Publiés', val: published, color: C.green, bg: C.greenLt },
+          { label: 'Brouillons', val: drafts, color: C.orange, bg: C.orangeLt },
+          { label: 'À la une', val: posts.filter(p => p.featured).length, color: '#F9A825', bg: '#FFF8E1' },
+        ].map(s => (
+          <div key={s.label} style={{ background: s.bg, borderRadius: 14, padding: '14px 16px', border: `1.5px solid ${s.color}30` }}>
+            <div style={{ fontSize: 22, fontWeight: 700, color: s.color }}>{s.val}</div>
+            <div style={{ fontSize: 12, color: s.color, opacity: 0.8 }}>{s.label}</div>
           </div>
         ))}
       </div>
 
-      {/* Filtres */}
-      <div style={{ display: 'flex', gap: 8 }}>
-        {(['all','published','draft'] as const).map(f => (
-          <button key={f} onClick={() => setFilter(f)}
-            style={{ padding: '7px 16px', borderRadius: 10, border: `2px solid ${filter === f ? C.violet : C.border}`, background: filter === f ? C.violetLt : C.white, color: filter === f ? C.violet : C.text2, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
-            {f === 'all' ? 'Tous' : f === 'published' ? 'Publiés' : 'Brouillons'}
+      {/* Filtres + Recherche */}
+      <div style={{ display: 'flex', gap: 10, marginBottom: 20, flexWrap: 'wrap', alignItems: 'center' }}>
+        <input
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder="Rechercher un article…"
+          style={{ flex: 1, minWidth: 200, padding: '9px 14px', borderRadius: 10, border: `1.5px solid ${C.border}`, fontSize: 13, outline: 'none', background: C.white }}
+        />
+        {CATEGORIES.map(cat => (
+          <button key={cat} onClick={() => setFilter(cat)}
+            style={{ padding: '7px 14px', borderRadius: 20, border: `1.5px solid ${filter === cat ? C.violet : C.border}`, background: filter === cat ? C.violet : C.white, color: filter === cat ? '#fff' : C.text2, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
+            {cat}
           </button>
         ))}
       </div>
 
-      {/* Liste des articles */}
-      <div style={{ background: C.white, border: `2px solid ${C.border}`, borderRadius: 20, overflow: 'hidden' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '3fr 1fr 1fr 80px 100px', padding: '11px 20px', background: C.bg, borderBottom: `2px solid ${C.border}` }}>
-          {['Titre', 'Catégorie', 'Statut', 'Vues', 'Actions'].map(h => (
-            <span key={h} style={{ fontSize: 11, fontWeight: 700, color: C.text3, textTransform: 'uppercase' }}>{h}</span>
-          ))}
+      {/* Liste articles */}
+      {loading ? (
+        <div style={{ textAlign: 'center', padding: 60, color: C.text3 }}>Chargement…</div>
+      ) : filtered.length === 0 ? (
+        <div style={{ textAlign: 'center', padding: 60, color: C.text3 }}>
+          <div style={{ fontSize: 40, marginBottom: 12 }}>📝</div>
+          <p>Aucun article trouvé.</p>
         </div>
-        {filtered.map((post, i) => {
-          const sc = STATUS_CFG[post.status]
-          return (
-            <div key={post.id}
-              style={{ display: 'grid', gridTemplateColumns: '3fr 1fr 1fr 80px 100px', padding: '13px 20px', borderBottom: i < filtered.length - 1 ? `1px solid ${C.border}` : 'none', alignItems: 'center' }}>
-              <div>
-                <p style={{ fontSize: 13, fontWeight: 700, color: C.text, marginBottom: 2 }}>{post.title}</p>
-                <p style={{ fontSize: 11, color: C.text3 }}>{post.author} · {new Date(post.created_at).toLocaleDateString('fr-FR')}</p>
+      ) : (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {filtered.map(post => (
+            <div key={post.id} style={{
+              background: C.white, border: `1.5px solid ${C.border}`, borderRadius: 16,
+              padding: '16px 20px', display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap',
+            }}>
+              {/* Emoji */}
+              <div style={{ width: 44, height: 44, borderRadius: 12, background: `${post.color}18`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, flexShrink: 0 }}>
+                {post.emoji}
               </div>
-              <span style={{ fontSize: 11, background: C.violetLt, color: C.violet, padding: '3px 8px', borderRadius: 8, fontWeight: 600, width: 'fit-content' }}>{post.category}</span>
-              <span style={{ fontSize: 11, fontWeight: 700, padding: '3px 8px', borderRadius: 8, background: sc.bg, color: sc.color, width: 'fit-content' }}>{sc.label}</span>
-              <span style={{ fontSize: 12, color: C.text2 }}>{post.views.toLocaleString()}</span>
-              <div style={{ display: 'flex', gap: 6 }}>
-                <button style={{ width: 28, height: 28, borderRadius: 7, border: `1px solid ${C.violet}`, background: C.violetLt, color: C.violet, cursor: 'pointer', fontSize: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>✏️</button>
-                {post.status === 'draft'
-                  ? <button style={{ width: 28, height: 28, borderRadius: 7, border: `1px solid ${C.green}`, background: C.greenLt, color: C.green, cursor: 'pointer', fontSize: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>🚀</button>
-                  : <button style={{ width: 28, height: 28, borderRadius: 7, border: `1px solid ${C.border}`, background: 'transparent', color: C.text3, cursor: 'pointer', fontSize: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>📦</button>
-                }
+
+              {/* Infos */}
+              <div style={{ flex: 1, minWidth: 200 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4, flexWrap: 'wrap' }}>
+                  <span style={{ fontSize: 14, fontWeight: 700, color: C.text }}>{post.title}</span>
+                  {post.featured && <span style={{ fontSize: 10, padding: '2px 7px', borderRadius: 8, background: '#FFF8E1', color: '#F9A825', fontWeight: 700 }}>⭐ UNE</span>}
+                  <span style={{ fontSize: 10, padding: '2px 7px', borderRadius: 8, background: `${post.color}18`, color: post.color, fontWeight: 700 }}>{post.category}</span>
+                  <span style={{
+                    fontSize: 10, padding: '2px 7px', borderRadius: 8, fontWeight: 700,
+                    background: post.published ? C.greenLt : C.orangeLt,
+                    color: post.published ? C.green : C.orange,
+                  }}>
+                    {post.published ? '✓ Publié' : '○ Brouillon'}
+                  </span>
+                </div>
+                <div style={{ fontSize: 12, color: C.text3 }}>
+                  {post.author_name} · {new Date(post.created_at).toLocaleDateString('fr-FR')} · {post.read_time} min
+                </div>
+              </div>
+
+              {/* Actions */}
+              <div style={{ display: 'flex', gap: 8, flexShrink: 0, flexWrap: 'wrap' }}>
+                {/* Toggle publié */}
+                <button
+                  onClick={() => handleTogglePublish(post)}
+                  style={{ padding: '7px 12px', borderRadius: 9, border: `1.5px solid ${post.published ? C.green : C.border}`, background: post.published ? C.greenLt : C.white, color: post.published ? C.green : C.text2, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}
+                >
+                  {post.published ? 'Dépublier' : 'Publier'}
+                </button>
+
+                {/* Toggle une */}
+                <button
+                  onClick={() => handleToggleFeatured(post)}
+                  title={post.featured ? 'Retirer de la une' : 'Mettre à la une'}
+                  style={{ padding: '7px 10px', borderRadius: 9, border: `1.5px solid ${post.featured ? '#F9A825' : C.border}`, background: post.featured ? '#FFF8E1' : C.white, color: post.featured ? '#F9A825' : C.text3, fontSize: 14, cursor: 'pointer' }}
+                >
+                  ⭐
+                </button>
+
+                {/* Éditer */}
+                <button
+                  onClick={() => router.push(`/admin/blog/editor?id=${post.id}`)}
+                  style={{ padding: '7px 14px', borderRadius: 9, border: `1.5px solid ${C.violet}`, background: C.violetLt, color: C.violet, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}
+                >
+                  Éditer
+                </button>
+
+                {/* Supprimer */}
+                {confirmDelete === post.id ? (
+                  <div style={{ display: 'flex', gap: 6 }}>
+                    <button
+                      onClick={() => handleDelete(post.id)}
+                      disabled={deleting === post.id}
+                      style={{ padding: '7px 12px', borderRadius: 9, border: 'none', background: C.red, color: '#fff', fontSize: 12, fontWeight: 700, cursor: 'pointer' }}
+                    >
+                      {deleting === post.id ? '…' : 'Confirmer'}
+                    </button>
+                    <button
+                      onClick={() => setConfirmDelete(null)}
+                      style={{ padding: '7px 12px', borderRadius: 9, border: `1.5px solid ${C.border}`, background: C.white, color: C.text2, fontSize: 12, cursor: 'pointer' }}
+                    >
+                      Annuler
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => setConfirmDelete(post.id)}
+                    style={{ padding: '7px 10px', borderRadius: 9, border: `1.5px solid ${C.border}`, background: C.white, color: C.text3, fontSize: 14, cursor: 'pointer' }}
+                  >
+                    🗑
+                  </button>
+                )}
               </div>
             </div>
-          )
-        })}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

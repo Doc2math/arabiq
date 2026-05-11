@@ -59,14 +59,24 @@ export default function CreateAdminPage() {
     if (!form.email || !form.username || !form.password) {
       setError('Tous les champs sont requis'); return
     }
+    if (form.password.length < 8) {
+      setError('Le mot de passe doit contenir au moins 8 caractères'); return
+    }
     setLoading(true)
     try {
-      await api.post('/api/v1/superadmin/admins', {
-        ...form,
-        permissions: selectedPerms,
+      // Étape 1 — Créer le compte via l'endpoint d'inscription
+      const registerRes = await api.post('/api/v1/auth/register', {
+        email:    form.email,
+        username: form.username,
+        password: form.password,
       })
-      setSuccess(`Admin ${form.username} créé avec succès !`)
-      setTimeout(() => router.push('/admin/superadmin'), 1500)
+      const newUserId = registerRes.data?.id ?? registerRes.data?.user?.id
+
+      // Étape 2 — Promouvoir en admin via l'endpoint superadmin
+      await api.post(`/api/v1/admin/admins/promote/${newUserId}`)
+
+      setSuccess(`Admin "${form.username}" créé avec succès !`)
+      setTimeout(() => router.push('/superadmin/admins'), 1500)
     } catch (err: any) {
       setError(err.response?.data?.detail || 'Erreur lors de la création')
     } finally {
@@ -85,7 +95,7 @@ export default function CreateAdminPage() {
   return (
     <div style={{ maxWidth: 680, margin: '0 auto' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 28 }}>
-        <button onClick={() => router.push('/admin/superadmin')}
+        <button onClick={() => router.push('/superadmin/admins')}
           style={{ background: 'none', border: 'none', cursor: 'pointer', color: C.violet, fontSize: 14, fontWeight: 600 }}>
           ← Retour
         </button>
@@ -104,42 +114,46 @@ export default function CreateAdminPage() {
       )}
 
       <form onSubmit={handleSubmit}>
+
+        {/* Informations du compte */}
         <div style={{ background: C.white, border: `2px solid ${C.border}`, borderRadius: 20, padding: '24px', marginBottom: 16 }}>
           <h3 style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 16 }}>Informations du compte</h3>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
             <div>
               <label style={{ fontSize: 12, fontWeight: 600, color: C.text2, display: 'block', marginBottom: 6 }}>Email</label>
-              <input type="email" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
-                placeholder="admin@arabiq.com" style={inputStyle}
-                onFocus={e => e.target.style.borderColor = C.violet}
-                onBlur={e => e.target.style.borderColor = C.border} />
+              <input type="email" value={form.email}
+                onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
+                placeholder="admin@langdad.com" style={inputStyle}
+                onFocus={e => (e.target as HTMLInputElement).style.borderColor = C.violet}
+                onBlur={e => (e.target as HTMLInputElement).style.borderColor = C.border} />
             </div>
             <div>
               <label style={{ fontSize: 12, fontWeight: 600, color: C.text2, display: 'block', marginBottom: 6 }}>Nom d'utilisateur</label>
-              <input type="text" value={form.username} onChange={e => setForm(f => ({ ...f, username: e.target.value }))}
+              <input type="text" value={form.username}
+                onChange={e => setForm(f => ({ ...f, username: e.target.value }))}
                 placeholder="ex: content_admin" style={inputStyle}
-                onFocus={e => e.target.style.borderColor = C.violet}
-                onBlur={e => e.target.style.borderColor = C.border} />
+                onFocus={e => (e.target as HTMLInputElement).style.borderColor = C.violet}
+                onBlur={e => (e.target as HTMLInputElement).style.borderColor = C.border} />
             </div>
-            <div>
+            <div style={{ gridColumn: '1 / -1' }}>
               <label style={{ fontSize: 12, fontWeight: 600, color: C.text2, display: 'block', marginBottom: 6 }}>Mot de passe</label>
-              <input type="password" value={form.password} onChange={e => setForm(f => ({ ...f, password: e.target.value }))}
+              <input type="password" value={form.password}
+                onChange={e => setForm(f => ({ ...f, password: e.target.value }))}
                 placeholder="Min. 8 caractères" style={inputStyle}
-                onFocus={e => e.target.style.borderColor = C.violet}
-                onBlur={e => e.target.style.borderColor = C.border} />
+                onFocus={e => (e.target as HTMLInputElement).style.borderColor = C.violet}
+                onBlur={e => (e.target as HTMLInputElement).style.borderColor = C.border} />
             </div>
-            <div>
-              <label style={{ fontSize: 12, fontWeight: 600, color: C.text2, display: 'block', marginBottom: 6 }}>Rôle</label>
-              <select value={form.role} onChange={e => setForm(f => ({ ...f, role: e.target.value }))}
-                style={{ ...inputStyle, cursor: 'pointer' }}>
-                <option value="admin">Admin</option>
-                <option value="superadmin">Super Admin</option>
-              </select>
-            </div>
+          </div>
+
+          {/* Note */}
+          <div style={{ marginTop: 14, padding: '10px 14px', background: C.bg, borderRadius: 10, border: `1px solid ${C.border}` }}>
+            <p style={{ fontSize: 12, color: C.text3 }}>
+              ℹ️ Le compte sera créé avec le rôle <strong>admin</strong>. Communiquez le mot de passe à l'administrateur et demandez-lui de le changer à sa première connexion.
+            </p>
           </div>
         </div>
 
-        {/* Templates de permissions */}
+        {/* Permissions */}
         <div style={{ background: C.white, border: `2px solid ${C.border}`, borderRadius: 20, padding: '24px', marginBottom: 16 }}>
           <h3 style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 6 }}>Permissions</h3>
           <p style={{ fontSize: 12, color: C.text3, marginBottom: 14 }}>Choisissez un modèle ou personnalisez manuellement</p>
