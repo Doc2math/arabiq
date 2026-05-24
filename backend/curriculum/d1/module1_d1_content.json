@@ -69,6 +69,7 @@
                 "lang": "fr",
                 "prompt": "Quelle est cette lettre ?",
                 "promptAr": "م",
+                "audioUrl": "/assets/audio/letters/mim.mp3",
                 "options": [
                   "Ba",
                   "Mim",
@@ -82,6 +83,7 @@
                 "lang": "fr",
                 "prompt": "Quelle est cette lettre ?",
                 "promptAr": "م",
+                "audioUrl": "/assets/audio/letters/mim.mp3",
                 "options": [
                   "Fa",
                   "Mim",
@@ -95,6 +97,7 @@
                 "lang": "fr",
                 "prompt": "Parmi ces lettres, laquelle est Mim ?",
                 "promptAr": null,
+                "audioUrl": "/assets/audio/letters/mim.mp3",
                 "options": [
                   "ن",
                   "م",
@@ -108,6 +111,7 @@
                 "lang": "fr",
                 "prompt": "Quelle lettre ressemble à un cercle avec une petite queue vers le bas ?",
                 "promptAr": null,
+                "audioUrl": "/assets/audio/letters/mim.mp3",
                 "options": [
                   "Kaf",
                   "Ba",
@@ -130,6 +134,7 @@
                 "lang": "fr",
                 "prompt": "Quelle est cette lettre ?",
                 "promptAr": "ب",
+                "audioUrl": "/assets/audio/letters/ba.mp3",
                 "options": [
                   "Ta",
                   "Kaf",
@@ -143,6 +148,7 @@
                 "lang": "fr",
                 "prompt": "Quelle est cette lettre ?",
                 "promptAr": "ب",
+                "audioUrl": "/assets/audio/letters/ba.mp3",
                 "options": [
                   "Ta",
                   "Ba",
@@ -156,6 +162,7 @@
                 "lang": "fr",
                 "prompt": "Parmi ces lettres, laquelle est Ba ?",
                 "promptAr": null,
+                "audioUrl": "/assets/audio/letters/ba.mp3",
                 "options": [
                   "ت",
                   "ث",
@@ -168,7 +175,7 @@
                 "level": 4,
                 "lang": "fr",
                 "prompt": "Quelle lettre a une coque plate avec un seul point en dessous ?",
-                "audio": "/assets/audio/letters/ba.mp3",
+                "audioUrl": "/assets/audio/letters/ba.mp3",
                 "promptAr": null,
                 "options": [
                   "Ta",
@@ -191,7 +198,7 @@
                 "level": 1,
                 "lang": "fr",
                 "prompt": "Quelle est cette lettre ?",
-                "audio": "/assets/audio/letters/kaf.mp3",
+                "audioUrl": "/assets/audio/letters/kaf.mp3",
                 "promptAr": "ك",
                 "options": [
                   "Kaf",
@@ -206,6 +213,7 @@
                 "lang": "fr",
                 "prompt": "Quelle est cette lettre ?",
                 "promptAr": "ك",
+                "audioUrl": "/assets/audio/letters/kaf.mp3",
                 "options": [
                   "Lam",
                   "Kaf",
@@ -218,7 +226,7 @@
                 "level": 3,
                 "lang": "fr",
                 "prompt": "Parmi ces lettres, laquelle est Kaf ?",
-
+                "audioUrl": "/assets/audio/letters/kaf.mp3",
                 "promptAr": null,
                 "options": [
                   "ل",
@@ -270,6 +278,7 @@
                 "lang": "fr",
                 "prompt": "Parmi ces lettres, laquelle est Ta ?",
                 "promptAr": null,
+                "audioUrl": "/assets/audio/letters/ta.mp3",
                 "options": [
                   "ب",
                   "ت",
@@ -283,6 +292,7 @@
                 "lang": "fr",
                 "prompt": "Quelle lettre ressemble à Ba mais avec deux points au-dessus au lieu d'un seul en dessous ?",
                 "promptAr": null,
+                "audioUrl": "/assets/audio/letters/ta.mp3",
                 "options": [
                   "Nun",
                   "Ba",
@@ -885,6 +895,7 @@
             "skill_id": "long_vowels",
             "prompt": "Comment se prononce بَا ?",
             "promptAr": "بَا",
+            "audioUrl": "/assets/audio/syllables/ba_alif_long.mp3" ,
             "xpReward": 4,
             "options": [
               "ba",
@@ -958,6 +969,7 @@
             "type": "mcq",
             "skill_id": "long_vowels",
             "prompt": "Comment se prononce كُوبٌ ?",
+            "audioUrl": "/assets/audio/words/kub.mp3" ,
             "promptAr": "كُوبٌ",
             "xpReward": 5,
             "options": [
@@ -973,7 +985,7 @@
             "id": "m1l3_ex6",
             "type": "mcq",
             "skill_id": "long_vowels",
-            "prompt": "Quelle voyelle longue correspond à ا ?",
+            "prompt": "Quelle voyelle longue correspond à Alif ?",
             "promptAr": null,
             "xpReward": 3,
             "options": [
@@ -1055,6 +1067,7 @@
             "skill_id": "tanwin",
             "prompt": "Comment se prononce مَكْتَبٌ à la fin ?",
             "promptAr": "مَكْتَبٌ",
+            "audioUrl": "/assets/audio/words/maktab.mp3",
             "xpReward": 4,
             "options": [
               "maktaba",
@@ -1079,7 +1092,7 @@
               "بَ"
             ],
             "correctIndex": 0,
-            "explanation": "بً = ban — tanwīn fath → 'an'.",
+            "explanation": " بًا  = ban — tanwīn fath → 'an'.",
             "prompts": [
               "Écoutez et identifiez le tanwīn",
               "Quel tanwīn entendez-vous ?",
@@ -1108,6 +1121,7 @@
             "skill_id": "tanwin",
             "prompt": "Comment se prononce كِتَابٌ ?",
             "promptAr": "كِتَابٌ",
+            "audioUrl": "/assets/audio/words/kitab.mp3",
             "xpReward": 4,
             "options": [
               "kitaba",
@@ -1159,7 +1173,8 @@
             "id": "m1l4_ex7",
             "type": "mcq",
             "skill_id": "tanwin",
-            "prompt": "Identifiez la forme avec tanwīn kasr",
+            "prompt": "Identifiez la forme avec tanwīn kasra",
+            "audioUrl": "",
             "promptAr": null,
             "xpReward": 4,
             "options": [
@@ -1370,6 +1385,7 @@
             "type": "mcq",
             "skill_id": "letter_positions",
             "prompt": "Dans مَكْتَبٌ, la lettre ب est en quelle position ?",
+            "audioUrl": "/assets/audio/words/maktab.mp3",
             "promptAr": "مَكْتَبٌ",
             "xpReward": 5,
             "options": [
@@ -1387,6 +1403,7 @@
             "skill_id": "letter_positions",
             "prompt": "Dans كِتَابٌ, la lettre ك est en quelle position ?",
             "promptAr": "كِتَابٌ",
+            "audioUrl": "/assets/audio/words/kitab.mp3",
             "xpReward": 5,
             "options": [
               "Isolée",
@@ -1434,7 +1451,7 @@
             "type": "mcq",
             "skill_id": "letter_positions",
             "prompt": "Dans مَكْتَبٌ, la lettre ت est en quelle position ?",
-            "promptAr": "مَكْتَبٌ",
+            "audioUrl": "/assets/audio/words/maktab.mp3",
             "xpReward": 5,
             "options": [
               "Initiale",
@@ -1466,6 +1483,7 @@
             "type": "mcq",
             "skill_id": "letter_positions",
             "prompt": "Dans مَكْتَبٌ, quelle est la forme de ت au milieu ?",
+            "audioUrl": "/assets/audio/words/maktab.mp3",
             "promptAr": "مَكْتَبٌ",
             "xpReward": 6,
             "options": [
@@ -1482,6 +1500,7 @@
             "type": "mcq",
             "skill_id": "letter_positions",
             "prompt": "Dans بَابٌ, le premier ب est en quelle position ?",
+            "audioUrl": "/assets/audio/words/bab.mp3",
             "promptAr": "بَابٌ",
             "xpReward": 5,
             "options": [
@@ -1512,6 +1531,7 @@
               "phoneme": "maktabun",
               "translation": "Bureau",
               "type": "nom",
+              
               "audio": "/assets/audio/words/maktab.mp3",
               "image": "/assets/images/words/maktab.jpg"
             },
@@ -1622,6 +1642,7 @@
             "skill_id": "word_comprehension",
             "prompt": "Que signifie كَتَبَ ?",
             "promptAr": "كَتَبَ",
+            "audioUrl": "/assets/audio/words/kataba.mp3",
             "xpReward": 4,
             "options": [
               "Un livre",
@@ -1653,6 +1674,7 @@
             "type": "mcq",
             "skill_id": "word_comprehension",
             "prompt": "Quel mot signifie 'Maison' ?",
+            "audioUrl": "/assets/audio/words/bayt.mp3",
             "promptAr": null,
             "xpReward": 4,
             "options": [
@@ -1669,6 +1691,7 @@
             "type": "mcq",
             "skill_id": "word_comprehension",
             "prompt": "Quelle est la nature du mot كَتَبَ ?",
+            "audioUrl": "/assets/audio/words/kataba.mp3",
             "promptAr": "كَتَبَ",
             "xpReward": 3,
             "options": [
@@ -1852,6 +1875,7 @@
             "type": "mcq",
             "skill_id": "word_comprehension",
             "prompt": "Que signifie مَكْتَبَةٌ ?",
+            "audioUrl": "/assets/audio/words/maktaba.mp3",
             "promptAr": "مَكْتَبَةٌ",
             "xpReward": 4,
             "options": [
@@ -1893,6 +1917,7 @@
             "type": "mcq",
             "skill_id": "word_comprehension",
             "prompt": "Quelle est la nature du mot كاتِبٌ ?",
+            "audioUrl": "/assets/audio/words/katib.mp3",
             "promptAr": "كاتِبٌ",
             "xpReward": 3,
             "options": [
@@ -1925,6 +1950,7 @@
             "type": "mcq",
             "skill_id": "word_comprehension",
             "prompt": "Quel mot signifie 'Il a caché' ?",
+            "audioUrl": "/assets/audio/words/katam.mp3",
             "promptAr": null,
             "xpReward": 4,
             "options": [
@@ -1942,6 +1968,7 @@
             "skill_id": "word_comprehension",
             "prompt": "Parmi ces mots, lequel est un verbe ?",
             "promptAr": null,
+            "audioUrl": "/assets/audio/words/bata.mp3",
             "xpReward": 3,
             "options": [
               "كاتِبٌ",
@@ -2159,6 +2186,10 @@
       "duration_minutes": 20,
       "skill_id": "word_building",
       "content": {
+    "introduction": {
+      "text": " Les lettres des mots sont donnés dans le désordre et on demande de les ordonner pour que le mot soit significatif"
+         },
+      
         "passing_score": 0.8,
         "exercises": [
           {
@@ -2166,6 +2197,7 @@
             "type": "drag_drop",
             "skill_id": "word_building",
             "prompt": "Assemblez les lettres pour former le mot 'bureau'",
+            
             "letters": [
               "مـ",
               "ـكـ",
@@ -2200,7 +2232,8 @@
             "type": "mcq",
             "skill_id": "word_building",
             "prompt": "Quelle lettre manque pour compléter ce mot ?",
-            "promptAr": "كِ□َابٌ",
+            "promptAr": "كـ?ـابٌ",
+            "audioUrl": "/assets/audio/words/kitab.mp3",
             "xpReward": 6,
             "options": [
               "ـتـ ",
@@ -2221,7 +2254,9 @@
             "type": "mcq",
             "skill_id": "word_building",
             "prompt": "Quelle lettre manque pour compléter ce mot ?",
-            "promptAr": "مَكْ - بٌ",
+            "audioUrl": "/assets/audio/words/maktab.mp3",
+            "promptAr": "مَـكـْ ? ـب",
+            
             "xpReward": 6,
             "options": [
               "ـبـ ",
@@ -2259,6 +2294,7 @@
             "skill_id": "word_building",
             "prompt": "Dans بَابٌ, quelle est la forme du second ب (en fin de mot) ?",
             "promptAr": "بَابٌ",
+            "audioUrl": "/assets/audio/words/bab.mp3",
             "xpReward": 5,
             "options": [
               "بـ (initiale)",
@@ -2336,6 +2372,7 @@
             "type": "mcq",
             "skill_id": "sentence_reading",
             "prompt": "Que signifie مَاتَ كَتْكُوتٌ ?",
+            "audioUrl": "/assets/audio/phrases/mata_katkut.mp3",
             "promptAr": "مَاتَ كَتْكُوتٌ",
             "xpReward": 5,
             "options": [
@@ -2347,17 +2384,18 @@
             "correctIndex": 1,
             "explanation": "مَاتَ = il est mort, كَتْكُوتٌ = poussin."
           },
-          {
+                  {
             "id": "m1l10_ex3",
             "type": "word_order",
             "skill_id": "sentence_reading",
             "prompt": "Remettez les mots dans l'ordre pour former la phrase : 'Maman a pleuré'",
-            "words": [
-              "مَامَا",
-              "بَكَتْ"
-            ],
+            "words": ["مَامَا", "بَكَتْ"],
             "correctSentence": "بَكَتْ مَامَا",
             "audioUrl": "/assets/audio/phrases/bakat_mama.mp3",
+            "wordAudio": {
+              "مَامَا": "/assets/audio/words/mama.mp3",
+              "بَكَتْ": "/assets/audio/words/bakat.mp3"
+            },
             "xpReward": 7,
             "explanation": "بَكَتْ مَامَا — le verbe vient avant le nom en arabe."
           },
@@ -2366,12 +2404,13 @@
             "type": "word_order",
             "skill_id": "sentence_reading",
             "prompt": "Remettez les mots dans l'ordre : 'Un poussin est mort'",
-            "words": [
-              "كَتْكُوتٌ",
-              "مَاتَ"
-            ],
+            "words": ["كَتْكُوتٌ", "مَاتَ"],
             "correctSentence": "مَاتَ كَتْكُوتٌ",
             "audioUrl": "/assets/audio/phrases/mata_katkut.mp3",
+            "wordAudio": {
+              "مَاتَ": "/assets/audio/words/mata.mp3",
+              "كَتْكُوتٌ": "/assets/audio/words/katkut.mp3"
+            },
             "xpReward": 7,
             "explanation": "مَاتَ كَتْكُوتٌ — verbe + sujet."
           },
@@ -2380,7 +2419,8 @@
             "type": "mcq",
             "skill_id": "sentence_reading",
             "prompt": "Quel mot manque dans cette phrase ?",
-            "promptAr": "كَتَبَ ___ كِتَاباً",
+            "audioUrl": "/assets/audio/phrases/kataba_katib.mp3",
+            "promptAr": "كَتَبَ ---- كِتَاباً",
             "xpReward": 6,
             "options": [
               "مَامَا",
@@ -2390,6 +2430,7 @@
             ],
             "correctIndex": 1,
             "explanation": "كَتَبَ كاتِبٌ كِتَاباً = un écrivain a écrit un livre.",
+
             "prompts": [
               "Quel mot manque dans cette phrase ?",
               "Complétez la phrase",
@@ -2401,6 +2442,7 @@
             "type": "matching",
             "skill_id": "sentence_reading",
             "prompt": "Associez chaque phrase à sa traduction",
+            
             "xpReward": 8,
             "pairs": [
               {
