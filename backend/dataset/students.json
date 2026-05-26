@@ -1,0 +1,32 @@
+[
+  {
+    "student_id": "3a005e125a305703",
+    "native_language": "fr",
+    "level": 8,
+    "created_at": "2026-05-01T07:01:51.382624+00:00"
+  },
+  {
+    "student_id": "fee467d7453293ff",
+    "native_language": "fr",
+    "level": 1,
+    "created_at": "2026-05-25T07:59:24.961444+00:00"
+  },
+  {
+    "student_id": "f4e96d1b904d7560",
+    "native_language": "fr",
+    "level": 7,
+    "created_at": "2026-05-02T12:18:52.033503+00:00"
+  },
+  {
+    "student_id": "76079080eb7dd456",
+    "native_language": "fr",
+    "level": 1,
+    "created_at": "2026-05-03T21:23:25.525403+00:00"
+  },
+  {
+    "student_id": "ac5d92ee5d8928e1",
+    "native_language": "fr",
+    "level": 19,
+    "created_at": "2026-04-19T21:29:59.671268+00:00"
+  }
+]

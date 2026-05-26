@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useRef, useEffect, useCallback } from 'react'
-import { Keyboard } from 'lucide-react';
+import { Keyboard } from 'lucide-react'
+
 const C = {
   violet:   '#6C3FC5',
   violetLt: '#EDE8FB',
@@ -45,6 +46,7 @@ interface ArabicKeyboardProps {
   validateLabel?: string
   answered?: boolean
   isCorrect?: boolean | null
+  rows?: number
 }
 
 export default function ArabicKeyboard({
@@ -57,24 +59,38 @@ export default function ArabicKeyboard({
   validateLabel = 'Valider →',
   answered = false,
   isCorrect = null,
+  rows = 3,
 }: ArabicKeyboardProps) {
-  const [open, setOpen]           = useState(false)
+  const [open, setOpen]           = useState(defaultOpen)
   const [activeKey, setActiveKey] = useState<string | null>(null)
   const [tooltip, setTooltip]     = useState<string | null>(null)
 
   // Position draggable
-  const [pos, setPos]         = useState({ x: 0, y: 0 })
+  const [pos, setPos]           = useState({ x: 0, y: 0 })
   const [dragging, setDragging] = useState(false)
   const dragStart               = useRef({ mx: 0, my: 0, kx: 0, ky: 0 })
 
   // Taille redimensionnable
-  const [kbdWidth, setKbdWidth]   = useState(620)
-  const [resizing, setResizing]   = useState(false)
-  const resizeStart               = useRef({ mx: 0, w: 620 })
+  const [kbdWidth, setKbdWidth] = useState(620)
+  const [resizing, setResizing] = useState(false)
+  const resizeStart             = useRef({ mx: 0, w: 620 })
 
-  const inputRef = useRef<HTMLInputElement>(null)
+  // ── Ref textarea ─────────────────────────────────────────
+  const textareaRef = useRef<HTMLTextAreaElement>(null)
+  // Ref pour sauvegarder la position du curseur
+  const selRef = useRef<{ start: number; end: number }>({ start: 0, end: 0 })
 
-  // ── Drag ──────────────────────────────────────────────────
+  // Sauvegarder la sélection avant chaque insertion clavier
+  const saveSelection = useCallback(() => {
+    const el = textareaRef.current
+    if (!el) return
+    selRef.current = {
+      start: el.selectionStart ?? value.length,
+      end:   el.selectionEnd   ?? value.length,
+    }
+  }, [value])
+
+  // ── Drag ─────────────────────────────────────────────────
   const onDragStart = (e: React.MouseEvent) => {
     e.preventDefault()
     setDragging(true)
@@ -83,19 +99,17 @@ export default function ArabicKeyboard({
 
   useEffect(() => {
     if (!dragging) return
-    const onMove = (e: MouseEvent) => {
-      setPos({
-        x: dragStart.current.kx + (e.clientX - dragStart.current.mx),
-        y: dragStart.current.ky + (e.clientY - dragStart.current.my),
-      })
-    }
+    const onMove = (e: MouseEvent) => setPos({
+      x: dragStart.current.kx + (e.clientX - dragStart.current.mx),
+      y: dragStart.current.ky + (e.clientY - dragStart.current.my),
+    })
     const onUp = () => setDragging(false)
     window.addEventListener('mousemove', onMove)
     window.addEventListener('mouseup', onUp)
     return () => { window.removeEventListener('mousemove', onMove); window.removeEventListener('mouseup', onUp) }
   }, [dragging])
 
-  // ── Resize ────────────────────────────────────────────────
+  // ── Resize ───────────────────────────────────────────────
   const onResizeStart = (e: React.MouseEvent) => {
     e.preventDefault()
     setResizing(true)
@@ -106,7 +120,6 @@ export default function ArabicKeyboard({
     if (!resizing) return
     const onMove = (e: MouseEvent) => {
       const delta = e.clientX - resizeStart.current.mx
-      // Clavier centré → resize symétrique (drag droite = élargit)
       const newW = Math.max(320, Math.min(window.innerWidth - 32, resizeStart.current.w + delta * 2))
       setKbdWidth(newW)
     }
@@ -116,37 +129,61 @@ export default function ArabicKeyboard({
     return () => { window.removeEventListener('mousemove', onMove); window.removeEventListener('mouseup', onUp) }
   }, [resizing])
 
-  // ── Insert ────────────────────────────────────────────────
+  // ── Insert ───────────────────────────────────────────────
   const insert = useCallback((char: string) => {
     if (disabled || answered) return
-    const el = inputRef.current
-    if (!el) return
-    const s = el.selectionStart ?? value.length
-    const e2 = el.selectionEnd ?? value.length
+    const s   = selRef.current.start
+    const e2  = selRef.current.end
     const next = value.slice(0, s) + char + value.slice(e2)
     onChange(next)
     const newPos = s + char.length
-    requestAnimationFrame(() => { el.focus(); el.setSelectionRange(newPos, newPos) })
+    // Mettre à jour la ref de sélection
+    selRef.current = { start: newPos, end: newPos }
+    // Restaurer le focus et le curseur après le re-render
+    requestAnimationFrame(() => {
+      const el = textareaRef.current
+      if (!el) return
+      el.focus()
+      el.setSelectionRange(newPos, newPos)
+    })
     setActiveKey(char)
     setTimeout(() => setActiveKey(null), 120)
   }, [value, onChange, disabled, answered])
 
   const backspace = useCallback(() => {
     if (disabled || answered) return
-    const el = inputRef.current; if (!el) return
-    const s = el.selectionStart ?? value.length
-    if (s === 0) return
-    onChange(value.slice(0, s - 1) + value.slice(s))
-    requestAnimationFrame(() => { el.focus(); el.setSelectionRange(s - 1, s - 1) })
+    const s  = selRef.current.start
+    const e2 = selRef.current.end
+    let next: string
+    let newPos: number
+    if (s !== e2) {
+      // Supprime la sélection
+      next   = value.slice(0, s) + value.slice(e2)
+      newPos = s
+    } else if (s > 0) {
+      next   = value.slice(0, s - 1) + value.slice(s)
+      newPos = s - 1
+    } else {
+      return
+    }
+    onChange(next)
+    selRef.current = { start: newPos, end: newPos }
+    requestAnimationFrame(() => {
+      const el = textareaRef.current
+      if (!el) return
+      el.focus()
+      el.setSelectionRange(newPos, newPos)
+    })
   }, [value, onChange, disabled, answered])
 
   const clear = useCallback(() => {
     if (disabled || answered) return
     onChange('')
-    requestAnimationFrame(() => inputRef.current?.focus())
+    selRef.current = { start: 0, end: 0 }
+    requestAnimationFrame(() => textareaRef.current?.focus())
   }, [onChange, disabled, answered])
 
-  // ── Styles partagés ───────────────────────────────────────
+  // ── Styles ───────────────────────────────────────────────
   const baseKey = (char: string, extra: React.CSSProperties = {}): React.CSSProperties => ({
     height:         40,
     borderRadius:   8,
@@ -163,63 +200,104 @@ export default function ArabicKeyboard({
     transition:     'all .1s',
     transform:      activeKey === char ? 'scale(0.92)' : 'scale(1)',
     flexShrink:     0,
-    userSelect:     'none',
-    position:       'relative',
+    userSelect:     'none' as const,
+    position:       'relative' as const,
     ...extra,
   })
 
   const fieldBorder = answered ? (isCorrect ? C.green : '#E24B4A') : open ? C.violet : C.border
   const fieldBg     = answered ? (isCorrect ? C.greenLt : '#FCEBEB') : C.white
-
-  // Calcul bottom en tenant compte du drag vertical
-  const bottomVal = pos.y < 0 ? -pos.y : 0
+  const bottomVal   = pos.y < 0 ? -pos.y : 0
 
   return (
     <div style={{ position: 'relative', width: '100%' }}>
 
-      {/* ── Champ de saisie ── */}
+      {/* ── Zone de saisie multilignes ── */}
       <div style={{ position: 'relative' }}>
-        <input
-          ref={inputRef}
-          type="text"
+        <textarea
+          ref={textareaRef}
           value={value}
           readOnly={disabled || answered}
           dir="rtl"
           placeholder={placeholder}
+          rows={rows}
           onFocus={() => { if (!disabled && !answered) setOpen(true) }}
-          onChange={e => { if (!disabled && !answered) onChange(e.target.value) }}
+          onSelect={saveSelection}
+          onKeyUp={saveSelection}
+          onMouseUp={saveSelection}
+          onChange={e => {
+            if (!disabled && !answered) {
+              onChange(e.target.value)
+              saveSelection()
+            }
+          }}
+          onKeyDown={e => {
+            // Autoriser la saisie physique clavier aussi
+            saveSelection()
+          }}
           style={{
-            width: '100%', padding: '12px 28px 12px 16px',
-            borderRadius: 14, fontFamily: "'Noto Naskh Arabic', serif",
-            fontSize: 22, border: `2.5px solid ${fieldBorder}`,
-            outline: 'none', color: C.text, background: fieldBg,
-            textAlign: 'right', transition: 'all .2s', boxSizing: 'border-box',
-            cursor: disabled || answered ? 'default' : 'text',
+            width:       '100%',
+            padding:     '12px 42px 12px 16px',
+            borderRadius: 14,
+            fontFamily:  "'Noto Naskh Arabic', serif",
+            fontSize:    22,
+            lineHeight:  1.8,
+            border:      `2.5px solid ${fieldBorder}`,
+            outline:     'none',
+            color:       C.text,
+            background:  fieldBg,
+            textAlign:   'right',
+            direction:   'rtl',
+            transition:  'all .2s',
+            boxSizing:   'border-box' as const,
+            cursor:      disabled || answered ? 'default' : 'text',
+            resize:      'vertical',
+            overflowY:   'auto',
+            minHeight:   rows * 40,
+            maxHeight:   400,
           }}
         />
         {!disabled && !answered && (
-          <button onClick={() => setOpen(o => !o)} title="Clavier arabe"
+          <button
+            onClick={() => setOpen(o => !o)}
+            title="Clavier arabe"
             style={{
-              position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)',
-              width: 32, height: 22, borderRadius: 8,
+              position:  'absolute',
+              left:      12,
+              top:       12,
+              width:     32,
+              height:    32,
+              borderRadius: 8,
               background: open ? C.violet : C.violetLt,
-              border: `0px solid ${C.violet}`, cursor: 'pointer',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: 16, transition: 'all .15s',
+              border:    `1px solid ${C.violet}40`,
+              cursor:    'pointer',
+              display:   'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              transition: 'all .15s',
             }}>
-            <Keyboard size={34}  />
+            <Keyboard size={18} color={open ? '#fff' : C.violet} />
           </button>
         )}
       </div>
 
       {/* ── Bouton valider ── */}
       {onValidate && (
-        <button onClick={onValidate} disabled={answered || !value.trim()}
+        <button
+          onClick={onValidate}
+          disabled={answered || !value.trim()}
           style={{
-            width: '100%', marginTop: 10, padding: '16px', borderRadius: 14,
-            border: 'none', background: answered || !value.trim() ? C.border : C.violet,
-            color: '#fff', cursor: answered || !value.trim() ? 'default' : 'pointer',
-            fontSize: 15, fontWeight: 700, transition: 'all .2s',  
+            width:        '100%',
+            marginTop:    10,
+            padding:      '16px',
+            borderRadius: 14,
+            border:       'none',
+            background:   answered || !value.trim() ? C.border : C.violet,
+            color:        '#fff',
+            cursor:       answered || !value.trim() ? 'default' : 'pointer',
+            fontSize:     15,
+            fontWeight:   700,
+            transition:   'all .2s',
           }}>
           {validateLabel}
         </button>
@@ -243,41 +321,59 @@ export default function ArabicKeyboard({
           userSelect:   'none',
         }}>
 
-          {/* ── Poignée drag + resize ── */}
+          {/* ── Poignée drag ── */}
           <div
             onMouseDown={onDragStart}
             style={{
-              cursor:   dragging ? 'grabbing' : 'grab',
-              padding:  '10px 0 8px',
-              display:  'flex', alignItems: 'center', justifyContent: 'center',
-              borderBottom: `1px solid ${C.border}`, marginBottom: 10,
-              position: 'relative',
+              cursor:       dragging ? 'grabbing' : 'grab',
+              padding:      '10px 0 8px',
+              display:      'flex',
+              alignItems:   'center',
+              justifyContent: 'center',
+              borderBottom: `1px solid ${C.border}`,
+              marginBottom: 10,
+              position:     'relative',
             }}>
-            {/* Poignée centrale */}
             <div style={{ width: 40, height: 4, borderRadius: 2, background: C.border }} />
 
-            {/* Handle resize gauche */}
             <div
               onMouseDown={e => { e.stopPropagation(); onResizeStart(e) }}
               title="Redimensionner"
               style={{
-                position: 'absolute', left: 8, top: '50%', transform: 'translateY(-50%)',
-                cursor: 'ew-resize', padding: '4px 6px', borderRadius: 6,
-                background: C.violetLt, border: `1px solid ${C.border}`,
-                fontSize: 12, color: C.violet, userSelect: 'none',
+                position:  'absolute',
+                left:      8,
+                top:       '50%',
+                transform: 'translateY(-50%)',
+                cursor:    'ew-resize',
+                padding:   '4px 6px',
+                borderRadius: 6,
+                background: C.violetLt,
+                border:    `1px solid ${C.border}`,
+                fontSize:  12,
+                color:     C.violet,
+                userSelect: 'none' as const,
               }}>
               ↔
             </div>
 
-            {/* Bouton fermer */}
             <button
               onMouseDown={e => { e.stopPropagation(); setOpen(false); setPos({ x: 0, y: 0 }) }}
               style={{
-                position: 'absolute', right: 8, top: '50%', transform: 'translateY(-50%)',
-                width: 24, height: 24, borderRadius: 6,
-                background: C.violetLt, border: `1px solid ${C.border}`,
-                cursor: 'pointer', fontSize: 13, color: C.violet,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                position:  'absolute',
+                right:     8,
+                top:       '50%',
+                transform: 'translateY(-50%)',
+                width:     24,
+                height:    24,
+                borderRadius: 6,
+                background: C.violetLt,
+                border:    `1px solid ${C.border}`,
+                cursor:    'pointer',
+                fontSize:  13,
+                color:     C.violet,
+                display:   'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
               }}>
               ✕
             </button>
@@ -285,48 +381,50 @@ export default function ArabicKeyboard({
 
           {/* ── Harakats ── */}
           <div style={{ marginBottom: 8 }}>
-            
             <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap', direction: 'rtl' }}>
               {HARAKATS.map(h => (
-                <div key={h.unicode} style={{ position: 'relative',  alignItems: 'center' }}>
-                  {/* Tooltip */}
+                <div key={h.unicode} style={{ position: 'relative' }}>
                   {tooltip === h.unicode && (
                     <div style={{
-                      position: 'absolute', bottom: '110%', left: '50%',
+                      position:  'absolute',
+                      bottom:    '110%',
+                      left:      '50%',
                       transform: 'translateX(-50%)',
-                      background: C.violetDk, color: '#fff',
-                      fontSize: 11, fontWeight: 600, padding: '4px 10px',
-                      borderRadius: 8, whiteSpace: 'nowrap', zIndex: 10000,
+                      background: C.violetDk,
+                      color:     '#fff',
+                      fontSize:  11,
+                      fontWeight: 600,
+                      padding:   '4px 10px',
+                      borderRadius: 8,
+                      whiteSpace: 'nowrap',
+                      zIndex:    10000,
                       pointerEvents: 'none',
                     }}>
                       {h.name}
                       <div style={{
-                        position: 'absolute', top: '100%', left: '50%',
-                        transform: 'translateX(-50%)',
-                        width: 0, height: 0,
-                        borderLeft: '5px solid transparent',
+                        position:    'absolute',
+                        top:         '100%',
+                        left:        '50%',
+                        transform:   'translateX(-50%)',
+                        width:       0,
+                        height:      0,
+                        borderLeft:  '5px solid transparent',
                         borderRight: '5px solid transparent',
-                        borderTop: `5px solid ${C.violetDk}`,
+                        borderTop:   `5px solid ${C.violetDk}`,
                       }} />
                     </div>
                   )}
                   <button
-                    onMouseDown={e => { e.preventDefault(); insert(h.unicode) }}
+                    onMouseDown={e => { e.preventDefault(); saveSelection(); insert(h.unicode) }}
                     onMouseEnter={() => setTooltip(h.unicode)}
                     onMouseLeave={() => setTooltip(null)}
-                    style={{
-                      ...baseKey(h.unicode, { width: 44 }),
-                      // Afficher la harakat sur un ba pour la rendre visible
-                      fontSize: 26,
-                    }}>
-                    {/* ba + harakat pour rendre visible */}
+                    style={{ ...baseKey(h.unicode, { width: 44 }) }}>
                     <span style={{
                       fontFamily: "'Noto Naskh Arabic', serif",
-                      fontSize: 28,
+                      fontSize:   28,
                       fontWeight: 700,
-                      direction: 'rtl',
-                      alignItems: 'center',
-                      color: activeKey === h.unicode ? '#fff' : C.violetDk,
+                      direction:  'rtl',
+                      color:      activeKey === h.unicode ? '#fff' : C.violetDk,
                     }}>
                       {`ب${h.display}`}
                     </span>
@@ -345,20 +443,20 @@ export default function ArabicKeyboard({
                 {row.map(char => (
                   <button
                     key={char}
-                    onMouseDown={e => { e.preventDefault(); insert(char) }}
+                    onMouseDown={e => { e.preventDefault(); saveSelection(); insert(char) }}
                     style={baseKey(char, { width: char.length > 1 ? 46 : 38 })}
                     onMouseEnter={e => {
                       if (activeKey !== char) {
-                        ;(e.currentTarget as HTMLElement).style.background = C.violetLt
+                        ;(e.currentTarget as HTMLElement).style.background  = C.violetLt
                         ;(e.currentTarget as HTMLElement).style.borderColor = C.violet
-                        ;(e.currentTarget as HTMLElement).style.color = C.violet
+                        ;(e.currentTarget as HTMLElement).style.color       = C.violet
                       }
                     }}
                     onMouseLeave={e => {
                       if (activeKey !== char) {
-                        ;(e.currentTarget as HTMLElement).style.background = C.bg
+                        ;(e.currentTarget as HTMLElement).style.background  = C.bg
                         ;(e.currentTarget as HTMLElement).style.borderColor = C.border
-                        ;(e.currentTarget as HTMLElement).style.color = C.text
+                        ;(e.currentTarget as HTMLElement).style.color       = C.text
                       }
                     }}>
                     {char}
@@ -370,17 +468,20 @@ export default function ArabicKeyboard({
 
           {/* ── Barre inférieure ── */}
           <div style={{ display: 'flex', gap: 5, marginTop: 8 }}>
-            <button onMouseDown={e => { e.preventDefault(); insert(' ') }}
+            <button
+              onMouseDown={e => { e.preventDefault(); saveSelection(); insert(' ') }}
               style={{ flex: 3, height: 38, borderRadius: 8, border: `1.5px solid ${C.border}`, background: C.bg, cursor: 'pointer', fontSize: 12, color: C.text2, fontWeight: 600 }}>
               espace
             </button>
-            <button onMouseDown={e => { e.preventDefault(); backspace() }}
-              style={{ flex: 1, height: 38, borderRadius: 8, border: `1.5px solid ${C.border}`, background: C.bg, cursor: 'pointer', fontSize: 18, color: C.text2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <button
+              onMouseDown={e => { e.preventDefault(); saveSelection(); backspace() }}
+              style={{ flex: 1, height: 38, borderRadius: 8, border: `1.5px solid ${C.border}`, background: C.bg, cursor: 'pointer', fontSize: 22, color: C.text2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               ⌫
             </button>
-            <button onMouseDown={e => { e.preventDefault(); clear() }}
+            <button
+              onMouseDown={e => { e.preventDefault(); clear() }}
               style={{ flex: 1, height: 38, borderRadius: 8, border: `1.5px solid ${C.border}`, background: C.bg, cursor: 'pointer', fontSize: 11, color: C.text3, fontWeight: 700 }}>
-              Reset
+              Reseto
             </button>
           </div>
         </div>

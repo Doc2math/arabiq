@@ -76,6 +76,27 @@
             Lieu :     backend
             nom:       audio_delete.py
             utilité :  supprime tous les fichiers audio du dossier public/assets/audio
+
+        7. Alimenter le dataset
+             Lieu :     backend
+             nom:       export_dataset.py
+             utilité :  met à jour le dataset dans le dossier backend/dataset/
+             Commande:  python export_dataset.py --output ./dataset --format both
+             Fichier à mettre à jour: chaque fois que de nouvelles compétences sont
+             utilisé il faut les ajouter dans le fichier:
+             Exemple:
+             SKILLS = [
+                    # Degré 1 — Module 1 (déjà là)
+                    {"skill_id": "letter_recognition", ...},
+                    
+                    # Degré 2 — à ajouter quand les modules seront créés
+                    {"skill_id": "definite_article",   "skill_name": "Definite Article (al-)", "module": 1, "degree": 2, "category": "grammar"},
+                    {"skill_id": "gender",             "skill_name": "Masculine/Feminine",      "module": 2, "degree": 2, "category": "grammar"},
+                    {"skill_id": "singular_plural",    "skill_name": "Singular/Plural",         "module": 3, "degree": 2, "category": "grammar"},
+                    ...
+                ]
+
+        
            
 
             

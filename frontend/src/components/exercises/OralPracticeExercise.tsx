@@ -507,7 +507,7 @@ export default function OralPracticeExercise({
                 display: "flex", alignItems: "flex-start", gap: 10,
               }}>
                 <span style={{ fontSize: 20, flexShrink: 0, marginTop: 1 }}>💡</span>
-                <div style={{ fontSize: 13, color: rc.text, lineHeight: 1.65, fontStyle: "italic" }}>
+                <div style={{ fontSize: 18, color: C.green, lineHeight: 1.65, fontStyle: "italic" }}>
                   {resultRecommandation}
                 </div>
               </div>

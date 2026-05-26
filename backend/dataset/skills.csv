@@ -1,0 +1,11 @@
+skill_id,skill_name,module,degree,category
+letter_recognition,Letter Recognition,1,1,phonetics
+harakat_reading,Harakat Reading,1,1,phonetics
+long_vowels,Long Vowels,1,1,phonetics
+tanwin,Tanwin,1,1,phonetics
+letter_positions,Letter Positions,1,1,morphology
+word_reading,Word Reading,1,1,reading
+word_comprehension,Word Comprehension,1,1,comprehension
+word_writing,Word Writing,1,1,writing
+word_building,Word Building,1,1,morphology
+sentence_reading,Sentence Reading,1,1,reading

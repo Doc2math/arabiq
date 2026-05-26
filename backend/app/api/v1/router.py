@@ -9,12 +9,12 @@ from app.api.v1.endpoints.certifications import router as certifications_router
 from app.api.v1.endpoints.institution import router as institution_router
 from app.api.v1.endpoints.oral import router as oral_router
 from app.api.v1.endpoints.blog import router as blog_router
-
-
+from app.api.v1.endpoints import evaluation
 
 
 
 api_router = APIRouter(prefix="/api/v1")
+api_router.include_router(evaluation.router)
 api_router.include_router(blog_router)
 api_router.include_router(oral_router)
 api_router.include_router(auth_router)

@@ -1,0 +1,72 @@
+[
+  {
+    "skill_id": "letter_recognition",
+    "skill_name": "Letter Recognition",
+    "module": 1,
+    "degree": 1,
+    "category": "phonetics"
+  },
+  {
+    "skill_id": "harakat_reading",
+    "skill_name": "Harakat Reading",
+    "module": 1,
+    "degree": 1,
+    "category": "phonetics"
+  },
+  {
+    "skill_id": "long_vowels",
+    "skill_name": "Long Vowels",
+    "module": 1,
+    "degree": 1,
+    "category": "phonetics"
+  },
+  {
+    "skill_id": "tanwin",
+    "skill_name": "Tanwin",
+    "module": 1,
+    "degree": 1,
+    "category": "phonetics"
+  },
+  {
+    "skill_id": "letter_positions",
+    "skill_name": "Letter Positions",
+    "module": 1,
+    "degree": 1,
+    "category": "morphology"
+  },
+  {
+    "skill_id": "word_reading",
+    "skill_name": "Word Reading",
+    "module": 1,
+    "degree": 1,
+    "category": "reading"
+  },
+  {
+    "skill_id": "word_comprehension",
+    "skill_name": "Word Comprehension",
+    "module": 1,
+    "degree": 1,
+    "category": "comprehension"
+  },
+  {
+    "skill_id": "word_writing",
+    "skill_name": "Word Writing",
+    "module": 1,
+    "degree": 1,
+    "category": "writing"
+  },
+  {
+    "skill_id": "word_building",
+    "skill_name": "Word Building",
+    "module": 1,
+    "degree": 1,
+    "category": "morphology"
+  },
+  {
+    "skill_id": "sentence_reading",
+    "skill_name": "Sentence Reading",
+    "module": 1,
+    "degree": 1,
+    "category": "reading"
+  }
+]

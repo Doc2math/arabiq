@@ -1,0 +1,1739 @@
+[
+  {
+    "exercise_id": "m1l5_ex1",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.8
+  },
+  {
+    "exercise_id": "m1l3_ex2",
+    "skill_id": "long_vowels",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 0.909
+  },
+  {
+    "exercise_id": "m1l8_ex10",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 4,
+    "success_rate": 0.75
+  },
+  {
+    "exercise_id": "eval_hr_b1",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l6_ex1",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 23,
+    "success_rate": 0.913
+  },
+  {
+    "exercise_id": "eval_hr_b3",
+    "skill_id": "harakat_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 3,
+    "success_rate": 0.667
+  },
+  {
+    "exercise_id": "m1l1_ex7",
+    "skill_id": "letter_recognition",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 34,
+    "success_rate": 0.706
+  },
+  {
+    "exercise_id": "m1l10_ex4",
+    "skill_id": "sentence_reading",
+    "exercise_type": "word_order",
+    "type_label": "Word Ordering",
+    "module_id": 1,
+    "n_interactions": 9,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l5_ex1",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 7,
+    "success_rate": 0.714
+  },
+  {
+    "exercise_id": "m2l2_ex4",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 11,
+    "success_rate": 0.364
+  },
+  {
+    "exercise_id": "m2l6_ex1",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l8_ex6",
+    "skill_id": "word_building",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_tw_b2",
+    "skill_id": "tanwin",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_ww_b2",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 3,
+    "success_rate": 0.333
+  },
+  {
+    "exercise_id": "m1l2_ex2",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 14,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l10_ex_txa1",
+    "skill_id": "sentence_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 0.727
+  },
+  {
+    "exercise_id": "m2l1_ex7",
+    "skill_id": "letter_recognition",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 0.625
+  },
+  {
+    "exercise_id": "m2l6_ex2",
+    "skill_id": "word_comprehension",
+    "exercise_type": "matching",
+    "type_label": "Text Matching",
+    "module_id": 2,
+    "n_interactions": 5,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l3_ex7",
+    "skill_id": "long_vowels",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l7_ex5",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 0.75
+  },
+  {
+    "exercise_id": "m2l7_ex4",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 0.875
+  },
+  {
+    "exercise_id": "m1l5_ex6",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.9
+  },
+  {
+    "exercise_id": "m1l5_ex8",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.9
+  },
+  {
+    "exercise_id": "ex_oral_m1_1",
+    "skill_id": "word_reading",
+    "exercise_type": "oral_reading",
+    "type_label": "Oral Reading",
+    "module_id": 1,
+    "n_interactions": 3,
+    "success_rate": 0.0
+  },
+  {
+    "exercise_id": "m1l3_ex1",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 0.727
+  },
+  {
+    "exercise_id": "m1l4_ex8",
+    "skill_id": "tanwin",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.9
+  },
+  {
+    "exercise_id": "eval_ww_b1",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 0.5
+  },
+  {
+    "exercise_id": "eval_lv_b1",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 3,
+    "success_rate": 0.667
+  },
+  {
+    "exercise_id": "m1l4_ex3",
+    "skill_id": "tanwin",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l6_ex2",
+    "skill_id": "word_comprehension",
+    "exercise_type": "matching",
+    "type_label": "Text Matching",
+    "module_id": 1,
+    "n_interactions": 22,
+    "success_rate": 0.864
+  },
+  {
+    "exercise_id": "m2l7_ex12",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 0.667
+  },
+  {
+    "exercise_id": "m2l4_ex8",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 4,
+    "success_rate": 0.5
+  },
+  {
+    "exercise_id": "m2l9_ex3",
+    "skill_id": "sentence_reading",
+    "exercise_type": "word_order",
+    "type_label": "Word Ordering",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_sr_b2",
+    "skill_id": "sentence_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l3_ex2",
+    "skill_id": "long_vowels",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 4,
+    "success_rate": 0.75
+  },
+  {
+    "exercise_id": "m1l8_ex12",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 4,
+    "success_rate": 0.75
+  },
+  {
+    "exercise_id": "m2l10_ex4",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l8_ex5",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 18,
+    "success_rate": 0.889
+  },
+  {
+    "exercise_id": "m2l3_ex3",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 4,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l9_ex6",
+    "skill_id": "word_building",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 0.467
+  },
+  {
+    "exercise_id": "m1l11_ex8",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 0.067
+  },
+  {
+    "exercise_id": "m2l4_ex2",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.833
+  },
+  {
+    "exercise_id": "m2l6_ex6",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 5,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_wr_b2",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_wr_b1",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l7_ex3",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 9,
+    "success_rate": 0.778
+  },
+  {
+    "exercise_id": "m2l10_ex9",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.833
+  },
+  {
+    "exercise_id": "m2l8_ex1",
+    "skill_id": "word_building",
+    "exercise_type": "drag_drop",
+    "type_label": "Drag and Drop",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l6_ex_txa1",
+    "skill_id": "word_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 2,
+    "n_interactions": 5,
+    "success_rate": 0.6
+  },
+  {
+    "exercise_id": "m1l9_ex4",
+    "skill_id": "word_building",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l5_ex4",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.833
+  },
+  {
+    "exercise_id": "m2l9_ex5",
+    "skill_id": "sentence_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l9_ex1",
+    "skill_id": "word_building",
+    "exercise_type": "drag_drop",
+    "type_label": "Drag and Drop",
+    "module_id": 1,
+    "n_interactions": 16,
+    "success_rate": 0.875
+  },
+  {
+    "exercise_id": "m1l7_ex6",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l4_ex3",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 5,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l2_ex8",
+    "skill_id": "harakat_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 11,
+    "success_rate": 0.727
+  },
+  {
+    "exercise_id": "m2l9_ex2",
+    "skill_id": "sentence_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l2_ex7",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 13,
+    "success_rate": 0.923
+  },
+  {
+    "exercise_id": "m1l9_ex5",
+    "skill_id": "word_building",
+    "exercise_type": "drag_drop",
+    "type_label": "Drag and Drop",
+    "module_id": 1,
+    "n_interactions": 14,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_lv_b3",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l4_ex4",
+    "skill_id": "tanwin",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_lr_b2",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 1,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l10_ex10",
+    "skill_id": "word_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.833
+  },
+  {
+    "exercise_id": "m1l1_ex1",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 36,
+    "success_rate": 0.778
+  },
+  {
+    "exercise_id": "m2l7_ex2",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 0.75
+  },
+  {
+    "exercise_id": "m1l8_ex8",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 0.867
+  },
+  {
+    "exercise_id": "m1l2_ex6",
+    "skill_id": "harakat_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 18,
+    "success_rate": 0.889
+  },
+  {
+    "exercise_id": "m1l8_ex4",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 16,
+    "success_rate": 0.875
+  },
+  {
+    "exercise_id": "m2l4_ex7",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l2_ex1",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 11,
+    "success_rate": 0.636
+  },
+  {
+    "exercise_id": "m1l8_ex6",
+    "skill_id": "word_writing",
+    "exercise_type": "drawing",
+    "type_label": "Letter Drawing",
+    "module_id": 1,
+    "n_interactions": 7,
+    "success_rate": 0.857
+  },
+  {
+    "exercise_id": "eval_lp_b1",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l7_ex3",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 8,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l5_ex2",
+    "skill_id": "word_comprehension",
+    "exercise_type": "matching",
+    "type_label": "Text Matching",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_wb_b1",
+    "skill_id": "word_building",
+    "exercise_type": "drag_drop",
+    "type_label": "Drag and Drop",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l4_ex6",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 5,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l9_ex2",
+    "skill_id": "word_building",
+    "exercise_type": "drag_drop",
+    "type_label": "Drag and Drop",
+    "module_id": 1,
+    "n_interactions": 14,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l7_ex_txa1",
+    "skill_id": "word_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 8,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l2_ex6",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 11,
+    "success_rate": 0.636
+  },
+  {
+    "exercise_id": "m2l7_ex10",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 0.667
+  },
+  {
+    "exercise_id": "m1l5_ex5",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.9
+  },
+  {
+    "exercise_id": "m1l3_ex3",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 0.909
+  },
+  {
+    "exercise_id": "m1l4_ex6",
+    "skill_id": "tanwin",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.9
+  },
+  {
+    "exercise_id": "m1l11_ex4",
+    "skill_id": "tanwin",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 16,
+    "success_rate": 0.938
+  },
+  {
+    "exercise_id": "m1l10_ex5",
+    "skill_id": "sentence_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l6_ex3",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 22,
+    "success_rate": 0.818
+  },
+  {
+    "exercise_id": "m1l7_ex5",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 9,
+    "success_rate": 0.889
+  },
+  {
+    "exercise_id": "m2l7_ex6",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 9,
+    "success_rate": 0.778
+  },
+  {
+    "exercise_id": "m1l11_ex3",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 16,
+    "success_rate": 0.938
+  },
+  {
+    "exercise_id": "m2l8_ex3",
+    "skill_id": "word_building",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 0.0
+  },
+  {
+    "exercise_id": "m1l2_ex5",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 0.867
+  },
+  {
+    "exercise_id": "m1l10_ex3",
+    "skill_id": "sentence_reading",
+    "exercise_type": "word_order",
+    "type_label": "Word Ordering",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.8
+  },
+  {
+    "exercise_id": "m2l2_ex5",
+    "skill_id": "harakat_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 11,
+    "success_rate": 0.727
+  },
+  {
+    "exercise_id": "m1l9_ex3",
+    "skill_id": "word_building",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 16,
+    "success_rate": 0.938
+  },
+  {
+    "exercise_id": "m2l1_ex5",
+    "skill_id": "letter_recognition",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l10_ex1",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l10_ex3",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.5
+  },
+  {
+    "exercise_id": "m1l5_ex4",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.8
+  },
+  {
+    "exercise_id": "m2l1_ex2",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l11_ex5",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 16,
+    "success_rate": 0.938
+  },
+  {
+    "exercise_id": "m2l5_ex5",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l1_ex4",
+    "skill_id": "letter_recognition",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 0.75
+  },
+  {
+    "exercise_id": "m2l10_ex2",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.833
+  },
+  {
+    "exercise_id": "eval_wb_b2",
+    "skill_id": "word_building",
+    "exercise_type": "drag_drop",
+    "type_label": "Drag and Drop",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l1_ex3",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 35,
+    "success_rate": 0.857
+  },
+  {
+    "exercise_id": "m2l10_ex6",
+    "skill_id": "word_comprehension",
+    "exercise_type": "matching",
+    "type_label": "Text Matching",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.833
+  },
+  {
+    "exercise_id": "m1l3_ex5",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 13,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l3_ex6",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 12,
+    "success_rate": 0.833
+  },
+  {
+    "exercise_id": "m1l8_ex7",
+    "skill_id": "word_writing",
+    "exercise_type": "drawing",
+    "type_label": "Letter Drawing",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_wc_b2",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l2_ex1",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 16,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l8_ex2",
+    "skill_id": "word_building",
+    "exercise_type": "drag_drop",
+    "type_label": "Drag and Drop",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l8_ex2",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 18,
+    "success_rate": 0.944
+  },
+  {
+    "exercise_id": "m2l1_ex6",
+    "skill_id": "letter_recognition",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l3_ex4",
+    "skill_id": "long_vowels",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 0.818
+  },
+  {
+    "exercise_id": "m1l7_ex1",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 8,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l2_ex7",
+    "skill_id": "harakat_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 2,
+    "n_interactions": 10,
+    "success_rate": 0.5
+  },
+  {
+    "exercise_id": "m2l3_ex6",
+    "skill_id": "long_vowels",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 2,
+    "n_interactions": 4,
+    "success_rate": 0.5
+  },
+  {
+    "exercise_id": "m2l9_ex_txa1",
+    "skill_id": "sentence_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l6_ex4",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 23,
+    "success_rate": 0.957
+  },
+  {
+    "exercise_id": "m2l5_ex3",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 7,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l9_ex6",
+    "skill_id": "sentence_reading",
+    "exercise_type": "matching",
+    "type_label": "Text Matching",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_sr_b1",
+    "skill_id": "sentence_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l1_ex4",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 37,
+    "success_rate": 0.649
+  },
+  {
+    "exercise_id": "eval_lp_b2",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l2_ex3",
+    "skill_id": "harakat_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 0.8
+  },
+  {
+    "exercise_id": "m1l1_ex2",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 39,
+    "success_rate": 0.897
+  },
+  {
+    "exercise_id": "m2l3_ex1",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 4,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l7_ex9",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l6_ex_txa1",
+    "skill_id": "word_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 21,
+    "success_rate": 0.476
+  },
+  {
+    "exercise_id": "m1l8_ex9",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 4,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_wc_b1",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l7_ex8",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l1_ex8",
+    "skill_id": "letter_recognition",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 34,
+    "success_rate": 0.618
+  },
+  {
+    "exercise_id": "m1l11_ex11",
+    "skill_id": "word_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 0.867
+  },
+  {
+    "exercise_id": "m2l5_ex6",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l6_ex5",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 27,
+    "success_rate": 0.889
+  },
+  {
+    "exercise_id": "m1l5_ex2",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.8
+  },
+  {
+    "exercise_id": "m2l2_ex3",
+    "skill_id": "harakat_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 11,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l3_ex4",
+    "skill_id": "long_vowels",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 4,
+    "success_rate": 0.25
+  },
+  {
+    "exercise_id": "eval_lr_b3",
+    "skill_id": "letter_recognition",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 1,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l10_ex2",
+    "skill_id": "sentence_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 0.909
+  },
+  {
+    "exercise_id": "m2l8_ex4",
+    "skill_id": "word_building",
+    "exercise_type": "drag_drop",
+    "type_label": "Drag and Drop",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l8_ex11",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 4,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l7_ex4",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 9,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l7_ex7",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 0.625
+  },
+  {
+    "exercise_id": "m1l5_ex7",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.9
+  },
+  {
+    "exercise_id": "m1l4_ex7",
+    "skill_id": "tanwin",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 9,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l8_ex1",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 20,
+    "success_rate": 0.75
+  },
+  {
+    "exercise_id": "m2l4_ex5",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l11_ex10",
+    "skill_id": "word_building",
+    "exercise_type": "drag_drop",
+    "type_label": "Drag and Drop",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l2_ex4",
+    "skill_id": "harakat_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 0.8
+  },
+  {
+    "exercise_id": "m2l2_ex2",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 12,
+    "success_rate": 0.667
+  },
+  {
+    "exercise_id": "eval_tw_b1",
+    "skill_id": "tanwin",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 0.5
+  },
+  {
+    "exercise_id": "m1l6_ex6",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 23,
+    "success_rate": 0.87
+  },
+  {
+    "exercise_id": "m1l11_ex6",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 16,
+    "success_rate": 0.812
+  },
+  {
+    "exercise_id": "m2l1_ex8",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 7,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l10_ex8",
+    "skill_id": "sentence_reading",
+    "exercise_type": "word_order",
+    "type_label": "Word Ordering",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.667
+  },
+  {
+    "exercise_id": "m2l3_ex5",
+    "skill_id": "long_vowels",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 4,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l4_ex4",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 4,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l4_ex2",
+    "skill_id": "tanwin",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.9
+  },
+  {
+    "exercise_id": "m2l6_ex4",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.667
+  },
+  {
+    "exercise_id": "m1l10_ex6",
+    "skill_id": "sentence_reading",
+    "exercise_type": "matching",
+    "type_label": "Text Matching",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.9
+  },
+  {
+    "exercise_id": "m1l2_ex8",
+    "skill_id": "harakat_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 13,
+    "success_rate": 0.846
+  },
+  {
+    "exercise_id": "m1l8_ex3",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 1,
+    "n_interactions": 18,
+    "success_rate": 0.722
+  },
+  {
+    "exercise_id": "m2l6_ex5",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 5,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l10_ex1",
+    "skill_id": "sentence_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 11,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l11_ex9",
+    "skill_id": "sentence_reading",
+    "exercise_type": "word_order",
+    "type_label": "Word Ordering",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 0.933
+  },
+  {
+    "exercise_id": "m1l7_ex_img1",
+    "skill_id": "word_comprehension",
+    "exercise_type": "matching_image_word",
+    "type_label": "Image-Word Matching",
+    "module_id": 1,
+    "n_interactions": 7,
+    "success_rate": 0.0
+  },
+  {
+    "exercise_id": "m2l10_ex7",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.833
+  },
+  {
+    "exercise_id": "m1l5_ex3",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 0.9
+  },
+  {
+    "exercise_id": "m1l4_ex1",
+    "skill_id": "tanwin",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 10,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l6_ex_img1",
+    "skill_id": "word_comprehension",
+    "exercise_type": "matching_image_word",
+    "type_label": "Image-Word Matching",
+    "module_id": 1,
+    "n_interactions": 22,
+    "success_rate": 0.682
+  },
+  {
+    "exercise_id": "m1l11_ex2",
+    "skill_id": "harakat_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 16,
+    "success_rate": 0.375
+  },
+  {
+    "exercise_id": "m2l5_ex_txa1",
+    "skill_id": "word_reading",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.667
+  },
+  {
+    "exercise_id": "m2l6_ex3",
+    "skill_id": "word_comprehension",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 5,
+    "success_rate": 0.8
+  },
+  {
+    "exercise_id": "m2l9_ex1",
+    "skill_id": "sentence_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l11_ex1",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 17,
+    "success_rate": 0.941
+  },
+  {
+    "exercise_id": "m2l4_ex1",
+    "skill_id": "letter_positions",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 5,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l8_ex5",
+    "skill_id": "word_building",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l1_ex6",
+    "skill_id": "letter_recognition",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 36,
+    "success_rate": 0.778
+  },
+  {
+    "exercise_id": "m2l10_ex5",
+    "skill_id": "word_reading",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 2,
+    "n_interactions": 6,
+    "success_rate": 0.833
+  },
+  {
+    "exercise_id": "m2l7_ex11",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l4_ex5",
+    "skill_id": "tanwin",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 1,
+    "n_interactions": 9,
+    "success_rate": 0.778
+  },
+  {
+    "exercise_id": "m1l11_ex7",
+    "skill_id": "word_comprehension",
+    "exercise_type": "matching",
+    "type_label": "Text Matching",
+    "module_id": 1,
+    "n_interactions": 15,
+    "success_rate": 0.867
+  },
+  {
+    "exercise_id": "m2l7_ex1",
+    "skill_id": "word_writing",
+    "exercise_type": "input_text",
+    "type_label": "Text Input",
+    "module_id": 2,
+    "n_interactions": 8,
+    "success_rate": 0.75
+  },
+  {
+    "exercise_id": "m2l9_ex4",
+    "skill_id": "sentence_reading",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 3,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_lv_b2",
+    "skill_id": "long_vowels",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 2,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "eval_lr_b4",
+    "skill_id": "letter_recognition",
+    "exercise_type": "audio_choice",
+    "type_label": "Audio-based Multiple Choice",
+    "module_id": 1,
+    "n_interactions": 1,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m2l1_ex3",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 9,
+    "success_rate": 0.889
+  },
+  {
+    "exercise_id": "m1l1_ex5",
+    "skill_id": "letter_recognition",
+    "exercise_type": "matching_text_audio",
+    "type_label": "Text-Audio Matching",
+    "module_id": 1,
+    "n_interactions": 36,
+    "success_rate": 0.694
+  },
+  {
+    "exercise_id": "m2l1_ex1",
+    "skill_id": "letter_recognition",
+    "exercise_type": "mcq",
+    "type_label": "Multiple Choice Question",
+    "module_id": 2,
+    "n_interactions": 9,
+    "success_rate": 1.0
+  },
+  {
+    "exercise_id": "m1l7_ex2",
+    "skill_id": "word_comprehension",
+    "exercise_type": "matching",
+    "type_label": "Text Matching",
+    "module_id": 1,
+    "n_interactions": 9,
+    "success_rate": 0.889
+  }
+]

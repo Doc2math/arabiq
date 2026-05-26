@@ -94,19 +94,25 @@ function MCQExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l: numb
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-      {ex.type === 'audio_choice' && (
-        <div style={{ textAlign: 'center', marginBottom: 8 }}>
-          <button onClick={() => playSound(ex.audioUrl, ex.promptAr)}
-            style={{ width: 72, height: 72, borderRadius: '50%', background: C.orange, border: 'none', cursor: 'pointer', fontSize: 28, color: '#fff' }}>▶</button>
-        </div>
-      )}
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+    {ex.type === 'audio_choice' && (
+      <div style={{ textAlign: 'center', marginBottom: 8 }}>
+        <button onClick={() => playSound(ex.audioUrl, ex.promptAr)}
+          style={{ width: 72, height: 72, borderRadius: '50%', background: C.orange, border: 'none', cursor: 'pointer', fontSize: 28, color: '#fff' }}>▶</button>
+      </div>
+    )}
+    <div style={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(2, 1fr)', 
+      gap: 10 
+    }}>
       {(opts as string[]).map((opt: string, i: number) => {
         const state = !answered ? 'idle' : i === selected && i === correctIdx ? 'correct' : i === selected ? 'wrong' : i === correctIdx ? 'show' : 'idle'
         return <OptionBtn key={i} label={String.fromCharCode(65 + i)} text={opt} state={state} onClick={() => handle(i)} />
       })}
     </div>
-  )
+  </div>
+)
 }
 
 // ── Input texte ─────────────────────────────────────────────
@@ -200,7 +206,7 @@ function DrawingExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l: 
 function DragDropExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l: number) => void }) {
   const total = ex.targetLength ?? ex.letters?.length ?? 4
   const [slots, setSlots] = useState<(string | null)[]>(Array(total).fill(null))
-  const [available, setAvailable] = useState<string[]>(ex.letters ?? [])
+  const [available, setAvailable] = useState<string[]>(() => shuffle(ex.letters ?? []))
   const [answered, setAnswered] = useState(false)
   const [correct, setCorrect] = useState<boolean | null>(null)
   const startTime = useRef(Date.now())
@@ -248,11 +254,10 @@ function DragDropExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l:
           </button>
         ))}
       </div>
-      {!answered && <button onClick={() => { setSlots(Array(total).fill(null)); setAvailable(ex.letters ?? []) }} style={{ fontSize: 12, color: C.text3, background: 'none', border: 'none', cursor: 'pointer' }}>↺ Réinitialiser</button>}
+      {!answered && <button onClick={() => { setSlots(Array(total).fill(null)); setAvailable(shuffle(ex.letters ?? [])) }} style={{ fontSize: 12, color: C.text3, background: 'none', border: 'none', cursor: 'pointer' }}>↺ Réinitialiser</button>}
     </div>
   )
-}
-
+}                                                                        
 // ── Word Order ──────────────────────────────────────────────
 function WordOrderExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l: number) => void }) {
   const [chosen, setChosen]       = useState<string[]>([])
@@ -343,7 +348,14 @@ function WordOrderExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l
 
 // ── Matching texte ↔ texte ──────────────────────────────────
 function MatchingExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l: number) => void }) {
+  const PAIR_COLORS = [
+  { bg: '#EDE8FB', border: '#6C3FC5', text: '#3D2280' },
+  { bg: '#FEF0E3', border: '#F07C1E', text: '#7A3A00' },
+  { bg: '#E3F7E8', border: '#2BA84A', text: '#1A6630' },
+  { bg: '#E6F1FB', border: '#1976D2', text: '#0D47A1' },
+   ]
   const pairs = ex.pairs ?? []
+  const [pairColors, setPairColors] = useState<Record<string, number>>({})
   const [shuffledAr] = useState<any[]>(() => shuffle(pairs))
   const [shuffledFr] = useState<string[]>(() => shuffle(pairs.map((p: any) => p.fr as string)))
   const [selectedAr, setSelectedAr] = useState<string | null>(null)
@@ -356,11 +368,12 @@ function MatchingExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l:
 
   const selectAr = (ar: string) => { if (validated) return; setSelectedAr(ar === selectedAr ? null : ar) }
   const selectFr = (fr: string) => {
-    if (!selectedAr || validated) return
-    setAssociations(prev => ({ ...prev, [selectedAr]: fr }))
-    setSelectedAr(null)
-  }
-
+  if (!selectedAr || validated) return
+  const colorIdx = Object.keys(associations).length % PAIR_COLORS.length
+  setPairColors(prev => ({ ...prev, [selectedAr]: colorIdx }))
+  setAssociations(prev => ({ ...prev, [selectedAr]: fr }))
+  setSelectedAr(null)
+    }
   const validate = () => {
     if (!allAssociated || validated) return
     const res: Record<string, boolean> = {}
@@ -373,21 +386,31 @@ function MatchingExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l:
   const getFrForAr = (ar: string) => associations[ar] ?? null
 
   const arColor = (ar: string) => {
-    if (validated && results) return results[ar] ? { bg: C.greenLt, border: C.green, text: C.green } : { bg: C.redLt, border: C.red, text: C.red }
-    if (selectedAr === ar)        return { bg: C.violetLt, border: C.violet, text: C.violet }
-    if (associations[ar])         return { bg: '#F0EDF8',  border: C.violet + '60', text: C.text }
-    return { bg: C.white, border: C.border, text: C.text }
+  if (validated && results) return results[ar] 
+    ? { bg: C.greenLt, border: C.green, text: C.green } 
+    : { bg: C.redLt, border: C.red, text: C.red }
+  if (selectedAr === ar) return { bg: C.violetLt, border: C.violet, text: C.violet }
+  if (associations[ar] !== undefined && pairColors[ar] !== undefined) {
+    const col = PAIR_COLORS[pairColors[ar]]
+    return { bg: col.bg, border: col.border, text: col.text }
   }
+  return { bg: C.white, border: C.border, text: C.text }
+}
 
   const frColor = (fr: string) => {
-    if (validated && results) {
-      const assocAr = Object.keys(associations).find(a => associations[a] === fr)
-      if (assocAr) return results[assocAr] ? { bg: C.greenLt, border: C.green, text: C.green } : { bg: C.redLt, border: C.red, text: C.red }
-    }
-    if (Object.values(associations).includes(fr)) return { bg: '#F0EDF8', border: C.violet + '60', text: C.text }
-    if (selectedAr) return { bg: C.violetLt + '60', border: C.violet + '40', text: C.text }
-    return { bg: C.white, border: C.border, text: C.text }
+  if (validated && results) {
+    const assocAr = Object.keys(associations).find(a => associations[a] === fr)
+    if (assocAr) return results[assocAr] 
+      ? { bg: C.greenLt, border: C.green, text: C.green } 
+      : { bg: C.redLt, border: C.red, text: C.red }
   }
+  const assocAr = Object.keys(associations).find(a => associations[a] === fr)
+  if (assocAr && pairColors[assocAr] !== undefined) {
+    const col = PAIR_COLORS[pairColors[assocAr]]
+    return { bg: col.bg, border: col.border, text: col.text }
+  }
+  return { bg: C.white, border: C.border, text: C.text }
+}
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -400,7 +423,7 @@ function MatchingExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: boolean, l:
               <div key={p.ar} onClick={() => selectAr(p.ar)}
                 style={{ borderRadius: 12, border: `2.5px solid ${c.border}`, background: c.bg, padding: '10px 8px', cursor: validated ? 'default' : 'pointer', transition: 'all .15s', textAlign: 'center' as const }}>
                 <div style={{ fontFamily: "'Noto Naskh Arabic',serif", fontSize: 28, color: c.text, direction: 'rtl' }}>{p.ar}</div>
-                {getFrForAr(p.ar) && !validated && <div style={{ fontSize: 10, color: C.violet, marginTop: 4, fontWeight: 600 }}>→ {getFrForAr(p.ar)}</div>}
+                
                 {validated && results && <div style={{ fontSize: 11, marginTop: 4, fontWeight: 700, color: c.text }}>{results[p.ar] ? '✓' : `✗ → ${p.fr}`}</div>}
               </div>
             )
@@ -641,8 +664,10 @@ function MatchingTextAudioExercise({ ex, onAnswer }: { ex: any; onAnswer: (c: bo
 
 // ── Carte d'exercice ────────────────────────────────────────
 function ExerciseCard({ ex, index, total, onAnswer, disabled }: {
+  
   ex: any; index: number; total: number; onAnswer: (c: boolean, l: number) => void; disabled: boolean
 }) {
+  
   const [answered, setAnswered] = useState(false)
   const [wasCorrect, setWasCorrect] = useState<boolean | null>(null)
   const prompt = ex.prompts?.length ? ex.prompts[Math.floor(Math.random() * ex.prompts.length)] : ex.prompt
@@ -827,26 +852,47 @@ export default function LessonPage() {
   const [loading, setLoading]           = useState(true)
   const [certLoading, setCertLoading]   = useState(false)
   const [certData, setCertData]         = useState<any>(null)
+  const [evalSummary, setEvalSummary] = useState<any>(null)
 
-  useEffect(() => {
-    curriculumApi.lesson(lessonId).then(res => {
-      const l = res.data
-      setLesson(l)
-      setModuleId(l.module_id ?? 1)
+useEffect(() => {
+  curriculumApi.lesson(lessonId).then(res => {
+    const l = res.data
+    setLesson(l)
+    setModuleId(l.module_id ?? 1)
+
+    if (l.lesson_type === 'evaluation') {
+      // Évaluation dynamique selon BKT
+      setPhase('exercises')
+      api.get(`/api/v1/curriculum/evaluation/module/${l.module_id ?? 1}?degree=1`)
+        .then(r => {
+          const exs = r.data.exercises ?? []
+          setExercises(shuffle(exs))
+        })
+        .catch(() => {
+          // Fallback sur les exercices statiques
+          const exs = l.content?.exercises ?? []
+          const masteryMap = JSON.parse(localStorage.getItem('langdad_mastery') ?? '{}')
+          setExercises(resolveExercises(exs, masteryMap))
+        })
+    } else if (l.lesson_type === 'oral_practice') {
+      setPhase('exercises')
+      const exs = l.content?.exercises ?? []
+      const masteryMap = JSON.parse(localStorage.getItem('langdad_mastery') ?? '{}')
+      setExercises(resolveExercises(exs, masteryMap))
+    } else {
       const exs = l.content?.exercises ?? []
       const masteryMap = JSON.parse(localStorage.getItem('langdad_mastery') ?? '{}')
       const resolved = resolveExercises(exs, masteryMap)
-      setExercises(l.lesson_type === 'evaluation' ? resolved : shuffle(resolved))
-      if (l.lesson_type === 'evaluation' || l.lesson_type === 'oral_practice') {
-        setPhase('exercises')
-      }
-      if (l.module_id) {
-        curriculumApi.lessons(l.module_id)
-          .then(r => setSiblings([...r.data].sort((a: any, b: any) => a.sort_order - b.sort_order)))
-          .catch(() => {})
-      }
-    }).catch(() => {}).finally(() => setLoading(false))
-  }, [lessonId])
+      setExercises(shuffle(resolved))
+    }
+
+    if (l.module_id) {
+      curriculumApi.lessons(l.module_id)
+        .then(r => setSiblings([...r.data].sort((a: any, b: any) => a.sort_order - b.sort_order)))
+        .catch(() => {})
+    }
+  }).catch(() => {}).finally(() => setLoading(false))
+}, [lessonId])
 
   useEffect(() => {
     if (lesson?.lesson_type === 'oral_practice') {
@@ -861,15 +907,21 @@ export default function LessonPage() {
   const prevLesson = curIdx > 0 ? siblings[curIdx - 1] : null
   const nextLesson = curIdx < siblings.length - 1 ? siblings[curIdx + 1] : null
   const totalEx    = exercises.length
+  
 
-  const handleAnswer = useCallback(async (isCorrect: boolean, latency: number) => {
+
+
+ const handleAnswer = useCallback(async (isCorrect: boolean, latency: number) => {
     if (!lesson) return
     setProcessing(true)
     const ex = exercises[currentEx]
     if (isCorrect) { setCorrectCount(c => c + 1); setXpEarned(x => x + (ex?.xpReward ?? 5)) }
 
+    // Vérifier si la leçon est déjà complétée (ne pas recompter le BKT)
+    const alreadyCompleted = siblings.find((s: any) => s.id === lessonId)?.completed_at
+
     try {
-      if (lesson.lesson_type !== 'oral_practice') {
+      if (lesson.lesson_type !== 'oral_practice' && !alreadyCompleted) {
         await api.post('/api/v1/bkt/log', {
           lesson_id:        lessonId,
           exercise_id:      ex?.id ?? 'unknown',
@@ -910,7 +962,7 @@ export default function LessonPage() {
       setCurrentEx(i => i + 1)
     }
     setProcessing(false)
-  }, [lesson, currentEx, totalEx, correctCount, exercises, lessonId, moduleId])
+  }, [lesson, currentEx, totalEx, correctCount, exercises, lessonId, moduleId, siblings])
 
   const handleGetCert = async () => {
     setCertLoading(true)
@@ -932,12 +984,22 @@ export default function LessonPage() {
     }
   }
 
-  const resetLesson = () => {
-    setPhase('exercises'); setCurrentEx(0); setCorrectCount(0); setXpEarned(0); setFinished(false)
+ const resetLesson = () => {
+  const nextPhase = lesson?.lesson_type === 'evaluation' ? 'intro' : 'exercises'
+  setPhase(nextPhase); setCurrentEx(0); setCorrectCount(0); setXpEarned(0); setFinished(false)
+  if (lesson?.lesson_type === 'evaluation') {
+    setEvalSummary(null)
+    api.get(`/api/v1/curriculum/evaluation/module/${moduleId}?degree=1`)
+      .then(r => { setExercises(shuffle(r.data.exercises ?? [])); setEvalSummary(r.data) })
+      .catch(() => {})
+  } else {
     const exs = lesson?.content?.exercises ?? []
-    setExercises(lesson?.lesson_type === 'evaluation' ? exs : shuffle(exs))
+    const masteryMap = JSON.parse(localStorage.getItem('langdad_mastery') ?? '{}')
+    const resolved = shuffle(resolveExercises(exs, masteryMap))
+    
+    setExercises(resolved)
   }
-
+}
   if (!user || loading) return <div style={{ padding: 60, textAlign: 'center', color: C.text3 }}>Chargement…</div>
   if (!lesson) return <div style={{ padding: 60, textAlign: 'center', color: C.text2 }}>Leçon introuvable.</div>
 
@@ -947,6 +1009,7 @@ export default function LessonPage() {
 
   // ── Page de fin ──────────────────────────────────────────
   if (finished) {
+    
     if (lesson.lesson_type === 'oral_practice') {
       return (
         <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 20px' }}>

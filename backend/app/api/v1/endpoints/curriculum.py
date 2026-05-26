@@ -1,6 +1,5 @@
 """
-Endpoints curriculum mis à jour — app/api/v1/endpoints/curriculum.py
-Ajout : GET /curriculum/parts
+Endpoints curriculum — app/api/v1/endpoints/curriculum.py
 """
 
 from fastapi import APIRouter, Depends, HTTPException, status
@@ -12,6 +11,7 @@ from app.api.deps import get_current_user
 from app.models.models import User, Module, Course, Lesson, LessonProgress, Part
 from pydantic import BaseModel
 from typing import Optional
+from datetime import datetime
 import uuid
 
 router = APIRouter(prefix="/curriculum", tags=["curriculum"])
@@ -27,6 +27,7 @@ class LessonRead(BaseModel):
     sort_order: int
     content: dict
     is_completed: bool
+    completed_at: Optional[datetime] = None
     module_id: int
 
     class Config:
@@ -45,6 +46,7 @@ class ModuleRead(BaseModel):
     lessons_count: int = 0
     completed_count: int = 0
     total_xp: int = 0
+    is_module_completed: bool = False  # toutes les leçons non-oral complétées
 
     class Config:
         from_attributes = True
@@ -68,13 +70,14 @@ class PartRead(BaseModel):
         from_attributes = True
 
 
-# ── Helper : leçons complétées ────────────────────────────────
-async def get_completed_ids(user_id: uuid.UUID, db: AsyncSession) -> set[int]:
+# ── Helper : progressions complétées ────────────────────────────
+async def get_completed_map(user_id: uuid.UUID, db: AsyncSession) -> dict[int, datetime]:
+    """Retourne {lesson_id: completed_at} pour toutes les leçons complétées."""
     result = await db.execute(
-        select(LessonProgress.lesson_id)
+        select(LessonProgress.lesson_id, LessonProgress.completed_at)
         .where(LessonProgress.user_id == user_id)
     )
-    return set(r[0] for r in result.all())
+    return {r[0]: r[1] for r in result.all()}
 
 
 # ── GET /curriculum/parts ─────────────────────────────────────
@@ -83,8 +86,8 @@ async def get_parts(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    """Retourne toutes les parties avec leurs modules et progression."""
-    completed_ids = await get_completed_ids(current_user.id, db)
+    completed_map = await get_completed_map(current_user.id, db)
+    completed_ids = set(completed_map.keys())
 
     result = await db.execute(
         select(Part)
@@ -96,22 +99,36 @@ async def get_parts(
     part_reads = []
     for part in parts:
         module_reads = []
-        total_lessons = 0
+        total_lessons    = 0
         completed_lessons = 0
 
         for mod in part.modules:
-            # Leçons du module
             les_result = await db.execute(
                 select(Lesson)
                 .join(Course, Lesson.course_id == Course.id)
                 .where(Course.module_id == mod.id)
+                .order_by(Lesson.sort_order)
             )
             lessons = les_result.scalars().all()
-            lesson_ids = [l.id for l in lessons]
-            mod_completed = len([lid for lid in lesson_ids if lid in completed_ids])
-            mod_xp = sum(l.xp_reward for l in lessons)
 
-            total_lessons += len(lessons)
+            # Leçons non-oral (comptent pour la progression du module)
+            non_oral_lessons = [l for l in lessons if l.lesson_type != 'oral_practice']
+            oral_lessons      = [l for l in lessons if l.lesson_type == 'oral_practice']
+
+            # Oral complété → ne pas compter dans les leçons visibles
+            oral_completed_ids = {l.id for l in oral_lessons if l.id in completed_ids}
+
+            lesson_ids    = [l.id for l in non_oral_lessons]
+            mod_completed = len([lid for lid in lesson_ids if lid in completed_ids])
+            mod_xp        = sum(l.xp_reward for l in lessons)
+
+            # Visible count = leçons non-oral + leçons oral NON complétées
+            visible_lessons = len(non_oral_lessons) + len([l for l in oral_lessons if l.id not in completed_ids])
+
+            # Module complété = toutes les leçons non-oral complétées
+            is_module_completed = len(lesson_ids) > 0 and mod_completed == len(lesson_ids)
+
+            total_lessons     += visible_lessons
             completed_lessons += mod_completed
 
             module_reads.append(ModuleRead(
@@ -119,9 +136,10 @@ async def get_parts(
                 description=mod.description, arabic_ratio=mod.arabic_ratio,
                 sort_order=mod.sort_order, is_premium=mod.is_premium,
                 part_id=mod.part_id,
-                lessons_count=len(lessons),
+                lessons_count=visible_lessons,
                 completed_count=mod_completed,
                 total_xp=mod_xp,
+                is_module_completed=is_module_completed,
             ))
 
         part_reads.append(PartRead(
@@ -143,11 +161,10 @@ async def get_modules(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    completed_ids = await get_completed_ids(current_user.id, db)
+    completed_map = await get_completed_map(current_user.id, db)
+    completed_ids = set(completed_map.keys())
 
-    result = await db.execute(
-        select(Module).order_by(Module.sort_order)
-    )
+    result = await db.execute(select(Module).order_by(Module.sort_order))
     modules = result.scalars().all()
 
     module_reads = []
@@ -158,8 +175,10 @@ async def get_modules(
             .where(Course.module_id == mod.id)
         )
         lessons = les_result.scalars().all()
-        lesson_ids = [l.id for l in lessons]
+        non_oral  = [l for l in lessons if l.lesson_type != 'oral_practice']
+        lesson_ids = [l.id for l in non_oral]
         mod_completed = len([lid for lid in lesson_ids if lid in completed_ids])
+        is_module_completed = len(lesson_ids) > 0 and mod_completed == len(lesson_ids)
 
         module_reads.append(ModuleRead(
             id=mod.id, slug=mod.slug, title=mod.title,
@@ -169,6 +188,7 @@ async def get_modules(
             lessons_count=len(lessons),
             completed_count=mod_completed,
             total_xp=sum(l.xp_reward for l in lessons),
+            is_module_completed=is_module_completed,
         ))
 
     return module_reads
@@ -181,7 +201,8 @@ async def get_module_lessons(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    completed_ids = await get_completed_ids(current_user.id, db)
+    completed_map = await get_completed_map(current_user.id, db)
+    completed_ids = set(completed_map.keys())
 
     result = await db.execute(
         select(Lesson)
@@ -191,16 +212,21 @@ async def get_module_lessons(
     )
     lessons = result.scalars().all()
 
-    return [
-        LessonRead(
+    lesson_reads = []
+    for l in lessons:
+        # Oral_practice complété → ne pas retourner
+        if l.lesson_type == 'oral_practice' and l.id in completed_ids:
+            continue
+        lesson_reads.append(LessonRead(
             id=l.id, title=l.title, lesson_type=l.lesson_type,
             xp_reward=l.xp_reward, duration_minutes=l.duration_minutes,
             sort_order=l.sort_order, content=l.content,
             is_completed=l.id in completed_ids,
+            completed_at=completed_map.get(l.id),
             module_id=module_id,
-        )
-        for l in lessons
-    ]
+        ))
+
+    return lesson_reads
 
 
 # ── GET /curriculum/lessons/{id} ─────────────────────────────
@@ -210,7 +236,7 @@ async def get_lesson(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    completed_ids = await get_completed_ids(current_user.id, db)
+    completed_map = await get_completed_map(current_user.id, db)
 
     result = await db.execute(
         select(Lesson)
@@ -221,17 +247,15 @@ async def get_lesson(
     if not lesson:
         raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Leçon introuvable")
 
-    # Récupérer module_id
-    course_result = await db.execute(
-        select(Course).where(Course.id == lesson.course_id)
-    )
+    course_result = await db.execute(select(Course).where(Course.id == lesson.course_id))
     course = course_result.scalar_one_or_none()
 
     return LessonRead(
         id=lesson.id, title=lesson.title, lesson_type=lesson.lesson_type,
         xp_reward=lesson.xp_reward, duration_minutes=lesson.duration_minutes,
         sort_order=lesson.sort_order, content=lesson.content,
-        is_completed=lesson.id in completed_ids,
+        is_completed=lesson.id in completed_map,
+        completed_at=completed_map.get(lesson.id),
         module_id=course.module_id if course else 0,
     )
 
@@ -257,13 +281,14 @@ async def complete_lesson(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    # Récupérer la leçon
+    from datetime import timezone
+    now = datetime.now(timezone.utc)
+
     result = await db.execute(select(Lesson).where(Lesson.id == lesson_id))
     lesson = result.scalar_one_or_none()
     if not lesson:
         raise HTTPException(status.HTTP_404_NOT_FOUND, detail="Leçon introuvable")
 
-    # Créer ou mettre à jour la progression
     prog_result = await db.execute(
         select(LessonProgress).where(
             LessonProgress.user_id == current_user.id,
@@ -282,6 +307,7 @@ async def complete_lesson(
             xp_earned=xp_to_add,
             duration_seconds=payload.duration_seconds,
             attempts=1,
+            completed_at=now,
         )
         db.add(prog)
     else:
@@ -290,8 +316,9 @@ async def complete_lesson(
             xp_to_add = max(0, lesson.xp_reward - existing.xp_earned) if payload.score >= 0.7 else 0
             existing.score = payload.score
             existing.xp_earned += xp_to_add
+        # Mettre à jour completed_at à chaque completion
+        existing.completed_at = now
 
-    # Mettre à jour l'XP et le niveau de l'utilisateur
     current_user.xp += xp_to_add
     new_level = max(1, current_user.xp // 100 + 1)
     current_user.level = new_level

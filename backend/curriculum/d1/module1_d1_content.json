@@ -2526,6 +2526,9 @@
 },
     {
       "sort_order": 12,
+      "introduction": {
+    "text": "Cette évaluation est personnalisée selon ton profil d'apprentissage.\n\nLes exercices ont été sélectionnés pour travailler tes points faibles et confirmer tes acquis.\n\nPrend ton temps, fais de ton mieux — cette évaluation n'est pas bloquante. Elle est là pour t'aider à progresser !"
+      },
       "title": "Évaluation globale du Module 1",
       "lesson_type": "evaluation",
       "xp_reward": 60,

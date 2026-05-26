@@ -320,6 +320,30 @@
         "documentation": {}
     },
     {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "status",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -525,6 +549,14 @@
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
         "documentation": {}
     },
     {
@@ -1049,6 +1081,14 @@
         "documentation": {}
     },
     {
+        "label": "get_db",
+        "importPath": "app.db.session",
+        "description": "app.db.session",
+        "isExtraImport": true,
+        "detail": "app.db.session",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "app.db.session",
         "description": "app.db.session",
@@ -1130,6 +1170,14 @@
     },
     {
         "label": "get_db",
+        "importPath": "app.api.deps",
+        "description": "app.api.deps",
+        "isExtraImport": true,
+        "detail": "app.api.deps",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
         "importPath": "app.api.deps",
         "description": "app.api.deps",
         "isExtraImport": true,
@@ -1466,6 +1514,14 @@
     },
     {
         "label": "Part",
+        "importPath": "app.models.models",
+        "description": "app.models.models",
+        "isExtraImport": true,
+        "detail": "app.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
         "importPath": "app.models.models",
         "description": "app.models.models",
         "isExtraImport": true,
@@ -2451,6 +2507,14 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "selectinload",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -2776,6 +2840,15 @@
         "documentation": {}
     },
     {
+        "label": "json,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json.",
+        "description": "json.",
+        "detail": "json.",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -2959,6 +3032,14 @@
         "description": "app.api.v1.endpoints.blog",
         "isExtraImport": true,
         "detail": "app.api.v1.endpoints.blog",
+        "documentation": {}
+    },
+    {
+        "label": "evaluation",
+        "importPath": "app.api.v1.endpoints",
+        "description": "app.api.v1.endpoints",
+        "isExtraImport": true,
+        "detail": "app.api.v1.endpoints",
         "documentation": {}
     },
     {
@@ -3975,6 +4056,60 @@
         "documentation": {}
     },
     {
+        "label": "load_bkt_profile",
+        "kind": 2,
+        "importPath": "backend.app.api.v1.endpoints.evaluation",
+        "description": "backend.app.api.v1.endpoints.evaluation",
+        "peekOfCode": "def load_bkt_profile(user_id: str) -> dict:\n    profile_path = BASE_DIR / \"app\" / \"bkt\" / \"profiles\" / f\"{user_id}.json\"\n    if not profile_path.exists():\n        return {}\n    try:\n        data = json.loads(profile_path.read_text(encoding=\"utf-8\"))\n        skills = data.get(\"skills\", {})\n        return {\n            skill_id: skill.get(\"p_mastered\", 0.0)\n            for skill_id, skill in skills.items()",
+        "detail": "backend.app.api.v1.endpoints.evaluation",
+        "documentation": {}
+    },
+    {
+        "label": "load_evaluation_bank",
+        "kind": 2,
+        "importPath": "backend.app.api.v1.endpoints.evaluation",
+        "description": "backend.app.api.v1.endpoints.evaluation",
+        "peekOfCode": "def load_evaluation_bank(degree: int, module_id: int) -> dict:\n    bank_path = CURR_DIR / f\"d{degree}\" / f\"evaluation_bank_m{module_id}.json\"\n    if not bank_path.exists():\n        raise HTTPException(status_code=404, detail=f\"Banque d'évaluation introuvable pour module {module_id} degré {degree}\")\n    return json.loads(bank_path.read_text(encoding=\"utf-8\"))\n# ── Sélection intelligente des exercices ─────────────────────\ndef select_exercises(bank: dict, mastery_map: dict) -> list:\n    skills     = bank.get(\"skills\", {})\n    selected   = []\n    all_mastered = True",
+        "detail": "backend.app.api.v1.endpoints.evaluation",
+        "documentation": {}
+    },
+    {
+        "label": "select_exercises",
+        "kind": 2,
+        "importPath": "backend.app.api.v1.endpoints.evaluation",
+        "description": "backend.app.api.v1.endpoints.evaluation",
+        "peekOfCode": "def select_exercises(bank: dict, mastery_map: dict) -> list:\n    skills     = bank.get(\"skills\", {})\n    selected   = []\n    all_mastered = True\n    for skill_id, levels in skills.items():\n        mastery = mastery_map.get(skill_id, 0.0)\n        if mastery < THRESHOLD_BASIC:\n            # Compétence faible → exercices de base\n            all_mastered = False\n            pool = levels.get(\"basic\", [])",
+        "detail": "backend.app.api.v1.endpoints.evaluation",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.evaluation",
+        "description": "backend.app.api.v1.endpoints.evaluation",
+        "peekOfCode": "router = APIRouter(prefix=\"/curriculum\", tags=[\"evaluation\"])\n# ── Chemins ──────────────────────────────────────────────────\nBASE_DIR  = Path(__file__).parent.parent.parent.parent.parent\nCURR_DIR  = BASE_DIR / \"curriculum\"\n# ── Seuils BKT ───────────────────────────────────────────────\nTHRESHOLD_BASIC        = 0.5   # mastery < 0.5  → basic\nTHRESHOLD_INTERMEDIATE = 0.8   # mastery 0.5-0.8 → intermediate\n                                # mastery > 0.8   → skip (maîtrisé)\n# Nombre d'exercices à sélectionner par compétence\nNB_BASIC        = 2",
+        "detail": "backend.app.api.v1.endpoints.evaluation",
+        "documentation": {}
+    },
+    {
+        "label": "THRESHOLD_INTERMEDIATE",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.evaluation",
+        "description": "backend.app.api.v1.endpoints.evaluation",
+        "peekOfCode": "THRESHOLD_INTERMEDIATE = 0.8   # mastery 0.5-0.8 → intermediate\n                                # mastery > 0.8   → skip (maîtrisé)\n# Nombre d'exercices à sélectionner par compétence\nNB_BASIC        = 2\nNB_INTERMEDIATE = 1\nNB_ADVANCED     = 3  # si tout maîtrisé\n# ── Lecture du profil BKT ────────────────────────────────────\ndef load_bkt_profile(user_id: str) -> dict:\n    profile_path = BASE_DIR / \"app\" / \"bkt\" / \"profiles\" / f\"{user_id}.json\"\n    if not profile_path.exists():",
+        "detail": "backend.app.api.v1.endpoints.evaluation",
+        "documentation": {}
+    },
+    {
+        "label": "NB_INTERMEDIATE",
+        "kind": 5,
+        "importPath": "backend.app.api.v1.endpoints.evaluation",
+        "description": "backend.app.api.v1.endpoints.evaluation",
+        "peekOfCode": "NB_INTERMEDIATE = 1\nNB_ADVANCED     = 3  # si tout maîtrisé\n# ── Lecture du profil BKT ────────────────────────────────────\ndef load_bkt_profile(user_id: str) -> dict:\n    profile_path = BASE_DIR / \"app\" / \"bkt\" / \"profiles\" / f\"{user_id}.json\"\n    if not profile_path.exists():\n        return {}\n    try:\n        data = json.loads(profile_path.read_text(encoding=\"utf-8\"))\n        skills = data.get(\"skills\", {})",
+        "detail": "backend.app.api.v1.endpoints.evaluation",
+        "documentation": {}
+    },
+    {
         "label": "InstitutionCreate",
         "kind": 6,
         "importPath": "backend.app.api.v1.endpoints.institution",
@@ -4204,7 +4339,7 @@
         "kind": 5,
         "importPath": "backend.app.api.v1.endpoints.oral",
         "description": "backend.app.api.v1.endpoints.oral",
-        "peekOfCode": "VOYELLE_NAMES = {\n    \"\\u064E\": \"fatha (a)\",\n    \"\\u064F\": \"damma (o/ou)\",\n    \"\\u0650\": \"kasra (i)\",\n    \"\\u0651\": \"shadda\",\n    \"\\u0652\": \"sukun\",\n}\nHALLUCINATIONS_CONNUES = [\n    \"اشتركوا في القناة\",\n    \"اشترك في القناة\",",
+        "peekOfCode": "VOYELLE_NAMES = {\n    \"\\u064E\": \"fatha (a)\",\n    \"\\u064F\": \"damma (o/ou)\",\n    \"\\u0650\": \"kasra (i)\",\n    \"\\u0651\": \"shadda\",\n    \"\\u0652\": \"sukun\",\n}\nHALLUCINATIONS_CONNUES = [\n]\ndef get_openai_client() -> AsyncOpenAI:",
         "detail": "backend.app.api.v1.endpoints.oral",
         "documentation": {}
     },
@@ -4213,7 +4348,7 @@
         "kind": 5,
         "importPath": "backend.app.api.v1.endpoints.oral",
         "description": "backend.app.api.v1.endpoints.oral",
-        "peekOfCode": "HALLUCINATIONS_CONNUES = [\n    \"اشتركوا في القناة\",\n    \"اشترك في القناة\",\n    \"تابعونا\",\n    \"للمزيد\",\n    \"سبحان الله\",\n    \"الله أكبر\",\n    \"صلى الله\",\n    \"بسم الله\",\n]",
+        "peekOfCode": "HALLUCINATIONS_CONNUES = [\n]\ndef get_openai_client() -> AsyncOpenAI:\n    key = os.getenv(\"OPENAI_API_KEY\")\n    if not key:\n        raise HTTPException(status_code=503, detail=\"OPENAI_API_KEY non configurée\")\n    return AsyncOpenAI(api_key=key)\ndef strip_harakat(text: str) -> str:\n    result = text\n    for ch in HARAKAT + TATWEEL:",
         "detail": "backend.app.api.v1.endpoints.oral",
         "documentation": {}
     },
@@ -4285,7 +4420,7 @@
         "kind": 5,
         "importPath": "backend.app.api.v1.router",
         "description": "backend.app.api.v1.router",
-        "peekOfCode": "api_router = APIRouter(prefix=\"/api/v1\")\napi_router.include_router(blog_router)\napi_router.include_router(oral_router)\napi_router.include_router(auth_router)\napi_router.include_router(certifications_router)\napi_router.include_router(curriculum_router)\napi_router.include_router(writing_sheets_router)\napi_router.include_router(bkt_router)\napi_router.include_router(admin_router)\napi_router.include_router(superadmin_router)",
+        "peekOfCode": "api_router = APIRouter(prefix=\"/api/v1\")\napi_router.include_router(evaluation.router)\napi_router.include_router(blog_router)\napi_router.include_router(oral_router)\napi_router.include_router(auth_router)\napi_router.include_router(certifications_router)\napi_router.include_router(curriculum_router)\napi_router.include_router(writing_sheets_router)\napi_router.include_router(bkt_router)\napi_router.include_router(admin_router)",
         "detail": "backend.app.api.v1.router",
         "documentation": {}
     },

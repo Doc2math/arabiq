@@ -1,0 +1,194 @@
+exercise_id,skill_id,exercise_type,type_label,module_id,n_interactions,success_rate
+m1l5_ex1,letter_positions,mcq,Multiple Choice Question,1,10,0.8
+m1l3_ex2,long_vowels,audio_choice,Audio-based Multiple Choice,1,11,0.909
+m1l8_ex10,word_writing,input_text,Text Input,1,4,0.75
+eval_hr_b1,harakat_reading,audio_choice,Audio-based Multiple Choice,1,3,1.0
+m1l6_ex1,word_reading,audio_choice,Audio-based Multiple Choice,1,23,0.913
+eval_hr_b3,harakat_reading,mcq,Multiple Choice Question,1,3,0.667
+m1l1_ex7,letter_recognition,matching_text_audio,Text-Audio Matching,1,34,0.706
+m1l10_ex4,sentence_reading,word_order,Word Ordering,1,9,1.0
+m2l5_ex1,word_reading,audio_choice,Audio-based Multiple Choice,2,7,0.714
+m2l2_ex4,harakat_reading,audio_choice,Audio-based Multiple Choice,2,11,0.364
+m2l6_ex1,word_comprehension,mcq,Multiple Choice Question,2,6,1.0
+m2l8_ex6,word_building,mcq,Multiple Choice Question,2,3,1.0
+eval_tw_b2,tanwin,audio_choice,Audio-based Multiple Choice,1,2,1.0
+eval_ww_b2,word_writing,input_text,Text Input,1,3,0.333
+m1l2_ex2,harakat_reading,audio_choice,Audio-based Multiple Choice,1,14,1.0
+m1l10_ex_txa1,sentence_reading,matching_text_audio,Text-Audio Matching,1,11,0.727
+m2l1_ex7,letter_recognition,matching_text_audio,Text-Audio Matching,2,8,0.625
+m2l6_ex2,word_comprehension,matching,Text Matching,2,5,1.0
+m1l3_ex7,long_vowels,matching_text_audio,Text-Audio Matching,1,11,1.0
+m2l7_ex5,word_writing,input_text,Text Input,2,8,0.75
+m2l7_ex4,word_writing,input_text,Text Input,2,8,0.875
+m1l5_ex6,letter_positions,mcq,Multiple Choice Question,1,10,0.9
+m1l5_ex8,letter_positions,mcq,Multiple Choice Question,1,10,0.9
+ex_oral_m1_1,word_reading,oral_reading,Oral Reading,1,3,0.0
+m1l3_ex1,long_vowels,mcq,Multiple Choice Question,1,11,0.727
+m1l4_ex8,tanwin,matching_text_audio,Text-Audio Matching,1,10,0.9
+eval_ww_b1,word_writing,input_text,Text Input,1,2,0.5
+eval_lv_b1,long_vowels,mcq,Multiple Choice Question,1,3,0.667
+m1l4_ex3,tanwin,mcq,Multiple Choice Question,1,10,1.0
+m1l6_ex2,word_comprehension,matching,Text Matching,1,22,0.864
+m2l7_ex12,word_writing,input_text,Text Input,2,3,0.667
+m2l4_ex8,letter_positions,mcq,Multiple Choice Question,2,4,0.5
+m2l9_ex3,sentence_reading,word_order,Word Ordering,2,3,1.0
+eval_sr_b2,sentence_reading,mcq,Multiple Choice Question,1,3,1.0
+m2l3_ex2,long_vowels,audio_choice,Audio-based Multiple Choice,2,4,0.75
+m1l8_ex12,word_writing,input_text,Text Input,1,4,0.75
+m2l10_ex4,letter_positions,mcq,Multiple Choice Question,2,6,1.0
+m1l8_ex5,word_writing,input_text,Text Input,1,18,0.889
+m2l3_ex3,long_vowels,mcq,Multiple Choice Question,2,4,1.0
+m1l9_ex6,word_building,mcq,Multiple Choice Question,1,15,0.467
+m1l11_ex8,word_writing,input_text,Text Input,1,15,0.067
+m2l4_ex2,letter_positions,mcq,Multiple Choice Question,2,6,0.833
+m2l6_ex6,word_comprehension,mcq,Multiple Choice Question,2,5,1.0
+eval_wr_b2,word_reading,audio_choice,Audio-based Multiple Choice,1,2,1.0
+eval_wr_b1,word_reading,audio_choice,Audio-based Multiple Choice,1,3,1.0
+m2l7_ex3,word_writing,input_text,Text Input,2,9,0.778
+m2l10_ex9,word_comprehension,mcq,Multiple Choice Question,2,6,0.833
+m2l8_ex1,word_building,drag_drop,Drag and Drop,2,3,1.0
+m2l6_ex_txa1,word_reading,matching_text_audio,Text-Audio Matching,2,5,0.6
+m1l9_ex4,word_building,mcq,Multiple Choice Question,1,15,1.0
+m2l5_ex4,word_reading,audio_choice,Audio-based Multiple Choice,2,6,0.833
+m2l9_ex5,sentence_reading,mcq,Multiple Choice Question,2,3,1.0
+m1l9_ex1,word_building,drag_drop,Drag and Drop,1,16,0.875
+m1l7_ex6,word_comprehension,mcq,Multiple Choice Question,1,10,1.0
+m2l4_ex3,letter_positions,mcq,Multiple Choice Question,2,5,1.0
+m2l2_ex8,harakat_reading,mcq,Multiple Choice Question,2,11,0.727
+m2l9_ex2,sentence_reading,mcq,Multiple Choice Question,2,3,1.0
+m1l2_ex7,harakat_reading,audio_choice,Audio-based Multiple Choice,1,13,0.923
+m1l9_ex5,word_building,drag_drop,Drag and Drop,1,14,1.0
+eval_lv_b3,long_vowels,mcq,Multiple Choice Question,1,2,1.0
+m1l4_ex4,tanwin,mcq,Multiple Choice Question,1,11,1.0
+eval_lr_b2,letter_recognition,mcq,Multiple Choice Question,1,1,1.0
+m2l10_ex10,word_reading,matching_text_audio,Text-Audio Matching,2,6,0.833
+m1l1_ex1,letter_recognition,mcq,Multiple Choice Question,1,36,0.778
+m2l7_ex2,word_writing,input_text,Text Input,2,8,0.75
+m1l8_ex8,word_writing,input_text,Text Input,1,15,0.867
+m1l2_ex6,harakat_reading,mcq,Multiple Choice Question,1,18,0.889
+m1l8_ex4,word_writing,input_text,Text Input,1,16,0.875
+m2l4_ex7,letter_positions,mcq,Multiple Choice Question,2,6,1.0
+m2l2_ex1,harakat_reading,audio_choice,Audio-based Multiple Choice,2,11,0.636
+m1l8_ex6,word_writing,drawing,Letter Drawing,1,7,0.857
+eval_lp_b1,letter_positions,mcq,Multiple Choice Question,1,2,1.0
+m1l7_ex3,word_comprehension,mcq,Multiple Choice Question,1,8,1.0
+m2l5_ex2,word_comprehension,matching,Text Matching,2,6,1.0
+eval_wb_b1,word_building,drag_drop,Drag and Drop,1,2,1.0
+m2l4_ex6,letter_positions,mcq,Multiple Choice Question,2,5,1.0
+m1l9_ex2,word_building,drag_drop,Drag and Drop,1,14,1.0
+m1l7_ex_txa1,word_reading,matching_text_audio,Text-Audio Matching,1,8,1.0
+m2l2_ex6,harakat_reading,audio_choice,Audio-based Multiple Choice,2,11,0.636
+m2l7_ex10,word_writing,input_text,Text Input,2,3,0.667
+m1l5_ex5,letter_positions,mcq,Multiple Choice Question,1,10,0.9
+m1l3_ex3,long_vowels,mcq,Multiple Choice Question,1,11,0.909
+m1l4_ex6,tanwin,audio_choice,Audio-based Multiple Choice,1,10,0.9
+m1l11_ex4,tanwin,mcq,Multiple Choice Question,1,16,0.938
+m1l10_ex5,sentence_reading,mcq,Multiple Choice Question,1,11,1.0
+m1l6_ex3,word_comprehension,mcq,Multiple Choice Question,1,22,0.818
+m1l7_ex5,word_comprehension,mcq,Multiple Choice Question,1,9,0.889
+m2l7_ex6,word_writing,input_text,Text Input,2,9,0.778
+m1l11_ex3,long_vowels,mcq,Multiple Choice Question,1,16,0.938
+m2l8_ex3,word_building,mcq,Multiple Choice Question,2,3,0.0
+m1l2_ex5,harakat_reading,audio_choice,Audio-based Multiple Choice,1,15,0.867
+m1l10_ex3,sentence_reading,word_order,Word Ordering,1,10,0.8
+m2l2_ex5,harakat_reading,mcq,Multiple Choice Question,2,11,0.727
+m1l9_ex3,word_building,mcq,Multiple Choice Question,1,16,0.938
+m2l1_ex5,letter_recognition,audio_choice,Audio-based Multiple Choice,2,8,1.0
+m2l10_ex1,letter_recognition,mcq,Multiple Choice Question,2,6,1.0
+m2l10_ex3,long_vowels,mcq,Multiple Choice Question,2,6,0.5
+m1l5_ex4,letter_positions,mcq,Multiple Choice Question,1,10,0.8
+m2l1_ex2,letter_recognition,mcq,Multiple Choice Question,2,8,1.0
+m1l11_ex5,letter_positions,mcq,Multiple Choice Question,1,16,0.938
+m2l5_ex5,word_comprehension,mcq,Multiple Choice Question,2,6,1.0
+m2l1_ex4,letter_recognition,matching_text_audio,Text-Audio Matching,2,8,0.75
+m2l10_ex2,harakat_reading,audio_choice,Audio-based Multiple Choice,2,6,0.833
+eval_wb_b2,word_building,drag_drop,Drag and Drop,1,2,1.0
+m1l1_ex3,letter_recognition,mcq,Multiple Choice Question,1,35,0.857
+m2l10_ex6,word_comprehension,matching,Text Matching,2,6,0.833
+m1l3_ex5,long_vowels,mcq,Multiple Choice Question,1,13,1.0
+m1l3_ex6,long_vowels,mcq,Multiple Choice Question,1,12,0.833
+m1l8_ex7,word_writing,drawing,Letter Drawing,1,11,1.0
+eval_wc_b2,word_comprehension,mcq,Multiple Choice Question,1,2,1.0
+m1l2_ex1,harakat_reading,audio_choice,Audio-based Multiple Choice,1,16,1.0
+m2l8_ex2,word_building,drag_drop,Drag and Drop,2,3,1.0
+m1l8_ex2,word_writing,input_text,Text Input,1,18,0.944
+m2l1_ex6,letter_recognition,matching_text_audio,Text-Audio Matching,2,8,1.0
+m1l3_ex4,long_vowels,audio_choice,Audio-based Multiple Choice,1,11,0.818
+m1l7_ex1,word_comprehension,mcq,Multiple Choice Question,1,8,1.0
+m2l2_ex7,harakat_reading,matching_text_audio,Text-Audio Matching,2,10,0.5
+m2l3_ex6,long_vowels,matching_text_audio,Text-Audio Matching,2,4,0.5
+m2l9_ex_txa1,sentence_reading,matching_text_audio,Text-Audio Matching,2,3,1.0
+m1l6_ex4,word_reading,audio_choice,Audio-based Multiple Choice,1,23,0.957
+m2l5_ex3,word_comprehension,mcq,Multiple Choice Question,2,7,1.0
+m2l9_ex6,sentence_reading,matching,Text Matching,2,3,1.0
+eval_sr_b1,sentence_reading,audio_choice,Audio-based Multiple Choice,1,2,1.0
+m1l1_ex4,letter_recognition,mcq,Multiple Choice Question,1,37,0.649
+eval_lp_b2,letter_positions,mcq,Multiple Choice Question,1,3,1.0
+m1l2_ex3,harakat_reading,mcq,Multiple Choice Question,1,15,0.8
+m1l1_ex2,letter_recognition,mcq,Multiple Choice Question,1,39,0.897
+m2l3_ex1,long_vowels,mcq,Multiple Choice Question,2,4,1.0
+m2l7_ex9,word_writing,input_text,Text Input,2,3,1.0
+m1l6_ex_txa1,word_reading,matching_text_audio,Text-Audio Matching,1,21,0.476
+m1l8_ex9,word_writing,input_text,Text Input,1,4,1.0
+eval_wc_b1,word_comprehension,mcq,Multiple Choice Question,1,2,1.0
+m2l7_ex8,word_writing,input_text,Text Input,2,3,1.0
+m1l1_ex8,letter_recognition,matching_text_audio,Text-Audio Matching,1,34,0.618
+m1l11_ex11,word_reading,matching_text_audio,Text-Audio Matching,1,15,0.867
+m2l5_ex6,word_comprehension,mcq,Multiple Choice Question,2,6,1.0
+m1l6_ex5,word_comprehension,mcq,Multiple Choice Question,1,27,0.889
+m1l5_ex2,letter_positions,mcq,Multiple Choice Question,1,10,0.8
+m2l2_ex3,harakat_reading,mcq,Multiple Choice Question,2,11,1.0
+m2l3_ex4,long_vowels,audio_choice,Audio-based Multiple Choice,2,4,0.25
+eval_lr_b3,letter_recognition,audio_choice,Audio-based Multiple Choice,1,1,1.0
+m1l10_ex2,sentence_reading,mcq,Multiple Choice Question,1,11,0.909
+m2l8_ex4,word_building,drag_drop,Drag and Drop,2,3,1.0
+m1l8_ex11,word_writing,input_text,Text Input,1,4,1.0
+m1l7_ex4,word_reading,audio_choice,Audio-based Multiple Choice,1,9,1.0
+m2l7_ex7,word_writing,input_text,Text Input,2,8,0.625
+m1l5_ex7,letter_positions,mcq,Multiple Choice Question,1,10,0.9
+m1l4_ex7,tanwin,mcq,Multiple Choice Question,1,9,1.0
+m1l8_ex1,word_writing,input_text,Text Input,1,20,0.75
+m2l4_ex5,letter_positions,mcq,Multiple Choice Question,2,6,1.0
+m1l11_ex10,word_building,drag_drop,Drag and Drop,1,15,1.0
+m1l2_ex4,harakat_reading,mcq,Multiple Choice Question,1,15,0.8
+m2l2_ex2,harakat_reading,audio_choice,Audio-based Multiple Choice,2,12,0.667
+eval_tw_b1,tanwin,mcq,Multiple Choice Question,1,2,0.5
+m1l6_ex6,word_comprehension,mcq,Multiple Choice Question,1,23,0.87
+m1l11_ex6,word_reading,audio_choice,Audio-based Multiple Choice,1,16,0.812
+m2l1_ex8,letter_recognition,mcq,Multiple Choice Question,2,7,1.0
+m2l10_ex8,sentence_reading,word_order,Word Ordering,2,6,0.667
+m2l3_ex5,long_vowels,mcq,Multiple Choice Question,2,4,1.0
+m2l4_ex4,letter_positions,mcq,Multiple Choice Question,2,4,1.0
+m1l4_ex2,tanwin,audio_choice,Audio-based Multiple Choice,1,10,0.9
+m2l6_ex4,word_reading,audio_choice,Audio-based Multiple Choice,2,6,0.667
+m1l10_ex6,sentence_reading,matching,Text Matching,1,10,0.9
+m1l2_ex8,harakat_reading,matching_text_audio,Text-Audio Matching,1,13,0.846
+m1l8_ex3,word_writing,input_text,Text Input,1,18,0.722
+m2l6_ex5,word_comprehension,mcq,Multiple Choice Question,2,5,1.0
+m1l10_ex1,sentence_reading,audio_choice,Audio-based Multiple Choice,1,11,1.0
+m1l11_ex9,sentence_reading,word_order,Word Ordering,1,15,0.933
+m1l7_ex_img1,word_comprehension,matching_image_word,Image-Word Matching,1,7,0.0
+m2l10_ex7,word_writing,input_text,Text Input,2,6,0.833
+m1l5_ex3,letter_positions,mcq,Multiple Choice Question,1,10,0.9
+m1l4_ex1,tanwin,mcq,Multiple Choice Question,1,10,1.0
+m1l6_ex_img1,word_comprehension,matching_image_word,Image-Word Matching,1,22,0.682
+m1l11_ex2,harakat_reading,audio_choice,Audio-based Multiple Choice,1,16,0.375
+m2l5_ex_txa1,word_reading,matching_text_audio,Text-Audio Matching,2,6,0.667
+m2l6_ex3,word_comprehension,mcq,Multiple Choice Question,2,5,0.8
+m2l9_ex1,sentence_reading,audio_choice,Audio-based Multiple Choice,2,3,1.0
+m1l11_ex1,letter_recognition,mcq,Multiple Choice Question,1,17,0.941
+m2l4_ex1,letter_positions,mcq,Multiple Choice Question,2,5,1.0
+m2l8_ex5,word_building,mcq,Multiple Choice Question,2,3,1.0
+m1l1_ex6,letter_recognition,matching_text_audio,Text-Audio Matching,1,36,0.778
+m2l10_ex5,word_reading,audio_choice,Audio-based Multiple Choice,2,6,0.833
+m2l7_ex11,word_writing,input_text,Text Input,2,3,1.0
+m1l4_ex5,tanwin,mcq,Multiple Choice Question,1,9,0.778
+m1l11_ex7,word_comprehension,matching,Text Matching,1,15,0.867
+m2l7_ex1,word_writing,input_text,Text Input,2,8,0.75
+m2l9_ex4,sentence_reading,mcq,Multiple Choice Question,2,3,1.0
+eval_lv_b2,long_vowels,audio_choice,Audio-based Multiple Choice,1,2,1.0
+eval_lr_b4,letter_recognition,audio_choice,Audio-based Multiple Choice,1,1,1.0
+m2l1_ex3,letter_recognition,mcq,Multiple Choice Question,2,9,0.889
+m1l1_ex5,letter_recognition,matching_text_audio,Text-Audio Matching,1,36,0.694
+m2l1_ex1,letter_recognition,mcq,Multiple Choice Question,2,9,1.0
+m1l7_ex2,word_comprehension,matching,Text Matching,1,9,0.889

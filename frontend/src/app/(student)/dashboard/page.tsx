@@ -26,6 +26,7 @@ interface ModuleData {
   lessons_count: number
   completed_count: number
   total_xp: number
+  is_module_completed: boolean
 }
 
 interface PartData {
@@ -66,6 +67,7 @@ export default function DashboardPage() {
   const [parts, setParts] = useState<PartData[]>([])
   const [loading, setLoading] = useState(true)
   const [expandedPart, setExpandedPart] = useState<number | null>(1)
+  const [showCompleted, setShowCompleted] = useState(false)
 
   useEffect(() => {
     api.get('/api/v1/curriculum/parts')
@@ -84,9 +86,6 @@ export default function DashboardPage() {
   const totalCompleted = parts.reduce((s, p) => s + p.completed_lessons, 0)
   const globalPct      = totalLessons > 0 ? Math.round((totalCompleted / totalLessons) * 100) : 0
 
-  const DEGREE_NAMES = ['', t('degree', { number: 1 }), t('degree', { number: 2 }), t('degree', { number: 3 }), t('degree', { number: 4 }), t('degree', { number: 5 }), t('degree', { number: 6 })]
-
-  // Noms traduits des degrés — on les hardcode car ils viennent de fr.json via t()
   const DEGREE_LABELS: Record<number, string> = {
     1: 'Découverte',
     2: 'Fondations',
@@ -95,6 +94,9 @@ export default function DashboardPage() {
     5: 'Perfectionnement',
     6: 'Excellence',
   }
+
+  // Compter les modules complétés
+  const completedModules = parts.flatMap(p => p.modules).filter(m => m.is_module_completed)
 
   return (
     <div style={{ maxWidth: 1020, margin: '0 auto', padding: '32px 24px' }}>
@@ -108,9 +110,8 @@ export default function DashboardPage() {
       }}>
         <div style={{ position: 'absolute', right: -40, top: -40, width: 200, height: 200, borderRadius: '50%', background: 'rgba(255,255,255,0.05)', pointerEvents: 'none' }} />
         <div>
-          <p style={{ fontSize: 14, opacity: 0.75, marginBottom: 4 }}>{t('welcome', { name: '' }).replace('{name}', '').trim()},</p>
+          <p style={{ fontSize: 16, opacity: 0.75, marginBottom: 4 }}>{t('welcome', { name: '' }).replace('{name}', '').trim()}</p>
           <h1 style={{ fontSize: 26, fontWeight: 700, marginBottom: 6 }}>{user.username} 👋</h1>
-          <p style={{ fontSize: 13, opacity: 0.8 }}>{t('welcome', { name: user.username })}</p>
         </div>
         <div style={{ textAlign: 'right' }}>
           <div style={{ fontSize: 48, marginBottom: 4 }}>🌙</div>
@@ -120,11 +121,11 @@ export default function DashboardPage() {
 
       {/* Stats */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 24 }}>
-       {[
-  { label: t('stats.xp'),       value: user.xp,           icon: '⚡', color: C.orange, bg: C.orangeLt },
-  { label: t('stats.streak'),   value: `${user.streak}j`, icon: '🔥', color: C.green,  bg: C.greenLt  },
-  { label: t('stats.level'),    value: user.level,        icon: '🏆', color: C.violet, bg: C.violetLt },
-  { label: t('stats.progress'), value: `${globalPct}%`,   icon: '📈', color: C.blue,   bg: C.blueLt   },
+        {[
+          { label: t('stats.xp'),       value: user.xp,           icon: '⚡', color: C.orange, bg: C.orangeLt },
+          { label: t('stats.streak'),   value: `${user.streak}j`, icon: '🔥', color: C.green,  bg: C.greenLt  },
+          { label: t('stats.level'),    value: user.level,        icon: '🏆', color: C.violet, bg: C.violetLt },
+          { label: t('stats.progress'), value: `${globalPct}%`,   icon: '📈', color: C.blue,   bg: C.blueLt   },
         ].map((s, i) => (
           <div key={i} style={{ background: C.white, border: `2px solid ${C.border}`, borderRadius: 16, padding: '16px', display: 'flex', alignItems: 'center', gap: 10 }}>
             <div style={{ width: 40, height: 40, borderRadius: 10, background: s.bg, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>{s.icon}</div>
@@ -135,6 +136,64 @@ export default function DashboardPage() {
           </div>
         ))}
       </div>
+
+      {/* Modules complétés — section archive */}
+      {completedModules.length > 0 && (
+        <div style={{ marginBottom: 20 }}>
+          <button
+            onClick={() => setShowCompleted(v => !v)}
+            style={{
+              display: 'flex', alignItems: 'center', gap: 10,
+              background: C.greenLt, border: `2px solid ${C.green}40`,
+              borderRadius: 14, padding: '12px 18px', cursor: 'pointer',
+              width: '100%', marginBottom: showCompleted ? 10 : 0,
+              transition: 'all .2s',
+            }}>
+            <span style={{ fontSize: 18 }}>✅</span>
+            <span style={{ fontSize: 14, fontWeight: 700, color: C.green, flex: 1, textAlign: 'left' }}>
+              {completedModules.length} module{completedModules.length > 1 ? 's' : ''} réussi{completedModules.length > 1 ? 's' : ''}
+            </span>
+            <span style={{ fontSize: 14, color: C.green, transition: 'transform .2s', transform: showCompleted ? 'rotate(180deg)' : 'none' }}>▾</span>
+          </button>
+
+          {showCompleted && (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8, padding: '4px 0' }}>
+              {completedModules.map(mod => (
+                <div key={mod.id} style={{
+                  background: C.white, border: `2px solid ${C.greenLt}`,
+                  borderRadius: 14, padding: '14px 16px',
+                  display: 'flex', alignItems: 'center', gap: 14,
+                }}>
+                  <div style={{
+                    width: 36, height: 36, borderRadius: 10, flexShrink: 0,
+                    background: C.green, color: '#fff',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontSize: 16, fontWeight: 700,
+                  }}>✓</div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <p style={{ fontSize: 14, fontWeight: 700, color: C.text, marginBottom: 2, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                      {mod.title}
+                    </p>
+                    <p style={{ fontSize: 11, color: C.green, fontWeight: 600 }}>Module réussi ✓</p>
+                  </div>
+                  <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
+                    <button
+                      onClick={() => router.push(`/module-report/${mod.id}`)}
+                      style={{ padding: '6px 12px', borderRadius: 8, border: `1.5px solid ${C.green}`, background: C.greenLt, color: C.green, fontSize: 11, fontWeight: 700, cursor: 'pointer' }}>
+                      📊 Rapport
+                    </button>
+                    <button
+                      onClick={() => router.push(`/module/${mod.id}`)}
+                      style={{ padding: '6px 12px', borderRadius: 8, border: `1.5px solid ${C.border}`, background: C.bg, color: C.text3, fontSize: 11, cursor: 'pointer' }}>
+                      Revoir
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Curriculum */}
       <h2 style={{ fontSize: 18, fontWeight: 700, color: C.text, marginBottom: 16 }}>
@@ -149,6 +208,9 @@ export default function DashboardPage() {
             const isExpanded = expandedPart === part.id
             const hasContent = part.total_lessons > 0
             const isLocked   = part.is_premium && !user.is_premium && !hasContent
+
+            // Modules actifs (non complétés)
+            const activeModules = part.modules.filter(m => !m.is_module_completed)
 
             return (
               <div key={part.id} style={{
@@ -214,9 +276,13 @@ export default function DashboardPage() {
 
                 {isExpanded && hasContent && (
                   <div style={{ padding: '16px 20px', display: 'flex', flexDirection: 'column', gap: 10 }}>
-                    {part.modules.map(mod => {
-                      const modPct      = mod.lessons_count > 0 ? Math.round((mod.completed_count / mod.lessons_count) * 100) : 0
-                      const isCompleted = mod.completed_count === mod.lessons_count && mod.lessons_count > 0
+                    {activeModules.length === 0 && (
+                      <p style={{ fontSize: 13, color: C.green, textAlign: 'center', padding: '12px 0', fontWeight: 600 }}>
+                        🎉 Tous les modules de ce degré sont réussis !
+                      </p>
+                    )}
+                    {activeModules.map(mod => {
+                      const modPct = mod.lessons_count > 0 ? Math.round((mod.completed_count / mod.lessons_count) * 100) : 0
 
                       return (
                         <button key={mod.id}
@@ -225,8 +291,8 @@ export default function DashboardPage() {
                           onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.borderColor = part.color; el.style.background = `${part.color}08` }}
                           onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.borderColor = C.border; el.style.background = C.bg }}>
 
-                          <div style={{ width: 36, height: 36, borderRadius: 10, flexShrink: 0, background: isCompleted ? part.color : `${part.color}20`, color: isCompleted ? '#fff' : part.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, fontWeight: 700 }}>
-                            {isCompleted ? '✓' : `M${mod.sort_order}`}
+                          <div style={{ width: 36, height: 36, borderRadius: 10, flexShrink: 0, background: `${part.color}20`, color: part.color, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, fontWeight: 700 }}>
+                            {`M${mod.sort_order}`}
                           </div>
 
                           <div style={{ flex: 1, minWidth: 0 }}>
@@ -244,7 +310,7 @@ export default function DashboardPage() {
                           <div style={{ textAlign: 'right', flexShrink: 0 }}>
                             <div style={{ fontSize: 12, fontWeight: 700, color: C.orange }}>⚡ {mod.total_xp} XP</div>
                             <div style={{ fontSize: 12, color: part.color, fontWeight: 600, marginTop: 2 }}>
-                              {modPct === 100 ? `${t('completed')} ✓` : modPct > 0 ? `${t('continueLesson')} →` : `${t('startModule')} →`}
+                              {modPct > 0 ? `${t('continueLesson')} →` : `${t('startModule')} →`}
                             </div>
                           </div>
                         </button>

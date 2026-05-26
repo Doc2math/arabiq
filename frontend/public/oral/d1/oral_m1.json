@@ -7,13 +7,14 @@
       "audio": "/assets/audio/syllables/ba_fatha.mp3"
     },
     {
-      "ar": "بِ", "phoneme": "bi", "name": "Ba — kasra",
-      "audio": "/assets/audio/syllables/ba_kasra.mp3"
-    },
-    {
       "ar": "بُ", "phoneme": "bu", "name": "Ba — damma",
       "audio": "/assets/audio/syllables/ba_damma.mp3"
     },
+    {
+      "ar": "بِ", "phoneme": "bi", "name": "Ba — kasra",
+      "audio": "/assets/audio/syllables/ba_kasra.mp3"
+    },
+    
     {
       "ar": "بَا", "phoneme": "baa", "name": "Ba — longue aa",
       "audio": "/assets/audio/syllables/ba_alif_long.mp3"
