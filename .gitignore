@@ -1,2 +1,3 @@
 "backend/certs/" 
 "backend/backups/" 
+"backend/.env" 
